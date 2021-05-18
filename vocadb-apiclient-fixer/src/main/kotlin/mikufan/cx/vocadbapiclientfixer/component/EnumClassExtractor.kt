@@ -8,7 +8,7 @@ import org.jeasy.batch.core.record.Record
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 import java.nio.file.Path
-import java.nio.file.Paths
+import kotlin.io.path.name
 import kotlin.io.path.useLines
 
 /**
@@ -18,20 +18,9 @@ import kotlin.io.path.useLines
  */
 @Component
 class EnumClassExtractor(
-  @Value("\${config.multi-enums-class-template}") templateResource: String,
   @Value("\${config.enum-capture-regex}") val enumRegex: Regex,
   @Value("\${config.package-capture-regex}") val packageRegex: Regex
 ): RecordMapper<Path, FixInfo> {
-
-  val template: String by lazy {
-    val url = this::class.java.classLoader.getResource(templateResource)
-      ?: throw RuntimeException("Can not find template for fixing enum classes").also {
-        log.error(it) { "${it.message}" }
-      }
-    Paths.get(url.toURI()).useLines {
-      it.joinToString("\n")
-    }.also { log.info { "Successfully load java template" } }
-  }
 
   override fun processRecord(record: Record<Path>): Record<FixInfo> {
     lateinit var `package`: String
@@ -62,7 +51,7 @@ class EnumClassExtractor(
         if (shouldBreak) break
       }
     }
-    val fixInfo = FixInfo(record.payload, `package`, enumList)
+    val fixInfo = FixInfo(record.payload, `package`, record.payload.fileName.name, enumList)
     log.debug { "Extracted these info for fixing enum $fixInfo" }
     return GenericRecord(record.header, fixInfo)
   }

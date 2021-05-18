@@ -20,7 +20,7 @@ class IOConfig (
   @NotNull
   val modelPath: Path = outputProjectDirectory.resolve(modelRelativePath)
 
-  init {
+  fun doCopy() {
     inputProjectDirectory.toFile().copyRecursively(outputProjectDirectory.toFile(), true)
   }
 
