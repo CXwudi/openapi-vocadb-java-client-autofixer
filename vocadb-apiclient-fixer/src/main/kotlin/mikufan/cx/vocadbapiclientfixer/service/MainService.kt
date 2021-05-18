@@ -2,11 +2,12 @@ package mikufan.cx.vocadbapiclientfixer.service
 
 import mikufan.cx.vocadbapiclientfixer.component.EnumClassExtractor
 import mikufan.cx.vocadbapiclientfixer.component.EnumClassFilter
-import mikufan.cx.vocadbapiclientfixer.component.LazyCopyModelReader
 import mikufan.cx.vocadbapiclientfixer.model.FixInfo
 import mu.KotlinLogging
 import org.jeasy.batch.core.job.JobBuilder
 import org.jeasy.batch.core.job.JobExecutor
+import org.jeasy.batch.core.reader.FileRecordReader
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 import java.nio.file.Path
 
@@ -16,7 +17,7 @@ import java.nio.file.Path
  */
 @Service
 class MainService(
-  val modelsReader: LazyCopyModelReader,
+  @Qualifier("modelReader") val modelsReader: FileRecordReader,
   val enumClassFilter: EnumClassFilter,
   val enumClassExtractor: EnumClassExtractor
 ) : Runnable {
