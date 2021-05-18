@@ -1,5 +1,6 @@
 package mikufan.cx.vocadbapiclientfixer.config
 
+import org.jeasy.batch.core.job.JobExecutor
 import org.jeasy.batch.core.reader.FileRecordReader
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -9,8 +10,12 @@ import org.springframework.context.annotation.Configuration
  * @author CX无敌
  */
 @Configuration
-class BatchConfig {
+class JobConfig {
+  @Bean
+  fun jobExecutor() = JobExecutor()
 
-  @Bean fun modelReader(ioConfig: IOConfig): FileRecordReader =
-    FileRecordReader(ioConfig.modelPath, true)
+  @Bean
+  fun modelReader(ioConfig: IOConfig) = FileRecordReader(ioConfig.modelPath, true)
+
+
 }

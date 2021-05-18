@@ -1,11 +1,13 @@
 io:
   input-project-directory:
-  backup-suffix: -backup
+  output-project-directory:
   model-relative-path:
 
 config:
   multi-enums-class-template: multi-enums.java.template
-  enum-capture-regex: ([A-Z]+\(\"\w+\"\))
+  package-capture-regex: package ((\.|\w)+)
+  enum-capture-regex: ([A-Z]+\("\w+"\))
+
 
 logging:
   level:

@@ -20,7 +20,7 @@ class EnumClassFilter: RecordFilter<Path> {
     val fileName = path.fileName.name.substringBefore('.')
     if (fileName.endsWith('s') && // target class ends with s
       path.toFile().useLines { seq -> // read the file and find "enum"
-        seq.any { it.contains("enum") }
+        seq.any { it.contains("public enum") }
       }){
       log.debug { "captured enum class: $fileName" }
       return record
