@@ -1,0 +1,13 @@
+io:
+  input-project-directory:
+  backup-suffix: -backup
+  model-relative-path:
+
+config:
+  multi-enums-class-template: multi-enums.java.template
+  enum-capture-regex: ([A-Z]+\(\"\w+\"\))
+
+logging:
+  level:
+    mikufan:
+      cx: debug

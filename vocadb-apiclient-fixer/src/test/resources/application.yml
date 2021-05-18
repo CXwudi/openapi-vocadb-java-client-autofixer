@@ -1,0 +1,8 @@
+io:
+  input-project-directory: D:\11134\Videos\Vocaloid Coding POC\VocaDB OpenAPI POC\vocadb-api-client-resttemplate
+  model-relative-path: src\main\java\cx\mikufan\vocadbapiclient\model
+
+logging:
+  level:
+    mikufan:
+      cx: debug
