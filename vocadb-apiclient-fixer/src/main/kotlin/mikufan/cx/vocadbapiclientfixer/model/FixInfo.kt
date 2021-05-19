@@ -8,6 +8,6 @@ import java.nio.file.Path
  */
 data class FixInfo(
   val originalClassFile: Path,
-  val className: String,
   val `package`: String,
+  val className: String,
   val enums: List<String>)

@@ -4,6 +4,7 @@ io:
   model-relative-path:
 
 config:
+  dry-run: false
   multi-enums-class-template: multi-enums.java.template
   package-capture-regex: package ((\.|\w)+)
   enum-capture-regex: ([A-Z]+\("\w+"\))

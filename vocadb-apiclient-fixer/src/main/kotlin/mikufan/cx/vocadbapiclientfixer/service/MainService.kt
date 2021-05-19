@@ -2,6 +2,7 @@ package mikufan.cx.vocadbapiclientfixer.service
 
 import mikufan.cx.vocadbapiclientfixer.component.EnumClassExtractor
 import mikufan.cx.vocadbapiclientfixer.component.EnumClassFilter
+import mikufan.cx.vocadbapiclientfixer.component.EnumClassFixer
 import mikufan.cx.vocadbapiclientfixer.model.FixInfo
 import mu.KotlinLogging
 import org.jeasy.batch.core.job.JobBuilder
@@ -19,7 +20,8 @@ import java.nio.file.Path
 class MainService(
   @Qualifier("modelReader") val modelsReader: FileRecordReader,
   val enumClassFilter: EnumClassFilter,
-  val enumClassExtractor: EnumClassExtractor
+  val enumClassExtractor: EnumClassExtractor,
+  val enumClassFixer: EnumClassFixer
 ) : Runnable {
 
   override fun run() {
@@ -28,7 +30,7 @@ class MainService(
       .reader(modelsReader)
       .filter(enumClassFilter)
       .mapper(enumClassExtractor)
-      .writer {}
+      .writer(enumClassFixer)
       .build()
 
     JobExecutor().use { executor ->

@@ -3,6 +3,9 @@ io:
   output-project-directory: D:\11134\Videos\Vocaloid Coding POC\VocaDB OpenAPI POC\vocadb-api-client-resttemplate-backup
   model-relative-path: src\main\java\cx\mikufan\vocadbapiclient\model
 
+config:
+  dry-run: false
+
 logging:
   level:
     mikufan:

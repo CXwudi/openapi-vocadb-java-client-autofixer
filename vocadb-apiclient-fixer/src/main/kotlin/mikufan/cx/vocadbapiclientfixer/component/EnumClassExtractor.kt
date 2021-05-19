@@ -51,7 +51,10 @@ class EnumClassExtractor(
         if (shouldBreak) break
       }
     }
-    val fixInfo = FixInfo(record.payload, `package`, record.payload.fileName.name, enumList)
+    val fixInfo = FixInfo(record.payload,
+      `package`,
+      record.payload.fileName.name.substringBefore('.'),
+      enumList)
     log.debug { "Extracted these info for fixing enum $fixInfo" }
     return GenericRecord(record.header, fixInfo)
   }
