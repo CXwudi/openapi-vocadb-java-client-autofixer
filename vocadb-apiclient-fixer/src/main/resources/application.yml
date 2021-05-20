@@ -8,6 +8,8 @@ config:
   multi-enums-class-template: multi-enums.java.template
   package-capture-regex: package ((\.|\w)+)
   enum-capture-regex: ([A-Z]+\("\w+"\))
+  api-api-fix:
+    ignore-directory: bin, \.\w+, gradle
 
 
 logging:

@@ -1,8 +1,6 @@
 package mikufan.cx.vocadbapiclientfixer.service
 
-import mikufan.cx.vocadbapiclientfixer.component.EnumClassExtractor
-import mikufan.cx.vocadbapiclientfixer.component.EnumClassFilter
-import mikufan.cx.vocadbapiclientfixer.component.EnumClassFixer
+import mikufan.cx.vocadbapiclientfixer.component.*
 import mikufan.cx.vocadbapiclientfixer.model.FixInfo
 import mu.KotlinLogging
 import org.jeasy.batch.core.job.JobBuilder
@@ -21,7 +19,12 @@ class MainService(
   @Qualifier("modelReader") val modelsReader: FileRecordReader,
   val enumClassFilter: EnumClassFilter,
   val enumClassExtractor: EnumClassExtractor,
-  val enumClassFixer: EnumClassFixer
+  val enumClassFixer: EnumClassFixer,
+  @Qualifier("projectReader") val projectReader: FileRecordReader,
+  val apiApiFilesFilter: ApiApiFilesFilter,
+  val apiApiFileRenamer: ApiApiFileRenamer,
+  val apiApiContentFixer: ApiApiContentFixer,
+  val fixedApiContentWriter: FixedApiContentWriter
 ) : Runnable {
 
   override fun run() {
@@ -33,9 +36,20 @@ class MainService(
       .writer(enumClassFixer)
       .build()
 
+    val apiRenameJob = JobBuilder<Path, Pair<Path, String>>()
+      .named("ApiApi replacing job")
+      .reader(projectReader)
+      .filter(apiApiFilesFilter)
+      .mapper(apiApiFileRenamer)
+      .mapper(apiApiContentFixer)
+      .writer(fixedApiContentWriter)
+      .build()
+
     JobExecutor().use { executor ->
       val jobReport = executor.execute(fixJob)
       log.info { "\n$jobReport" }
+      val jobReport2 = executor.execute(apiRenameJob)
+      log.info { "$jobReport2" }
     }
 
   }

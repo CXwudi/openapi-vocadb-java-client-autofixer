@@ -30,6 +30,7 @@ class JobConfig {
     }
   }
 
-
+  @Bean("projectReader")
+  fun projectReader(ioConfig: IOConfig) = FileRecordReader(ioConfig.outputProjectDirectory, true)
 }
 
