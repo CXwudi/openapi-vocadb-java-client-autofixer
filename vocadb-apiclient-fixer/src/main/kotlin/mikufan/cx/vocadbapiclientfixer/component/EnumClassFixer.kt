@@ -1,5 +1,7 @@
 package mikufan.cx.vocadbapiclientfixer.component
 
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import mikufan.cx.vocadbapiclientfixer.model.FixInfo
 import mu.KotlinLogging
 import org.jeasy.batch.core.record.Batch
@@ -34,22 +36,27 @@ class EnumClassFixer(
   }
 
   override fun writeRecords(batch: Batch<FixInfo>) {
-    batch.map { it.payload }
-      .forEach { fixInfo ->
-        val enumString = fixInfo.enums.joinToString(",\n\n    ")
-        val newClassContent = MessageFormat.format(template,
-          fixInfo.`package`,
-          fixInfo.className,
-          enumString,
-          LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
-        )
-        if (dryRun){
-          log.info { "Dry Run writing to ${fixInfo.originalClassFile}:\n$newClassContent" }
-        } else {
-          log.debug { "Writing fix to ${fixInfo.originalClassFile}" }
-          fixInfo.originalClassFile.writeText(newClassContent)
+    runBlocking {
+      batch.map { it.payload }
+        .forEach { fixInfo ->
+          launch {
+            val enumString = fixInfo.enums.joinToString(",\n\n    ")
+            val newClassContent = MessageFormat.format(template,
+              fixInfo.`package`,
+              fixInfo.className,
+              enumString,
+              LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+            )
+            if (dryRun){
+              log.info { "Dry Run writing to ${fixInfo.originalClassFile}:\n$newClassContent" }
+            } else {
+              log.debug { "Writing fix to ${fixInfo.originalClassFile}" }
+              fixInfo.originalClassFile.writeText(newClassContent)
+            }
+          }
         }
-      }
+    }
+
   }
 }
 
