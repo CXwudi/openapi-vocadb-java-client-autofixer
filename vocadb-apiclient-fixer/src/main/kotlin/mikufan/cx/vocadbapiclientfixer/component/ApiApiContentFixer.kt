@@ -1,37 +1,61 @@
 package mikufan.cx.vocadbapiclientfixer.component
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import mu.KotlinLogging
-import org.jeasy.batch.core.mapper.RecordMapper
-import org.jeasy.batch.core.record.GenericRecord
-import org.jeasy.batch.core.record.Record
+import org.jeasy.batch.core.record.Batch
+import org.jeasy.batch.core.writer.RecordWriter
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 import java.nio.file.Path
 import kotlin.io.path.useLines
+import kotlin.io.path.writeText
+import kotlin.system.measureTimeMillis
 
 /**
  * @date 2021-05-19
  * @author CX无敌
  */
 @Component
-class ApiApiContentFixer : RecordMapper<Path, Pair<Path, String>> {
-  override fun processRecord(record: Record<Path>): Record<Pair<Path, String>>? {
-    val path = record.payload
-    var processed = false
+class ApiApiContentFixer(
+  @Value("\${config.dry-run}") val dryRun: Boolean
+) : RecordWriter<Path> {
+
+  override fun writeRecords(batch: Batch<Path>): Unit {
+    val timeMillis = measureTimeMillis {
+      runBlocking(Dispatchers.IO) {
+        batch.map { it.payload }
+          .forEach {
+            launch {
+              doFix(it)
+            }
+          }
+      }
+    }
+    log.info { "Writing cost $timeMillis ms" }
+  }
+
+  private suspend fun doFix(path: Path) {
+    var found = false
     val fixedContent = path.useLines { seq ->
       seq.map {
         if (it.contains("ApiApi")) {
-          processed = true
+          found = true
           it.replace("ApiApi", "Api")
         } else {
           it
         }
       }.joinToString("\n")
     }
-    return if (processed){
+    if (found) {
       log.debug { "Found \"ApiApi\" in $path" }
-      GenericRecord(record.header, Pair(path, fixedContent))
-    } else {
-      null
+      if (dryRun){
+        log.debug { "Dry Run writing to $path:\n$fixedContent" }
+      } else {
+        log.debug { "Fixing $path" }
+        path.writeText(fixedContent)
+      }
     }
   }
 }

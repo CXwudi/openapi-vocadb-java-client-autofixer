@@ -23,8 +23,7 @@ class MainService(
   @Qualifier("projectReader") val projectReader: FileRecordReader,
   val apiApiFilesFilter: ApiApiFilesFilter,
   val apiApiFileRenamer: ApiApiFileRenamer,
-  val apiApiContentFixer: ApiApiContentFixer,
-  val fixedApiContentWriter: FixedApiContentWriter
+  val apiApiContentFixer: ApiApiContentFixer
 ) : Runnable {
 
   override fun run() {
@@ -36,13 +35,12 @@ class MainService(
       .writer(enumClassFixer)
       .build()
 
-    val apiRenameJob = JobBuilder<Path, Pair<Path, String>>()
+    val apiRenameJob = JobBuilder<Path, Path>()
       .named("ApiApi replacing job")
       .reader(projectReader)
       .filter(apiApiFilesFilter)
       .mapper(apiApiFileRenamer)
-      .mapper(apiApiContentFixer)
-      .writer(fixedApiContentWriter)
+      .writer(apiApiContentFixer)
       .build()
 
     JobExecutor().use { executor ->

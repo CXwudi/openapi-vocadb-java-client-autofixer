@@ -19,7 +19,6 @@ class ApiApiFilesFilter(
   @Value("\${config.api-api-fix.ignore-directory}") val regexes: List<Regex>
 ): RecordFilter<Path> {
   val projectDir = ioConfig.outputProjectDirectory
-  //val regexes = regexStrings.map {Regex(it)}
 
   override fun processRecord(record: Record<Path>): Record<Path>? {
     val path = record.payload
