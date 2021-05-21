@@ -50,7 +50,11 @@ openapi-generator-cli generate \
   -o vocadb-api-client-resttemplate
 ```
 
-4. (Optional) update some of the dependencies used by the client 
+4. (if using `resttemplate` or `webclient`) resolve import conflict in `UserApiApi.java`
+   1. remove `import <your package>.model.MediaType;`
+   2. let `apiUsersCurrentAlbumsAlbumIdPost()` and `apiUsersCurrentAlbumsAlbumIdPostWithHttpInfo()` take the parameter of type `<your package>.model.MediaType`
+5. (Optional) update some of the dependencies used by the client
+
 
 ### 2. Fix your generated client with this auto fixer
 
@@ -60,3 +64,30 @@ openapi-generator-cli generate \
    2. relative path to model is the relative path from your input directory to path of `--model-package`
 2. cd into [vocadb-apiclient-fixer](vocadb-apiclient-fixer/), run `./mvnw spring-boot:run '-Dspring-boot.run.arguments="--spring.config.import=file:my-config.yml"'`
 3. your client should be ready to use 😉
+
+## notes
+
+### before generate
+
+- OpenAPI is very fragile, so better stick with the command in the step to generate your client
+- Gson is not working for parsing date, like `Expected BEGIN_OBJECT but was STRING at line 1 column 109 path $.items[0].song.createDate`
+- when using Jackson, must put `-p openApiNullable=false`, otherwise parsing issue on list with `com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of 'org.openapitools.jackson.nullable.JsonNullable<java.util.List<cx.mikufan.vocadbapiclient.model.SongInListForApiContract>>' out of START_ARRAY token`. This is because with `openApiNullable=true`, your list is `JsonNullable<List<>>` instead of `List<>`
+- as for data library, use `java8-localdatetime`. 
+  - the default one `threetenbp` has parsing issue
+  - the `java-8` one use `ZoneDateTime` which requires an additional zone info in the string, but vocadb's date doesn't have it
+
+### when using the client
+
+- take a look of your client, understand the structure
+  - api directory is where you use to call the VocaDB Rest API
+  - `ApiClient` is the core class
+- by default, the base URL is always `http://localhost`, change it to `https://vocadb.net` by calling `setBaseurl()` on `ApiClient` class
+  - for Java 11 native HTTP client, use `setHostname("vocadb.net")` and `setScheme("https")` (Java 11 native HTTP client doesn't have `setBaseurl()`). If you don't do `setScheme("https")`, you need to manually add `builder.followRedirects(Redirect.NORMAL)`
+- because VocaDB and UtaiteDB use the same codebase, you could probably change the base URL to `https://utaitedb.net` to make your client an UtaiteDB Api Client.
+  - be awared that some artist types are a bit different between VocaDB and UtaiteDB, as ycanardeau [said](https://discord.com/channels/309072240639737866/723937904216375317/844444328662401044)
+  - if having problem, you can always grab the `swagger.json` file from UtaiteDB API [page](https://utaitedb.net/swagger/index.html) and regernate your client just for UtaiteDB
+
+## So what does this auto fixer trying to fix
+
+this fixer will change all enum classes with suffixname of `s` into a class that can make Jackson Json parser parses works for one-line multiple-enum string (like `pvServers: "NicoNicoDouga, Youtube"`).  
+take a look at the `SongForApiContract` for example. It has a field `private PVServices pvServices;`. Before fixing, PVServices is just an enum class. However, in reality, VocaDB could return multiple enum for that field, separated by comma (like `pvServers: "NicoNicoDouga, Youtube"`).
