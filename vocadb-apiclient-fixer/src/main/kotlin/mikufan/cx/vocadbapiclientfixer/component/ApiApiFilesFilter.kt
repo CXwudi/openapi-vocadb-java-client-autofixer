@@ -25,7 +25,7 @@ class ApiApiFilesFilter(
     val relativePath = projectDir.relativize(path)
     val folders = relativePath.toList()
     val firstFolderOrFile = folders[0].fileName.name
-    return if (regexes.any { it.containsMatchIn(firstFolderOrFile) }){
+    return if (regexes.any { it.matches(firstFolderOrFile) }){
       log.debug { "Ignoring scanning on $relativePath" }
       null
     } else {
