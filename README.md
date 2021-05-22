@@ -75,7 +75,7 @@ openapi-generator-cli generate \
 
 ## So what does this auto fixer trying to fix
 
-This fixer will change all enum classes with suffixname of `s` into a class that can make Jackson Json parser parses works for one-line multiple-enum string.  
+This fixer will change all enum classes with suffixname of `s` into a class that can make Jackson JSON parser parses works for one-line multiple-enum string.  
 For example, take a look at the `SongForApiContract` in the sample-unfixed-client.
 It has a field `private PVServices pvServices;`.
 Before fixing, `PVServices` is just an enum class. It can only accept one enum for that field.  
@@ -83,4 +83,4 @@ However, in reality, VocaDB could return multiple enums for that field,
 separated by comma (like `pvServers: "NicoNicoDouga, Youtube"`).
 
 This fixer also globally replaces all strings `ApiApi` to `Api`.
-If a file name contains such string, the file is also renamed.
+If a file name contains such a string, the file is also renamed.
