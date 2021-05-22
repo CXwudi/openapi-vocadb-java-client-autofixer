@@ -42,12 +42,13 @@ openapi-generator-cli generate \
 
 ### 2. Fix the generated client with this auto fixer
 
-1. open the [my-config.yml](./vocadb-apiclient-fixer/my-config.yml) file and edit it
+1. clone this project `git clone --recurse-submodules -j8 https://github.com/CXwudi/vocadb-openapi-java-client-autofixer`
+2. open the [my-config.yml](./vocadb-apiclient-fixer/my-config.yml) file in [`./vocadb-apiclient-fixer`](vocadb-apiclient-fixer/) and edit it
    1. input directory is where your auto-generated client is
-      - can be relative path from the `./vocadb-apiclient-fixer` perspective
-   2. relative path to model is the relative path from your input directory to path of `--model-package`
-2. cd into [vocadb-apiclient-fixer](vocadb-apiclient-fixer/), run `./mvnw spring-boot:run '-Dspring-boot.run.arguments="--spring.config.import=file:my-config.yml"'`
-3. your client should be ready to use 😉
+      - can be relative path from the [`./vocadb-apiclient-fixer`](vocadb-apiclient-fixer/) perspective
+   2. relative path to model is the relative path from theinput directory to path of `--model-package` on your `openapi-generator-cli` command
+3. cd into [`./vocadb-apiclient-fixer`](vocadb-apiclient-fixer/), run `./mvnw spring-boot:run '-Dspring-boot.run.arguments="--spring.config.import=file:my-config.yml"'`
+4. your client should be ready to use 😉
 
 ## Notes
 
