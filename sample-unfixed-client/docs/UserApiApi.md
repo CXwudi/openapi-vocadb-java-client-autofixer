@@ -47,11 +47,11 @@ Method | HTTP request | Description
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -94,6 +94,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -110,11 +111,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -163,6 +164,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -179,11 +181,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -226,6 +228,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -242,11 +245,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -288,6 +291,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -304,11 +308,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -350,6 +354,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -366,11 +371,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -413,6 +418,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -429,11 +435,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -476,6 +482,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -492,11 +499,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -540,6 +547,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -556,11 +564,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -604,6 +612,7 @@ No authorization required
 - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: Not defined
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -620,11 +629,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -632,7 +641,7 @@ public class Example {
         defaultClient.setBasePath("http://localhost");
 
         UserApiApi apiInstance = new UserApiApi(defaultClient);
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         UserGroupId groups = UserGroupId.fromValue("Nothing"); // UserGroupId | 
         LocalDateTime joinDateAfter = new LocalDateTime(); // LocalDateTime | 
         LocalDateTime joinDateBefore = new LocalDateTime(); // LocalDateTime | 
@@ -664,7 +673,7 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **groups** | [**UserGroupId**](.md)|  | [optional] [enum: Nothing, Limited, Regular, Trusted, Moderator, Admin]
  **joinDateAfter** | **LocalDateTime**|  | [optional]
  **joinDateBefore** | **LocalDateTime**|  | [optional]
@@ -691,6 +700,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -707,11 +717,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -756,6 +766,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -772,11 +783,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -785,7 +796,7 @@ public class Example {
 
         UserApiApi apiInstance = new UserApiApi(defaultClient);
         Integer id = 56; // Integer | 
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         Integer tagId = 56; // Integer | 
         String tag = "tag_example"; // String | 
         Integer artistId = 56; // Integer | 
@@ -820,7 +831,7 @@ public class Example {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  |
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **tagId** | **Integer**|  | [optional]
  **tag** | **String**|  | [optional]
  **artistId** | **Integer**|  | [optional]
@@ -849,6 +860,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -865,11 +877,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -914,6 +926,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -930,11 +943,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -979,6 +992,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -995,11 +1009,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1008,7 +1022,7 @@ public class Example {
 
         UserApiApi apiInstance = new UserApiApi(defaultClient);
         Integer id = 56; // Integer | 
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         List<Integer> tagId = Arrays.asList(); // List<Integer> | 
         ArtistType artistType = ArtistType.fromValue("Unknown"); // ArtistType | 
         Integer start = 0; // Integer | 
@@ -1038,7 +1052,7 @@ public class Example {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  |
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
  **artistType** | [**ArtistType**](.md)|  | [optional] [enum: Unknown, Circle, Label, Producer, Animator, Illustrator, Lyricist, Vocaloid, UTAU, CeVIO, OtherVoiceSynthesizer, OtherVocalist, OtherGroup, OtherIndividual, Utaite, Band, Vocalist, Character, SynthesizerV, CoverArtist]
  **start** | **Integer**|  | [optional] [default to 0]
@@ -1062,6 +1076,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1078,11 +1093,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1127,6 +1142,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1143,11 +1159,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1191,6 +1207,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1207,11 +1224,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1266,6 +1283,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1282,11 +1300,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1331,6 +1349,7 @@ No authorization required
 - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1347,11 +1366,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1400,6 +1419,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1416,11 +1436,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1465,6 +1485,7 @@ No authorization required
 - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1481,11 +1502,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1494,7 +1515,7 @@ public class Example {
 
         UserApiApi apiInstance = new UserApiApi(defaultClient);
         Integer id = 56; // Integer | 
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         String tagName = "tagName_example"; // String | 
         List<Integer> tagId = Arrays.asList(); // List<Integer> | 
         List<Integer> artistId = Arrays.asList(); // List<Integer> | 
@@ -1532,7 +1553,7 @@ public class Example {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  |
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **tagName** | **String**|  | [optional]
  **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
  **artistId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
@@ -1564,6 +1585,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1580,11 +1602,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1629,6 +1651,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1645,11 +1668,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1694,6 +1717,7 @@ No authorization required
 - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1710,11 +1734,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1760,6 +1784,7 @@ No authorization required
 - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: Not defined
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1776,11 +1801,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1789,7 +1814,7 @@ public class Example {
 
         UserApiApi apiInstance = new UserApiApi(defaultClient);
         Integer id = 56; // Integer | 
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         List<Integer> tagId = Arrays.asList(); // List<Integer> | 
         Boolean childTags = false; // Boolean | 
         NameMatchMode nameMatchMode = NameMatchMode.fromValue("Auto"); // NameMatchMode | 
@@ -1818,7 +1843,7 @@ public class Example {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  |
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
  **childTags** | **Boolean**|  | [optional] [default to false]
  **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
@@ -1841,6 +1866,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1857,11 +1883,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1904,6 +1930,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1920,11 +1947,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -1932,7 +1959,7 @@ public class Example {
         defaultClient.setBasePath("http://localhost");
 
         UserApiApi apiInstance = new UserApiApi(defaultClient);
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         NameMatchMode nameMatchMode = NameMatchMode.fromValue("Auto"); // NameMatchMode | 
         Integer maxResults = 10; // Integer | 
         Boolean includeDisabled = false; // Boolean | 
@@ -1955,7 +1982,7 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
  **maxResults** | **Integer**|  | [optional] [default to 10]
  **includeDisabled** | **Boolean**|  | [optional] [default to false]
@@ -1973,6 +2000,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -1989,11 +2017,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -2035,6 +2063,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -2051,11 +2080,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.UserApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.UserApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -2098,6 +2127,7 @@ No authorization required
 
 - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |

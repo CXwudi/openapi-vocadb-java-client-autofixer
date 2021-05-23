@@ -2,6 +2,7 @@
 
 # LocalizedStringWithIdContract
 
+
 ## Properties
 
 Name | Type | Description | Notes

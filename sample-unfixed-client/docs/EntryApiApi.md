@@ -19,11 +19,11 @@ Method | HTTP request | Description
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.EntryApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.EntryApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class Example {
         defaultClient.setBasePath("http://localhost");
 
         EntryApiApi apiInstance = new EntryApiApi(defaultClient);
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         List<String> tagName = Arrays.asList(); // List<String> | 
         List<Integer> tagId = Arrays.asList(); // List<Integer> | 
         Boolean childTags = false; // Boolean | 
@@ -63,7 +63,7 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **tagName** | [**List&lt;String&gt;**](String.md)|  | [optional]
  **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
  **childTags** | **Boolean**|  | [optional] [default to false]
@@ -90,6 +90,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -106,11 +107,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.EntryApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.EntryApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -118,7 +119,7 @@ public class Example {
         defaultClient.setBasePath("http://localhost");
 
         EntryApiApi apiInstance = new EntryApiApi(defaultClient);
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         NameMatchMode nameMatchMode = NameMatchMode.fromValue("Auto"); // NameMatchMode | 
         Integer maxResults = 10; // Integer | 
         try {
@@ -140,7 +141,7 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
  **maxResults** | **Integer**|  | [optional] [default to 10]
 
@@ -156,6 +157,7 @@ No authorization required
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |

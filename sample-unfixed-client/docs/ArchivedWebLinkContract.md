@@ -2,6 +2,7 @@
 
 # ArchivedWebLinkContract
 
+
 ## Properties
 
 Name | Type | Description | Notes

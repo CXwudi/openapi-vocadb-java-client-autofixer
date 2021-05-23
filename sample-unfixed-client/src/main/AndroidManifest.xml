@@ -1,3 +1,3 @@
-<manifest package="cx.mikufan.vocadbapiclient.client" xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest package="mikufan.cx.vocadbapiclient.client" xmlns:android="http://schemas.android.com/apk/res/android">
     <application />
 </manifest>

@@ -26,11 +26,11 @@ Method | HTTP request | Description
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.SongListApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.SongListApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -72,6 +72,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -88,11 +89,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.SongListApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.SongListApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -136,6 +137,7 @@ No authorization required
 - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: Not defined
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -152,11 +154,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.SongListApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.SongListApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -164,7 +166,7 @@ public class Example {
         defaultClient.setBasePath("http://localhost");
 
         SongListApiApi apiInstance = new SongListApiApi(defaultClient);
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         List<Integer> tagId = Arrays.asList(); // List<Integer> | 
         Boolean childTags = false; // Boolean | 
         NameMatchMode nameMatchMode = NameMatchMode.fromValue("Auto"); // NameMatchMode | 
@@ -194,7 +196,7 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
  **childTags** | **Boolean**|  | [optional] [default to false]
  **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
@@ -219,6 +221,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -235,11 +238,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.SongListApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.SongListApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -247,7 +250,7 @@ public class Example {
         defaultClient.setBasePath("http://localhost");
 
         SongListApiApi apiInstance = new SongListApiApi(defaultClient);
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         NameMatchMode nameMatchMode = NameMatchMode.fromValue("Auto"); // NameMatchMode | 
         SongListFeaturedCategory featuredCategory = SongListFeaturedCategory.fromValue("Nothing"); // SongListFeaturedCategory | 
         Integer maxResults = 10; // Integer | 
@@ -270,7 +273,7 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
  **featuredCategory** | [**SongListFeaturedCategory**](.md)|  | [optional] [enum: Nothing, Concerts, VocaloidRanking, Pools, Other]
  **maxResults** | **Integer**|  | [optional] [default to 10]
@@ -288,6 +291,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -304,11 +308,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.SongListApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.SongListApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -317,7 +321,7 @@ public class Example {
 
         SongListApiApi apiInstance = new SongListApiApi(defaultClient);
         Integer id = 56; // Integer | 
-        String notes = "\"\""; // String | 
+        String notes = ""; // String | 
         Boolean hardDelete = false; // Boolean | 
         try {
             apiInstance.apiSongListsIdDelete(id, notes, hardDelete);
@@ -338,7 +342,7 @@ public class Example {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  |
- **notes** | **String**|  | [optional] [default to &quot;&quot;]
+ **notes** | **String**|  | [optional] [default to ]
  **hardDelete** | **Boolean**|  | [optional] [default to false]
 
 ### Return type
@@ -353,6 +357,7 @@ No authorization required
 
 - **Content-Type**: Not defined
 - **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -370,11 +375,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.SongListApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.SongListApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -417,6 +422,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -433,11 +439,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.SongListApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.SongListApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -482,6 +488,7 @@ No authorization required
 - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -498,11 +505,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.SongListApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.SongListApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -511,7 +518,7 @@ public class Example {
 
         SongListApiApi apiInstance = new SongListApiApi(defaultClient);
         Integer listId = 56; // Integer | 
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         String songTypes = "songTypes_example"; // String | 
         PVServices pvServices = PVServices.fromValue("Nothing"); // PVServices | 
         List<Integer> tagId = Arrays.asList(); // List<Integer> | 
@@ -545,7 +552,7 @@ public class Example {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **listId** | **Integer**|  |
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **songTypes** | **String**|  | [optional]
  **pvServices** | [**PVServices**](.md)|  | [optional] [enum: Nothing, NicoNicoDouga, Youtube, SoundCloud, Vimeo, Piapro, Bilibili, File, LocalFile, Creofuga, Bandcamp]
  **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
@@ -573,6 +580,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -589,11 +597,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.SongListApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.SongListApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -635,6 +643,7 @@ No authorization required
 
 - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: text/plain, application/json, text/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |

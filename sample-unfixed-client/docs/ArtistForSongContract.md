@@ -2,6 +2,7 @@
 
 # ArtistForSongContract
 
+
 ## Properties
 
 Name | Type | Description | Notes

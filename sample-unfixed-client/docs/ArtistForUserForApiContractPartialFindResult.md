@@ -2,6 +2,7 @@
 
 # ArtistForUserForApiContractPartialFindResult
 
+
 ## Properties
 
 Name | Type | Description | Notes

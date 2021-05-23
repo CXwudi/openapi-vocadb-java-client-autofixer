@@ -2,6 +2,7 @@
 
 # SongRatingContract
 
+
 ## Properties
 
 Name | Type | Description | Notes

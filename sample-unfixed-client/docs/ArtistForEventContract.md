@@ -2,6 +2,7 @@
 
 # ArtistForEventContract
 
+
 ## Properties
 
 Name | Type | Description | Notes

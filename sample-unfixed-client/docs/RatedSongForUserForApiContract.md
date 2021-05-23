@@ -2,6 +2,7 @@
 
 # RatedSongForUserForApiContract
 
+
 ## Properties
 
 Name | Type | Description | Notes

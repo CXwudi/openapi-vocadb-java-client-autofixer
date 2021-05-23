@@ -2,6 +2,7 @@
 
 # AlbumReviewContract
 
+
 ## Properties
 
 Name | Type | Description | Notes

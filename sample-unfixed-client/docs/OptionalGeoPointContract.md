@@ -2,6 +2,7 @@
 
 # OptionalGeoPointContract
 
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -2,6 +2,7 @@
 
 # ArtistForUserForApiContract
 
+
 ## Properties
 
 Name | Type | Description | Notes

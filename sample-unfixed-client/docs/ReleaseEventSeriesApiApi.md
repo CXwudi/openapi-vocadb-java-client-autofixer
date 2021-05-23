@@ -20,11 +20,11 @@ Method | HTTP request | Description
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.ReleaseEventSeriesApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.ReleaseEventSeriesApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class Example {
         defaultClient.setBasePath("http://localhost");
 
         ReleaseEventSeriesApiApi apiInstance = new ReleaseEventSeriesApiApi(defaultClient);
-        String query = "\"\""; // String | 
+        String query = ""; // String | 
         ReleaseEventSeriesOptionalFields fields = ReleaseEventSeriesOptionalFields.fromValue("None"); // ReleaseEventSeriesOptionalFields | 
         Integer start = 0; // Integer | 
         Integer maxResults = 10; // Integer | 
@@ -58,7 +58,7 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to &quot;&quot;]
+ **query** | **String**|  | [optional] [default to ]
  **fields** | [**ReleaseEventSeriesOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Description, Events, MainPicture, Names, WebLinks]
  **start** | **Integer**|  | [optional] [default to 0]
  **maxResults** | **Integer**|  | [optional] [default to 10]
@@ -79,6 +79,7 @@ No authorization required
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -95,11 +96,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.ReleaseEventSeriesApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.ReleaseEventSeriesApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -108,7 +109,7 @@ public class Example {
 
         ReleaseEventSeriesApiApi apiInstance = new ReleaseEventSeriesApiApi(defaultClient);
         Integer id = 56; // Integer | 
-        String notes = "\"\""; // String | 
+        String notes = ""; // String | 
         Boolean hardDelete = false; // Boolean | 
         try {
             apiInstance.apiReleaseEventSeriesIdDelete(id, notes, hardDelete);
@@ -129,7 +130,7 @@ public class Example {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  |
- **notes** | **String**|  | [optional] [default to &quot;&quot;]
+ **notes** | **String**|  | [optional] [default to ]
  **hardDelete** | **Boolean**|  | [optional] [default to false]
 
 ### Return type
@@ -144,6 +145,7 @@ No authorization required
 
 - **Content-Type**: Not defined
 - **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
@@ -161,11 +163,11 @@ No authorization required
 
 ```java
 // Import classes:
-import cx.mikufan.vocadbapiclient.client.ApiClient;
-import cx.mikufan.vocadbapiclient.client.ApiException;
-import cx.mikufan.vocadbapiclient.client.Configuration;
-import cx.mikufan.vocadbapiclient.client.models.*;
-import cx.mikufan.vocadbapiclient.api.ReleaseEventSeriesApiApi;
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.ReleaseEventSeriesApiApi;
 
 public class Example {
     public static void main(String[] args) {
@@ -211,6 +213,7 @@ No authorization required
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |

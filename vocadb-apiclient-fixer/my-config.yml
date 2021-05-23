@@ -5,7 +5,7 @@ io:
   output-project-directory: ../sample-fixed-client
   # what is the relative path of the model package from input-project-directory
   # this is usually src/main/java/{you com}/{you artifact}/{package that contains vocadb models}
-  model-relative-path: src\main\java\cx\mikufan\vocadbapiclient\model
+  model-relative-path: src\main\java\mikufan\cx\vocadbapiclient\model
 
 config:
   # for debug purposes, not writing to anything

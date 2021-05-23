@@ -2,6 +2,7 @@
 
 # AlbumForApiContract
 
+
 ## Properties
 
 Name | Type | Description | Notes
