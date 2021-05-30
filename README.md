@@ -60,8 +60,7 @@ openapi-generator-cli generate \
 - as for data library, use `java8-localdatetime`
   - the default one `threetenbp` has parsing issue
   - the `java-8` one use `ZoneDateTime` which requires an additional zone info in the string, but vocadb's date doesn't have it
-- modify the [my-config.yml](./vocadb-apiclient-fixer/my-config.yml) to set to your generated client and spcify your own output folder
-  - the [my-config.yml](./vocadb-apiclient-fixer/my-config.yml) file has a default config value filled in. It can autofix the [sample-unfixed-client](./sample-unfixed-client) for demo purposes.
+- the [my-config.yml](./vocadb-apiclient-fixer/my-config.yml) file has some default config values filled in. It is used to autofix the [sample-unfixed-client](./sample-unfixed-client) for demo purposes.
   - In fact, the sample [VocaDB OpenAPI Java Client](https://github.com/CXwudi/vocadb-openapi-client-java) is fixed by this demo config
 
 ### When using the client
