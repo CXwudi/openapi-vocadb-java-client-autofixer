@@ -65,7 +65,7 @@ openapi-generator-cli generate \
 
 ### When using the client
 
-see [notes](https://github.com/CXwudi/vocadb-openapi-client-java#notes) in my sample [VocaDB OpenAPI Java Client](https://github.com/CXwudi/vocadb-openapi-client-java)
+see [notes](https://github.com/CXwudi/vocadb-openapi-client-java#notes) in my sample client
 
 ## So what does this auto fixer trying to fix
 
