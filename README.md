@@ -65,14 +65,7 @@ openapi-generator-cli generate \
 
 ### When using the client
 
-- take a look of your client, understand the structure
-  - api directory is where you use to call the VocaDB Rest API
-  - `ApiClient` is the core class
-- by default, the base URL is always `http://localhost`, change it to `https://vocadb.net` by calling `setBaseurl()` on `ApiClient` class
-  - for Java 11 native HTTP client, use `setHostname("vocadb.net")` and `setScheme("https")` (Java 11 native HTTP client doesn't have `setBaseurl()`). If you don't do `setScheme("https")`, you need to manually add `builder.followRedirects(Redirect.NORMAL)`
-- because VocaDB and UtaiteDB use the same codebase, you could probably change the base URL to `https://utaitedb.net` to make your client an UtaiteDB Api Client.
-  - be awared that some artist types are a bit different between VocaDB and UtaiteDB, as ycanardeau [said](https://discord.com/channels/309072240639737866/723937904216375317/844444328662401044)
-  - if having problem on UtaiteDB, you can always grab the `swagger.json` file from UtaiteDB API [page](https://utaitedb.net/swagger/index.html) and regernate your client just for UtaiteDB
+see [notes](https://github.com/CXwudi/vocadb-openapi-client-java#notes) in my sample [VocaDB OpenAPI Java Client](https://github.com/CXwudi/vocadb-openapi-client-java)
 
 ## So what does this auto fixer trying to fix
 
