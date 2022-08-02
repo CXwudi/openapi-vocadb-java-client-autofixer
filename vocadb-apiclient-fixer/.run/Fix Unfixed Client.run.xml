@@ -1,0 +1,23 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Fix Unfixed Client" type="SpringBootApplicationConfigurationType"
+                 factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES"/>
+    <additionalParameters>
+      <param>
+        <option name="enabled" value="true"/>
+        <option name="name" value="spring.config.import"/>
+        <option name="value" value="file:my-config.yml"/>
+      </param>
+      <param>
+        <option name="enabled" value="true"/>
+        <option name="name" value="config.dry-run"/>
+        <option name="value" value="false"/>
+      </param>
+    </additionalParameters>
+    <module name="vocadb-apiclient-fixer"/>
+    <option name="SPRING_BOOT_MAIN_CLASS" value="mikufan.cx.vocadbapiclientfixer.VocaDbApiClientFixerApplication"/>
+    <method v="2">
+      <option name="Make" enabled="true"/>
+    </method>
+  </configuration>
+</component>
