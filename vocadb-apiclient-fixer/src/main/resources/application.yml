@@ -17,10 +17,10 @@ config:
   enum-capture-regex: ([A-Z]+\("\w+"\))
   project-copier:
     # it will preserve first level directory/file in the output-project-directory
-    ignore-path: .git, .gitignore
+    ignore-path: .git, .gitignore, target, build
   api-api-fix:
     # it only ignore the first level directory in the output-project-directory
-    ignore-directory: bin, \.\w+, gradle, target
+    ignore-directory: bin, \.\w+, gradle, target, build
   old-readme-new-filename: README Original.md
 
 

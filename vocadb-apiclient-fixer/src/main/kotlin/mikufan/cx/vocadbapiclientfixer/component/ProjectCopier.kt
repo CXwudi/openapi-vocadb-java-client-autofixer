@@ -30,7 +30,7 @@ class ProjectCopier(
     log.info { "Start cleaning up the output directory to avoid conflicting contents" }
     Files.list(outputDirectory)
       .parallel()
-      .filter { it != outputDirectory && ignorePaths.all { ignoredPath -> it != outputDirectory / ignoredPath } }
+      .filter { it != outputDirectory && ignorePaths.all { ignoredPath -> it != outputDirectory / ignoredPath.fileName } }
       .forEach {
         log.debug { "deleting $it" }
         FileSystemUtils.deleteRecursively(it)
@@ -42,7 +42,7 @@ class ProjectCopier(
     log.info { "Starting copying the fresh copy of unfixed api client at $inputDirectory to $outputDirectory" }
     Files.list(inputDirectory)
       .parallel()
-      .filter { it != inputDirectory && ignorePaths.all { ignoredPath -> it != inputDirectory / ignoredPath } }
+      .filter { it != inputDirectory && ignorePaths.all { ignoredPath -> it != inputDirectory / ignoredPath.fileName } }
       .forEach {
         log.debug { "copying $it" }
         FileSystemUtils.copyRecursively(it, outputDirectory / it.fileName)
