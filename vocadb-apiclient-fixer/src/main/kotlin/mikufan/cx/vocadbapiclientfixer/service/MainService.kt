@@ -23,7 +23,8 @@ class MainService(
   @Qualifier("projectReader") val projectReader: FileRecordReader,
   val apiApiFilesFilter: ApiApiFilesFilter,
   val apiApiFileRenamer: ApiApiFileRenamer,
-  val apiApiContentFixer: ApiApiContentFixer
+  val apiApiContentFixer: ApiApiContentFixer,
+  val readMeFileCopier: ReadMeFileCopier,
 ) : Runnable {
 
   override fun run() {
@@ -48,6 +49,8 @@ class MainService(
       log.info { "\n$jobReport" }
       val jobReport2 = executor.execute(apiRenameJob)
       log.info { "$jobReport2" }
+      readMeFileCopier.doCopy()
+      log.info { "Lastly, copied the readme file" }
     }
   }
 }

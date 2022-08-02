@@ -6,6 +6,9 @@ io:
   # what is the relative path of the model package from input-project-directory
   # this is usually src/main/java/{you com}/{you artifact}/
   model-relative-path:
+  # the relative path of the new readme file for your fixed api client
+  # the ole readme file will be
+  optional-readme-file:
 
 config:
   dry-run: false
@@ -14,6 +17,7 @@ config:
   enum-capture-regex: ([A-Z]+\("\w+"\))
   api-api-fix:
     ignore-directory: bin, \.\w+, gradle
+  old-readme-new-filename: README Original.md
 
 
 logging:

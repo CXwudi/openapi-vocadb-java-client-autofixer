@@ -16,7 +16,8 @@ import java.nio.file.Path
 class IOConfig(
   @NotNull val inputProjectDirectory: Path,
   @NotNull val outputProjectDirectory: Path,
-  modelRelativePath: Path
+  modelRelativePath: Path,
+  val optionalReadmeFile: Path? = null,
 ) {
 
   @NotNull
