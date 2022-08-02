@@ -5,8 +5,10 @@ import mikufan.cx.vocadbapiclientfixer.config.IOConfig
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
+import org.springframework.context.annotation.Profile
 
 @SpringBootTest
+@Profile("test")
 class VocaDbApiClientFixerApplicationTests {
   @Autowired
   lateinit var ioConfig: IOConfig
