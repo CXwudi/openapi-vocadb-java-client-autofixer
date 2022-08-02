@@ -269,7 +269,7 @@
         <swagger-annotations-version>1.5.22</swagger-annotations-version>
         <spring-web-version>5.3.7</spring-web-version>
         <jackson-version>2.12.3</jackson-version>
-        <jackson-databind-version>2.12.3</jackson-databind-version>
+        <jackson-databind-version>2.12.6.1</jackson-databind-version>
         <javax-annotation-version>1.3.2</javax-annotation-version>
         <maven-plugin-version>1.0.0</maven-plugin-version>
         <junit-version>4.13.1</junit-version>
