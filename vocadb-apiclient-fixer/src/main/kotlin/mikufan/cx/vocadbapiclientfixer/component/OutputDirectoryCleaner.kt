@@ -18,13 +18,15 @@ class OutputDirectoryCleaner(
   private val outputDirectory = ioConfig.outputProjectDirectory
 
   fun clean() {
-    Files.walk(outputDirectory)
+    log.info { "Start cleaning up the output directory to avoid conflicting contents" }
+    Files.list(outputDirectory)
       .parallel()
-      .filter { it.contains(Path(".git")) && it != outputDirectory }
+      .filter { it != outputDirectory && it != outputDirectory / ".git" && it != outputDirectory / ".gitignore" }
       .forEach {
+        log.debug { "deleting $it" }
         deleteDirRecursively(it)
       }
-    log.info { "Cleaned up existing files in $outputDirectory except .git" }
+    log.info { "Cleaned up existing files in $outputDirectory except git related directory" }
   }
 
   fun deleteDirRecursively(path: Path) {
