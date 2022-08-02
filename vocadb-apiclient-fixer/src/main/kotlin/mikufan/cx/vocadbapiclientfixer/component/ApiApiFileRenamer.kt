@@ -1,6 +1,6 @@
 package mikufan.cx.vocadbapiclientfixer.component
 
-import mu.KotlinLogging
+import mikufan.cx.inlinelogging.KInlineLogging
 import org.jeasy.batch.core.mapper.RecordMapper
 import org.jeasy.batch.core.record.GenericRecord
 import org.jeasy.batch.core.record.Record
@@ -14,11 +14,11 @@ import kotlin.io.path.name
  * @author CX无敌
  */
 @Component
-class ApiApiFileRenamer: RecordMapper<Path, Path> {
+class ApiApiFileRenamer : RecordMapper<Path, Path> {
   override fun processRecord(record: Record<Path>): Record<Path> {
     val path = record.payload
     val fileName = path.fileName.name
-    return if (fileName.contains("ApiApi")){
+    return if (fileName.contains("ApiApi")) {
       val newFileName = fileName.replace("ApiApi", "Api")
       val newPath = path.moveTo(path.resolveSibling(newFileName), true)
       log.debug { "Renamed $path to $newPath" }
@@ -29,4 +29,4 @@ class ApiApiFileRenamer: RecordMapper<Path, Path> {
   }
 }
 
-private val log = KotlinLogging.logger {}
+private val log = KInlineLogging.logger()

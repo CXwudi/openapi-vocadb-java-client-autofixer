@@ -1,8 +1,8 @@
 package mikufan.cx.vocadbapiclientfixer.service
 
+import mikufan.cx.inlinelogging.KInlineLogging
 import mikufan.cx.vocadbapiclientfixer.component.*
 import mikufan.cx.vocadbapiclientfixer.model.FixInfo
-import mu.KotlinLogging
 import org.jeasy.batch.core.job.JobBuilder
 import org.jeasy.batch.core.job.JobExecutor
 import org.jeasy.batch.core.reader.FileRecordReader
@@ -49,9 +49,7 @@ class MainService(
       val jobReport2 = executor.execute(apiRenameJob)
       log.info { "$jobReport2" }
     }
-
   }
-
 }
 
-private val log = KotlinLogging.logger {}
+private val log = KInlineLogging.logger()

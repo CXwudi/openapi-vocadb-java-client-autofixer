@@ -11,11 +11,13 @@ import java.nio.file.Path
  * @author CX无敌
  */
 @ConfigurationProperties("io")
-@ConstructorBinding @Validated
-class IOConfig (
+@ConstructorBinding
+@Validated
+class IOConfig(
   @NotNull val inputProjectDirectory: Path,
   @NotNull val outputProjectDirectory: Path,
-  modelRelativePath: Path){
+  modelRelativePath: Path
+) {
 
   @NotNull
   val modelPath: Path = outputProjectDirectory.resolve(modelRelativePath)
@@ -23,5 +25,4 @@ class IOConfig (
   fun doCopy() {
     inputProjectDirectory.toFile().copyRecursively(outputProjectDirectory.toFile(), true)
   }
-
 }

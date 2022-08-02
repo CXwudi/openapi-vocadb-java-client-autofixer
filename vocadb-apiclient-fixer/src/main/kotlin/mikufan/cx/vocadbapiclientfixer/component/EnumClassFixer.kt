@@ -3,8 +3,8 @@ package mikufan.cx.vocadbapiclientfixer.component
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import mikufan.cx.inlinelogging.KInlineLogging
 import mikufan.cx.vocadbapiclientfixer.model.FixInfo
-import mu.KotlinLogging
 import org.jeasy.batch.core.record.Batch
 import org.jeasy.batch.core.writer.RecordWriter
 import org.springframework.beans.factory.annotation.Value
@@ -26,7 +26,7 @@ import kotlin.system.measureTimeMillis
 class EnumClassFixer(
   @Value("\${config.multi-enums-class-template}") templateResource: String,
   @Value("\${config.dry-run}") val dryRun: Boolean
-): RecordWriter<FixInfo> {
+) : RecordWriter<FixInfo> {
 
   val template by lazy {
     val url = this::class.java.classLoader.getResource(templateResource)
@@ -69,4 +69,4 @@ class EnumClassFixer(
   }
 }
 
-private val log = KotlinLogging.logger {}
+private val log = KInlineLogging.logger()

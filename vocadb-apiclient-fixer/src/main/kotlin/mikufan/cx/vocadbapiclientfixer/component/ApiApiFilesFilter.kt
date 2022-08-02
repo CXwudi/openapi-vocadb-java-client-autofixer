@@ -1,7 +1,7 @@
 package mikufan.cx.vocadbapiclientfixer.component
 
+import mikufan.cx.inlinelogging.KInlineLogging
 import mikufan.cx.vocadbapiclientfixer.config.IOConfig
-import mu.KotlinLogging
 import org.jeasy.batch.core.filter.RecordFilter
 import org.jeasy.batch.core.record.Record
 import org.springframework.beans.factory.annotation.Value
@@ -17,7 +17,7 @@ import kotlin.io.path.name
 class ApiApiFilesFilter(
   ioConfig: IOConfig,
   @Value("\${config.api-api-fix.ignore-directory}") val regexes: List<Regex>
-): RecordFilter<Path> {
+) : RecordFilter<Path> {
   val projectDir = ioConfig.outputProjectDirectory
 
   override fun processRecord(record: Record<Path>): Record<Path>? {
@@ -25,7 +25,7 @@ class ApiApiFilesFilter(
     val relativePath = projectDir.relativize(path)
     val folders = relativePath.toList()
     val firstFolderOrFile = folders[0].fileName.name
-    return if (regexes.any { it.matches(firstFolderOrFile) }){
+    return if (regexes.any { it.matches(firstFolderOrFile) }) {
       log.debug { "Ignoring scanning on $relativePath" }
       null
     } else {
@@ -34,4 +34,4 @@ class ApiApiFilesFilter(
   }
 }
 
-private val log = KotlinLogging.logger {}
+private val log = KInlineLogging.logger()

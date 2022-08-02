@@ -10,4 +10,5 @@ data class FixInfo(
   val originalClassFile: Path,
   val `package`: String,
   val className: String,
-  val enums: List<String>)
+  val enums: List<String>
+)

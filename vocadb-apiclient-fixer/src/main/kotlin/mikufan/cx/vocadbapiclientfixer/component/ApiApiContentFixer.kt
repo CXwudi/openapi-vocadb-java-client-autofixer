@@ -3,7 +3,7 @@ package mikufan.cx.vocadbapiclientfixer.component
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import mu.KotlinLogging
+import mikufan.cx.inlinelogging.KInlineLogging
 import org.jeasy.batch.core.record.Batch
 import org.jeasy.batch.core.writer.RecordWriter
 import org.springframework.beans.factory.annotation.Value
@@ -22,7 +22,7 @@ class ApiApiContentFixer(
   @Value("\${config.dry-run}") val dryRun: Boolean
 ) : RecordWriter<Path> {
 
-  override fun writeRecords(batch: Batch<Path>): Unit {
+  override fun writeRecords(batch: Batch<Path>) {
     val timeMillis = measureTimeMillis {
       runBlocking(Dispatchers.IO) {
         batch.map { it.payload }
@@ -50,7 +50,7 @@ class ApiApiContentFixer(
     }
     if (found) {
       log.debug { "Found \"ApiApi\" in $path" }
-      if (dryRun){
+      if (dryRun) {
         log.debug { "Dry Run writing to $path:\n$fixedContent" }
       } else {
         log.debug { "Fixing $path" }
@@ -60,4 +60,4 @@ class ApiApiContentFixer(
   }
 }
 
-private val log = KotlinLogging.logger {}
+private val log = KInlineLogging.logger()
