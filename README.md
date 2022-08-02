@@ -11,39 +11,42 @@ Just go to my sample [VocaDB OpenAPI Java Client](https://github.com/CXwudi/voca
 ### 1. Generate your raw VocaDB API client
 
 1. install OpenAPI (see [instruction](https://github.com/OpenAPITools/openapi-generator#1---installation))
+   - optionally you can use docker to run OpenAPI generator, see [instruction](https://github.com/OpenAPITools/openapi-generator#16---docker)
 2. grab the `swagger.json` from VocaDB API [page](https://vocadb.net/swagger/index.html)
 3. open bash and run these command
-```
-openapi-generator-cli generate \
---api-package <your package>.api \
---model-package <your package>.model \
---invoker-package <your package>.client \
--i <location of the`swagger.json file> \
---group-id <your group-id> \
---artifact-id <your artifact-id> \
---artifact-version <your version> \
--g java  \
-  -p java8=true \
-  -p dateLibrary=java8-localdatetime \
-  -p useRuntimeException=true \
-  -p openApiNullable=false \
-  -p serializationLibrary=jackson \
-  -p licenseName=<your license name> \
-  -p licenseUrl=<your license url> \
---library <any candidates other than okhttp-gson> \
--o <give a name to your client directory>
-```
 
-- available library candidates are specified in OpenAPI Java [page](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/java.md)
+   ``` shall
+   openapi-generator-cli generate \
+   --api-package <your package>.api \
+   --model-package <your package>.model \
+   --invoker-package <your package>.client \
+   -i <location of the swagger.json file> \
+   --group-id <your group-id> \
+   --artifact-id <your artifact-id> \
+   --artifact-version <your version> \
+   -g java  \
+   -p java8=true \
+   -p dateLibrary=java8-localdatetime \
+   -p useRuntimeException=true \
+   -p openApiNullable=false \
+   -p serializationLibrary=jackson \
+   -p licenseName=<your license name> \
+   -p licenseUrl=<your license url> \
+   --library <any candidates other than okhttp-gson> \
+   -o <give a name to your client directory>
+   ```
+   - available library candidates are specified in OpenAPI Java [page](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/java.md)
+   - if you are using docker, make sure you modified the generator launch command,
+     properly mounted the output directory,
+     and modify the `-o` option to fit docker's environment
 
 4. (if using `resttemplate` or `webclient`) resolve import conflict in `UserApiApi.java`
    1. remove `import <your package>.model.MediaType;`
    2. let `apiUsersCurrentAlbumsAlbumIdPost()` and `apiUsersCurrentAlbumsAlbumIdPostWithHttpInfo()` take the parameter of type `<your package>.model.MediaType`
-5. (Optional) update some of the dependencies used by the client
-   1. spring and jackson related dependencies
+5. (Optional) update some dependencies used by the client
+   1. spring and Jackson related dependencies
    2. remove `jackson-databind-nullable`
-   3. edit LICENSE and etc.
-
+   3. copy LICENSE, etc.
 
 ### 2. Fix your raw client with this auto fixer
 
@@ -51,7 +54,7 @@ openapi-generator-cli generate \
 2. open the [my-config.yml](./vocadb-apiclient-fixer/my-config.yml) file in [`./vocadb-apiclient-fixer`](vocadb-apiclient-fixer/) and edit it
    1. input directory is where your auto-generated client is
       - can be relative path from the [`./vocadb-apiclient-fixer`](vocadb-apiclient-fixer/) perspective
-   2. relative path to model is the relative path from theinput directory to path of `--model-package` on your `openapi-generator-cli` command
+   2. relative path to model is the relative path from the input directory to path of `--model-package` on your `openapi-generator-cli` command
 3. cd into [`./vocadb-apiclient-fixer`](vocadb-apiclient-fixer/), run `./mvnw spring-boot:run '-Dspring-boot.run.arguments="--spring.config.import=file:my-config.yml"'`
 4. your client should be ready to use 😉
 
@@ -74,12 +77,13 @@ see [notes](https://github.com/CXwudi/vocadb-openapi-client-java#notes) in my sa
 
 ## So what does this auto fixer trying to fix
 
-This fixer will change all enum classes with suffixname of `s` into a class that can make Jackson JSON parser parses works for one-line multiple-enum string.  
+This fixer will change all enum classes with suffixname of `s` into a class that can make Jackson JSON parser works for one-line multiple-value enum string.  
 For example, take a look at the `SongForApiContract` in the sample-unfixed-client.
 It has a field `private PVServices pvServices;`.
-Before fixing, `PVServices` is just an enum class. It can only accept one enum for that field.  
-However, in reality, VocaDB could return multiple enums for that field,
-separated by comma (like `pvServers: "NicoNicoDouga, Youtube"`).
+Before fixing, `PVServices` is just an enum class. It can only accept one value for that field.  
+However, in reality, VocaDB could return multiple values for that field, separated by comma (like `pvServers: "NicoNicoDouga, Youtube"`).  
+So the fixer will change each enum class like `PVServices` into a normal class that can accept such multiple values of the same enum.  
+And each new class will have customized `@JsonCreator` and `@JsonValue` annotations to stay compatible with the behavior of the old unfixed enum class.
 
 This fixer also globally replaces all strings `ApiApi` to `Api`.
 If a file name contains such a string, the file is also renamed.

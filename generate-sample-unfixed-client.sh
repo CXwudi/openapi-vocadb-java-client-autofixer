@@ -1,4 +1,4 @@
-# make sure sample-unfixed-client is an empty folder
+# make sure sample-unfixed-client is an existing empty folder
 docker run --rm -v "${PWD}/sample-unfixed-client:/local/sample-unfixed-client" openapitools/openapi-generator-cli generate \
   --api-package mikufan.cx.vocadbapiclient.api \
   --model-package mikufan.cx.vocadbapiclient.model \

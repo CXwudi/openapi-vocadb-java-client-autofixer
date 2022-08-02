@@ -25,9 +25,9 @@ class MainService(
   val apiApiFilesFilter: ApiApiFilesFilter,
   val apiApiFileRenamer: ApiApiFileRenamer,
   val apiApiContentFixer: ApiApiContentFixer,
-  // TODO: resolve mediatype confliction
+  // TODO: resolve mediatype conflict
   val readMeFileCopier: ReadMeFileCopier,
-  // TODO: copy
+  // TODO: (optional) copy license
 ) : Runnable {
 
   override fun run() {
