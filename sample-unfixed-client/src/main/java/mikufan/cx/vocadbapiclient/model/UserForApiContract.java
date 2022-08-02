@@ -30,6 +30,7 @@ import mikufan.cx.vocadbapiclient.model.OldUsernameContract;
 import mikufan.cx.vocadbapiclient.model.UserGroupId;
 import mikufan.cx.vocadbapiclient.model.UserKnownLanguageContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * UserForApiContract
@@ -45,8 +46,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   UserForApiContract.JSON_PROPERTY_ID,
   UserForApiContract.JSON_PROPERTY_NAME
 })
-@JsonTypeName("UserForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class UserForApiContract {
   public static final String JSON_PROPERTY_ACTIVE = "active";
   private Boolean active;
@@ -75,6 +75,8 @@ public class UserForApiContract {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;
 
+  public UserForApiContract() {
+  }
 
   public UserForApiContract active(Boolean active) {
     

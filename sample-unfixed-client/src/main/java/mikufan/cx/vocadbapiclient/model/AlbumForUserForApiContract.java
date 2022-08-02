@@ -27,6 +27,7 @@ import mikufan.cx.vocadbapiclient.model.MediaType;
 import mikufan.cx.vocadbapiclient.model.PurchaseStatus;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * AlbumForUserForApiContract
@@ -38,8 +39,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   AlbumForUserForApiContract.JSON_PROPERTY_RATING,
   AlbumForUserForApiContract.JSON_PROPERTY_USER
 })
-@JsonTypeName("AlbumForUserForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class AlbumForUserForApiContract {
   public static final String JSON_PROPERTY_ALBUM = "album";
   private AlbumForApiContract album;
@@ -56,6 +56,8 @@ public class AlbumForUserForApiContract {
   public static final String JSON_PROPERTY_USER = "user";
   private UserForApiContract user;
 
+  public AlbumForUserForApiContract() {
+  }
 
   public AlbumForUserForApiContract album(AlbumForApiContract album) {
     

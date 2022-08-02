@@ -32,7 +32,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 @Component("mikufan.cx.vocadbapiclient.api.CommentApiApi")
 public class CommentApiApi {
     private ApiClient apiClient;
@@ -76,7 +76,7 @@ public class CommentApiApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ResponseEntity<Void> apiCommentsEntryTypeCommentsCommentIdDeleteWithHttpInfo(EntryType entryType, Integer commentId) throws RestClientException {
-        Object postBody = null;
+        Object localVarPostBody = null;
         
         // verify the required parameter 'entryType' is set
         if (entryType == null) {
@@ -92,22 +92,21 @@ public class CommentApiApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("entryType", entryType);
         uriVariables.put("commentId", commentId);
-        String path = apiClient.expandPath("/api/comments/{entryType}-comments/{commentId}", uriVariables);
 
-        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, String> cookieParams = new LinkedMultiValueMap<String, String>();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-        final String[] contentTypes = {  };
-        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-        String[] authNames = new String[] {  };
+        String[] localVarAuthNames = new String[] {  };
 
-        ParameterizedTypeReference<Void> returnType = new ParameterizedTypeReference<Void>() {};
-        return apiClient.invokeAPI(path, HttpMethod.DELETE, queryParams, postBody, headerParams, cookieParams, formParams, localVarAccept, contentType, authNames, returnType);
+        ParameterizedTypeReference<Void> localReturnType = new ParameterizedTypeReference<Void>() {};
+        return apiClient.invokeAPI("/api/comments/{entryType}-comments/{commentId}", HttpMethod.DELETE, uriVariables, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
     /**
      * 
@@ -133,7 +132,7 @@ public class CommentApiApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ResponseEntity<Void> apiCommentsEntryTypeCommentsCommentIdPostWithHttpInfo(EntryType entryType, Integer commentId, CommentForApiContract commentForApiContract) throws RestClientException {
-        Object postBody = commentForApiContract;
+        Object localVarPostBody = commentForApiContract;
         
         // verify the required parameter 'entryType' is set
         if (entryType == null) {
@@ -149,24 +148,23 @@ public class CommentApiApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("entryType", entryType);
         uriVariables.put("commentId", commentId);
-        String path = apiClient.expandPath("/api/comments/{entryType}-comments/{commentId}", uriVariables);
 
-        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, String> cookieParams = new LinkedMultiValueMap<String, String>();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-        final String[] contentTypes = { 
-            "application/json-patch+json", "application/json", "text/json", "application/_*+json"
+        final String[] localVarContentTypes = { 
+            "application/json-patch+json", "application/json", "text/json", "application/*+json"
          };
-        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-        String[] authNames = new String[] {  };
+        String[] localVarAuthNames = new String[] {  };
 
-        ParameterizedTypeReference<Void> returnType = new ParameterizedTypeReference<Void>() {};
-        return apiClient.invokeAPI(path, HttpMethod.POST, queryParams, postBody, headerParams, cookieParams, formParams, localVarAccept, contentType, authNames, returnType);
+        ParameterizedTypeReference<Void> localReturnType = new ParameterizedTypeReference<Void>() {};
+        return apiClient.invokeAPI("/api/comments/{entryType}-comments/{commentId}", HttpMethod.POST, uriVariables, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
     /**
      * 
@@ -191,7 +189,7 @@ public class CommentApiApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ResponseEntity<CommentForApiContractPartialFindResult> apiCommentsEntryTypeCommentsGetWithHttpInfo(EntryType entryType, Integer entryId) throws RestClientException {
-        Object postBody = null;
+        Object localVarPostBody = null;
         
         // verify the required parameter 'entryType' is set
         if (entryType == null) {
@@ -201,26 +199,25 @@ public class CommentApiApi {
         // create path and map variables
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("entryType", entryType);
-        String path = apiClient.expandPath("/api/comments/{entryType}-comments", uriVariables);
 
-        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, String> cookieParams = new LinkedMultiValueMap<String, String>();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryId", entryId));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryId", entryId));
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-        final String[] contentTypes = {  };
-        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-        String[] authNames = new String[] {  };
+        String[] localVarAuthNames = new String[] {  };
 
-        ParameterizedTypeReference<CommentForApiContractPartialFindResult> returnType = new ParameterizedTypeReference<CommentForApiContractPartialFindResult>() {};
-        return apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, cookieParams, formParams, localVarAccept, contentType, authNames, returnType);
+        ParameterizedTypeReference<CommentForApiContractPartialFindResult> localReturnType = new ParameterizedTypeReference<CommentForApiContractPartialFindResult>() {};
+        return apiClient.invokeAPI("/api/comments/{entryType}-comments", HttpMethod.GET, uriVariables, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
     /**
      * 
@@ -245,7 +242,7 @@ public class CommentApiApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ResponseEntity<CommentForApiContract> apiCommentsEntryTypeCommentsPostWithHttpInfo(EntryType entryType, CommentForApiContract commentForApiContract) throws RestClientException {
-        Object postBody = commentForApiContract;
+        Object localVarPostBody = commentForApiContract;
         
         // verify the required parameter 'entryType' is set
         if (entryType == null) {
@@ -255,26 +252,25 @@ public class CommentApiApi {
         // create path and map variables
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("entryType", entryType);
-        String path = apiClient.expandPath("/api/comments/{entryType}-comments", uriVariables);
 
-        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, String> cookieParams = new LinkedMultiValueMap<String, String>();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-        final String[] contentTypes = { 
-            "application/json-patch+json", "application/json", "text/json", "application/_*+json"
+        final String[] localVarContentTypes = { 
+            "application/json-patch+json", "application/json", "text/json", "application/*+json"
          };
-        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-        String[] authNames = new String[] {  };
+        String[] localVarAuthNames = new String[] {  };
 
-        ParameterizedTypeReference<CommentForApiContract> returnType = new ParameterizedTypeReference<CommentForApiContract>() {};
-        return apiClient.invokeAPI(path, HttpMethod.POST, queryParams, postBody, headerParams, cookieParams, formParams, localVarAccept, contentType, authNames, returnType);
+        ParameterizedTypeReference<CommentForApiContract> localReturnType = new ParameterizedTypeReference<CommentForApiContract>() {};
+        return apiClient.invokeAPI("/api/comments/{entryType}-comments", HttpMethod.POST, uriVariables, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
     /**
      * 
@@ -315,36 +311,35 @@ public class CommentApiApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ResponseEntity<CommentForApiContractPartialFindResult> apiCommentsGetWithHttpInfo(LocalDateTime before, LocalDateTime since, Integer userId, EntryType entryType, Integer maxResults, Boolean getTotalCount, CommentOptionalFields fields, EntryOptionalFields entryFields, ContentLanguagePreference lang, CommentSortRule sortRule) throws RestClientException {
-        Object postBody = null;
+        Object localVarPostBody = null;
         
-        String path = apiClient.expandPath("/api/comments", Collections.<String, Object>emptyMap());
 
-        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, String> cookieParams = new LinkedMultiValueMap<String, String>();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "before", before));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "since", since));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "userId", userId));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryType", entryType));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "getTotalCount", getTotalCount));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryFields", entryFields));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "sortRule", sortRule));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "before", before));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "since", since));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "userId", userId));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryType", entryType));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "getTotalCount", getTotalCount));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryFields", entryFields));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "sortRule", sortRule));
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-        final String[] contentTypes = {  };
-        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-        String[] authNames = new String[] {  };
+        String[] localVarAuthNames = new String[] {  };
 
-        ParameterizedTypeReference<CommentForApiContractPartialFindResult> returnType = new ParameterizedTypeReference<CommentForApiContractPartialFindResult>() {};
-        return apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, cookieParams, formParams, localVarAccept, contentType, authNames, returnType);
+        ParameterizedTypeReference<CommentForApiContractPartialFindResult> localReturnType = new ParameterizedTypeReference<CommentForApiContractPartialFindResult>() {};
+        return apiClient.invokeAPI("/api/comments", HttpMethod.GET, Collections.<String, Object>emptyMap(), localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
 }

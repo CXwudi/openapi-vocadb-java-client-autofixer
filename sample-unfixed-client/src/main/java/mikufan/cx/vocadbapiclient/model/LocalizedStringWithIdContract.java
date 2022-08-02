@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.ContentLanguageSelection;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * LocalizedStringWithIdContract
@@ -33,8 +34,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   LocalizedStringWithIdContract.JSON_PROPERTY_LANGUAGE,
   LocalizedStringWithIdContract.JSON_PROPERTY_VALUE
 })
-@JsonTypeName("LocalizedStringWithIdContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class LocalizedStringWithIdContract {
   public static final String JSON_PROPERTY_ID = "id";
   private Integer id;
@@ -45,6 +45,8 @@ public class LocalizedStringWithIdContract {
   public static final String JSON_PROPERTY_VALUE = "value";
   private String value;
 
+  public LocalizedStringWithIdContract() {
+  }
 
   public LocalizedStringWithIdContract id(Integer id) {
     

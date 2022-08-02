@@ -2,16 +2,16 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiArtistsCommentsCommentIdDelete**](ArtistApiApi.md#apiArtistsCommentsCommentIdDelete) | **DELETE** /api/artists/comments/{commentId} | 
-[**apiArtistsCommentsCommentIdPost**](ArtistApiApi.md#apiArtistsCommentsCommentIdPost) | **POST** /api/artists/comments/{commentId} | 
-[**apiArtistsGet**](ArtistApiApi.md#apiArtistsGet) | **GET** /api/artists | 
-[**apiArtistsIdCommentsGet**](ArtistApiApi.md#apiArtistsIdCommentsGet) | **GET** /api/artists/{id}/comments | 
-[**apiArtistsIdCommentsPost**](ArtistApiApi.md#apiArtistsIdCommentsPost) | **POST** /api/artists/{id}/comments | 
-[**apiArtistsIdDelete**](ArtistApiApi.md#apiArtistsIdDelete) | **DELETE** /api/artists/{id} | 
-[**apiArtistsIdGet**](ArtistApiApi.md#apiArtistsIdGet) | **GET** /api/artists/{id} | 
-[**apiArtistsNamesGet**](ArtistApiApi.md#apiArtistsNamesGet) | **GET** /api/artists/names | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiArtistsCommentsCommentIdDelete**](ArtistApiApi.md#apiArtistsCommentsCommentIdDelete) | **DELETE** /api/artists/comments/{commentId} |  |
+| [**apiArtistsCommentsCommentIdPost**](ArtistApiApi.md#apiArtistsCommentsCommentIdPost) | **POST** /api/artists/comments/{commentId} |  |
+| [**apiArtistsGet**](ArtistApiApi.md#apiArtistsGet) | **GET** /api/artists |  |
+| [**apiArtistsIdCommentsGet**](ArtistApiApi.md#apiArtistsIdCommentsGet) | **GET** /api/artists/{id}/comments |  |
+| [**apiArtistsIdCommentsPost**](ArtistApiApi.md#apiArtistsIdCommentsPost) | **POST** /api/artists/{id}/comments |  |
+| [**apiArtistsIdDelete**](ArtistApiApi.md#apiArtistsIdDelete) | **DELETE** /api/artists/{id} |  |
+| [**apiArtistsIdGet**](ArtistApiApi.md#apiArtistsIdGet) | **GET** /api/artists/{id} |  |
+| [**apiArtistsNamesGet**](ArtistApiApi.md#apiArtistsNamesGet) | **GET** /api/artists/names |  |
 
 
 
@@ -54,9 +54,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
 
 ### Return type
 
@@ -118,10 +118,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -133,7 +133,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: Not defined
 
 
@@ -199,25 +199,25 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **artistTypes** | **String**|  | [optional]
- **allowBaseVoicebanks** | **Boolean**|  | [optional] [default to true]
- **tagName** | [**List&lt;String&gt;**](String.md)|  | [optional]
- **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **childTags** | **Boolean**|  | [optional] [default to false]
- **followedByUserId** | **Integer**|  | [optional]
- **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked]
- **advancedFilters** | [**List&lt;AdvancedSearchFilterParams&gt;**](AdvancedSearchFilterParams.md)|  | [optional]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **sort** | [**ArtistSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, AdditionDateAsc, ReleaseDate, SongCount, SongRating, FollowerCount]
- **preferAccurateMatches** | **Boolean**|  | [optional] [default to false]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **fields** | [**ArtistOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, ArtistLinks, ArtistLinksReverse, BaseVoicebank, Description, MainPicture, Names, Tags, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **artistTypes** | **String**|  | [optional] |
+| **allowBaseVoicebanks** | **Boolean**|  | [optional] [default to true] |
+| **tagName** | [**List&lt;String&gt;**](String.md)|  | [optional] |
+| **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **childTags** | **Boolean**|  | [optional] [default to false] |
+| **followedByUserId** | **Integer**|  | [optional] |
+| **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked] |
+| **advancedFilters** | [**List&lt;AdvancedSearchFilterParams&gt;**](AdvancedSearchFilterParams.md)|  | [optional] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **sort** | [**ArtistSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, AdditionDateAsc, ReleaseDate, SongCount, SongRating, FollowerCount] |
+| **preferAccurateMatches** | **Boolean**|  | [optional] [default to false] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **fields** | [**ArtistOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, ArtistLinks, ArtistLinksReverse, BaseVoicebank, Description, MainPicture, Names, Tags, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -279,9 +279,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
 
 ### Return type
 
@@ -344,10 +344,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -359,7 +359,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -409,10 +409,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **notes** | **String**|  | [optional] [default to ]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **notes** | **String**|  | [optional] [default to ] |
 
 ### Return type
 
@@ -477,12 +477,12 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **fields** | [**ArtistOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, ArtistLinks, ArtistLinksReverse, BaseVoicebank, Description, MainPicture, Names, Tags, WebLinks]
- **relations** | [**ArtistRelationsFields**](.md)|  | [optional] [enum: None, LatestAlbums, LatestEvents, LatestSongs, PopularAlbums, PopularSongs, All]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **fields** | [**ArtistOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, ArtistLinks, ArtistLinksReverse, BaseVoicebank, Description, MainPicture, Names, Tags, WebLinks] |
+| **relations** | [**ArtistRelationsFields**](.md)|  | [optional] [enum: None, LatestAlbums, LatestEvents, LatestSongs, PopularAlbums, PopularSongs, All] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -546,11 +546,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **maxResults** | **Integer**|  | [optional] [default to 15]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **maxResults** | **Integer**|  | [optional] [default to 15] |
 
 ### Return type
 

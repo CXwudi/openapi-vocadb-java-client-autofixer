@@ -1,4 +1,6 @@
+.github/workflows/maven.yml
 .gitignore
+.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -64,13 +66,13 @@ docs/DiscussionTopicSortRule.md
 docs/DistanceUnit.md
 docs/EnglishTranslatedStringContract.md
 docs/EntryApiApi.md
+docs/EntryEditDataContract.md
 docs/EntryEditEvent.md
 docs/EntryForApiContract.md
 docs/EntryForApiContractPartialFindResult.md
 docs/EntryOptionalFields.md
 docs/EntrySortRule.md
 docs/EntryStatus.md
-docs/EntryThumbContract.md
 docs/EntryThumbForApiContract.md
 docs/EntryType.md
 docs/EntryTypes.md
@@ -110,6 +112,7 @@ docs/ReleaseEventSeriesApiApi.md
 docs/ReleaseEventSeriesContract.md
 docs/ReleaseEventSeriesForApiContract.md
 docs/ReleaseEventSeriesForApiContractPartialFindResult.md
+docs/ReleaseEventSeriesForEditForApiContract.md
 docs/ReleaseEventSeriesOptionalFields.md
 docs/ResourcesApiApi.md
 docs/SongApiApi.md
@@ -125,7 +128,7 @@ docs/SongListBaseContract.md
 docs/SongListFeaturedCategory.md
 docs/SongListForApiContract.md
 docs/SongListForApiContractPartialFindResult.md
-docs/SongListForEditContract.md
+docs/SongListForEditForApiContract.md
 docs/SongListOptionalFields.md
 docs/SongListSortRule.md
 docs/SongOptionalFields.md
@@ -134,6 +137,7 @@ docs/SongSortRule.md
 docs/SongType.md
 docs/SongVocalistSelection.md
 docs/SongVoteRating.md
+docs/SortDirection.md
 docs/TagApiApi.md
 docs/TagBaseContract.md
 docs/TagForApiContract.md
@@ -256,13 +260,13 @@ src/main/java/mikufan/cx/vocadbapiclient/model/DiscussionTopicOptionalFields.jav
 src/main/java/mikufan/cx/vocadbapiclient/model/DiscussionTopicSortRule.java
 src/main/java/mikufan/cx/vocadbapiclient/model/DistanceUnit.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EnglishTranslatedStringContract.java
+src/main/java/mikufan/cx/vocadbapiclient/model/EntryEditDataContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EntryEditEvent.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EntryForApiContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EntryForApiContractPartialFindResult.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EntryOptionalFields.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EntrySortRule.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EntryStatus.java
-src/main/java/mikufan/cx/vocadbapiclient/model/EntryThumbContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EntryThumbForApiContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EntryType.java
 src/main/java/mikufan/cx/vocadbapiclient/model/EntryTypes.java
@@ -298,6 +302,7 @@ src/main/java/mikufan/cx/vocadbapiclient/model/ReleaseEventOptionalFields.java
 src/main/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesForApiContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesForApiContractPartialFindResult.java
+src/main/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesForEditForApiContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesOptionalFields.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongForApiContract.java
@@ -310,7 +315,7 @@ src/main/java/mikufan/cx/vocadbapiclient/model/SongListBaseContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongListFeaturedCategory.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongListForApiContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongListForApiContractPartialFindResult.java
-src/main/java/mikufan/cx/vocadbapiclient/model/SongListForEditContract.java
+src/main/java/mikufan/cx/vocadbapiclient/model/SongListForEditForApiContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongListOptionalFields.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongListSortRule.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongOptionalFields.java
@@ -319,6 +324,7 @@ src/main/java/mikufan/cx/vocadbapiclient/model/SongSortRule.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongType.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongVocalistSelection.java
 src/main/java/mikufan/cx/vocadbapiclient/model/SongVoteRating.java
+src/main/java/mikufan/cx/vocadbapiclient/model/SortDirection.java
 src/main/java/mikufan/cx/vocadbapiclient/model/TagBaseContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/TagForApiContract.java
 src/main/java/mikufan/cx/vocadbapiclient/model/TagForApiContractPartialFindResult.java
@@ -420,13 +426,13 @@ src/test/java/mikufan/cx/vocadbapiclient/model/DiscussionTopicOptionalFieldsTest
 src/test/java/mikufan/cx/vocadbapiclient/model/DiscussionTopicSortRuleTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/DistanceUnitTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EnglishTranslatedStringContractTest.java
+src/test/java/mikufan/cx/vocadbapiclient/model/EntryEditDataContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EntryEditEventTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EntryForApiContractPartialFindResultTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EntryForApiContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EntryOptionalFieldsTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EntrySortRuleTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EntryStatusTest.java
-src/test/java/mikufan/cx/vocadbapiclient/model/EntryThumbContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EntryThumbForApiContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EntryTypeTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/EntryTypesTest.java
@@ -462,6 +468,7 @@ src/test/java/mikufan/cx/vocadbapiclient/model/ReleaseEventOptionalFieldsTest.ja
 src/test/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesForApiContractPartialFindResultTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesForApiContractTest.java
+src/test/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesForEditForApiContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/ReleaseEventSeriesOptionalFieldsTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongForApiContractPartialFindResultTest.java
@@ -474,7 +481,7 @@ src/test/java/mikufan/cx/vocadbapiclient/model/SongListBaseContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongListFeaturedCategoryTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongListForApiContractPartialFindResultTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongListForApiContractTest.java
-src/test/java/mikufan/cx/vocadbapiclient/model/SongListForEditContractTest.java
+src/test/java/mikufan/cx/vocadbapiclient/model/SongListForEditForApiContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongListOptionalFieldsTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongListSortRuleTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongOptionalFieldsTest.java
@@ -483,6 +490,7 @@ src/test/java/mikufan/cx/vocadbapiclient/model/SongSortRuleTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongTypeTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongVocalistSelectionTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/SongVoteRatingTest.java
+src/test/java/mikufan/cx/vocadbapiclient/model/SortDirectionTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/TagBaseContractTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/TagForApiContractPartialFindResultTest.java
 src/test/java/mikufan/cx/vocadbapiclient/model/TagForApiContractTest.java

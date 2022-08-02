@@ -22,7 +22,7 @@ import mikufan.cx.vocadbapiclient.model.PVServices;
 import mikufan.cx.vocadbapiclient.model.SongInListForApiContractPartialFindResult;
 import mikufan.cx.vocadbapiclient.model.SongListFeaturedCategory;
 import mikufan.cx.vocadbapiclient.model.SongListForApiContractPartialFindResult;
-import mikufan.cx.vocadbapiclient.model.SongListForEditContract;
+import mikufan.cx.vocadbapiclient.model.SongListForEditForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongListOptionalFields;
 import mikufan.cx.vocadbapiclient.model.SongListSortRule;
 import mikufan.cx.vocadbapiclient.model.SongOptionalFields;
@@ -30,6 +30,8 @@ import mikufan.cx.vocadbapiclient.model.SongSortRule;
 import org.junit.Test;
 import org.junit.Ignore;
 
+import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -213,8 +215,8 @@ public class SongListApiApiTest {
      */
     @Test
     public void apiSongListsPostTest() {
-        SongListForEditContract songListForEditContract = null;
-        Integer response = api.apiSongListsPost(songListForEditContract);
+        SongListForEditForApiContract songListForEditForApiContract = null;
+        Integer response = api.apiSongListsPost(songListForEditForApiContract);
 
         // TODO: test validations
     }

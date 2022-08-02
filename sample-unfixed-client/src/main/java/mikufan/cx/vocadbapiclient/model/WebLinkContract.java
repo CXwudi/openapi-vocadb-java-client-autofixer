@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.WebLinkCategory;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * WebLinkContract
@@ -36,8 +37,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   WebLinkContract.JSON_PROPERTY_ID,
   WebLinkContract.JSON_PROPERTY_URL
 })
-@JsonTypeName("WebLinkContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class WebLinkContract {
   public static final String JSON_PROPERTY_CATEGORY = "category";
   private WebLinkCategory category;
@@ -57,6 +57,8 @@ public class WebLinkContract {
   public static final String JSON_PROPERTY_URL = "url";
   private String url;
 
+  public WebLinkContract() {
+  }
 
   public WebLinkContract category(WebLinkCategory category) {
     

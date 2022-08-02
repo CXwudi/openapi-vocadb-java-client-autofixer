@@ -25,6 +25,7 @@ import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * DiscussionFolderContract
@@ -37,8 +38,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   DiscussionFolderContract.JSON_PROPERTY_NAME,
   DiscussionFolderContract.JSON_PROPERTY_TOPIC_COUNT
 })
-@JsonTypeName("DiscussionFolderContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class DiscussionFolderContract {
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
   private String description;
@@ -58,6 +58,8 @@ public class DiscussionFolderContract {
   public static final String JSON_PROPERTY_TOPIC_COUNT = "topicCount";
   private Integer topicCount;
 
+  public DiscussionFolderContract() {
+  }
 
   public DiscussionFolderContract description(String description) {
     

@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.ArtistForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * ArtistForUserForApiContract
@@ -31,12 +32,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
   ArtistForUserForApiContract.JSON_PROPERTY_ARTIST
 })
-@JsonTypeName("ArtistForUserForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class ArtistForUserForApiContract {
   public static final String JSON_PROPERTY_ARTIST = "artist";
   private ArtistForApiContract artist;
 
+  public ArtistForUserForApiContract() {
+  }
 
   public ArtistForUserForApiContract artist(ArtistForApiContract artist) {
     

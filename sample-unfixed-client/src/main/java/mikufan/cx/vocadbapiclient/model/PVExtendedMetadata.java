@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * PVExtendedMetadata
@@ -30,12 +31,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
   PVExtendedMetadata.JSON_PROPERTY_JSON
 })
-@JsonTypeName("PVExtendedMetadata")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class PVExtendedMetadata {
   public static final String JSON_PROPERTY_JSON = "json";
   private String json;
 
+  public PVExtendedMetadata() {
+  }
 
   public PVExtendedMetadata json(String json) {
     

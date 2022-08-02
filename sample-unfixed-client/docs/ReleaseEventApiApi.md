@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiReleaseEventsEventIdAlbumsGet**](ReleaseEventApiApi.md#apiReleaseEventsEventIdAlbumsGet) | **GET** /api/releaseEvents/{eventId}/albums | 
-[**apiReleaseEventsEventIdPublishedSongsGet**](ReleaseEventApiApi.md#apiReleaseEventsEventIdPublishedSongsGet) | **GET** /api/releaseEvents/{eventId}/published-songs | 
-[**apiReleaseEventsEventIdReportsPost**](ReleaseEventApiApi.md#apiReleaseEventsEventIdReportsPost) | **POST** /api/releaseEvents/{eventId}/reports | 
-[**apiReleaseEventsGet**](ReleaseEventApiApi.md#apiReleaseEventsGet) | **GET** /api/releaseEvents | 
-[**apiReleaseEventsIdDelete**](ReleaseEventApiApi.md#apiReleaseEventsIdDelete) | **DELETE** /api/releaseEvents/{id} | 
-[**apiReleaseEventsIdGet**](ReleaseEventApiApi.md#apiReleaseEventsIdGet) | **GET** /api/releaseEvents/{id} | 
-[**apiReleaseEventsNamesGet**](ReleaseEventApiApi.md#apiReleaseEventsNamesGet) | **GET** /api/releaseEvents/names | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiReleaseEventsEventIdAlbumsGet**](ReleaseEventApiApi.md#apiReleaseEventsEventIdAlbumsGet) | **GET** /api/releaseEvents/{eventId}/albums |  |
+| [**apiReleaseEventsEventIdPublishedSongsGet**](ReleaseEventApiApi.md#apiReleaseEventsEventIdPublishedSongsGet) | **GET** /api/releaseEvents/{eventId}/published-songs |  |
+| [**apiReleaseEventsEventIdReportsPost**](ReleaseEventApiApi.md#apiReleaseEventsEventIdReportsPost) | **POST** /api/releaseEvents/{eventId}/reports |  |
+| [**apiReleaseEventsGet**](ReleaseEventApiApi.md#apiReleaseEventsGet) | **GET** /api/releaseEvents |  |
+| [**apiReleaseEventsIdDelete**](ReleaseEventApiApi.md#apiReleaseEventsIdDelete) | **DELETE** /api/releaseEvents/{id} |  |
+| [**apiReleaseEventsIdGet**](ReleaseEventApiApi.md#apiReleaseEventsIdGet) | **GET** /api/releaseEvents/{id} |  |
+| [**apiReleaseEventsNamesGet**](ReleaseEventApiApi.md#apiReleaseEventsNamesGet) | **GET** /api/releaseEvents/names |  |
 
 
 
@@ -56,11 +56,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventId** | **Integer**|  |
- **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **eventId** | **Integer**|  | |
+| **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -124,11 +124,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventId** | **Integer**|  |
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **eventId** | **Integer**|  | |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -192,12 +192,12 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **eventId** | **Integer**|  |
- **reportType** | [**EventReportType**](.md)|  | [optional] [enum: InvalidInfo, Duplicate, Inappropriate, Other]
- **notes** | **String**|  | [optional]
- **versionNumber** | **Integer**|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **eventId** | **Integer**|  | |
+| **reportType** | [**EventReportType**](.md)|  | [optional] [enum: InvalidInfo, Duplicate, Inappropriate, Other] |
+| **notes** | **String**|  | [optional] |
+| **versionNumber** | **Integer**|  | [optional] |
 
 ### Return type
 
@@ -221,7 +221,7 @@ No authorization required
 
 ## apiReleaseEventsGet
 
-> ReleaseEventForApiContractPartialFindResult apiReleaseEventsGet(query, nameMatchMode, seriesId, afterDate, beforeDate, category, userCollectionId, tagId, childTags, artistId, childVoicebanks, includeMembers, status, start, maxResults, getTotalCount, sort, fields, lang)
+> ReleaseEventForApiContractPartialFindResult apiReleaseEventsGet(query, nameMatchMode, seriesId, afterDate, beforeDate, category, userCollectionId, tagId, childTags, artistId, childVoicebanks, includeMembers, status, start, maxResults, getTotalCount, sort, fields, lang, sortDirection)
 
 
 
@@ -260,8 +260,9 @@ public class Example {
         EventSortRule sort = EventSortRule.fromValue("None"); // EventSortRule | 
         ReleaseEventOptionalFields fields = ReleaseEventOptionalFields.fromValue("None"); // ReleaseEventOptionalFields | 
         ContentLanguagePreference lang = ContentLanguagePreference.fromValue("Default"); // ContentLanguagePreference | 
+        SortDirection sortDirection = SortDirection.fromValue("Ascending"); // SortDirection | 
         try {
-            ReleaseEventForApiContractPartialFindResult result = apiInstance.apiReleaseEventsGet(query, nameMatchMode, seriesId, afterDate, beforeDate, category, userCollectionId, tagId, childTags, artistId, childVoicebanks, includeMembers, status, start, maxResults, getTotalCount, sort, fields, lang);
+            ReleaseEventForApiContractPartialFindResult result = apiInstance.apiReleaseEventsGet(query, nameMatchMode, seriesId, afterDate, beforeDate, category, userCollectionId, tagId, childTags, artistId, childVoicebanks, includeMembers, status, start, maxResults, getTotalCount, sort, fields, lang, sortDirection);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling ReleaseEventApiApi#apiReleaseEventsGet");
@@ -277,27 +278,28 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **seriesId** | **Integer**|  | [optional] [default to 0]
- **afterDate** | **LocalDateTime**|  | [optional]
- **beforeDate** | **LocalDateTime**|  | [optional]
- **category** | [**EventCategory**](.md)|  | [optional] [enum: Unspecified, AlbumRelease, Anniversary, Club, Concert, Contest, Convention, Other]
- **userCollectionId** | **Integer**|  | [optional]
- **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **childTags** | **Boolean**|  | [optional] [default to false]
- **artistId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **childVoicebanks** | **Boolean**|  | [optional] [default to false]
- **includeMembers** | **Boolean**|  | [optional] [default to false]
- **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **sort** | [**EventSortRule**](.md)|  | [optional] [enum: None, Name, Date, AdditionDate, SeriesName, VenueName]
- **fields** | [**ReleaseEventOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, MainPicture, Names, Series, SongList, Tags, Venue, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **seriesId** | **Integer**|  | [optional] [default to 0] |
+| **afterDate** | **LocalDateTime**|  | [optional] |
+| **beforeDate** | **LocalDateTime**|  | [optional] |
+| **category** | [**EventCategory**](.md)|  | [optional] [enum: Unspecified, AlbumRelease, Anniversary, Club, Concert, Contest, Convention, Other] |
+| **userCollectionId** | **Integer**|  | [optional] |
+| **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **childTags** | **Boolean**|  | [optional] [default to false] |
+| **artistId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **childVoicebanks** | **Boolean**|  | [optional] [default to false] |
+| **includeMembers** | **Boolean**|  | [optional] [default to false] |
+| **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **sort** | [**EventSortRule**](.md)|  | [optional] [enum: None, Name, Date, AdditionDate, SeriesName, VenueName] |
+| **fields** | [**ReleaseEventOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, MainPicture, Names, Series, SongList, Tags, Venue, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **sortDirection** | [**SortDirection**](.md)|  | [optional] [enum: Ascending, Descending] |
 
 ### Return type
 
@@ -360,11 +362,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **notes** | **String**|  | [optional] [default to ]
- **hardDelete** | **Boolean**|  | [optional] [default to false]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **notes** | **String**|  | [optional] [default to ] |
+| **hardDelete** | **Boolean**|  | [optional] [default to false] |
 
 ### Return type
 
@@ -428,11 +430,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **fields** | [**ReleaseEventOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, MainPicture, Names, Series, SongList, Tags, Venue, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **fields** | [**ReleaseEventOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, MainPicture, Names, Series, SongList, Tags, Venue, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -495,10 +497,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **maxResults** | **Integer**|  | [optional] [default to 10]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
 
 ### Return type
 

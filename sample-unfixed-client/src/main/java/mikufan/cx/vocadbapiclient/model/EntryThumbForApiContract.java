@@ -23,22 +23,26 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * EntryThumbForApiContract
  */
 @JsonPropertyOrder({
   EntryThumbForApiContract.JSON_PROPERTY_MIME,
+  EntryThumbForApiContract.JSON_PROPERTY_NAME,
   EntryThumbForApiContract.JSON_PROPERTY_URL_ORIGINAL,
   EntryThumbForApiContract.JSON_PROPERTY_URL_SMALL_THUMB,
   EntryThumbForApiContract.JSON_PROPERTY_URL_THUMB,
   EntryThumbForApiContract.JSON_PROPERTY_URL_TINY_THUMB
 })
-@JsonTypeName("EntryThumbForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class EntryThumbForApiContract {
   public static final String JSON_PROPERTY_MIME = "mime";
   private String mime;
+
+  public static final String JSON_PROPERTY_NAME = "name";
+  private String name;
 
   public static final String JSON_PROPERTY_URL_ORIGINAL = "urlOriginal";
   private String urlOriginal;
@@ -52,6 +56,8 @@ public class EntryThumbForApiContract {
   public static final String JSON_PROPERTY_URL_TINY_THUMB = "urlTinyThumb";
   private String urlTinyThumb;
 
+  public EntryThumbForApiContract() {
+  }
 
   public EntryThumbForApiContract mime(String mime) {
     
@@ -77,6 +83,33 @@ public class EntryThumbForApiContract {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMime(String mime) {
     this.mime = mime;
+  }
+
+
+  public EntryThumbForApiContract name(String name) {
+    
+    this.name = name;
+    return this;
+  }
+
+   /**
+   * Get name
+   * @return name
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getName() {
+    return name;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setName(String name) {
+    this.name = name;
   }
 
 
@@ -198,6 +231,7 @@ public class EntryThumbForApiContract {
     }
     EntryThumbForApiContract entryThumbForApiContract = (EntryThumbForApiContract) o;
     return Objects.equals(this.mime, entryThumbForApiContract.mime) &&
+        Objects.equals(this.name, entryThumbForApiContract.name) &&
         Objects.equals(this.urlOriginal, entryThumbForApiContract.urlOriginal) &&
         Objects.equals(this.urlSmallThumb, entryThumbForApiContract.urlSmallThumb) &&
         Objects.equals(this.urlThumb, entryThumbForApiContract.urlThumb) &&
@@ -206,7 +240,7 @@ public class EntryThumbForApiContract {
 
   @Override
   public int hashCode() {
-    return Objects.hash(mime, urlOriginal, urlSmallThumb, urlThumb, urlTinyThumb);
+    return Objects.hash(mime, name, urlOriginal, urlSmallThumb, urlThumb, urlTinyThumb);
   }
 
   @Override
@@ -214,6 +248,7 @@ public class EntryThumbForApiContract {
     StringBuilder sb = new StringBuilder();
     sb.append("class EntryThumbForApiContract {\n");
     sb.append("    mime: ").append(toIndentedString(mime)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    urlOriginal: ").append(toIndentedString(urlOriginal)).append("\n");
     sb.append("    urlSmallThumb: ").append(toIndentedString(urlSmallThumb)).append("\n");
     sb.append("    urlThumb: ").append(toIndentedString(urlThumb)).append("\n");

@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.AdvancedFilterType;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * AdvancedSearchFilterParams
@@ -33,8 +34,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   AdvancedSearchFilterParams.JSON_PROPERTY_NEGATE,
   AdvancedSearchFilterParams.JSON_PROPERTY_PARAM
 })
-@JsonTypeName("AdvancedSearchFilterParams")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class AdvancedSearchFilterParams {
   public static final String JSON_PROPERTY_FILTER_TYPE = "filterType";
   private AdvancedFilterType filterType;
@@ -45,6 +45,8 @@ public class AdvancedSearchFilterParams {
   public static final String JSON_PROPERTY_PARAM = "param";
   private String param;
 
+  public AdvancedSearchFilterParams() {
+  }
 
   public AdvancedSearchFilterParams filterType(AdvancedFilterType filterType) {
     

@@ -26,6 +26,7 @@ import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.EntryForApiContract;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * CommentForApiContract
@@ -38,8 +39,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   CommentForApiContract.JSON_PROPERTY_ID,
   CommentForApiContract.JSON_PROPERTY_MESSAGE
 })
-@JsonTypeName("CommentForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class CommentForApiContract {
   public static final String JSON_PROPERTY_AUTHOR = "author";
   private UserForApiContract author;
@@ -59,6 +59,8 @@ public class CommentForApiContract {
   public static final String JSON_PROPERTY_MESSAGE = "message";
   private String message;
 
+  public CommentForApiContract() {
+  }
 
   public CommentForApiContract author(UserForApiContract author) {
     

@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.SongVoteRating;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * SongRatingContract
@@ -31,12 +32,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
   SongRatingContract.JSON_PROPERTY_RATING
 })
-@JsonTypeName("SongRatingContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class SongRatingContract {
   public static final String JSON_PROPERTY_RATING = "rating";
   private SongVoteRating rating;
 
+  public SongRatingContract() {
+  }
 
   public SongRatingContract rating(SongVoteRating rating) {
     

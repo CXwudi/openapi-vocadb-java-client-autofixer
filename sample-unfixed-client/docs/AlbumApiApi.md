@@ -2,24 +2,24 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiAlbumsCommentsCommentIdDelete**](AlbumApiApi.md#apiAlbumsCommentsCommentIdDelete) | **DELETE** /api/albums/comments/{commentId} | 
-[**apiAlbumsCommentsCommentIdPost**](AlbumApiApi.md#apiAlbumsCommentsCommentIdPost) | **POST** /api/albums/comments/{commentId} | 
-[**apiAlbumsGet**](AlbumApiApi.md#apiAlbumsGet) | **GET** /api/albums | 
-[**apiAlbumsIdCommentsGet**](AlbumApiApi.md#apiAlbumsIdCommentsGet) | **GET** /api/albums/{id}/comments | 
-[**apiAlbumsIdCommentsPost**](AlbumApiApi.md#apiAlbumsIdCommentsPost) | **POST** /api/albums/{id}/comments | 
-[**apiAlbumsIdDelete**](AlbumApiApi.md#apiAlbumsIdDelete) | **DELETE** /api/albums/{id} | 
-[**apiAlbumsIdGet**](AlbumApiApi.md#apiAlbumsIdGet) | **GET** /api/albums/{id} | 
-[**apiAlbumsIdReviewsGet**](AlbumApiApi.md#apiAlbumsIdReviewsGet) | **GET** /api/albums/{id}/reviews | 
-[**apiAlbumsIdReviewsPost**](AlbumApiApi.md#apiAlbumsIdReviewsPost) | **POST** /api/albums/{id}/reviews | 
-[**apiAlbumsIdReviewsReviewIdDelete**](AlbumApiApi.md#apiAlbumsIdReviewsReviewIdDelete) | **DELETE** /api/albums/{id}/reviews/{reviewId} | 
-[**apiAlbumsIdTracksFieldsGet**](AlbumApiApi.md#apiAlbumsIdTracksFieldsGet) | **GET** /api/albums/{id}/tracks/fields | 
-[**apiAlbumsIdTracksGet**](AlbumApiApi.md#apiAlbumsIdTracksGet) | **GET** /api/albums/{id}/tracks | 
-[**apiAlbumsIdUserCollectionsGet**](AlbumApiApi.md#apiAlbumsIdUserCollectionsGet) | **GET** /api/albums/{id}/user-collections | 
-[**apiAlbumsNamesGet**](AlbumApiApi.md#apiAlbumsNamesGet) | **GET** /api/albums/names | 
-[**apiAlbumsNewGet**](AlbumApiApi.md#apiAlbumsNewGet) | **GET** /api/albums/new | 
-[**apiAlbumsTopGet**](AlbumApiApi.md#apiAlbumsTopGet) | **GET** /api/albums/top | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiAlbumsCommentsCommentIdDelete**](AlbumApiApi.md#apiAlbumsCommentsCommentIdDelete) | **DELETE** /api/albums/comments/{commentId} |  |
+| [**apiAlbumsCommentsCommentIdPost**](AlbumApiApi.md#apiAlbumsCommentsCommentIdPost) | **POST** /api/albums/comments/{commentId} |  |
+| [**apiAlbumsGet**](AlbumApiApi.md#apiAlbumsGet) | **GET** /api/albums |  |
+| [**apiAlbumsIdCommentsGet**](AlbumApiApi.md#apiAlbumsIdCommentsGet) | **GET** /api/albums/{id}/comments |  |
+| [**apiAlbumsIdCommentsPost**](AlbumApiApi.md#apiAlbumsIdCommentsPost) | **POST** /api/albums/{id}/comments |  |
+| [**apiAlbumsIdDelete**](AlbumApiApi.md#apiAlbumsIdDelete) | **DELETE** /api/albums/{id} |  |
+| [**apiAlbumsIdGet**](AlbumApiApi.md#apiAlbumsIdGet) | **GET** /api/albums/{id} |  |
+| [**apiAlbumsIdReviewsGet**](AlbumApiApi.md#apiAlbumsIdReviewsGet) | **GET** /api/albums/{id}/reviews |  |
+| [**apiAlbumsIdReviewsPost**](AlbumApiApi.md#apiAlbumsIdReviewsPost) | **POST** /api/albums/{id}/reviews |  |
+| [**apiAlbumsIdReviewsReviewIdDelete**](AlbumApiApi.md#apiAlbumsIdReviewsReviewIdDelete) | **DELETE** /api/albums/{id}/reviews/{reviewId} |  |
+| [**apiAlbumsIdTracksFieldsGet**](AlbumApiApi.md#apiAlbumsIdTracksFieldsGet) | **GET** /api/albums/{id}/tracks/fields |  |
+| [**apiAlbumsIdTracksGet**](AlbumApiApi.md#apiAlbumsIdTracksGet) | **GET** /api/albums/{id}/tracks |  |
+| [**apiAlbumsIdUserCollectionsGet**](AlbumApiApi.md#apiAlbumsIdUserCollectionsGet) | **GET** /api/albums/{id}/user-collections |  |
+| [**apiAlbumsNamesGet**](AlbumApiApi.md#apiAlbumsNamesGet) | **GET** /api/albums/names |  |
+| [**apiAlbumsNewGet**](AlbumApiApi.md#apiAlbumsNewGet) | **GET** /api/albums/new |  |
+| [**apiAlbumsTopGet**](AlbumApiApi.md#apiAlbumsTopGet) | **GET** /api/albums/top |  |
 
 
 
@@ -62,9 +62,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
 
 ### Return type
 
@@ -126,10 +126,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -141,7 +141,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: Not defined
 
 
@@ -213,31 +213,31 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **discTypes** | [**DiscType**](.md)|  | [optional] [enum: Unknown, Album, Single, EP, SplitAlbum, Compilation, Video, Artbook, Game, Fanmade, Instrumental, Other]
- **tagName** | [**List&lt;String&gt;**](String.md)|  | [optional]
- **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **childTags** | **Boolean**|  | [optional] [default to false]
- **artistId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **artistParticipationStatus** | [**ArtistAlbumParticipationStatus**](.md)|  | [optional] [enum: Everything, OnlyMainAlbums, OnlyCollaborations]
- **childVoicebanks** | **Boolean**|  | [optional] [default to false]
- **includeMembers** | **Boolean**|  | [optional] [default to false]
- **barcode** | **String**|  | [optional]
- **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked]
- **releaseDateAfter** | **LocalDateTime**|  | [optional]
- **releaseDateBefore** | **LocalDateTime**|  | [optional]
- **advancedFilters** | [**List&lt;AdvancedSearchFilterParams&gt;**](AdvancedSearchFilterParams.md)|  | [optional]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **sort** | [**AlbumSortRule**](.md)|  | [optional] [enum: None, Name, ReleaseDate, ReleaseDateWithNulls, AdditionDate, RatingAverage, RatingTotal, NameThenReleaseDate, CollectionCount]
- **preferAccurateMatches** | **Boolean**|  | [optional] [default to false]
- **deleted** | **Boolean**|  | [optional] [default to false]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **discTypes** | [**DiscType**](.md)|  | [optional] [enum: Unknown, Album, Single, EP, SplitAlbum, Compilation, Video, Artbook, Game, Fanmade, Instrumental, Other] |
+| **tagName** | [**List&lt;String&gt;**](String.md)|  | [optional] |
+| **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **childTags** | **Boolean**|  | [optional] [default to false] |
+| **artistId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **artistParticipationStatus** | [**ArtistAlbumParticipationStatus**](.md)|  | [optional] [enum: Everything, OnlyMainAlbums, OnlyCollaborations] |
+| **childVoicebanks** | **Boolean**|  | [optional] [default to false] |
+| **includeMembers** | **Boolean**|  | [optional] [default to false] |
+| **barcode** | **String**|  | [optional] |
+| **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked] |
+| **releaseDateAfter** | **LocalDateTime**|  | [optional] |
+| **releaseDateBefore** | **LocalDateTime**|  | [optional] |
+| **advancedFilters** | [**List&lt;AdvancedSearchFilterParams&gt;**](AdvancedSearchFilterParams.md)|  | [optional] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **sort** | [**AlbumSortRule**](.md)|  | [optional] [enum: None, Name, ReleaseDate, ReleaseDateWithNulls, AdditionDate, RatingAverage, RatingTotal, NameThenReleaseDate, CollectionCount] |
+| **preferAccurateMatches** | **Boolean**|  | [optional] [default to false] |
+| **deleted** | **Boolean**|  | [optional] [default to false] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -299,9 +299,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
 
 ### Return type
 
@@ -364,10 +364,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -379,7 +379,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -429,10 +429,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **notes** | **String**|  | [optional] [default to ]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **notes** | **String**|  | [optional] [default to ] |
 
 ### Return type
 
@@ -497,12 +497,12 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks]
- **songFields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks] |
+| **songFields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -565,10 +565,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **languageCode** | **String**|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **languageCode** | **String**|  | [optional] |
 
 ### Return type
 
@@ -631,10 +631,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **albumReviewContract** | [**AlbumReviewContract**](AlbumReviewContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **albumReviewContract** | [**AlbumReviewContract**](AlbumReviewContract.md)|  | [optional] |
 
 ### Return type
 
@@ -646,7 +646,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -696,10 +696,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **reviewId** | **Integer**|  |
- **id** | **String**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **reviewId** | **Integer**|  | |
+| **id** | **String**|  | |
 
 ### Return type
 
@@ -764,12 +764,12 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **field** | [**List&lt;String&gt;**](String.md)|  | [optional]
- **discNumber** | **Integer**|  | [optional]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **field** | [**List&lt;String&gt;**](String.md)|  | [optional] |
+| **discNumber** | **Integer**|  | [optional] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -833,11 +833,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -900,10 +900,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -967,11 +967,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **maxResults** | **Integer**|  | [optional] [default to 15]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **maxResults** | **Integer**|  | [optional] [default to 15] |
 
 ### Return type
 
@@ -1034,10 +1034,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
- **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks] |
 
 ### Return type
 
@@ -1101,11 +1101,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ignoreIds** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
- **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **ignoreIds** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks] |
 
 ### Return type
 

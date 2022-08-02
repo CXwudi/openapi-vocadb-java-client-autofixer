@@ -31,6 +31,7 @@ import mikufan.cx.vocadbapiclient.model.LocalizedStringContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventForApiContract;
 import mikufan.cx.vocadbapiclient.model.WebLinkForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * ReleaseEventSeriesForApiContract
@@ -49,8 +50,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   ReleaseEventSeriesForApiContract.JSON_PROPERTY_VERSION,
   ReleaseEventSeriesForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@JsonTypeName("ReleaseEventSeriesForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class ReleaseEventSeriesForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -88,6 +88,8 @@ public class ReleaseEventSeriesForApiContract {
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
   private List<WebLinkForApiContract> webLinks = null;
 
+  public ReleaseEventSeriesForApiContract() {
+  }
 
   public ReleaseEventSeriesForApiContract additionalNames(String additionalNames) {
     

@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.DiscMediaType;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * AlbumDiscPropertiesContract
@@ -34,8 +35,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   AlbumDiscPropertiesContract.JSON_PROPERTY_MEDIA_TYPE,
   AlbumDiscPropertiesContract.JSON_PROPERTY_NAME
 })
-@JsonTypeName("AlbumDiscPropertiesContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class AlbumDiscPropertiesContract {
   public static final String JSON_PROPERTY_DISC_NUMBER = "discNumber";
   private Integer discNumber;
@@ -49,6 +49,8 @@ public class AlbumDiscPropertiesContract {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;
 
+  public AlbumDiscPropertiesContract() {
+  }
 
   public AlbumDiscPropertiesContract discNumber(Integer discNumber) {
     

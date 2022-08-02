@@ -28,6 +28,7 @@ import mikufan.cx.vocadbapiclient.model.CommentForApiContractPartialFindResult;
 import mikufan.cx.vocadbapiclient.model.ContentLanguagePreference;
 import mikufan.cx.vocadbapiclient.model.CreateReportModel;
 import mikufan.cx.vocadbapiclient.model.DiscType;
+import mikufan.cx.vocadbapiclient.model.EntryEditDataContract;
 import mikufan.cx.vocadbapiclient.model.EntryType;
 import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.LogicalGrouping;
@@ -57,6 +58,8 @@ import mikufan.cx.vocadbapiclient.model.UserSortRule;
 import org.junit.Test;
 import org.junit.Ignore;
 
+import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -198,7 +201,7 @@ public class UserApiApiTest {
     public void apiUsersCurrentRefreshEntryEditPostTest() {
         EntryType entryType = null;
         Integer entryId = null;
-        api.apiUsersCurrentRefreshEntryEditPost(entryType, entryId);
+        EntryEditDataContract response = api.apiUsersCurrentRefreshEntryEditPost(entryType, entryId);
 
         // TODO: test validations
     }
@@ -291,7 +294,8 @@ public class UserApiApiTest {
         NameMatchMode nameMatchMode = null;
         AlbumOptionalFields fields = null;
         ContentLanguagePreference lang = null;
-        AlbumForUserForApiContractPartialFindResult response = api.apiUsersIdAlbumsGet(id, query, tagId, tag, artistId, purchaseStatuses, releaseEventId, albumTypes, advancedFilters, start, maxResults, getTotalCount, sort, nameMatchMode, fields, lang);
+        MediaType mediaType = null;
+        AlbumForUserForApiContractPartialFindResult response = api.apiUsersIdAlbumsGet(id, query, tagId, tag, artistId, purchaseStatuses, releaseEventId, albumTypes, advancedFilters, start, maxResults, getTotalCount, sort, nameMatchMode, fields, lang, mediaType);
 
         // TODO: test validations
     }

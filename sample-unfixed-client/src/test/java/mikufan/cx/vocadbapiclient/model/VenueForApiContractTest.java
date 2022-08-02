@@ -79,6 +79,14 @@ public class VenueForApiContractTest {
     }
 
     /**
+     * Test the property 'deleted'
+     */
+    @Test
+    public void deletedTest() {
+        // TODO: test deleted
+    }
+
+    /**
      * Test the property 'description'
      */
     @Test

@@ -30,6 +30,7 @@ import mikufan.cx.vocadbapiclient.model.OptionalGeoPointContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventContract;
 import mikufan.cx.vocadbapiclient.model.WebLinkForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * VenueForApiContract
@@ -39,6 +40,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   VenueForApiContract.JSON_PROPERTY_ADDRESS,
   VenueForApiContract.JSON_PROPERTY_ADDRESS_COUNTRY_CODE,
   VenueForApiContract.JSON_PROPERTY_COORDINATES,
+  VenueForApiContract.JSON_PROPERTY_DELETED,
   VenueForApiContract.JSON_PROPERTY_DESCRIPTION,
   VenueForApiContract.JSON_PROPERTY_EVENTS,
   VenueForApiContract.JSON_PROPERTY_ID,
@@ -48,8 +50,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   VenueForApiContract.JSON_PROPERTY_VERSION,
   VenueForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@JsonTypeName("VenueForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class VenueForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -62,6 +63,9 @@ public class VenueForApiContract {
 
   public static final String JSON_PROPERTY_COORDINATES = "coordinates";
   private OptionalGeoPointContract coordinates;
+
+  public static final String JSON_PROPERTY_DELETED = "deleted";
+  private Boolean deleted;
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
   private String description;
@@ -87,6 +91,8 @@ public class VenueForApiContract {
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
   private List<WebLinkForApiContract> webLinks = null;
 
+  public VenueForApiContract() {
+  }
 
   public VenueForApiContract additionalNames(String additionalNames) {
     
@@ -193,6 +199,33 @@ public class VenueForApiContract {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCoordinates(OptionalGeoPointContract coordinates) {
     this.coordinates = coordinates;
+  }
+
+
+  public VenueForApiContract deleted(Boolean deleted) {
+    
+    this.deleted = deleted;
+    return this;
+  }
+
+   /**
+   * Get deleted
+   * @return deleted
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+  @JsonProperty(JSON_PROPERTY_DELETED)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Boolean getDeleted() {
+    return deleted;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_DELETED)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setDeleted(Boolean deleted) {
+    this.deleted = deleted;
   }
 
 
@@ -449,6 +482,7 @@ public class VenueForApiContract {
         Objects.equals(this.address, venueForApiContract.address) &&
         Objects.equals(this.addressCountryCode, venueForApiContract.addressCountryCode) &&
         Objects.equals(this.coordinates, venueForApiContract.coordinates) &&
+        Objects.equals(this.deleted, venueForApiContract.deleted) &&
         Objects.equals(this.description, venueForApiContract.description) &&
         Objects.equals(this.events, venueForApiContract.events) &&
         Objects.equals(this.id, venueForApiContract.id) &&
@@ -461,7 +495,7 @@ public class VenueForApiContract {
 
   @Override
   public int hashCode() {
-    return Objects.hash(additionalNames, address, addressCountryCode, coordinates, description, events, id, name, names, status, version, webLinks);
+    return Objects.hash(additionalNames, address, addressCountryCode, coordinates, deleted, description, events, id, name, names, status, version, webLinks);
   }
 
   @Override
@@ -472,6 +506,7 @@ public class VenueForApiContract {
     sb.append("    address: ").append(toIndentedString(address)).append("\n");
     sb.append("    addressCountryCode: ").append(toIndentedString(addressCountryCode)).append("\n");
     sb.append("    coordinates: ").append(toIndentedString(coordinates)).append("\n");
+    sb.append("    deleted: ").append(toIndentedString(deleted)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    events: ").append(toIndentedString(events)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");

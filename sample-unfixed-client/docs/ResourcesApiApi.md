@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiResourcesCultureCodeGet**](ResourcesApiApi.md#apiResourcesCultureCodeGet) | **GET** /api/resources/{cultureCode} | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiResourcesCultureCodeGet**](ResourcesApiApi.md#apiResourcesCultureCodeGet) | **GET** /api/resources/{cultureCode} |  |
 
 
 
@@ -49,10 +49,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **cultureCode** | **String**|  |
- **setNames** | [**List&lt;String&gt;**](String.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **cultureCode** | **String**|  | |
+| **setNames** | [**List&lt;String&gt;**](String.md)|  | [optional] |
 
 ### Return type
 

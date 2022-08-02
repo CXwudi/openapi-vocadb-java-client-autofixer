@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * ReleaseEventSeriesForApiContractPartialFindResult
@@ -35,8 +36,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   ReleaseEventSeriesForApiContractPartialFindResult.JSON_PROPERTY_TERM,
   ReleaseEventSeriesForApiContractPartialFindResult.JSON_PROPERTY_TOTAL_COUNT
 })
-@JsonTypeName("ReleaseEventSeriesForApiContractPartialFindResult")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class ReleaseEventSeriesForApiContractPartialFindResult {
   public static final String JSON_PROPERTY_ITEMS = "items";
   private List<ReleaseEventSeriesForApiContract> items = null;
@@ -47,6 +47,8 @@ public class ReleaseEventSeriesForApiContractPartialFindResult {
   public static final String JSON_PROPERTY_TOTAL_COUNT = "totalCount";
   private Integer totalCount;
 
+  public ReleaseEventSeriesForApiContractPartialFindResult() {
+  }
 
   public ReleaseEventSeriesForApiContractPartialFindResult items(List<ReleaseEventSeriesForApiContract> items) {
     

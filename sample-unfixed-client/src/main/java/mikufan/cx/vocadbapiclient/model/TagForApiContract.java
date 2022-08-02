@@ -33,6 +33,7 @@ import mikufan.cx.vocadbapiclient.model.LocalizedStringWithIdContract;
 import mikufan.cx.vocadbapiclient.model.TagBaseContract;
 import mikufan.cx.vocadbapiclient.model.WebLinkForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * TagForApiContract
@@ -58,8 +59,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   TagForApiContract.JSON_PROPERTY_VERSION,
   TagForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@JsonTypeName("TagForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class TagForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -118,6 +118,8 @@ public class TagForApiContract {
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
   private List<WebLinkForApiContract> webLinks = null;
 
+  public TagForApiContract() {
+  }
 
   public TagForApiContract additionalNames(String additionalNames) {
     

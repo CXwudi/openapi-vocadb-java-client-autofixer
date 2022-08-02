@@ -32,7 +32,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 @Component("mikufan.cx.vocadbapiclient.api.ActivityEntryApiApi")
 public class ActivityEntryApiApi {
     private ApiClient apiClient;
@@ -95,37 +95,36 @@ public class ActivityEntryApiApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ResponseEntity<ActivityEntryForApiContractPartialFindResult> apiActivityEntriesGetWithHttpInfo(LocalDateTime before, LocalDateTime since, Integer userId, EntryEditEvent editEvent, EntryType entryType, Integer maxResults, Boolean getTotalCount, ActivityEntryOptionalFields fields, EntryOptionalFields entryFields, ContentLanguagePreference lang, ActivityEntrySortRule sortRule) throws RestClientException {
-        Object postBody = null;
+        Object localVarPostBody = null;
         
-        String path = apiClient.expandPath("/api/activityEntries", Collections.<String, Object>emptyMap());
 
-        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, String> cookieParams = new LinkedMultiValueMap<String, String>();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "before", before));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "since", since));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "userId", userId));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "editEvent", editEvent));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryType", entryType));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "getTotalCount", getTotalCount));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryFields", entryFields));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "sortRule", sortRule));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "before", before));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "since", since));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "userId", userId));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "editEvent", editEvent));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryType", entryType));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "getTotalCount", getTotalCount));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryFields", entryFields));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "sortRule", sortRule));
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-        final String[] contentTypes = {  };
-        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-        String[] authNames = new String[] {  };
+        String[] localVarAuthNames = new String[] {  };
 
-        ParameterizedTypeReference<ActivityEntryForApiContractPartialFindResult> returnType = new ParameterizedTypeReference<ActivityEntryForApiContractPartialFindResult>() {};
-        return apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, cookieParams, formParams, localVarAccept, contentType, authNames, returnType);
+        ParameterizedTypeReference<ActivityEntryForApiContractPartialFindResult> localReturnType = new ParameterizedTypeReference<ActivityEntryForApiContractPartialFindResult>() {};
+        return apiClient.invokeAPI("/api/activityEntries", HttpMethod.GET, Collections.<String, Object>emptyMap(), localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
 }

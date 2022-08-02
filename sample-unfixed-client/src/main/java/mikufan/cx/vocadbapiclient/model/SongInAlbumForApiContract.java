@@ -23,7 +23,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
+import mikufan.cx.vocadbapiclient.model.SongVoteRating;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * SongInAlbumForApiContract
@@ -32,11 +34,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   SongInAlbumForApiContract.JSON_PROPERTY_DISC_NUMBER,
   SongInAlbumForApiContract.JSON_PROPERTY_ID,
   SongInAlbumForApiContract.JSON_PROPERTY_NAME,
+  SongInAlbumForApiContract.JSON_PROPERTY_RATING,
   SongInAlbumForApiContract.JSON_PROPERTY_SONG,
   SongInAlbumForApiContract.JSON_PROPERTY_TRACK_NUMBER
 })
-@JsonTypeName("SongInAlbumForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class SongInAlbumForApiContract {
   public static final String JSON_PROPERTY_DISC_NUMBER = "discNumber";
   private Integer discNumber;
@@ -47,12 +49,17 @@ public class SongInAlbumForApiContract {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;
 
+  public static final String JSON_PROPERTY_RATING = "rating";
+  private SongVoteRating rating;
+
   public static final String JSON_PROPERTY_SONG = "song";
   private SongForApiContract song;
 
   public static final String JSON_PROPERTY_TRACK_NUMBER = "trackNumber";
   private Integer trackNumber;
 
+  public SongInAlbumForApiContract() {
+  }
 
   public SongInAlbumForApiContract discNumber(Integer discNumber) {
     
@@ -135,6 +142,33 @@ public class SongInAlbumForApiContract {
   }
 
 
+  public SongInAlbumForApiContract rating(SongVoteRating rating) {
+    
+    this.rating = rating;
+    return this;
+  }
+
+   /**
+   * Get rating
+   * @return rating
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+  @JsonProperty(JSON_PROPERTY_RATING)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public SongVoteRating getRating() {
+    return rating;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_RATING)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setRating(SongVoteRating rating) {
+    this.rating = rating;
+  }
+
+
   public SongInAlbumForApiContract song(SongForApiContract song) {
     
     this.song = song;
@@ -201,13 +235,14 @@ public class SongInAlbumForApiContract {
     return Objects.equals(this.discNumber, songInAlbumForApiContract.discNumber) &&
         Objects.equals(this.id, songInAlbumForApiContract.id) &&
         Objects.equals(this.name, songInAlbumForApiContract.name) &&
+        Objects.equals(this.rating, songInAlbumForApiContract.rating) &&
         Objects.equals(this.song, songInAlbumForApiContract.song) &&
         Objects.equals(this.trackNumber, songInAlbumForApiContract.trackNumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(discNumber, id, name, song, trackNumber);
+    return Objects.hash(discNumber, id, name, rating, song, trackNumber);
   }
 
   @Override
@@ -217,6 +252,7 @@ public class SongInAlbumForApiContract {
     sb.append("    discNumber: ").append(toIndentedString(discNumber)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    song: ").append(toIndentedString(song)).append("\n");
     sb.append("    trackNumber: ").append(toIndentedString(trackNumber)).append("\n");
     sb.append("}");

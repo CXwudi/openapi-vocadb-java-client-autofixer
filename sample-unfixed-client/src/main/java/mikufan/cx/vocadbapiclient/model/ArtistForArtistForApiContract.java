@@ -25,6 +25,7 @@ import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.ArtistContract;
 import mikufan.cx.vocadbapiclient.model.ArtistLinkType;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * ArtistForArtistForApiContract
@@ -33,8 +34,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   ArtistForArtistForApiContract.JSON_PROPERTY_ARTIST,
   ArtistForArtistForApiContract.JSON_PROPERTY_LINK_TYPE
 })
-@JsonTypeName("ArtistForArtistForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class ArtistForArtistForApiContract {
   public static final String JSON_PROPERTY_ARTIST = "artist";
   private ArtistContract artist;
@@ -42,6 +42,8 @@ public class ArtistForArtistForApiContract {
   public static final String JSON_PROPERTY_LINK_TYPE = "linkType";
   private ArtistLinkType linkType;
 
+  public ArtistForArtistForApiContract() {
+  }
 
   public ArtistForArtistForApiContract artist(ArtistContract artist) {
     

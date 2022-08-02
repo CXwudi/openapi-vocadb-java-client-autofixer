@@ -25,6 +25,7 @@ import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import mikufan.cx.vocadbapiclient.model.UserInboxType;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * UserMessageContract
@@ -40,8 +41,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   UserMessageContract.JSON_PROPERTY_SENDER,
   UserMessageContract.JSON_PROPERTY_SUBJECT
 })
-@JsonTypeName("UserMessageContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class UserMessageContract {
   public static final String JSON_PROPERTY_BODY = "body";
   private String body;
@@ -70,6 +70,8 @@ public class UserMessageContract {
   public static final String JSON_PROPERTY_SUBJECT = "subject";
   private String subject;
 
+  public UserMessageContract() {
+  }
 
   public UserMessageContract body(String body) {
     

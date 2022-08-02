@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.UserReportType;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * CreateReportModel
@@ -32,8 +33,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   CreateReportModel.JSON_PROPERTY_REPORT_TYPE,
   CreateReportModel.JSON_PROPERTY_REASON
 })
-@JsonTypeName("CreateReportModel")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class CreateReportModel {
   public static final String JSON_PROPERTY_REPORT_TYPE = "reportType";
   private UserReportType reportType;
@@ -41,6 +41,8 @@ public class CreateReportModel {
   public static final String JSON_PROPERTY_REASON = "reason";
   private String reason;
 
+  public CreateReportModel() {
+  }
 
   public CreateReportModel reportType(UserReportType reportType) {
     

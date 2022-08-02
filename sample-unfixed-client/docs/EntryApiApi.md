@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiEntriesGet**](EntryApiApi.md#apiEntriesGet) | **GET** /api/entries | 
-[**apiEntriesNamesGet**](EntryApiApi.md#apiEntriesNamesGet) | **GET** /api/entries/names | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiEntriesGet**](EntryApiApi.md#apiEntriesGet) | **GET** /api/entries |  |
+| [**apiEntriesNamesGet**](EntryApiApi.md#apiEntriesNamesGet) | **GET** /api/entries/names |  |
 
 
 
@@ -61,21 +61,21 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **tagName** | [**List&lt;String&gt;**](String.md)|  | [optional]
- **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **childTags** | **Boolean**|  | [optional] [default to false]
- **entryTypes** | [**EntryTypes**](.md)|  | [optional] [enum: Nothing, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue]
- **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **sort** | [**EntrySortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, ActivityDate]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **fields** | [**EntryOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Description, MainPicture, Names, PVs, Tags, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **tagName** | [**List&lt;String&gt;**](String.md)|  | [optional] |
+| **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **childTags** | **Boolean**|  | [optional] [default to false] |
+| **entryTypes** | [**EntryTypes**](.md)|  | [optional] [enum: Nothing, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue] |
+| **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **sort** | [**EntrySortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, ActivityDate] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **fields** | [**EntryOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Description, MainPicture, Names, PVs, Tags, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -139,11 +139,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **maxResults** | **Integer**|  | [optional] [default to 10]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
 
 ### Return type
 

@@ -25,6 +25,7 @@ import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * AlbumReviewContract
@@ -38,8 +39,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   AlbumReviewContract.JSON_PROPERTY_TITLE,
   AlbumReviewContract.JSON_PROPERTY_USER
 })
-@JsonTypeName("AlbumReviewContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class AlbumReviewContract {
   public static final String JSON_PROPERTY_ID = "id";
   private Integer id;
@@ -62,6 +62,8 @@ public class AlbumReviewContract {
   public static final String JSON_PROPERTY_USER = "user";
   private UserForApiContract user;
 
+  public AlbumReviewContract() {
+  }
 
   public AlbumReviewContract id(Integer id) {
     

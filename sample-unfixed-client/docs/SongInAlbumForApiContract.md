@@ -5,13 +5,14 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**discNumber** | **Integer** |  |  [optional]
-**id** | **Integer** |  |  [optional]
-**name** | **String** |  |  [optional]
-**song** | [**SongForApiContract**](SongForApiContract.md) |  |  [optional]
-**trackNumber** | **Integer** |  |  [optional]
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**discNumber** | **Integer** |  |  [optional] |
+|**id** | **Integer** |  |  [optional] |
+|**name** | **String** |  |  [optional] |
+|**rating** | **SongVoteRating** |  |  [optional] |
+|**song** | [**SongForApiContract**](SongForApiContract.md) |  |  [optional] |
+|**trackNumber** | **Integer** |  |  [optional] |
 
 
 

@@ -2,22 +2,22 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiTagsByNameNameGet**](TagApiApi.md#apiTagsByNameNameGet) | **GET** /api/tags/byName/{name} | 
-[**apiTagsCategoryNamesGet**](TagApiApi.md#apiTagsCategoryNamesGet) | **GET** /api/tags/categoryNames | 
-[**apiTagsCommentsCommentIdDelete**](TagApiApi.md#apiTagsCommentsCommentIdDelete) | **DELETE** /api/tags/comments/{commentId} | 
-[**apiTagsCommentsCommentIdPost**](TagApiApi.md#apiTagsCommentsCommentIdPost) | **POST** /api/tags/comments/{commentId} | 
-[**apiTagsGet**](TagApiApi.md#apiTagsGet) | **GET** /api/tags | 
-[**apiTagsIdDelete**](TagApiApi.md#apiTagsIdDelete) | **DELETE** /api/tags/{id} | 
-[**apiTagsIdGet**](TagApiApi.md#apiTagsIdGet) | **GET** /api/tags/{id} | 
-[**apiTagsNamesGet**](TagApiApi.md#apiTagsNamesGet) | **GET** /api/tags/names | 
-[**apiTagsPost**](TagApiApi.md#apiTagsPost) | **POST** /api/tags | 
-[**apiTagsTagIdChildrenGet**](TagApiApi.md#apiTagsTagIdChildrenGet) | **GET** /api/tags/{tagId}/children | 
-[**apiTagsTagIdCommentsGet**](TagApiApi.md#apiTagsTagIdCommentsGet) | **GET** /api/tags/{tagId}/comments | 
-[**apiTagsTagIdCommentsPost**](TagApiApi.md#apiTagsTagIdCommentsPost) | **POST** /api/tags/{tagId}/comments | 
-[**apiTagsTagIdReportsPost**](TagApiApi.md#apiTagsTagIdReportsPost) | **POST** /api/tags/{tagId}/reports | 
-[**apiTagsTopGet**](TagApiApi.md#apiTagsTopGet) | **GET** /api/tags/top | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiTagsByNameNameGet**](TagApiApi.md#apiTagsByNameNameGet) | **GET** /api/tags/byName/{name} |  |
+| [**apiTagsCategoryNamesGet**](TagApiApi.md#apiTagsCategoryNamesGet) | **GET** /api/tags/categoryNames |  |
+| [**apiTagsCommentsCommentIdDelete**](TagApiApi.md#apiTagsCommentsCommentIdDelete) | **DELETE** /api/tags/comments/{commentId} |  |
+| [**apiTagsCommentsCommentIdPost**](TagApiApi.md#apiTagsCommentsCommentIdPost) | **POST** /api/tags/comments/{commentId} |  |
+| [**apiTagsGet**](TagApiApi.md#apiTagsGet) | **GET** /api/tags |  |
+| [**apiTagsIdDelete**](TagApiApi.md#apiTagsIdDelete) | **DELETE** /api/tags/{id} |  |
+| [**apiTagsIdGet**](TagApiApi.md#apiTagsIdGet) | **GET** /api/tags/{id} |  |
+| [**apiTagsNamesGet**](TagApiApi.md#apiTagsNamesGet) | **GET** /api/tags/names |  |
+| [**apiTagsPost**](TagApiApi.md#apiTagsPost) | **POST** /api/tags |  |
+| [**apiTagsTagIdChildrenGet**](TagApiApi.md#apiTagsTagIdChildrenGet) | **GET** /api/tags/{tagId}/children |  |
+| [**apiTagsTagIdCommentsGet**](TagApiApi.md#apiTagsTagIdCommentsGet) | **GET** /api/tags/{tagId}/comments |  |
+| [**apiTagsTagIdCommentsPost**](TagApiApi.md#apiTagsTagIdCommentsPost) | **POST** /api/tags/{tagId}/comments |  |
+| [**apiTagsTagIdReportsPost**](TagApiApi.md#apiTagsTagIdReportsPost) | **POST** /api/tags/{tagId}/reports |  |
+| [**apiTagsTopGet**](TagApiApi.md#apiTagsTopGet) | **GET** /api/tags/top |  |
 
 
 
@@ -63,11 +63,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **String**|  |
- **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **name** | **String**|  | |
+| **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -130,10 +130,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
 
 ### Return type
 
@@ -194,9 +194,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
 
 ### Return type
 
@@ -258,10 +258,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -273,7 +273,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: Not defined
 
 
@@ -334,20 +334,20 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **allowChildren** | **Boolean**|  | [optional] [default to true]
- **categoryName** | **String**|  | [optional] [default to ]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **sort** | [**TagSortRule**](.md)|  | [optional] [enum: Nothing, Name, AdditionDate, UsageCount]
- **preferAccurateMatches** | **Boolean**|  | [optional] [default to false]
- **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
- **target** | [**TagTargetTypes**](.md)|  | [optional] [enum: Nothing, Album, Artist, AlbumArtist, Event, Song, AlbumSong, ArtistSong, All]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **allowChildren** | **Boolean**|  | [optional] [default to true] |
+| **categoryName** | **String**|  | [optional] [default to ] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **sort** | [**TagSortRule**](.md)|  | [optional] [enum: Nothing, Name, AdditionDate, UsageCount] |
+| **preferAccurateMatches** | **Boolean**|  | [optional] [default to false] |
+| **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **target** | [**TagTargetTypes**](.md)|  | [optional] [enum: Nothing, Album, Artist, AlbumArtist, Event, Song, AlbumSong, ArtistSong, SongList, All] |
 
 ### Return type
 
@@ -410,11 +410,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **notes** | **String**|  | [optional] [default to ]
- **hardDelete** | **Boolean**|  | [optional] [default to false]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **notes** | **String**|  | [optional] [default to ] |
+| **hardDelete** | **Boolean**|  | [optional] [default to false] |
 
 ### Return type
 
@@ -478,11 +478,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -546,11 +546,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **allowAliases** | **Boolean**|  | [optional] [default to true]
- **maxResults** | **Integer**|  | [optional] [default to 10]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **allowAliases** | **Boolean**|  | [optional] [default to true] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
 
 ### Return type
 
@@ -612,9 +612,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **String**|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **name** | **String**|  | [optional] |
 
 ### Return type
 
@@ -678,11 +678,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tagId** | **Integer**|  |
- **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **tagId** | **Integer**|  | |
+| **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -744,9 +744,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tagId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **tagId** | **Integer**|  | |
 
 ### Return type
 
@@ -809,10 +809,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tagId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **tagId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -824,7 +824,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -876,12 +876,12 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tagId** | **Integer**|  |
- **reportType** | [**TagReportType**](.md)|  | [optional] [enum: InvalidInfo, Duplicate, Inappropriate, Other]
- **notes** | **String**|  | [optional]
- **versionNumber** | **Integer**|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **tagId** | **Integer**|  | |
+| **reportType** | [**TagReportType**](.md)|  | [optional] [enum: InvalidInfo, Duplicate, Inappropriate, Other] |
+| **notes** | **String**|  | [optional] |
+| **versionNumber** | **Integer**|  | [optional] |
 
 ### Return type
 
@@ -946,12 +946,12 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **categoryName** | **String**|  | [optional]
- **entryType** | [**EntryType**](.md)|  | [optional] [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue]
- **maxResults** | **Integer**|  | [optional] [default to 15]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **categoryName** | **String**|  | [optional] |
+| **entryType** | [**EntryType**](.md)|  | [optional] [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue] |
+| **maxResults** | **Integer**|  | [optional] [default to 15] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 

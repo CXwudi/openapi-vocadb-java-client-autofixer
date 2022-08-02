@@ -17,10 +17,13 @@ import mikufan.cx.vocadbapiclient.model.ContentLanguagePreference;
 import mikufan.cx.vocadbapiclient.model.NameMatchMode;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesForApiContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesForApiContractPartialFindResult;
+import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesForEditForApiContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesOptionalFields;
 import org.junit.Test;
 import org.junit.Ignore;
 
+import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -71,6 +74,22 @@ public class ReleaseEventSeriesApiApiTest {
         String notes = null;
         Boolean hardDelete = null;
         api.apiReleaseEventSeriesIdDelete(id, notes, hardDelete);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * 
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void apiReleaseEventSeriesIdForEditGetTest() {
+        Integer id = null;
+        ReleaseEventSeriesForEditForApiContract response = api.apiReleaseEventSeriesIdForEditGet(id);
 
         // TODO: test validations
     }

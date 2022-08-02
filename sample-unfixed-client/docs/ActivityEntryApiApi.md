@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiActivityEntriesGet**](ActivityEntryApiApi.md#apiActivityEntriesGet) | **GET** /api/activityEntries | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiActivityEntriesGet**](ActivityEntryApiApi.md#apiActivityEntriesGet) | **GET** /api/activityEntries |  |
 
 
 
@@ -58,19 +58,19 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **before** | **LocalDateTime**|  | [optional]
- **since** | **LocalDateTime**|  | [optional]
- **userId** | **Integer**|  | [optional]
- **editEvent** | [**EntryEditEvent**](.md)|  | [optional] [enum: Created, Updated, Deleted, Restored]
- **entryType** | [**EntryType**](.md)|  | [optional] [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue]
- **maxResults** | **Integer**|  | [optional] [default to 50]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **fields** | [**ActivityEntryOptionalFields**](.md)|  | [optional] [enum: None, ArchivedVersion, Entry]
- **entryFields** | [**EntryOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Description, MainPicture, Names, PVs, Tags, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
- **sortRule** | [**ActivityEntrySortRule**](.md)|  | [optional] [enum: CreateDateDescending, CreateDate]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **before** | **LocalDateTime**|  | [optional] |
+| **since** | **LocalDateTime**|  | [optional] |
+| **userId** | **Integer**|  | [optional] |
+| **editEvent** | [**EntryEditEvent**](.md)|  | [optional] [enum: Created, Updated, Deleted, Restored] |
+| **entryType** | [**EntryType**](.md)|  | [optional] [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue] |
+| **maxResults** | **Integer**|  | [optional] [default to 50] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **fields** | [**ActivityEntryOptionalFields**](.md)|  | [optional] [enum: None, ArchivedVersion, Entry] |
+| **entryFields** | [**EntryOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Description, MainPicture, Names, PVs, Tags, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **sortRule** | [**ActivityEntrySortRule**](.md)|  | [optional] [enum: CreateDateDescending, CreateDate] |
 
 ### Return type
 

@@ -6,6 +6,7 @@ import mikufan.cx.vocadbapiclient.model.ContentLanguagePreference;
 import mikufan.cx.vocadbapiclient.model.NameMatchMode;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesForApiContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesForApiContractPartialFindResult;
+import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesForEditForApiContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesOptionalFields;
 
 import java.util.Collections;
@@ -29,7 +30,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 @Component("mikufan.cx.vocadbapiclient.api.ReleaseEventSeriesApiApi")
 public class ReleaseEventSeriesApiApi {
     private ApiClient apiClient;
@@ -84,34 +85,33 @@ public class ReleaseEventSeriesApiApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ResponseEntity<ReleaseEventSeriesForApiContractPartialFindResult> apiReleaseEventSeriesGetWithHttpInfo(String query, ReleaseEventSeriesOptionalFields fields, Integer start, Integer maxResults, Boolean getTotalCount, NameMatchMode nameMatchMode, ContentLanguagePreference lang) throws RestClientException {
-        Object postBody = null;
+        Object localVarPostBody = null;
         
-        String path = apiClient.expandPath("/api/releaseEventSeries", Collections.<String, Object>emptyMap());
 
-        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, String> cookieParams = new LinkedMultiValueMap<String, String>();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "query", query));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "start", start));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "getTotalCount", getTotalCount));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "nameMatchMode", nameMatchMode));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "query", query));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "start", start));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "getTotalCount", getTotalCount));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "nameMatchMode", nameMatchMode));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-        final String[] contentTypes = {  };
-        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-        String[] authNames = new String[] {  };
+        String[] localVarAuthNames = new String[] {  };
 
-        ParameterizedTypeReference<ReleaseEventSeriesForApiContractPartialFindResult> returnType = new ParameterizedTypeReference<ReleaseEventSeriesForApiContractPartialFindResult>() {};
-        return apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, cookieParams, formParams, localVarAccept, contentType, authNames, returnType);
+        ParameterizedTypeReference<ReleaseEventSeriesForApiContractPartialFindResult> localReturnType = new ParameterizedTypeReference<ReleaseEventSeriesForApiContractPartialFindResult>() {};
+        return apiClient.invokeAPI("/api/releaseEventSeries", HttpMethod.GET, Collections.<String, Object>emptyMap(), localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
     /**
      * 
@@ -137,7 +137,7 @@ public class ReleaseEventSeriesApiApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ResponseEntity<Void> apiReleaseEventSeriesIdDeleteWithHttpInfo(Integer id, String notes, Boolean hardDelete) throws RestClientException {
-        Object postBody = null;
+        Object localVarPostBody = null;
         
         // verify the required parameter 'id' is set
         if (id == null) {
@@ -147,25 +147,73 @@ public class ReleaseEventSeriesApiApi {
         // create path and map variables
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
-        String path = apiClient.expandPath("/api/releaseEventSeries/{id}", uriVariables);
 
-        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, String> cookieParams = new LinkedMultiValueMap<String, String>();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "hardDelete", hardDelete));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "hardDelete", hardDelete));
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-        final String[] contentTypes = {  };
-        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-        String[] authNames = new String[] {  };
+        String[] localVarAuthNames = new String[] {  };
 
-        ParameterizedTypeReference<Void> returnType = new ParameterizedTypeReference<Void>() {};
-        return apiClient.invokeAPI(path, HttpMethod.DELETE, queryParams, postBody, headerParams, cookieParams, formParams, localVarAccept, contentType, authNames, returnType);
+        ParameterizedTypeReference<Void> localReturnType = new ParameterizedTypeReference<Void>() {};
+        return apiClient.invokeAPI("/api/releaseEventSeries/{id}", HttpMethod.DELETE, uriVariables, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
+    }
+    /**
+     * 
+     * 
+     * <p><b>200</b> - Success
+     * @param id  (required)
+     * @return ReleaseEventSeriesForEditForApiContract
+     * @throws RestClientException if an error occurs while attempting to invoke the API
+     */
+    public ReleaseEventSeriesForEditForApiContract apiReleaseEventSeriesIdForEditGet(Integer id) throws RestClientException {
+        return apiReleaseEventSeriesIdForEditGetWithHttpInfo(id).getBody();
+    }
+
+    /**
+     * 
+     * 
+     * <p><b>200</b> - Success
+     * @param id  (required)
+     * @return ResponseEntity&lt;ReleaseEventSeriesForEditForApiContract&gt;
+     * @throws RestClientException if an error occurs while attempting to invoke the API
+     */
+    public ResponseEntity<ReleaseEventSeriesForEditForApiContract> apiReleaseEventSeriesIdForEditGetWithHttpInfo(Integer id) throws RestClientException {
+        Object localVarPostBody = null;
+        
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Missing the required parameter 'id' when calling apiReleaseEventSeriesIdForEditGet");
+        }
+        
+        // create path and map variables
+        final Map<String, Object> uriVariables = new HashMap<String, Object>();
+        uriVariables.put("id", id);
+
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
+
+        final String[] localVarAccepts = { 
+            "text/plain", "application/json", "text/json"
+         };
+        final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+        String[] localVarAuthNames = new String[] {  };
+
+        ParameterizedTypeReference<ReleaseEventSeriesForEditForApiContract> localReturnType = new ParameterizedTypeReference<ReleaseEventSeriesForEditForApiContract>() {};
+        return apiClient.invokeAPI("/api/releaseEventSeries/{id}/for-edit", HttpMethod.GET, uriVariables, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
     /**
      * 
@@ -192,7 +240,7 @@ public class ReleaseEventSeriesApiApi {
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
     public ResponseEntity<ReleaseEventSeriesForApiContract> apiReleaseEventSeriesIdGetWithHttpInfo(Integer id, ReleaseEventSeriesOptionalFields fields, ContentLanguagePreference lang) throws RestClientException {
-        Object postBody = null;
+        Object localVarPostBody = null;
         
         // verify the required parameter 'id' is set
         if (id == null) {
@@ -202,26 +250,25 @@ public class ReleaseEventSeriesApiApi {
         // create path and map variables
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("id", id);
-        String path = apiClient.expandPath("/api/releaseEventSeries/{id}", uriVariables);
 
-        final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        final HttpHeaders headerParams = new HttpHeaders();
-        final MultiValueMap<String, String> cookieParams = new LinkedMultiValueMap<String, String>();
-        final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
-        queryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-        final String[] contentTypes = {  };
-        final MediaType contentType = apiClient.selectHeaderContentType(contentTypes);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-        String[] authNames = new String[] {  };
+        String[] localVarAuthNames = new String[] {  };
 
-        ParameterizedTypeReference<ReleaseEventSeriesForApiContract> returnType = new ParameterizedTypeReference<ReleaseEventSeriesForApiContract>() {};
-        return apiClient.invokeAPI(path, HttpMethod.GET, queryParams, postBody, headerParams, cookieParams, formParams, localVarAccept, contentType, authNames, returnType);
+        ParameterizedTypeReference<ReleaseEventSeriesForApiContract> localReturnType = new ParameterizedTypeReference<ReleaseEventSeriesForApiContract>() {};
+        return apiClient.invokeAPI("/api/releaseEventSeries/{id}", HttpMethod.GET, uriVariables, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
 }

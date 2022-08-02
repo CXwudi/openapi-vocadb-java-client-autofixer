@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.TagBaseContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * TagUsageForApiContract
@@ -32,8 +33,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   TagUsageForApiContract.JSON_PROPERTY_COUNT,
   TagUsageForApiContract.JSON_PROPERTY_TAG
 })
-@JsonTypeName("TagUsageForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class TagUsageForApiContract {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Integer count;
@@ -41,6 +41,8 @@ public class TagUsageForApiContract {
   public static final String JSON_PROPERTY_TAG = "tag";
   private TagBaseContract tag;
 
+  public TagUsageForApiContract() {
+  }
 
   public TagUsageForApiContract count(Integer count) {
     

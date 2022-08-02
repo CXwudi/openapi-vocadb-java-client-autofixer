@@ -24,59 +24,26 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
-import mikufan.cx.vocadbapiclient.model.EntryThumbContract;
+import mikufan.cx.vocadbapiclient.model.EntryThumbForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongInListEditContract;
 import mikufan.cx.vocadbapiclient.model.SongListFeaturedCategory;
-import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
 
 /**
- * Model tests for SongListForEditContract
+ * Model tests for SongListForEditForApiContract
  */
-public class SongListForEditContractTest {
-    private final SongListForEditContract model = new SongListForEditContract();
+public class SongListForEditForApiContractTest {
+    private final SongListForEditForApiContract model = new SongListForEditForApiContract();
 
     /**
-     * Model tests for SongListForEditContract
+     * Model tests for SongListForEditForApiContract
      */
     @Test
-    public void testSongListForEditContract() {
-        // TODO: test SongListForEditContract
-    }
-
-    /**
-     * Test the property 'songLinks'
-     */
-    @Test
-    public void songLinksTest() {
-        // TODO: test songLinks
-    }
-
-    /**
-     * Test the property 'updateNotes'
-     */
-    @Test
-    public void updateNotesTest() {
-        // TODO: test updateNotes
-    }
-
-    /**
-     * Test the property 'author'
-     */
-    @Test
-    public void authorTest() {
-        // TODO: test author
-    }
-
-    /**
-     * Test the property 'canEdit'
-     */
-    @Test
-    public void canEditTest() {
-        // TODO: test canEdit
+    public void testSongListForEditForApiContract() {
+        // TODO: test SongListForEditForApiContract
     }
 
     /**
@@ -104,30 +71,6 @@ public class SongListForEditContractTest {
     }
 
     /**
-     * Test the property 'status'
-     */
-    @Test
-    public void statusTest() {
-        // TODO: test status
-    }
-
-    /**
-     * Test the property 'thumb'
-     */
-    @Test
-    public void thumbTest() {
-        // TODO: test thumb
-    }
-
-    /**
-     * Test the property 'version'
-     */
-    @Test
-    public void versionTest() {
-        // TODO: test version
-    }
-
-    /**
      * Test the property 'featuredCategory'
      */
     @Test
@@ -144,11 +87,43 @@ public class SongListForEditContractTest {
     }
 
     /**
+     * Test the property 'mainPicture'
+     */
+    @Test
+    public void mainPictureTest() {
+        // TODO: test mainPicture
+    }
+
+    /**
      * Test the property 'name'
      */
     @Test
     public void nameTest() {
         // TODO: test name
+    }
+
+    /**
+     * Test the property 'songLinks'
+     */
+    @Test
+    public void songLinksTest() {
+        // TODO: test songLinks
+    }
+
+    /**
+     * Test the property 'status'
+     */
+    @Test
+    public void statusTest() {
+        // TODO: test status
+    }
+
+    /**
+     * Test the property 'updateNotes'
+     */
+    @Test
+    public void updateNotesTest() {
+        // TODO: test updateNotes
     }
 
 }

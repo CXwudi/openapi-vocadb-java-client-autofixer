@@ -5,10 +5,10 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**language** | **ContentLanguageSelection** |  |  [optional]
-**value** | **String** |  |  [optional]
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**language** | **ContentLanguageSelection** |  |  [optional] |
+|**value** | **String** |  |  [optional] |
 
 
 

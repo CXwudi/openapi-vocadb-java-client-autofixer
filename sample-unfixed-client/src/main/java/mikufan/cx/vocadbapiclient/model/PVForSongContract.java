@@ -28,6 +28,7 @@ import mikufan.cx.vocadbapiclient.model.PVService;
 import mikufan.cx.vocadbapiclient.model.PVType;
 import mikufan.cx.vocadbapiclient.model.SongContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * PVForSongContract
@@ -48,8 +49,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   PVForSongContract.JSON_PROPERTY_THUMB_URL,
   PVForSongContract.JSON_PROPERTY_URL
 })
-@JsonTypeName("PVForSongContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class PVForSongContract {
   public static final String JSON_PROPERTY_SONG = "song";
   private SongContract song;
@@ -93,6 +93,8 @@ public class PVForSongContract {
   public static final String JSON_PROPERTY_URL = "url";
   private String url;
 
+  public PVForSongContract() {
+  }
 
   public PVForSongContract song(SongContract song) {
     

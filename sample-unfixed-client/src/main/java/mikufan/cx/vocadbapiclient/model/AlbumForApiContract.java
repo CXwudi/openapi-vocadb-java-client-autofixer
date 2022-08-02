@@ -40,6 +40,7 @@ import mikufan.cx.vocadbapiclient.model.SongInAlbumForApiContract;
 import mikufan.cx.vocadbapiclient.model.TagUsageForApiContract;
 import mikufan.cx.vocadbapiclient.model.WebLinkForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * AlbumForApiContract
@@ -74,8 +75,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   AlbumForApiContract.JSON_PROPERTY_VERSION,
   AlbumForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@JsonTypeName("AlbumForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class AlbumForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -161,6 +161,8 @@ public class AlbumForApiContract {
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
   private List<WebLinkForApiContract> webLinks = null;
 
+  public AlbumForApiContract() {
+  }
 
   public AlbumForApiContract additionalNames(String additionalNames) {
     

@@ -176,11 +176,11 @@ public class EntryForApiContractTest {
     }
 
     /**
-     * Test the property 'pVs'
+     * Test the property 'pvs'
      */
     @Test
-    public void pVsTest() {
-        // TODO: test pVs
+    public void pvsTest() {
+        // TODO: test pvs
     }
 
     /**

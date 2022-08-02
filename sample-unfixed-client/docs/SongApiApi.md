@@ -2,24 +2,24 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiSongsByPvGet**](SongApiApi.md#apiSongsByPvGet) | **GET** /api/songs/byPv | 
-[**apiSongsCommentsCommentIdDelete**](SongApiApi.md#apiSongsCommentsCommentIdDelete) | **DELETE** /api/songs/comments/{commentId} | 
-[**apiSongsCommentsCommentIdPost**](SongApiApi.md#apiSongsCommentsCommentIdPost) | **POST** /api/songs/comments/{commentId} | 
-[**apiSongsGet**](SongApiApi.md#apiSongsGet) | **GET** /api/songs | 
-[**apiSongsHighlightedGet**](SongApiApi.md#apiSongsHighlightedGet) | **GET** /api/songs/highlighted | 
-[**apiSongsIdCommentsGet**](SongApiApi.md#apiSongsIdCommentsGet) | **GET** /api/songs/{id}/comments | 
-[**apiSongsIdCommentsPost**](SongApiApi.md#apiSongsIdCommentsPost) | **POST** /api/songs/{id}/comments | 
-[**apiSongsIdDelete**](SongApiApi.md#apiSongsIdDelete) | **DELETE** /api/songs/{id} | 
-[**apiSongsIdDerivedGet**](SongApiApi.md#apiSongsIdDerivedGet) | **GET** /api/songs/{id}/derived | 
-[**apiSongsIdGet**](SongApiApi.md#apiSongsIdGet) | **GET** /api/songs/{id} | 
-[**apiSongsIdRatingsGet**](SongApiApi.md#apiSongsIdRatingsGet) | **GET** /api/songs/{id}/ratings | 
-[**apiSongsIdRatingsPost**](SongApiApi.md#apiSongsIdRatingsPost) | **POST** /api/songs/{id}/ratings | 
-[**apiSongsIdRelatedGet**](SongApiApi.md#apiSongsIdRelatedGet) | **GET** /api/songs/{id}/related | 
-[**apiSongsLyricsLyricsIdGet**](SongApiApi.md#apiSongsLyricsLyricsIdGet) | **GET** /api/songs/lyrics/{lyricsId} | 
-[**apiSongsNamesGet**](SongApiApi.md#apiSongsNamesGet) | **GET** /api/songs/names | 
-[**apiSongsTopRatedGet**](SongApiApi.md#apiSongsTopRatedGet) | **GET** /api/songs/top-rated | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiSongsByPvGet**](SongApiApi.md#apiSongsByPvGet) | **GET** /api/songs/byPv |  |
+| [**apiSongsCommentsCommentIdDelete**](SongApiApi.md#apiSongsCommentsCommentIdDelete) | **DELETE** /api/songs/comments/{commentId} |  |
+| [**apiSongsCommentsCommentIdPost**](SongApiApi.md#apiSongsCommentsCommentIdPost) | **POST** /api/songs/comments/{commentId} |  |
+| [**apiSongsGet**](SongApiApi.md#apiSongsGet) | **GET** /api/songs |  |
+| [**apiSongsHighlightedGet**](SongApiApi.md#apiSongsHighlightedGet) | **GET** /api/songs/highlighted |  |
+| [**apiSongsIdCommentsGet**](SongApiApi.md#apiSongsIdCommentsGet) | **GET** /api/songs/{id}/comments |  |
+| [**apiSongsIdCommentsPost**](SongApiApi.md#apiSongsIdCommentsPost) | **POST** /api/songs/{id}/comments |  |
+| [**apiSongsIdDelete**](SongApiApi.md#apiSongsIdDelete) | **DELETE** /api/songs/{id} |  |
+| [**apiSongsIdDerivedGet**](SongApiApi.md#apiSongsIdDerivedGet) | **GET** /api/songs/{id}/derived |  |
+| [**apiSongsIdGet**](SongApiApi.md#apiSongsIdGet) | **GET** /api/songs/{id} |  |
+| [**apiSongsIdRatingsGet**](SongApiApi.md#apiSongsIdRatingsGet) | **GET** /api/songs/{id}/ratings |  |
+| [**apiSongsIdRatingsPost**](SongApiApi.md#apiSongsIdRatingsPost) | **POST** /api/songs/{id}/ratings |  |
+| [**apiSongsIdRelatedGet**](SongApiApi.md#apiSongsIdRelatedGet) | **GET** /api/songs/{id}/related |  |
+| [**apiSongsLyricsLyricsIdGet**](SongApiApi.md#apiSongsLyricsLyricsIdGet) | **GET** /api/songs/lyrics/{lyricsId} |  |
+| [**apiSongsNamesGet**](SongApiApi.md#apiSongsNamesGet) | **GET** /api/songs/names |  |
+| [**apiSongsTopRatedGet**](SongApiApi.md#apiSongsTopRatedGet) | **GET** /api/songs/top-rated |  |
 
 
 
@@ -66,12 +66,12 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pvService** | [**PVService**](.md)|  | [optional] [enum: NicoNicoDouga, Youtube, SoundCloud, Vimeo, Piapro, Bilibili, File, LocalFile, Creofuga, Bandcamp]
- **pvId** | **String**|  | [optional]
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **pvService** | [**PVService**](.md)|  | [optional] [enum: NicoNicoDouga, Youtube, SoundCloud, Vimeo, Piapro, Bilibili, File, LocalFile, Creofuga, Bandcamp] |
+| **pvId** | **String**|  | [optional] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -132,9 +132,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
 
 ### Return type
 
@@ -196,10 +196,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -211,7 +211,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: Not defined
 
 
@@ -293,41 +293,41 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **songTypes** | **String**|  | [optional]
- **afterDate** | **LocalDateTime**|  | [optional]
- **beforeDate** | **LocalDateTime**|  | [optional]
- **tagName** | [**List&lt;String&gt;**](String.md)|  | [optional]
- **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **childTags** | **Boolean**|  | [optional] [default to false]
- **unifyTypesAndTags** | **Boolean**|  | [optional] [default to false]
- **artistId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **artistParticipationStatus** | [**ArtistAlbumParticipationStatus**](.md)|  | [optional] [enum: Everything, OnlyMainAlbums, OnlyCollaborations]
- **childVoicebanks** | **Boolean**|  | [optional] [default to false]
- **includeMembers** | **Boolean**|  | [optional] [default to false]
- **onlyWithPvs** | **Boolean**|  | [optional] [default to false]
- **pvServices** | [**PVServices**](.md)|  | [optional] [enum: Nothing, NicoNicoDouga, Youtube, SoundCloud, Vimeo, Piapro, Bilibili, File, LocalFile, Creofuga, Bandcamp]
- **since** | **Integer**|  | [optional]
- **minScore** | **Integer**|  | [optional]
- **userCollectionId** | **Integer**|  | [optional]
- **releaseEventId** | **Integer**|  | [optional]
- **parentSongId** | **Integer**|  | [optional]
- **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked]
- **advancedFilters** | [**List&lt;AdvancedSearchFilterParams&gt;**](AdvancedSearchFilterParams.md)|  | [optional]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **sort** | [**SongSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, PublishDate, FavoritedTimes, RatingScore, TagUsageCount]
- **preferAccurateMatches** | **Boolean**|  | [optional] [default to false]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
- **minMilliBpm** | **Integer**|  | [optional]
- **maxMilliBpm** | **Integer**|  | [optional]
- **minLength** | **Integer**|  | [optional]
- **maxLength** | **Integer**|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **songTypes** | **String**|  | [optional] |
+| **afterDate** | **LocalDateTime**|  | [optional] |
+| **beforeDate** | **LocalDateTime**|  | [optional] |
+| **tagName** | [**List&lt;String&gt;**](String.md)|  | [optional] |
+| **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **childTags** | **Boolean**|  | [optional] [default to false] |
+| **unifyTypesAndTags** | **Boolean**|  | [optional] [default to false] |
+| **artistId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **artistParticipationStatus** | [**ArtistAlbumParticipationStatus**](.md)|  | [optional] [enum: Everything, OnlyMainAlbums, OnlyCollaborations] |
+| **childVoicebanks** | **Boolean**|  | [optional] [default to false] |
+| **includeMembers** | **Boolean**|  | [optional] [default to false] |
+| **onlyWithPvs** | **Boolean**|  | [optional] [default to false] |
+| **pvServices** | [**PVServices**](.md)|  | [optional] [enum: Nothing, NicoNicoDouga, Youtube, SoundCloud, Vimeo, Piapro, Bilibili, File, LocalFile, Creofuga, Bandcamp] |
+| **since** | **Integer**|  | [optional] |
+| **minScore** | **Integer**|  | [optional] |
+| **userCollectionId** | **Integer**|  | [optional] |
+| **releaseEventId** | **Integer**|  | [optional] |
+| **parentSongId** | **Integer**|  | [optional] |
+| **status** | [**EntryStatus**](.md)|  | [optional] [enum: Draft, Finished, Approved, Locked] |
+| **advancedFilters** | [**List&lt;AdvancedSearchFilterParams&gt;**](AdvancedSearchFilterParams.md)|  | [optional] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **sort** | [**SongSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, PublishDate, FavoritedTimes, RatingScore, TagUsageCount] |
+| **preferAccurateMatches** | **Boolean**|  | [optional] [default to false] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **minMilliBpm** | **Integer**|  | [optional] |
+| **maxMilliBpm** | **Integer**|  | [optional] |
+| **minLength** | **Integer**|  | [optional] |
+| **maxLength** | **Integer**|  | [optional] |
 
 ### Return type
 
@@ -390,10 +390,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
 
 ### Return type
 
@@ -455,9 +455,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
 
 ### Return type
 
@@ -520,10 +520,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -535,7 +535,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -585,10 +585,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **notes** | **String**|  | [optional] [default to ]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **notes** | **String**|  | [optional] [default to ] |
 
 ### Return type
 
@@ -652,11 +652,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -720,11 +720,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -788,11 +788,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **userFields** | [**UserOptionalFields**](.md)|  | [optional] [enum: None, KnownLanguages, MainPicture, OldUsernames]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **userFields** | [**UserOptionalFields**](.md)|  | [optional] [enum: None, KnownLanguages, MainPicture, OldUsernames] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -854,10 +854,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **songRatingContract** | [**SongRatingContract**](SongRatingContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **songRatingContract** | [**SongRatingContract**](SongRatingContract.md)|  | [optional] |
 
 ### Return type
 
@@ -869,7 +869,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: Not defined
 
 
@@ -921,11 +921,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -987,9 +987,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **lyricsId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **lyricsId** | **Integer**|  | |
 
 ### Return type
 
@@ -1053,11 +1053,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **maxResults** | **Integer**|  | [optional] [default to 15]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **maxResults** | **Integer**|  | [optional] [default to 15] |
 
 ### Return type
 
@@ -1125,15 +1125,15 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **durationHours** | **Integer**|  | [optional]
- **startDate** | **LocalDateTime**|  | [optional]
- **filterBy** | [**TopSongsDateFilterType**](.md)|  | [optional] [enum: CreateDate, PublishDate, Popularity]
- **vocalist** | [**SongVocalistSelection**](.md)|  | [optional] [enum: Nothing, Vocaloid, UTAU, Other]
- **maxResults** | **Integer**|  | [optional] [default to 25]
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **durationHours** | **Integer**|  | [optional] |
+| **startDate** | **LocalDateTime**|  | [optional] |
+| **filterBy** | [**TopSongsDateFilterType**](.md)|  | [optional] [enum: CreateDate, PublishDate, Popularity] |
+| **vocalist** | [**SongVocalistSelection**](.md)|  | [optional] [enum: Nothing, Vocaloid, UTAU, Other] |
+| **maxResults** | **Integer**|  | [optional] [default to 25] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 

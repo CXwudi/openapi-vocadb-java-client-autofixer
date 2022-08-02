@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiVenuesGet**](VenueApiApi.md#apiVenuesGet) | **GET** /api/venues | 
-[**apiVenuesIdDelete**](VenueApiApi.md#apiVenuesIdDelete) | **DELETE** /api/venues/{id} | 
-[**apiVenuesIdReportsPost**](VenueApiApi.md#apiVenuesIdReportsPost) | **POST** /api/venues/{id}/reports | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiVenuesGet**](VenueApiApi.md#apiVenuesGet) | **GET** /api/venues |  |
+| [**apiVenuesIdDelete**](VenueApiApi.md#apiVenuesIdDelete) | **DELETE** /api/venues/{id} |  |
+| [**apiVenuesIdReportsPost**](VenueApiApi.md#apiVenuesIdReportsPost) | **POST** /api/venues/{id}/reports |  |
 
 
 
@@ -61,20 +61,20 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **fields** | [**VenueOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Description, Events, Names, WebLinks]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
- **sortRule** | [**VenueSortRule**](.md)|  | [optional] [enum: None, Name, Distance]
- **latitude** | **Double**|  | [optional]
- **longitude** | **Double**|  | [optional]
- **radius** | **Double**|  | [optional]
- **distanceUnit** | [**DistanceUnit**](.md)|  | [optional] [enum: Kilometers, Miles]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **fields** | [**VenueOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Description, Events, Names, WebLinks] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **sortRule** | [**VenueSortRule**](.md)|  | [optional] [enum: None, Name, Distance] |
+| **latitude** | **Double**|  | [optional] |
+| **longitude** | **Double**|  | [optional] |
+| **radius** | **Double**|  | [optional] |
+| **distanceUnit** | [**DistanceUnit**](.md)|  | [optional] [enum: Kilometers, Miles] |
 
 ### Return type
 
@@ -137,11 +137,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **notes** | **String**|  | [optional] [default to ]
- **hardDelete** | **Boolean**|  | [optional] [default to false]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **notes** | **String**|  | [optional] [default to ] |
+| **hardDelete** | **Boolean**|  | [optional] [default to false] |
 
 ### Return type
 
@@ -205,12 +205,12 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **reportType** | [**VenueReportType**](.md)|  | [optional] [enum: InvalidInfo, Duplicate, Inappropriate, Other]
- **notes** | **String**|  | [optional]
- **versionNumber** | **Integer**|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **reportType** | [**VenueReportType**](.md)|  | [optional] [enum: InvalidInfo, Duplicate, Inappropriate, Other] |
+| **notes** | **String**|  | [optional] |
+| **versionNumber** | **Integer**|  | [optional] |
 
 ### Return type
 

@@ -29,6 +29,7 @@ import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesContract;
 import mikufan.cx.vocadbapiclient.model.SongListBaseContract;
 import mikufan.cx.vocadbapiclient.model.VenueContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * ReleaseEventContract
@@ -54,8 +55,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   ReleaseEventContract.JSON_PROPERTY_VENUE_NAME,
   ReleaseEventContract.JSON_PROPERTY_VERSION
 })
-@JsonTypeName("ReleaseEventContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class ReleaseEventContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -114,6 +114,16 @@ public class ReleaseEventContract {
   public static final String JSON_PROPERTY_VERSION = "version";
   private Integer version;
 
+  public ReleaseEventContract() {
+  }
+
+  @JsonCreator
+  public ReleaseEventContract(
+    @JsonProperty(JSON_PROPERTY_HAS_VENUE_OR_VENUE_NAME) Boolean hasVenueOrVenueName
+  ) {
+    this();
+    this.hasVenueOrVenueName = hasVenueOrVenueName;
+  }
 
   public ReleaseEventContract additionalNames(String additionalNames) {
     

@@ -28,6 +28,7 @@ import mikufan.cx.vocadbapiclient.model.AlbumForApiContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * ArtistRelationsForApi
@@ -39,8 +40,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   ArtistRelationsForApi.JSON_PROPERTY_POPULAR_ALBUMS,
   ArtistRelationsForApi.JSON_PROPERTY_POPULAR_SONGS
 })
-@JsonTypeName("ArtistRelationsForApi")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class ArtistRelationsForApi {
   public static final String JSON_PROPERTY_LATEST_ALBUMS = "latestAlbums";
   private List<AlbumForApiContract> latestAlbums = null;
@@ -57,6 +57,8 @@ public class ArtistRelationsForApi {
   public static final String JSON_PROPERTY_POPULAR_SONGS = "popularSongs";
   private List<SongForApiContract> popularSongs = null;
 
+  public ArtistRelationsForApi() {
+  }
 
   public ArtistRelationsForApi latestAlbums(List<AlbumForApiContract> latestAlbums) {
     

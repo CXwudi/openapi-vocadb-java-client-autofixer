@@ -27,9 +27,12 @@ import mikufan.cx.vocadbapiclient.model.ReleaseEventForApiContractPartialFindRes
 import mikufan.cx.vocadbapiclient.model.ReleaseEventOptionalFields;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongOptionalFields;
+import mikufan.cx.vocadbapiclient.model.SortDirection;
 import org.junit.Test;
 import org.junit.Ignore;
 
+import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -128,7 +131,8 @@ public class ReleaseEventApiApiTest {
         EventSortRule sort = null;
         ReleaseEventOptionalFields fields = null;
         ContentLanguagePreference lang = null;
-        ReleaseEventForApiContractPartialFindResult response = api.apiReleaseEventsGet(query, nameMatchMode, seriesId, afterDate, beforeDate, category, userCollectionId, tagId, childTags, artistId, childVoicebanks, includeMembers, status, start, maxResults, getTotalCount, sort, fields, lang);
+        SortDirection sortDirection = null;
+        ReleaseEventForApiContractPartialFindResult response = api.apiReleaseEventsGet(query, nameMatchMode, seriesId, afterDate, beforeDate, category, userCollectionId, tagId, childTags, artistId, childVoicebanks, includeMembers, status, start, maxResults, getTotalCount, sort, fields, lang, sortDirection);
 
         // TODO: test validations
     }

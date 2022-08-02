@@ -28,6 +28,7 @@ import java.util.List;
 import mikufan.cx.vocadbapiclient.model.CommentForApiContract;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * DiscussionTopicContract
@@ -44,8 +45,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   DiscussionTopicContract.JSON_PROPERTY_LOCKED,
   DiscussionTopicContract.JSON_PROPERTY_NAME
 })
-@JsonTypeName("DiscussionTopicContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class DiscussionTopicContract {
   public static final String JSON_PROPERTY_AUTHOR = "author";
   private UserForApiContract author;
@@ -77,6 +77,8 @@ public class DiscussionTopicContract {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;
 
+  public DiscussionTopicContract() {
+  }
 
   public DiscussionTopicContract author(UserForApiContract author) {
     

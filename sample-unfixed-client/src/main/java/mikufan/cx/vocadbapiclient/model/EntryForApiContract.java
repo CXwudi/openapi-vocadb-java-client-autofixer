@@ -39,6 +39,7 @@ import mikufan.cx.vocadbapiclient.model.SongListFeaturedCategory;
 import mikufan.cx.vocadbapiclient.model.SongType;
 import mikufan.cx.vocadbapiclient.model.TagUsageForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * EntryForApiContract
@@ -59,7 +60,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   EntryForApiContract.JSON_PROPERTY_MAIN_PICTURE,
   EntryForApiContract.JSON_PROPERTY_NAME,
   EntryForApiContract.JSON_PROPERTY_NAMES,
-  EntryForApiContract.JSON_PROPERTY_P_VS,
+  EntryForApiContract.JSON_PROPERTY_PVS,
   EntryForApiContract.JSON_PROPERTY_SONG_LIST_FEATURED_CATEGORY,
   EntryForApiContract.JSON_PROPERTY_SONG_TYPE,
   EntryForApiContract.JSON_PROPERTY_STATUS,
@@ -70,8 +71,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   EntryForApiContract.JSON_PROPERTY_VERSION,
   EntryForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@JsonTypeName("EntryForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class EntryForApiContract {
   public static final String JSON_PROPERTY_ACTIVITY_DATE = "activityDate";
   private LocalDateTime activityDate;
@@ -118,8 +118,8 @@ public class EntryForApiContract {
   public static final String JSON_PROPERTY_NAMES = "names";
   private List<LocalizedStringContract> names = null;
 
-  public static final String JSON_PROPERTY_P_VS = "pVs";
-  private List<PVContract> pVs = null;
+  public static final String JSON_PROPERTY_PVS = "pvs";
+  private List<PVContract> pvs = null;
 
   public static final String JSON_PROPERTY_SONG_LIST_FEATURED_CATEGORY = "songListFeaturedCategory";
   private SongListFeaturedCategory songListFeaturedCategory;
@@ -148,6 +148,8 @@ public class EntryForApiContract {
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
   private List<ArchivedWebLinkContract> webLinks = null;
 
+  public EntryForApiContract() {
+  }
 
   public EntryForApiContract activityDate(LocalDateTime activityDate) {
     
@@ -562,38 +564,38 @@ public class EntryForApiContract {
   }
 
 
-  public EntryForApiContract pVs(List<PVContract> pVs) {
+  public EntryForApiContract pvs(List<PVContract> pvs) {
     
-    this.pVs = pVs;
+    this.pvs = pvs;
     return this;
   }
 
-  public EntryForApiContract addPVsItem(PVContract pVsItem) {
-    if (this.pVs == null) {
-      this.pVs = new ArrayList<>();
+  public EntryForApiContract addPvsItem(PVContract pvsItem) {
+    if (this.pvs == null) {
+      this.pvs = new ArrayList<>();
     }
-    this.pVs.add(pVsItem);
+    this.pvs.add(pvsItem);
     return this;
   }
 
    /**
-   * Get pVs
-   * @return pVs
+   * Get pvs
+   * @return pvs
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
-  @JsonProperty(JSON_PROPERTY_P_VS)
+  @JsonProperty(JSON_PROPERTY_PVS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public List<PVContract> getpVs() {
-    return pVs;
+  public List<PVContract> getPvs() {
+    return pvs;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_P_VS)
+  @JsonProperty(JSON_PROPERTY_PVS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setpVs(List<PVContract> pVs) {
-    this.pVs = pVs;
+  public void setPvs(List<PVContract> pvs) {
+    this.pvs = pvs;
   }
 
 
@@ -880,7 +882,7 @@ public class EntryForApiContract {
         Objects.equals(this.mainPicture, entryForApiContract.mainPicture) &&
         Objects.equals(this.name, entryForApiContract.name) &&
         Objects.equals(this.names, entryForApiContract.names) &&
-        Objects.equals(this.pVs, entryForApiContract.pVs) &&
+        Objects.equals(this.pvs, entryForApiContract.pvs) &&
         Objects.equals(this.songListFeaturedCategory, entryForApiContract.songListFeaturedCategory) &&
         Objects.equals(this.songType, entryForApiContract.songType) &&
         Objects.equals(this.status, entryForApiContract.status) &&
@@ -894,7 +896,7 @@ public class EntryForApiContract {
 
   @Override
   public int hashCode() {
-    return Objects.hash(activityDate, additionalNames, artistString, artistType, createDate, defaultName, defaultNameLanguage, description, discType, entryType, eventCategory, id, mainPicture, name, names, pVs, songListFeaturedCategory, songType, status, releaseEventSeriesName, tagCategoryName, tags, urlSlug, version, webLinks);
+    return Objects.hash(activityDate, additionalNames, artistString, artistType, createDate, defaultName, defaultNameLanguage, description, discType, entryType, eventCategory, id, mainPicture, name, names, pvs, songListFeaturedCategory, songType, status, releaseEventSeriesName, tagCategoryName, tags, urlSlug, version, webLinks);
   }
 
   @Override
@@ -916,7 +918,7 @@ public class EntryForApiContract {
     sb.append("    mainPicture: ").append(toIndentedString(mainPicture)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    names: ").append(toIndentedString(names)).append("\n");
-    sb.append("    pVs: ").append(toIndentedString(pVs)).append("\n");
+    sb.append("    pvs: ").append(toIndentedString(pvs)).append("\n");
     sb.append("    songListFeaturedCategory: ").append(toIndentedString(songListFeaturedCategory)).append("\n");
     sb.append("    songType: ").append(toIndentedString(songType)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");

@@ -16,6 +16,7 @@ package mikufan.cx.vocadbapiclient.model;
 import java.util.Objects;
 import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -40,6 +41,8 @@ public enum TagTargetTypes {
   ALBUMSONG("AlbumSong"),
   
   ARTISTSONG("ArtistSong"),
+  
+  SONGLIST("SongList"),
   
   ALL("All");
 

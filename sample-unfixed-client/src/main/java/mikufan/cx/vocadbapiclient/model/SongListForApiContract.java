@@ -33,6 +33,7 @@ import mikufan.cx.vocadbapiclient.model.SongListFeaturedCategory;
 import mikufan.cx.vocadbapiclient.model.TagUsageForApiContract;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * SongListForApiContract
@@ -51,8 +52,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   SongListForApiContract.JSON_PROPERTY_ID,
   SongListForApiContract.JSON_PROPERTY_NAME
 })
-@JsonTypeName("SongListForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class SongListForApiContract {
   public static final String JSON_PROPERTY_AUTHOR = "author";
   private UserForApiContract author;
@@ -90,6 +90,8 @@ public class SongListForApiContract {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;
 
+  public SongListForApiContract() {
+  }
 
   public SongListForApiContract author(UserForApiContract author) {
     

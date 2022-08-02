@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
+import mikufan.cx.vocadbapiclient.model.SongVoteRating;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -62,6 +63,14 @@ public class SongInAlbumForApiContractTest {
     @Test
     public void nameTest() {
         // TODO: test name
+    }
+
+    /**
+     * Test the property 'rating'
+     */
+    @Test
+    public void ratingTest() {
+        // TODO: test rating
     }
 
     /**

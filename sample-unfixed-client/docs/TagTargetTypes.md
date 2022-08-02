@@ -21,6 +21,8 @@
 
 * `ARTISTSONG` (value: `"ArtistSong"`)
 
+* `SONGLIST` (value: `"SongList"`)
+
 * `ALL` (value: `"All"`)
 
 

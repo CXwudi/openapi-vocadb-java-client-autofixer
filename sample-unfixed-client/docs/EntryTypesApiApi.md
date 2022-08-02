@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiEntryTypesEntryTypeSubTypeTagGet**](EntryTypesApiApi.md#apiEntryTypesEntryTypeSubTypeTagGet) | **GET** /api/entry-types/{entryType}/{subType}/tag | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiEntryTypesEntryTypeSubTypeTagGet**](EntryTypesApiApi.md#apiEntryTypesEntryTypeSubTypeTagGet) | **GET** /api/entry-types/{entryType}/{subType}/tag |  |
 
 
 
@@ -50,11 +50,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue]
- **subType** | **String**|  |
- **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue] |
+| **subType** | **String**|  | |
+| **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks] |
 
 ### Return type
 

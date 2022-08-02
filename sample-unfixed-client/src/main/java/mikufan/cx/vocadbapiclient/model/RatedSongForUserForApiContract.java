@@ -27,6 +27,7 @@ import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongVoteRating;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * RatedSongForUserForApiContract
@@ -37,8 +38,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   RatedSongForUserForApiContract.JSON_PROPERTY_USER,
   RatedSongForUserForApiContract.JSON_PROPERTY_RATING
 })
-@JsonTypeName("RatedSongForUserForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class RatedSongForUserForApiContract {
   public static final String JSON_PROPERTY_DATE = "date";
   private LocalDateTime date;
@@ -52,6 +52,8 @@ public class RatedSongForUserForApiContract {
   public static final String JSON_PROPERTY_RATING = "rating";
   private SongVoteRating rating;
 
+  public RatedSongForUserForApiContract() {
+  }
 
   public RatedSongForUserForApiContract date(LocalDateTime date) {
     

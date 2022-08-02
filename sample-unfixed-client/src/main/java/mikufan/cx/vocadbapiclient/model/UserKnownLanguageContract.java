@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.UserLanguageProficiency;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * UserKnownLanguageContract
@@ -32,8 +33,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   UserKnownLanguageContract.JSON_PROPERTY_CULTURE_CODE,
   UserKnownLanguageContract.JSON_PROPERTY_PROFICIENCY
 })
-@JsonTypeName("UserKnownLanguageContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class UserKnownLanguageContract {
   public static final String JSON_PROPERTY_CULTURE_CODE = "cultureCode";
   private String cultureCode;
@@ -41,6 +41,8 @@ public class UserKnownLanguageContract {
   public static final String JSON_PROPERTY_PROFICIENCY = "proficiency";
   private UserLanguageProficiency proficiency;
 
+  public UserKnownLanguageContract() {
+  }
 
   public UserKnownLanguageContract cultureCode(String cultureCode) {
     

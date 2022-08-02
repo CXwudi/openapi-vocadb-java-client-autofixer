@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiCommentsEntryTypeCommentsCommentIdDelete**](CommentApiApi.md#apiCommentsEntryTypeCommentsCommentIdDelete) | **DELETE** /api/comments/{entryType}-comments/{commentId} | 
-[**apiCommentsEntryTypeCommentsCommentIdPost**](CommentApiApi.md#apiCommentsEntryTypeCommentsCommentIdPost) | **POST** /api/comments/{entryType}-comments/{commentId} | 
-[**apiCommentsEntryTypeCommentsGet**](CommentApiApi.md#apiCommentsEntryTypeCommentsGet) | **GET** /api/comments/{entryType}-comments | 
-[**apiCommentsEntryTypeCommentsPost**](CommentApiApi.md#apiCommentsEntryTypeCommentsPost) | **POST** /api/comments/{entryType}-comments | 
-[**apiCommentsGet**](CommentApiApi.md#apiCommentsGet) | **GET** /api/comments | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiCommentsEntryTypeCommentsCommentIdDelete**](CommentApiApi.md#apiCommentsEntryTypeCommentsCommentIdDelete) | **DELETE** /api/comments/{entryType}-comments/{commentId} |  |
+| [**apiCommentsEntryTypeCommentsCommentIdPost**](CommentApiApi.md#apiCommentsEntryTypeCommentsCommentIdPost) | **POST** /api/comments/{entryType}-comments/{commentId} |  |
+| [**apiCommentsEntryTypeCommentsGet**](CommentApiApi.md#apiCommentsEntryTypeCommentsGet) | **GET** /api/comments/{entryType}-comments |  |
+| [**apiCommentsEntryTypeCommentsPost**](CommentApiApi.md#apiCommentsEntryTypeCommentsPost) | **POST** /api/comments/{entryType}-comments |  |
+| [**apiCommentsGet**](CommentApiApi.md#apiCommentsGet) | **GET** /api/comments |  |
 
 
 
@@ -52,10 +52,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue]
- **commentId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue] |
+| **commentId** | **Integer**|  | |
 
 ### Return type
 
@@ -118,11 +118,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue]
- **commentId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue] |
+| **commentId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -134,7 +134,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: Not defined
 
 
@@ -185,10 +185,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue]
- **entryId** | **Integer**|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue] |
+| **entryId** | **Integer**|  | [optional] |
 
 ### Return type
 
@@ -251,10 +251,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue]
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **entryType** | [**EntryType**](.md)|  | [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue] |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -266,7 +266,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -325,18 +325,18 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **before** | **LocalDateTime**|  | [optional]
- **since** | **LocalDateTime**|  | [optional]
- **userId** | **Integer**|  | [optional]
- **entryType** | [**EntryType**](.md)|  | [optional] [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue]
- **maxResults** | **Integer**|  | [optional] [default to 50]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **fields** | [**CommentOptionalFields**](.md)|  | [optional] [enum: None, Entry]
- **entryFields** | [**EntryOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Description, MainPicture, Names, PVs, Tags, WebLinks]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
- **sortRule** | [**CommentSortRule**](.md)|  | [optional] [enum: CreateDateDescending, CreateDate]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **before** | **LocalDateTime**|  | [optional] |
+| **since** | **LocalDateTime**|  | [optional] |
+| **userId** | **Integer**|  | [optional] |
+| **entryType** | [**EntryType**](.md)|  | [optional] [enum: Undefined, Album, Artist, DiscussionTopic, PV, ReleaseEvent, ReleaseEventSeries, Song, SongList, Tag, User, Venue] |
+| **maxResults** | **Integer**|  | [optional] [default to 50] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **fields** | [**CommentOptionalFields**](.md)|  | [optional] [enum: None, Entry] |
+| **entryFields** | [**EntryOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Description, MainPicture, Names, PVs, Tags, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **sortRule** | [**CommentSortRule**](.md)|  | [optional] [enum: CreateDateDescending, CreateDate] |
 
 ### Return type
 

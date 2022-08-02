@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * SongForApiContractPartialFindResult
@@ -35,8 +36,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   SongForApiContractPartialFindResult.JSON_PROPERTY_TERM,
   SongForApiContractPartialFindResult.JSON_PROPERTY_TOTAL_COUNT
 })
-@JsonTypeName("SongForApiContractPartialFindResult")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class SongForApiContractPartialFindResult {
   public static final String JSON_PROPERTY_ITEMS = "items";
   private List<SongForApiContract> items = null;
@@ -47,6 +47,8 @@ public class SongForApiContractPartialFindResult {
   public static final String JSON_PROPERTY_TOTAL_COUNT = "totalCount";
   private Integer totalCount;
 
+  public SongForApiContractPartialFindResult() {
+  }
 
   public SongForApiContractPartialFindResult items(List<SongForApiContract> items) {
     

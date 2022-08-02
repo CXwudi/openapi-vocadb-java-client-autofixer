@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * SongInListEditContract
@@ -34,8 +35,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   SongInListEditContract.JSON_PROPERTY_ORDER,
   SongInListEditContract.JSON_PROPERTY_SONG
 })
-@JsonTypeName("SongInListEditContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class SongInListEditContract {
   public static final String JSON_PROPERTY_SONG_IN_LIST_ID = "songInListId";
   private Integer songInListId;
@@ -49,6 +49,8 @@ public class SongInListEditContract {
   public static final String JSON_PROPERTY_SONG = "song";
   private SongForApiContract song;
 
+  public SongInListEditContract() {
+  }
 
   public SongInListEditContract songInListId(Integer songInListId) {
     

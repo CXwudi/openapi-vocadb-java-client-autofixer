@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiSongListsCommentsCommentIdDelete**](SongListApiApi.md#apiSongListsCommentsCommentIdDelete) | **DELETE** /api/songLists/comments/{commentId} | 
-[**apiSongListsCommentsCommentIdPost**](SongListApiApi.md#apiSongListsCommentsCommentIdPost) | **POST** /api/songLists/comments/{commentId} | 
-[**apiSongListsFeaturedGet**](SongListApiApi.md#apiSongListsFeaturedGet) | **GET** /api/songLists/featured | 
-[**apiSongListsFeaturedNamesGet**](SongListApiApi.md#apiSongListsFeaturedNamesGet) | **GET** /api/songLists/featured/names | 
-[**apiSongListsIdDelete**](SongListApiApi.md#apiSongListsIdDelete) | **DELETE** /api/songLists/{id} | 
-[**apiSongListsListIdCommentsGet**](SongListApiApi.md#apiSongListsListIdCommentsGet) | **GET** /api/songLists/{listId}/comments | 
-[**apiSongListsListIdCommentsPost**](SongListApiApi.md#apiSongListsListIdCommentsPost) | **POST** /api/songLists/{listId}/comments | 
-[**apiSongListsListIdSongsGet**](SongListApiApi.md#apiSongListsListIdSongsGet) | **GET** /api/songLists/{listId}/songs | 
-[**apiSongListsPost**](SongListApiApi.md#apiSongListsPost) | **POST** /api/songLists | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiSongListsCommentsCommentIdDelete**](SongListApiApi.md#apiSongListsCommentsCommentIdDelete) | **DELETE** /api/songLists/comments/{commentId} |  |
+| [**apiSongListsCommentsCommentIdPost**](SongListApiApi.md#apiSongListsCommentsCommentIdPost) | **POST** /api/songLists/comments/{commentId} |  |
+| [**apiSongListsFeaturedGet**](SongListApiApi.md#apiSongListsFeaturedGet) | **GET** /api/songLists/featured |  |
+| [**apiSongListsFeaturedNamesGet**](SongListApiApi.md#apiSongListsFeaturedNamesGet) | **GET** /api/songLists/featured/names |  |
+| [**apiSongListsIdDelete**](SongListApiApi.md#apiSongListsIdDelete) | **DELETE** /api/songLists/{id} |  |
+| [**apiSongListsListIdCommentsGet**](SongListApiApi.md#apiSongListsListIdCommentsGet) | **GET** /api/songLists/{listId}/comments |  |
+| [**apiSongListsListIdCommentsPost**](SongListApiApi.md#apiSongListsListIdCommentsPost) | **POST** /api/songLists/{listId}/comments |  |
+| [**apiSongListsListIdSongsGet**](SongListApiApi.md#apiSongListsListIdSongsGet) | **GET** /api/songLists/{listId}/songs |  |
+| [**apiSongListsPost**](SongListApiApi.md#apiSongListsPost) | **POST** /api/songLists |  |
 
 
 
@@ -55,9 +55,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
 
 ### Return type
 
@@ -119,10 +119,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -134,7 +134,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: Not defined
 
 
@@ -194,19 +194,19 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **childTags** | **Boolean**|  | [optional] [default to false]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **featuredCategory** | [**SongListFeaturedCategory**](.md)|  | [optional] [enum: Nothing, Concerts, VocaloidRanking, Pools, Other]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **sort** | [**SongListSortRule**](.md)|  | [optional] [enum: None, Name, Date, CreateDate]
- **fields** | [**SongListOptionalFields**](.md)|  | [optional] [enum: None, Description, Events, MainPicture, Tags]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **childTags** | **Boolean**|  | [optional] [default to false] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **featuredCategory** | [**SongListFeaturedCategory**](.md)|  | [optional] [enum: Nothing, Concerts, VocaloidRanking, Pools, Other] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **sort** | [**SongListSortRule**](.md)|  | [optional] [enum: None, Name, Date, CreateDate] |
+| **fields** | [**SongListOptionalFields**](.md)|  | [optional] [enum: None, Description, Events, MainPicture, Tags] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -271,12 +271,12 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **query** | **String**|  | [optional] [default to ]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **featuredCategory** | [**SongListFeaturedCategory**](.md)|  | [optional] [enum: Nothing, Concerts, VocaloidRanking, Pools, Other]
- **maxResults** | **Integer**|  | [optional] [default to 10]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **query** | **String**|  | [optional] [default to ] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **featuredCategory** | [**SongListFeaturedCategory**](.md)|  | [optional] [enum: Nothing, Concerts, VocaloidRanking, Pools, Other] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
 
 ### Return type
 
@@ -339,11 +339,11 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  |
- **notes** | **String**|  | [optional] [default to ]
- **hardDelete** | **Boolean**|  | [optional] [default to false]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **notes** | **String**|  | [optional] [default to ] |
+| **hardDelete** | **Boolean**|  | [optional] [default to false] |
 
 ### Return type
 
@@ -405,9 +405,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **listId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **listId** | **Integer**|  | |
 
 ### Return type
 
@@ -470,10 +470,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **listId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **listId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -485,7 +485,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -549,23 +549,23 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **listId** | **Integer**|  |
- **query** | **String**|  | [optional] [default to ]
- **songTypes** | **String**|  | [optional]
- **pvServices** | [**PVServices**](.md)|  | [optional] [enum: Nothing, NicoNicoDouga, Youtube, SoundCloud, Vimeo, Piapro, Bilibili, File, LocalFile, Creofuga, Bandcamp]
- **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **artistId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional]
- **childVoicebanks** | **Boolean**|  | [optional] [default to false]
- **advancedFilters** | [**List&lt;AdvancedSearchFilterParams&gt;**](AdvancedSearchFilterParams.md)|  | [optional]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **sort** | [**SongSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, PublishDate, FavoritedTimes, RatingScore, TagUsageCount]
- **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words]
- **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm]
- **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **listId** | **Integer**|  | |
+| **query** | **String**|  | [optional] [default to ] |
+| **songTypes** | **String**|  | [optional] |
+| **pvServices** | [**PVServices**](.md)|  | [optional] [enum: Nothing, NicoNicoDouga, Youtube, SoundCloud, Vimeo, Piapro, Bilibili, File, LocalFile, Creofuga, Bandcamp] |
+| **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **artistId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
+| **childVoicebanks** | **Boolean**|  | [optional] [default to false] |
+| **advancedFilters** | [**List&lt;AdvancedSearchFilterParams&gt;**](AdvancedSearchFilterParams.md)|  | [optional] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **sort** | [**SongSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, PublishDate, FavoritedTimes, RatingScore, TagUsageCount] |
+| **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
@@ -589,7 +589,7 @@ No authorization required
 
 ## apiSongListsPost
 
-> Integer apiSongListsPost(songListForEditContract)
+> Integer apiSongListsPost(songListForEditForApiContract)
 
 
 
@@ -609,9 +609,9 @@ public class Example {
         defaultClient.setBasePath("http://localhost");
 
         SongListApiApi apiInstance = new SongListApiApi(defaultClient);
-        SongListForEditContract songListForEditContract = new SongListForEditContract(); // SongListForEditContract | 
+        SongListForEditForApiContract songListForEditForApiContract = new SongListForEditForApiContract(); // SongListForEditForApiContract | 
         try {
-            Integer result = apiInstance.apiSongListsPost(songListForEditContract);
+            Integer result = apiInstance.apiSongListsPost(songListForEditForApiContract);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling SongListApiApi#apiSongListsPost");
@@ -627,9 +627,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **songListForEditContract** | [**SongListForEditContract**](SongListForEditContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **songListForEditForApiContract** | [**SongListForEditForApiContract**](SongListForEditForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -641,7 +641,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 

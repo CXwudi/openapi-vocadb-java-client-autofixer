@@ -20,56 +20,48 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import mikufan.cx.vocadbapiclient.model.EntryType;
+import java.time.LocalDateTime;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
 
 /**
- * Model tests for EntryThumbContract
+ * Model tests for EntryEditDataContract
  */
-public class EntryThumbContractTest {
-    private final EntryThumbContract model = new EntryThumbContract();
+public class EntryEditDataContractTest {
+    private final EntryEditDataContract model = new EntryEditDataContract();
 
     /**
-     * Model tests for EntryThumbContract
+     * Model tests for EntryEditDataContract
      */
     @Test
-    public void testEntryThumbContract() {
-        // TODO: test EntryThumbContract
+    public void testEntryEditDataContract() {
+        // TODO: test EntryEditDataContract
     }
 
     /**
-     * Test the property 'entryType'
+     * Test the property 'time'
      */
     @Test
-    public void entryTypeTest() {
-        // TODO: test entryType
+    public void timeTest() {
+        // TODO: test time
     }
 
     /**
-     * Test the property 'id'
+     * Test the property 'userId'
      */
     @Test
-    public void idTest() {
-        // TODO: test id
+    public void userIdTest() {
+        // TODO: test userId
     }
 
     /**
-     * Test the property 'mime'
+     * Test the property 'userName'
      */
     @Test
-    public void mimeTest() {
-        // TODO: test mime
-    }
-
-    /**
-     * Test the property 'version'
-     */
-    @Test
-    public void versionTest() {
-        // TODO: test version
+    public void userNameTest() {
+        // TODO: test userName
     }
 
 }

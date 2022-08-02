@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * OldUsernameContract
@@ -32,8 +33,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   OldUsernameContract.JSON_PROPERTY_DATE,
   OldUsernameContract.JSON_PROPERTY_OLD_NAME
 })
-@JsonTypeName("OldUsernameContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class OldUsernameContract {
   public static final String JSON_PROPERTY_DATE = "date";
   private LocalDateTime date;
@@ -41,6 +41,8 @@ public class OldUsernameContract {
   public static final String JSON_PROPERTY_OLD_NAME = "oldName";
   private String oldName;
 
+  public OldUsernameContract() {
+  }
 
   public OldUsernameContract date(LocalDateTime date) {
     

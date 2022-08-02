@@ -2,19 +2,19 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiDiscussionsCommentsCommentIdDelete**](DiscussionApiApi.md#apiDiscussionsCommentsCommentIdDelete) | **DELETE** /api/discussions/comments/{commentId} | 
-[**apiDiscussionsCommentsCommentIdPost**](DiscussionApiApi.md#apiDiscussionsCommentsCommentIdPost) | **POST** /api/discussions/comments/{commentId} | 
-[**apiDiscussionsFoldersFolderIdTopicsGet**](DiscussionApiApi.md#apiDiscussionsFoldersFolderIdTopicsGet) | **GET** /api/discussions/folders/{folderId}/topics | 
-[**apiDiscussionsFoldersFolderIdTopicsPost**](DiscussionApiApi.md#apiDiscussionsFoldersFolderIdTopicsPost) | **POST** /api/discussions/folders/{folderId}/topics | 
-[**apiDiscussionsFoldersGet**](DiscussionApiApi.md#apiDiscussionsFoldersGet) | **GET** /api/discussions/folders | 
-[**apiDiscussionsFoldersPost**](DiscussionApiApi.md#apiDiscussionsFoldersPost) | **POST** /api/discussions/folders | 
-[**apiDiscussionsTopicsGet**](DiscussionApiApi.md#apiDiscussionsTopicsGet) | **GET** /api/discussions/topics | 
-[**apiDiscussionsTopicsTopicIdCommentsPost**](DiscussionApiApi.md#apiDiscussionsTopicsTopicIdCommentsPost) | **POST** /api/discussions/topics/{topicId}/comments | 
-[**apiDiscussionsTopicsTopicIdDelete**](DiscussionApiApi.md#apiDiscussionsTopicsTopicIdDelete) | **DELETE** /api/discussions/topics/{topicId} | 
-[**apiDiscussionsTopicsTopicIdGet**](DiscussionApiApi.md#apiDiscussionsTopicsTopicIdGet) | **GET** /api/discussions/topics/{topicId} | 
-[**apiDiscussionsTopicsTopicIdPost**](DiscussionApiApi.md#apiDiscussionsTopicsTopicIdPost) | **POST** /api/discussions/topics/{topicId} | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**apiDiscussionsCommentsCommentIdDelete**](DiscussionApiApi.md#apiDiscussionsCommentsCommentIdDelete) | **DELETE** /api/discussions/comments/{commentId} |  |
+| [**apiDiscussionsCommentsCommentIdPost**](DiscussionApiApi.md#apiDiscussionsCommentsCommentIdPost) | **POST** /api/discussions/comments/{commentId} |  |
+| [**apiDiscussionsFoldersFolderIdTopicsGet**](DiscussionApiApi.md#apiDiscussionsFoldersFolderIdTopicsGet) | **GET** /api/discussions/folders/{folderId}/topics |  |
+| [**apiDiscussionsFoldersFolderIdTopicsPost**](DiscussionApiApi.md#apiDiscussionsFoldersFolderIdTopicsPost) | **POST** /api/discussions/folders/{folderId}/topics |  |
+| [**apiDiscussionsFoldersGet**](DiscussionApiApi.md#apiDiscussionsFoldersGet) | **GET** /api/discussions/folders |  |
+| [**apiDiscussionsFoldersPost**](DiscussionApiApi.md#apiDiscussionsFoldersPost) | **POST** /api/discussions/folders |  |
+| [**apiDiscussionsTopicsGet**](DiscussionApiApi.md#apiDiscussionsTopicsGet) | **GET** /api/discussions/topics |  |
+| [**apiDiscussionsTopicsTopicIdCommentsPost**](DiscussionApiApi.md#apiDiscussionsTopicsTopicIdCommentsPost) | **POST** /api/discussions/topics/{topicId}/comments |  |
+| [**apiDiscussionsTopicsTopicIdDelete**](DiscussionApiApi.md#apiDiscussionsTopicsTopicIdDelete) | **DELETE** /api/discussions/topics/{topicId} |  |
+| [**apiDiscussionsTopicsTopicIdGet**](DiscussionApiApi.md#apiDiscussionsTopicsTopicIdGet) | **GET** /api/discussions/topics/{topicId} |  |
+| [**apiDiscussionsTopicsTopicIdPost**](DiscussionApiApi.md#apiDiscussionsTopicsTopicIdPost) | **POST** /api/discussions/topics/{topicId} |  |
 
 
 
@@ -57,9 +57,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
 
 ### Return type
 
@@ -121,10 +121,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **commentId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **commentId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -136,7 +136,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: Not defined
 
 
@@ -187,10 +187,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folderId** | **Integer**|  |
- **fields** | [**DiscussionTopicOptionalFields**](.md)|  | [optional] [enum: None, Comments, CommentCount, Content, LastComment, All]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **folderId** | **Integer**|  | |
+| **fields** | [**DiscussionTopicOptionalFields**](.md)|  | [optional] [enum: None, Comments, CommentCount, Content, LastComment, All] |
 
 ### Return type
 
@@ -253,10 +253,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folderId** | **Integer**|  |
- **discussionTopicContract** | [**DiscussionTopicContract**](DiscussionTopicContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **folderId** | **Integer**|  | |
+| **discussionTopicContract** | [**DiscussionTopicContract**](DiscussionTopicContract.md)|  | [optional] |
 
 ### Return type
 
@@ -268,7 +268,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -318,9 +318,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fields** | [**DiscussionFolderOptionalFields**](.md)|  | [optional] [enum: None, LastTopic, TopicCount]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **fields** | [**DiscussionFolderOptionalFields**](.md)|  | [optional] [enum: None, LastTopic, TopicCount] |
 
 ### Return type
 
@@ -382,9 +382,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **discussionFolderContract** | [**DiscussionFolderContract**](DiscussionFolderContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **discussionFolderContract** | [**DiscussionFolderContract**](DiscussionFolderContract.md)|  | [optional] |
 
 ### Return type
 
@@ -396,7 +396,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -451,14 +451,14 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folderId** | **Integer**|  | [optional]
- **start** | **Integer**|  | [optional] [default to 0]
- **maxResults** | **Integer**|  | [optional] [default to 10]
- **getTotalCount** | **Boolean**|  | [optional] [default to false]
- **sort** | [**DiscussionTopicSortRule**](.md)|  | [optional] [enum: None, Name, DateCreated, LastCommentDate]
- **fields** | [**DiscussionTopicOptionalFields**](.md)|  | [optional] [enum: None, Comments, CommentCount, Content, LastComment, All]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **folderId** | **Integer**|  | [optional] |
+| **start** | **Integer**|  | [optional] [default to 0] |
+| **maxResults** | **Integer**|  | [optional] [default to 10] |
+| **getTotalCount** | **Boolean**|  | [optional] [default to false] |
+| **sort** | [**DiscussionTopicSortRule**](.md)|  | [optional] [enum: None, Name, DateCreated, LastCommentDate] |
+| **fields** | [**DiscussionTopicOptionalFields**](.md)|  | [optional] [enum: None, Comments, CommentCount, Content, LastComment, All] |
 
 ### Return type
 
@@ -521,10 +521,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **topicId** | **Integer**|  |
- **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **topicId** | **Integer**|  | |
+| **commentForApiContract** | [**CommentForApiContract**](CommentForApiContract.md)|  | [optional] |
 
 ### Return type
 
@@ -536,7 +536,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: text/plain, application/json, text/json
 
 
@@ -585,9 +585,9 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **topicId** | **Integer**|  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **topicId** | **Integer**|  | |
 
 ### Return type
 
@@ -650,10 +650,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **topicId** | **Integer**|  |
- **fields** | [**DiscussionTopicOptionalFields**](.md)|  | [optional] [enum: None, Comments, CommentCount, Content, LastComment, All]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **topicId** | **Integer**|  | |
+| **fields** | [**DiscussionTopicOptionalFields**](.md)|  | [optional] [enum: None, Comments, CommentCount, Content, LastComment, All] |
 
 ### Return type
 
@@ -715,10 +715,10 @@ public class Example {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **topicId** | **Integer**|  |
- **discussionTopicContract** | [**DiscussionTopicContract**](DiscussionTopicContract.md)|  | [optional]
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **topicId** | **Integer**|  | |
+| **discussionTopicContract** | [**DiscussionTopicContract**](DiscussionTopicContract.md)|  | [optional] |
 
 ### Return type
 
@@ -730,7 +730,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
 - **Accept**: Not defined
 
 

@@ -24,6 +24,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.SongListFeaturedCategory;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * SongListBaseContract
@@ -33,8 +34,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   SongListBaseContract.JSON_PROPERTY_ID,
   SongListBaseContract.JSON_PROPERTY_NAME
 })
-@JsonTypeName("SongListBaseContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class SongListBaseContract {
   public static final String JSON_PROPERTY_FEATURED_CATEGORY = "featuredCategory";
   private SongListFeaturedCategory featuredCategory;
@@ -45,6 +45,8 @@ public class SongListBaseContract {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;
 
+  public SongListBaseContract() {
+  }
 
   public SongListBaseContract featuredCategory(SongListFeaturedCategory featuredCategory) {
     

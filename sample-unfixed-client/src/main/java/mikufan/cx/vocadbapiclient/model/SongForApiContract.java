@@ -39,6 +39,7 @@ import mikufan.cx.vocadbapiclient.model.SongType;
 import mikufan.cx.vocadbapiclient.model.TagUsageForApiContract;
 import mikufan.cx.vocadbapiclient.model.WebLinkForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * SongForApiContract
@@ -75,8 +76,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   SongForApiContract.JSON_PROPERTY_MIN_MILLI_BPM,
   SongForApiContract.JSON_PROPERTY_MAX_MILLI_BPM
 })
-@JsonTypeName("SongForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class SongForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -168,6 +168,8 @@ public class SongForApiContract {
   public static final String JSON_PROPERTY_MAX_MILLI_BPM = "maxMilliBpm";
   private Integer maxMilliBpm;
 
+  public SongForApiContract() {
+  }
 
   public SongForApiContract additionalNames(String additionalNames) {
     

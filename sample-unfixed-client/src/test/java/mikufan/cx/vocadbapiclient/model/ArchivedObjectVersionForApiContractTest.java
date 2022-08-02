@@ -20,8 +20,11 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import mikufan.cx.vocadbapiclient.model.EntryStatus;
+import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -42,11 +45,51 @@ public class ArchivedObjectVersionForApiContractTest {
     }
 
     /**
+     * Test the property 'agentName'
+     */
+    @Test
+    public void agentNameTest() {
+        // TODO: test agentName
+    }
+
+    /**
+     * Test the property 'anythingChanged'
+     */
+    @Test
+    public void anythingChangedTest() {
+        // TODO: test anythingChanged
+    }
+
+    /**
+     * Test the property 'author'
+     */
+    @Test
+    public void authorTest() {
+        // TODO: test author
+    }
+
+    /**
      * Test the property 'changedFields'
      */
     @Test
     public void changedFieldsTest() {
         // TODO: test changedFields
+    }
+
+    /**
+     * Test the property 'created'
+     */
+    @Test
+    public void createdTest() {
+        // TODO: test created
+    }
+
+    /**
+     * Test the property 'hidden'
+     */
+    @Test
+    public void hiddenTest() {
+        // TODO: test hidden
     }
 
     /**
@@ -63,6 +106,22 @@ public class ArchivedObjectVersionForApiContractTest {
     @Test
     public void notesTest() {
         // TODO: test notes
+    }
+
+    /**
+     * Test the property 'reason'
+     */
+    @Test
+    public void reasonTest() {
+        // TODO: test reason
+    }
+
+    /**
+     * Test the property 'status'
+     */
+    @Test
+    public void statusTest() {
+        // TODO: test status
     }
 
     /**

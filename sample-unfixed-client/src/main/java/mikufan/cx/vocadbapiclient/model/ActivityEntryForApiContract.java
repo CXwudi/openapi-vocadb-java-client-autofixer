@@ -28,6 +28,7 @@ import mikufan.cx.vocadbapiclient.model.EntryEditEvent;
 import mikufan.cx.vocadbapiclient.model.EntryForApiContract;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 /**
  * ActivityEntryForApiContract
@@ -39,8 +40,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   ActivityEntryForApiContract.JSON_PROPERTY_EDIT_EVENT,
   ActivityEntryForApiContract.JSON_PROPERTY_ENTRY
 })
-@JsonTypeName("ActivityEntryForApiContract")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-23T13:02:48.301797700-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
 public class ActivityEntryForApiContract {
   public static final String JSON_PROPERTY_ARCHIVED_VERSION = "archivedVersion";
   private ArchivedObjectVersionForApiContract archivedVersion;
@@ -57,6 +57,8 @@ public class ActivityEntryForApiContract {
   public static final String JSON_PROPERTY_ENTRY = "entry";
   private EntryForApiContract entry;
 
+  public ActivityEntryForApiContract() {
+  }
 
   public ActivityEntryForApiContract archivedVersion(ArchivedObjectVersionForApiContract archivedVersion) {
     
