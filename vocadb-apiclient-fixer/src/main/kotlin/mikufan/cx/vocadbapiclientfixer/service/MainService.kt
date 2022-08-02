@@ -16,7 +16,7 @@ import java.nio.file.Path
  */
 @Service
 class MainService(
-  val outputDirectoryCleaner: OutputDirectoryCleaner,
+  val projectCopier: ProjectCopier,
   @Qualifier("modelReader") val modelsReader: FileRecordReader,
   val enumClassFilter: EnumClassFilter,
   val enumClassExtractor: EnumClassExtractor,
@@ -25,7 +25,9 @@ class MainService(
   val apiApiFilesFilter: ApiApiFilesFilter,
   val apiApiFileRenamer: ApiApiFileRenamer,
   val apiApiContentFixer: ApiApiContentFixer,
+  // TODO: resolve mediatype confliction
   val readMeFileCopier: ReadMeFileCopier,
+  // TODO: copy
 ) : Runnable {
 
   override fun run() {
@@ -45,7 +47,7 @@ class MainService(
       .writer(apiApiContentFixer)
       .build()
 
-    outputDirectoryCleaner.clean()
+    projectCopier.cleanThenCopy()
     JobExecutor().use { executor ->
       val jobReport = executor.execute(fixJob)
       log.info { "\n$jobReport" }

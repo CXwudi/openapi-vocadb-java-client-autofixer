@@ -15,8 +15,12 @@ config:
   multi-enums-class-template: multi-enums.java.template
   package-capture-regex: package ((\.|\w)+)
   enum-capture-regex: ([A-Z]+\("\w+"\))
+  project-copier:
+    # it will preserve first level directory/file in the output-project-directory
+    ignore-path: .git, .gitignore
   api-api-fix:
-    ignore-directory: bin, \.\w+, gradle
+    # it only ignore the first level directory in the output-project-directory
+    ignore-directory: bin, \.\w+, gradle, target
   old-readme-new-filename: README Original.md
 
 
