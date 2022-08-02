@@ -16,7 +16,8 @@ import kotlin.io.path.div
 @Component
 class ProjectCopier(
   ioConfig: IOConfig,
-  @Value("\${config.project-copier.ignore-path}") private val ignorePathNames: List<String>
+  @Value("\${config.project-copier.ignore-deletion-path}") private val ignoreDeletionPathNames: List<String>,
+  @Value("\${config.project-copier.ignore-copy-path}") private val ignoreCopyPathNames: List<String>
 ) {
   private val inputDirectory: Path = ioConfig.inputProjectDirectory
   private val outputDirectory: Path = ioConfig.outputProjectDirectory
@@ -30,7 +31,7 @@ class ProjectCopier(
     log.info { "Start cleaning up the output directory to avoid conflicting contents" }
     Files.list(outputDirectory)
       .parallel()
-      .filter { it != outputDirectory && ignorePathNames.all { ignoredPathName -> it != outputDirectory / ignoredPathName } }
+      .filter { it != outputDirectory && ignoreDeletionPathNames.all { ignoredPathName -> it != outputDirectory / ignoredPathName } }
       .forEach {
         log.debug { "deleting $it" }
         FileSystemUtils.deleteRecursively(it)
@@ -42,7 +43,7 @@ class ProjectCopier(
     log.info { "Starting copying the fresh copy of unfixed api client at $inputDirectory to $outputDirectory" }
     Files.list(inputDirectory)
       .parallel()
-      .filter { it != inputDirectory && ignorePathNames.all { ignoredPathName -> it != inputDirectory / ignoredPathName } }
+      .filter { it != inputDirectory && ignoreCopyPathNames.all { ignoredPathName -> it != inputDirectory / ignoredPathName } }
       .forEach {
         log.debug { "copying $it" }
         FileSystemUtils.copyRecursively(it, outputDirectory / it.fileName)

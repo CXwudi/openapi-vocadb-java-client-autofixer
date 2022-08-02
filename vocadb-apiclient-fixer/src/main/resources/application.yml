@@ -17,7 +17,9 @@ config:
   enum-capture-regex: ([A-Z]+\("\w+"\))
   project-copier:
     # it will preserve first level directory/file in the output-project-directory
-    ignore-path: .git, .gitignore, target, build
+    ignore-deletion-path: .git, .gitignore, target, build
+    # it will not copy those first level directory/file from input-project-directory to output-project-directory
+    ignore-copy-path: ${config.project-copier.ignore-deletion-path}, .github
   api-api-fix:
     # it only ignore the first level directory in the output-project-directory
     ignore-directory: bin, \.\w+, gradle, target, build
