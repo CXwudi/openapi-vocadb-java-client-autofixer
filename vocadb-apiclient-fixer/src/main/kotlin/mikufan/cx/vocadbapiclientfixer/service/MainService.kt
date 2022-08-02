@@ -16,6 +16,7 @@ import java.nio.file.Path
  */
 @Service
 class MainService(
+  val outputDirectoryCleaner: OutputDirectoryCleaner,
   @Qualifier("modelReader") val modelsReader: FileRecordReader,
   val enumClassFilter: EnumClassFilter,
   val enumClassExtractor: EnumClassExtractor,
@@ -44,14 +45,14 @@ class MainService(
       .writer(apiApiContentFixer)
       .build()
 
+    outputDirectoryCleaner.clean()
     JobExecutor().use { executor ->
       val jobReport = executor.execute(fixJob)
       log.info { "\n$jobReport" }
       val jobReport2 = executor.execute(apiRenameJob)
       log.info { "$jobReport2" }
-      readMeFileCopier.doCopy()
-      log.info { "Lastly, copied the readme file" }
     }
+    readMeFileCopier.doCopy()
   }
 }
 
