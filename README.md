@@ -28,6 +28,8 @@ openapi-generator-cli generate \
   -p useRuntimeException=true \
   -p openApiNullable=false \
   -p serializationLibrary=jackson \
+  -p licenseName=<your license name> \
+  -p licenseUrl=<your license url> \
 --library <any candidates other than okhttp-gson> \
 -o <give a name to your client directory>
 ```
@@ -38,6 +40,9 @@ openapi-generator-cli generate \
    1. remove `import <your package>.model.MediaType;`
    2. let `apiUsersCurrentAlbumsAlbumIdPost()` and `apiUsersCurrentAlbumsAlbumIdPostWithHttpInfo()` take the parameter of type `<your package>.model.MediaType`
 5. (Optional) update some of the dependencies used by the client
+   1. spring and jackson related dependencies
+   2. remove `jackson-databind-nullable`
+   3. edit LICENSE and etc.
 
 
 ### 2. Fix your raw client with this auto fixer

@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CommentForApiContractPartialFindResult.JSON_PROPERTY_TERM,
   CommentForApiContractPartialFindResult.JSON_PROPERTY_TOTAL_COUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
 public class CommentForApiContractPartialFindResult {
   public static final String JSON_PROPERTY_ITEMS = "items";
   private List<CommentForApiContract> items = null;

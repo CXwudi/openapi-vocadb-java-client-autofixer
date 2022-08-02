@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArtistForApiContractPartialFindResult.JSON_PROPERTY_TERM,
   ArtistForApiContractPartialFindResult.JSON_PROPERTY_TOTAL_COUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
 public class ArtistForApiContractPartialFindResult {
   public static final String JSON_PROPERTY_ITEMS = "items";
   private List<ArtistForApiContract> items = null;

@@ -21,6 +21,7 @@ import mikufan.cx.vocadbapiclient.model.EntryEditDataContract;
 import mikufan.cx.vocadbapiclient.model.EntryType;
 import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.LogicalGrouping;
+import mikufan.cx.vocadbapiclient.model.MediaType;
 import mikufan.cx.vocadbapiclient.model.NameMatchMode;
 import mikufan.cx.vocadbapiclient.model.PVServices;
 import mikufan.cx.vocadbapiclient.model.PurchaseStatus;
@@ -65,7 +66,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
 @Component("mikufan.cx.vocadbapiclient.api.UserApiApi")
 public class UserApiApi {
     private ApiClient apiClient;
@@ -147,7 +148,7 @@ public class UserApiApi {
      * @return String
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public String apiUsersCurrentAlbumsAlbumIdPost(Integer albumId, PurchaseStatus collectionStatus, mikufan.cx.vocadbapiclient.model.MediaType mediaType, Integer rating) throws RestClientException {
+    public String apiUsersCurrentAlbumsAlbumIdPost(Integer albumId, PurchaseStatus collectionStatus, MediaType mediaType, Integer rating) throws RestClientException {
         return apiUsersCurrentAlbumsAlbumIdPostWithHttpInfo(albumId, collectionStatus, mediaType, rating).getBody();
     }
 
@@ -162,7 +163,7 @@ public class UserApiApi {
      * @return ResponseEntity&lt;String&gt;
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ResponseEntity<String> apiUsersCurrentAlbumsAlbumIdPostWithHttpInfo(Integer albumId, PurchaseStatus collectionStatus, mikufan.cx.vocadbapiclient.model.MediaType mediaType, Integer rating) throws RestClientException {
+    public ResponseEntity<String> apiUsersCurrentAlbumsAlbumIdPostWithHttpInfo(Integer albumId, PurchaseStatus collectionStatus, MediaType mediaType, Integer rating) throws RestClientException {
         Object localVarPostBody = null;
         
         // verify the required parameter 'albumId' is set

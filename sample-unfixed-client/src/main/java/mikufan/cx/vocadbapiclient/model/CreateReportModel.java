@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CreateReportModel.JSON_PROPERTY_REPORT_TYPE,
   CreateReportModel.JSON_PROPERTY_REASON
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
 public class CreateReportModel {
   public static final String JSON_PROPERTY_REPORT_TYPE = "reportType";
   private UserReportType reportType;

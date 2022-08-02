@@ -16,8 +16,8 @@
 
     <licenses>
         <license>
-            <name>Unlicense</name>
-            <url>http://unlicense.org</url>
+            <name>WTFPL</name>
+            <url>http://www.wtfpl.net/</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -245,11 +245,6 @@
             <version>${jackson-version}</version>
         </dependency>
         <dependency>
-            <groupId>org.openapitools</groupId>
-            <artifactId>jackson-databind-nullable</artifactId>
-            <version>${jackson-databind-nullable-version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
             <version>${jackson-version}</version>
@@ -272,10 +267,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <swagger-annotations-version>1.5.22</swagger-annotations-version>
-        <spring-web-version>5.3.21</spring-web-version>
+        <spring-web-version>5.3.22</spring-web-version>
         <jackson-version>2.13.3</jackson-version>
         <jackson-databind-version>2.13.3</jackson-databind-version>
-        <jackson-databind-nullable-version>0.2.3</jackson-databind-nullable-version>
         <jakarta-annotation-version>1.3.5</jakarta-annotation-version>
         <maven-plugin-version>1.0.0</maven-plugin-version>
         <junit-version>4.13.2</junit-version>

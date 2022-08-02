@@ -38,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongInAlbumForApiContract.JSON_PROPERTY_SONG,
   SongInAlbumForApiContract.JSON_PROPERTY_TRACK_NUMBER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
 public class SongInAlbumForApiContract {
   public static final String JSON_PROPERTY_DISC_NUMBER = "discNumber";
   private Integer discNumber;

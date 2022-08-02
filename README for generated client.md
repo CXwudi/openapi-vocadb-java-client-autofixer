@@ -23,8 +23,10 @@ openapi-generator-cli generate \
     -p useRuntimeException=true \
     -p openApiNullable=false \
     -p serializationLibrary=jackson \
+    -p licenseName=WTFPL \
+    -p licenseUrl=http://www.wtfpl.net/ \
   --library resttemplate \
-  -o vocadb-api-client-resttemplate
+  -o vocadb-openapi-client-java
 ```
 
 ## How to import

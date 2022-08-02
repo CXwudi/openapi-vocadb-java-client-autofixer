@@ -71,7 +71,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   EntryForApiContract.JSON_PROPERTY_VERSION,
   EntryForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
 public class EntryForApiContract {
   public static final String JSON_PROPERTY_ACTIVITY_DATE = "activityDate";
   private LocalDateTime activityDate;

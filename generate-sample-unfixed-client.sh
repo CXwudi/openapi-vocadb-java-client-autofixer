@@ -13,5 +13,9 @@ docker run --rm -v "${PWD}/sample-unfixed-client:/local/sample-unfixed-client" o
     -p useRuntimeException=true \
     -p openApiNullable=false \
     -p serializationLibrary=jackson \
+    -p licenseName=WTFPL \
+    -p licenseUrl=http://www.wtfpl.net/ \
   --library resttemplate \
   -o /local/sample-unfixed-client
+
+cp LICENSE sample-unfixed-client/LICENSE

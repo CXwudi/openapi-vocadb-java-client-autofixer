@@ -39,7 +39,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AlbumForUserForApiContract.JSON_PROPERTY_RATING,
   AlbumForUserForApiContract.JSON_PROPERTY_USER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
 public class AlbumForUserForApiContract {
   public static final String JSON_PROPERTY_ALBUM = "album";
   private AlbumForApiContract album;

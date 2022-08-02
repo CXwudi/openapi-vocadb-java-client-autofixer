@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   EntryEditDataContract.JSON_PROPERTY_USER_ID,
   EntryEditDataContract.JSON_PROPERTY_USER_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T18:31:43.684348Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
 public class EntryEditDataContract {
   public static final String JSON_PROPERTY_TIME = "time";
   private LocalDateTime time;
