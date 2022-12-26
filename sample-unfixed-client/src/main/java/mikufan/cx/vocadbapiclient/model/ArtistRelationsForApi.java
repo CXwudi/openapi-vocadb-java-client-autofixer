@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.AlbumForApiContract;
@@ -40,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArtistRelationsForApi.JSON_PROPERTY_POPULAR_ALBUMS,
   ArtistRelationsForApi.JSON_PROPERTY_POPULAR_SONGS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class ArtistRelationsForApi {
   public static final String JSON_PROPERTY_LATEST_ALBUMS = "latestAlbums";
   private List<AlbumForApiContract> latestAlbums = null;
@@ -78,8 +76,7 @@ public class ArtistRelationsForApi {
    * Get latestAlbums
    * @return latestAlbums
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LATEST_ALBUMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -113,8 +110,7 @@ public class ArtistRelationsForApi {
    * Get latestEvents
    * @return latestEvents
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LATEST_EVENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -148,8 +144,7 @@ public class ArtistRelationsForApi {
    * Get latestSongs
    * @return latestSongs
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LATEST_SONGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -183,8 +178,7 @@ public class ArtistRelationsForApi {
    * Get popularAlbums
    * @return popularAlbums
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_POPULAR_ALBUMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -218,8 +212,7 @@ public class ArtistRelationsForApi {
    * Get popularSongs
    * @return popularSongs
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_POPULAR_SONGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

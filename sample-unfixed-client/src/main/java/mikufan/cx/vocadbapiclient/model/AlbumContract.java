@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.DiscType;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
@@ -49,7 +47,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AlbumContract.JSON_PROPERTY_STATUS,
   AlbumContract.JSON_PROPERTY_VERSION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class AlbumContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -106,8 +104,7 @@ public class AlbumContract {
    * Get additionalNames
    * @return additionalNames
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADDITIONAL_NAMES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -133,8 +130,7 @@ public class AlbumContract {
    * Get artistString
    * @return artistString
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ARTIST_STRING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -160,8 +156,7 @@ public class AlbumContract {
    * Get coverPictureMime
    * @return coverPictureMime
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COVER_PICTURE_MIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -187,8 +182,7 @@ public class AlbumContract {
    * Get createDate
    * @return createDate
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATE_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -214,8 +208,7 @@ public class AlbumContract {
    * Get deleted
    * @return deleted
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -241,8 +234,7 @@ public class AlbumContract {
    * Get discType
    * @return discType
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DISC_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -268,8 +260,7 @@ public class AlbumContract {
    * Get id
    * @return id
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -295,8 +286,7 @@ public class AlbumContract {
    * Get name
    * @return name
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -322,8 +312,7 @@ public class AlbumContract {
    * Get ratingAverage
    * @return ratingAverage
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATING_AVERAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -349,8 +338,7 @@ public class AlbumContract {
    * Get ratingCount
    * @return ratingCount
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATING_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -376,8 +364,7 @@ public class AlbumContract {
    * Get releaseDate
    * @return releaseDate
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RELEASE_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -403,8 +390,7 @@ public class AlbumContract {
    * Get releaseEvent
    * @return releaseEvent
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RELEASE_EVENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -430,8 +416,7 @@ public class AlbumContract {
    * Get status
    * @return status
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -457,8 +442,7 @@ public class AlbumContract {
    * Get version
    * @return version
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

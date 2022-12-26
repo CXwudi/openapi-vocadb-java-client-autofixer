@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
@@ -36,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RelatedSongsContract.JSON_PROPERTY_LIKE_MATCHES,
   RelatedSongsContract.JSON_PROPERTY_TAG_MATCHES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class RelatedSongsContract {
   public static final String JSON_PROPERTY_ARTIST_MATCHES = "artistMatches";
   private List<SongForApiContract> artistMatches = null;
@@ -68,8 +66,7 @@ public class RelatedSongsContract {
    * Get artistMatches
    * @return artistMatches
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ARTIST_MATCHES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -103,8 +100,7 @@ public class RelatedSongsContract {
    * Get likeMatches
    * @return likeMatches
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIKE_MATCHES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -138,8 +134,7 @@ public class RelatedSongsContract {
    * Get tagMatches
    * @return tagMatches
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAG_MATCHES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import mikufan.cx.vocadbapiclient.model.UserInboxType;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -41,7 +39,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UserMessageContract.JSON_PROPERTY_SENDER,
   UserMessageContract.JSON_PROPERTY_SUBJECT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class UserMessageContract {
   public static final String JSON_PROPERTY_BODY = "body";
   private String body;
@@ -83,8 +81,7 @@ public class UserMessageContract {
    * Get body
    * @return body
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -110,8 +107,7 @@ public class UserMessageContract {
    * Get createdFormatted
    * @return createdFormatted
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATED_FORMATTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -137,8 +133,7 @@ public class UserMessageContract {
    * Get highPriority
    * @return highPriority
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HIGH_PRIORITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -164,8 +159,7 @@ public class UserMessageContract {
    * Get id
    * @return id
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -191,8 +185,7 @@ public class UserMessageContract {
    * Get inbox
    * @return inbox
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INBOX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -218,8 +211,7 @@ public class UserMessageContract {
    * Get read
    * @return read
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_READ)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -245,8 +237,7 @@ public class UserMessageContract {
    * Get receiver
    * @return receiver
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECEIVER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -272,8 +263,7 @@ public class UserMessageContract {
    * Get sender
    * @return sender
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -299,8 +289,7 @@ public class UserMessageContract {
    * Get subject
    * @return subject
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

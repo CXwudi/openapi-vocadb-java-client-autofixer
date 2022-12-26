@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.ArtistCategories;
 import mikufan.cx.vocadbapiclient.model.ArtistContract;
 import mikufan.cx.vocadbapiclient.model.ArtistRoles;
@@ -39,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArtistForAlbumForApiContract.JSON_PROPERTY_NAME,
   ArtistForAlbumForApiContract.JSON_PROPERTY_ROLES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class ArtistForAlbumForApiContract {
   public static final String JSON_PROPERTY_ARTIST = "artist";
   private ArtistContract artist;
@@ -72,8 +70,7 @@ public class ArtistForAlbumForApiContract {
    * Get artist
    * @return artist
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ARTIST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -99,8 +96,7 @@ public class ArtistForAlbumForApiContract {
    * Get categories
    * @return categories
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -126,8 +122,7 @@ public class ArtistForAlbumForApiContract {
    * Get effectiveRoles
    * @return effectiveRoles
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EFFECTIVE_ROLES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -153,8 +148,7 @@ public class ArtistForAlbumForApiContract {
    * Get isSupport
    * @return isSupport
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_SUPPORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -180,8 +174,7 @@ public class ArtistForAlbumForApiContract {
    * Get name
    * @return name
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -207,8 +200,7 @@ public class ArtistForAlbumForApiContract {
    * Get roles
    * @return roles
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ROLES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

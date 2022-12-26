@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.SongListForApiContract;
@@ -36,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongListForApiContractPartialFindResult.JSON_PROPERTY_TERM,
   SongListForApiContractPartialFindResult.JSON_PROPERTY_TOTAL_COUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class SongListForApiContractPartialFindResult {
   public static final String JSON_PROPERTY_ITEMS = "items";
   private List<SongListForApiContract> items = null;
@@ -68,8 +66,7 @@ public class SongListForApiContractPartialFindResult {
    * Get items
    * @return items
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ITEMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -95,8 +92,7 @@ public class SongListForApiContractPartialFindResult {
    * Get term
    * @return term
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TERM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -122,8 +118,7 @@ public class SongListForApiContractPartialFindResult {
    * Get totalCount
    * @return totalCount
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

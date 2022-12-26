@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.ArtistCategories;
 import mikufan.cx.vocadbapiclient.model.ArtistContract;
 import mikufan.cx.vocadbapiclient.model.ArtistRoles;
@@ -41,7 +39,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArtistForSongContract.JSON_PROPERTY_NAME,
   ArtistForSongContract.JSON_PROPERTY_ROLES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class ArtistForSongContract {
   public static final String JSON_PROPERTY_ARTIST = "artist";
   private ArtistContract artist;
@@ -80,8 +78,7 @@ public class ArtistForSongContract {
    * Get artist
    * @return artist
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ARTIST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -107,8 +104,7 @@ public class ArtistForSongContract {
    * Get categories
    * @return categories
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -134,8 +130,7 @@ public class ArtistForSongContract {
    * Get effectiveRoles
    * @return effectiveRoles
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EFFECTIVE_ROLES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -161,8 +156,7 @@ public class ArtistForSongContract {
    * Get id
    * @return id
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -188,8 +182,7 @@ public class ArtistForSongContract {
    * Get isCustomName
    * @return isCustomName
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_CUSTOM_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -215,8 +208,7 @@ public class ArtistForSongContract {
    * Get isSupport
    * @return isSupport
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_SUPPORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -242,8 +234,7 @@ public class ArtistForSongContract {
    * Get name
    * @return name
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -269,8 +260,7 @@ public class ArtistForSongContract {
    * Get roles
    * @return roles
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ROLES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

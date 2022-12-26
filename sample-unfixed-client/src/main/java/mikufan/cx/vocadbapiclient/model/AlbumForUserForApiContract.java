@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.AlbumForApiContract;
 import mikufan.cx.vocadbapiclient.model.MediaType;
 import mikufan.cx.vocadbapiclient.model.PurchaseStatus;
@@ -39,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AlbumForUserForApiContract.JSON_PROPERTY_RATING,
   AlbumForUserForApiContract.JSON_PROPERTY_USER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class AlbumForUserForApiContract {
   public static final String JSON_PROPERTY_ALBUM = "album";
   private AlbumForApiContract album;
@@ -69,8 +67,7 @@ public class AlbumForUserForApiContract {
    * Get album
    * @return album
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ALBUM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -96,8 +93,7 @@ public class AlbumForUserForApiContract {
    * Get mediaType
    * @return mediaType
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MEDIA_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -123,8 +119,7 @@ public class AlbumForUserForApiContract {
    * Get purchaseStatus
    * @return purchaseStatus
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PURCHASE_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -150,8 +145,7 @@ public class AlbumForUserForApiContract {
    * Get rating
    * @return rating
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -177,8 +171,7 @@ public class AlbumForUserForApiContract {
    * Get user
    * @return user
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

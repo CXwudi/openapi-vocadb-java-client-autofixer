@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongVoteRating;
@@ -38,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RatedSongForUserForApiContract.JSON_PROPERTY_USER,
   RatedSongForUserForApiContract.JSON_PROPERTY_RATING
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class RatedSongForUserForApiContract {
   public static final String JSON_PROPERTY_DATE = "date";
   private LocalDateTime date;
@@ -65,8 +63,7 @@ public class RatedSongForUserForApiContract {
    * Get date
    * @return date
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -92,8 +89,7 @@ public class RatedSongForUserForApiContract {
    * Get song
    * @return song
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SONG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -119,8 +115,7 @@ public class RatedSongForUserForApiContract {
    * Get user
    * @return user
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -146,8 +141,7 @@ public class RatedSongForUserForApiContract {
    * Get rating
    * @return rating
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

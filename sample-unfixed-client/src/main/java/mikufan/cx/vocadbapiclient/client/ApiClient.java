@@ -54,7 +54,7 @@ import java.time.OffsetDateTime;
 
 import mikufan.cx.vocadbapiclient.client.auth.Authentication;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 @Component("mikufan.cx.vocadbapiclient.client.ApiClient")
 public class ApiClient extends JavaTimeFormatter {
     public enum CollectionFormat {

@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongVoteRating;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -38,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongInAlbumForApiContract.JSON_PROPERTY_SONG,
   SongInAlbumForApiContract.JSON_PROPERTY_TRACK_NUMBER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class SongInAlbumForApiContract {
   public static final String JSON_PROPERTY_DISC_NUMBER = "discNumber";
   private Integer discNumber;
@@ -71,8 +69,7 @@ public class SongInAlbumForApiContract {
    * Get discNumber
    * @return discNumber
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DISC_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -98,8 +95,7 @@ public class SongInAlbumForApiContract {
    * Get id
    * @return id
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -125,8 +121,7 @@ public class SongInAlbumForApiContract {
    * Get name
    * @return name
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -152,8 +147,7 @@ public class SongInAlbumForApiContract {
    * Get rating
    * @return rating
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -179,8 +173,7 @@ public class SongInAlbumForApiContract {
    * Get song
    * @return song
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SONG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -206,8 +199,7 @@ public class SongInAlbumForApiContract {
    * Get trackNumber
    * @return trackNumber
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRACK_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

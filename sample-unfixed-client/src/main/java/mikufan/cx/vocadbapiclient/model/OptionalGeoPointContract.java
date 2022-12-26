@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
@@ -34,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   OptionalGeoPointContract.JSON_PROPERTY_LATITUDE,
   OptionalGeoPointContract.JSON_PROPERTY_LONGITUDE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class OptionalGeoPointContract {
   public static final String JSON_PROPERTY_FORMATTED = "formatted";
   private String formatted;
@@ -61,8 +59,7 @@ public class OptionalGeoPointContract {
    * Get formatted
    * @return formatted
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FORMATTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -88,8 +85,7 @@ public class OptionalGeoPointContract {
    * Get hasValue
    * @return hasValue
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HAS_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -115,8 +111,7 @@ public class OptionalGeoPointContract {
    * Get latitude
    * @return latitude
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LATITUDE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -142,8 +137,7 @@ public class OptionalGeoPointContract {
    * Get longitude
    * @return longitude
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LONGITUDE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

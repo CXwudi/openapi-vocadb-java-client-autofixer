@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -76,7 +74,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongForApiContract.JSON_PROPERTY_MIN_MILLI_BPM,
   SongForApiContract.JSON_PROPERTY_MAX_MILLI_BPM
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class SongForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -181,8 +179,7 @@ public class SongForApiContract {
    * Get additionalNames
    * @return additionalNames
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADDITIONAL_NAMES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -216,8 +213,7 @@ public class SongForApiContract {
    * Get albums
    * @return albums
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ALBUMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -251,8 +247,7 @@ public class SongForApiContract {
    * Get artists
    * @return artists
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ARTISTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -278,8 +273,7 @@ public class SongForApiContract {
    * Get artistString
    * @return artistString
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ARTIST_STRING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -305,8 +299,7 @@ public class SongForApiContract {
    * Get createDate
    * @return createDate
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATE_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -332,8 +325,7 @@ public class SongForApiContract {
    * Get defaultName
    * @return defaultName
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEFAULT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -359,8 +351,7 @@ public class SongForApiContract {
    * Get defaultNameLanguage
    * @return defaultNameLanguage
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEFAULT_NAME_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -386,8 +377,7 @@ public class SongForApiContract {
    * Get deleted
    * @return deleted
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -413,8 +403,7 @@ public class SongForApiContract {
    * Get favoritedTimes
    * @return favoritedTimes
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FAVORITED_TIMES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -440,8 +429,7 @@ public class SongForApiContract {
    * Get id
    * @return id
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -467,8 +455,7 @@ public class SongForApiContract {
    * Get lengthSeconds
    * @return lengthSeconds
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LENGTH_SECONDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -502,8 +489,7 @@ public class SongForApiContract {
    * Get lyrics
    * @return lyrics
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LYRICS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -529,8 +515,7 @@ public class SongForApiContract {
    * Get mainPicture
    * @return mainPicture
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MAIN_PICTURE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -556,8 +541,7 @@ public class SongForApiContract {
    * Get mergedTo
    * @return mergedTo
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MERGED_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -583,8 +567,7 @@ public class SongForApiContract {
    * Get name
    * @return name
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -618,8 +601,7 @@ public class SongForApiContract {
    * Get names
    * @return names
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAMES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -645,8 +627,7 @@ public class SongForApiContract {
    * Get originalVersionId
    * @return originalVersionId
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ORIGINAL_VERSION_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -672,8 +653,7 @@ public class SongForApiContract {
    * Get publishDate
    * @return publishDate
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PUBLISH_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -707,8 +687,7 @@ public class SongForApiContract {
    * Get pvs
    * @return pvs
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PVS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -734,8 +713,7 @@ public class SongForApiContract {
    * Get pvServices
    * @return pvServices
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PV_SERVICES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -761,8 +739,7 @@ public class SongForApiContract {
    * Get ratingScore
    * @return ratingScore
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RATING_SCORE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -788,8 +765,7 @@ public class SongForApiContract {
    * Get releaseEvent
    * @return releaseEvent
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RELEASE_EVENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -815,8 +791,7 @@ public class SongForApiContract {
    * Get songType
    * @return songType
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SONG_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -842,8 +817,7 @@ public class SongForApiContract {
    * Get status
    * @return status
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -877,8 +851,7 @@ public class SongForApiContract {
    * Get tags
    * @return tags
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -904,8 +877,7 @@ public class SongForApiContract {
    * Get thumbUrl
    * @return thumbUrl
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_THUMB_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -931,8 +903,7 @@ public class SongForApiContract {
    * Get version
    * @return version
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -966,8 +937,7 @@ public class SongForApiContract {
    * Get webLinks
    * @return webLinks
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WEB_LINKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -993,8 +963,7 @@ public class SongForApiContract {
    * Get minMilliBpm
    * @return minMilliBpm
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MIN_MILLI_BPM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -1020,8 +989,7 @@ public class SongForApiContract {
    * Get maxMilliBpm
    * @return maxMilliBpm
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MAX_MILLI_BPM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 

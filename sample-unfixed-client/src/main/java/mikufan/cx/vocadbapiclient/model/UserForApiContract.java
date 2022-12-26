@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +44,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UserForApiContract.JSON_PROPERTY_ID,
   UserForApiContract.JSON_PROPERTY_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-02T20:16:06.008977Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
 public class UserForApiContract {
   public static final String JSON_PROPERTY_ACTIVE = "active";
   private Boolean active;
@@ -88,8 +86,7 @@ public class UserForApiContract {
    * Get active
    * @return active
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -115,8 +112,7 @@ public class UserForApiContract {
    * Get groupId
    * @return groupId
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GROUP_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -150,8 +146,7 @@ public class UserForApiContract {
    * Get knownLanguages
    * @return knownLanguages
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_KNOWN_LANGUAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -177,8 +172,7 @@ public class UserForApiContract {
    * Get mainPicture
    * @return mainPicture
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MAIN_PICTURE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -204,8 +198,7 @@ public class UserForApiContract {
    * Get memberSince
    * @return memberSince
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MEMBER_SINCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -239,8 +232,7 @@ public class UserForApiContract {
    * Get oldUsernames
    * @return oldUsernames
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OLD_USERNAMES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -266,8 +258,7 @@ public class UserForApiContract {
    * Get verifiedArtist
    * @return verifiedArtist
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VERIFIED_ARTIST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -293,8 +284,7 @@ public class UserForApiContract {
    * Get id
    * @return id
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -320,8 +310,7 @@ public class UserForApiContract {
    * Get name
    * @return name
   **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
