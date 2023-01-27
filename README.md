@@ -15,25 +15,26 @@ Just go to my sample [VocaDB OpenAPI Java Client](https://github.com/CXwudi/voca
 2. grab the `swagger.json` from VocaDB API [page](https://vocadb.net/swagger/index.html)
 3. open bash and run these command
 
-   ``` shall
-   openapi-generator-cli generate \
+   ``` shell
+openapi-generator-cli generate \
    --api-package <your package>.api \
    --model-package <your package>.model \
    --invoker-package <your package>.client \
-   -i <location of the swagger.json file> \
+   -i <location of the vocadb swagger.json file> \
    --group-id <your group-id> \
    --artifact-id <your artifact-id> \
    --artifact-version <your version> \
    -g java  \
-   -p java8=true \
-   -p dateLibrary=java8-localdatetime \
-   -p useRuntimeException=true \
-   -p openApiNullable=false \
-   -p serializationLibrary=jackson \
-   -p licenseName=<your license name> \
-   -p licenseUrl=<your license url> \
+      -p java8=true \
+      -p dateLibrary=java8-localdatetime \
+      -p useRuntimeException=true \
+      -p useJakartaEe=true \
+      -p openApiNullable=false \
+      -p serializationLibrary=jackson \
+      -p licenseName=<your license name> \
+      -p licenseUrl=<your license url> \
    --library <any candidates other than okhttp-gson> \
-   -o <give a name to your client directory>
+   -o /local/sample-unfixed-client
    ```
    - available library candidates are specified in OpenAPI Java [page](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/java.md)
    - if you are using docker, make sure you modified the generator launch command,
