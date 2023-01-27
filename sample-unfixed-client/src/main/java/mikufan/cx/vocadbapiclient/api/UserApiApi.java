@@ -21,7 +21,6 @@ import mikufan.cx.vocadbapiclient.model.EntryEditDataContract;
 import mikufan.cx.vocadbapiclient.model.EntryType;
 import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.LogicalGrouping;
-import mikufan.cx.vocadbapiclient.model.MediaType;
 import mikufan.cx.vocadbapiclient.model.NameMatchMode;
 import mikufan.cx.vocadbapiclient.model.PVServices;
 import mikufan.cx.vocadbapiclient.model.PurchaseStatus;
@@ -147,7 +146,7 @@ public class UserApiApi {
      * @return String
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public String apiUsersCurrentAlbumsAlbumIdPost(Integer albumId, PurchaseStatus collectionStatus, MediaType mediaType, Integer rating) throws RestClientException {
+    public String apiUsersCurrentAlbumsAlbumIdPost(Integer albumId, PurchaseStatus collectionStatus, mikufan.cx.vocadbapiclient.model.MediaType mediaType, Integer rating) throws RestClientException {
         return apiUsersCurrentAlbumsAlbumIdPostWithHttpInfo(albumId, collectionStatus, mediaType, rating).getBody();
     }
 
@@ -162,7 +161,7 @@ public class UserApiApi {
      * @return ResponseEntity&lt;String&gt;
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ResponseEntity<String> apiUsersCurrentAlbumsAlbumIdPostWithHttpInfo(Integer albumId, PurchaseStatus collectionStatus, MediaType mediaType, Integer rating) throws RestClientException {
+    public ResponseEntity<String> apiUsersCurrentAlbumsAlbumIdPostWithHttpInfo(Integer albumId, PurchaseStatus collectionStatus, mikufan.cx.vocadbapiclient.model.MediaType mediaType, Integer rating) throws RestClientException {
         Object localVarPostBody = null;
         
         // verify the required parameter 'albumId' is set
@@ -680,7 +679,7 @@ public class UserApiApi {
      * @return AlbumForUserForApiContractPartialFindResult
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public AlbumForUserForApiContractPartialFindResult apiUsersIdAlbumsGet(Integer id, String query, Integer tagId, String tag, Integer artistId, PurchaseStatuses purchaseStatuses, Integer releaseEventId, DiscType albumTypes, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, AlbumSortRule sort, NameMatchMode nameMatchMode, AlbumOptionalFields fields, ContentLanguagePreference lang, MediaType mediaType) throws RestClientException {
+    public AlbumForUserForApiContractPartialFindResult apiUsersIdAlbumsGet(Integer id, String query, Integer tagId, String tag, Integer artistId, PurchaseStatuses purchaseStatuses, Integer releaseEventId, DiscType albumTypes, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, AlbumSortRule sort, NameMatchMode nameMatchMode, AlbumOptionalFields fields, ContentLanguagePreference lang, mikufan.cx.vocadbapiclient.model.MediaType mediaType) throws RestClientException {
         return apiUsersIdAlbumsGetWithHttpInfo(id, query, tagId, tag, artistId, purchaseStatuses, releaseEventId, albumTypes, advancedFilters, start, maxResults, getTotalCount, sort, nameMatchMode, fields, lang, mediaType).getBody();
     }
 
@@ -708,7 +707,7 @@ public class UserApiApi {
      * @return ResponseEntity&lt;AlbumForUserForApiContractPartialFindResult&gt;
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ResponseEntity<AlbumForUserForApiContractPartialFindResult> apiUsersIdAlbumsGetWithHttpInfo(Integer id, String query, Integer tagId, String tag, Integer artistId, PurchaseStatuses purchaseStatuses, Integer releaseEventId, DiscType albumTypes, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, AlbumSortRule sort, NameMatchMode nameMatchMode, AlbumOptionalFields fields, ContentLanguagePreference lang, MediaType mediaType) throws RestClientException {
+    public ResponseEntity<AlbumForUserForApiContractPartialFindResult> apiUsersIdAlbumsGetWithHttpInfo(Integer id, String query, Integer tagId, String tag, Integer artistId, PurchaseStatuses purchaseStatuses, Integer releaseEventId, DiscType albumTypes, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, AlbumSortRule sort, NameMatchMode nameMatchMode, AlbumOptionalFields fields, ContentLanguagePreference lang, mikufan.cx.vocadbapiclient.model.MediaType mediaType) throws RestClientException {
         Object localVarPostBody = null;
         
         // verify the required parameter 'id' is set
