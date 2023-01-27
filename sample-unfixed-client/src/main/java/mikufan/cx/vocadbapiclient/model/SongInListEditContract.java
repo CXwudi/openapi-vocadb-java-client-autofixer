@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongInListEditContract.JSON_PROPERTY_ORDER,
   SongInListEditContract.JSON_PROPERTY_SONG
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
 public class SongInListEditContract {
   public static final String JSON_PROPERTY_SONG_IN_LIST_ID = "songInListId";
   private Integer songInListId;

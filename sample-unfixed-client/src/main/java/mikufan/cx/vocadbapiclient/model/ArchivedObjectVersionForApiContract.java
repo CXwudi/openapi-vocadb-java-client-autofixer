@@ -39,12 +39,13 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArchivedObjectVersionForApiContract.JSON_PROPERTY_CREATED,
   ArchivedObjectVersionForApiContract.JSON_PROPERTY_HIDDEN,
   ArchivedObjectVersionForApiContract.JSON_PROPERTY_ID,
+  ArchivedObjectVersionForApiContract.JSON_PROPERTY_IS_SNAPSHOT,
   ArchivedObjectVersionForApiContract.JSON_PROPERTY_NOTES,
   ArchivedObjectVersionForApiContract.JSON_PROPERTY_REASON,
   ArchivedObjectVersionForApiContract.JSON_PROPERTY_STATUS,
   ArchivedObjectVersionForApiContract.JSON_PROPERTY_VERSION
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
 public class ArchivedObjectVersionForApiContract {
   public static final String JSON_PROPERTY_AGENT_NAME = "agentName";
   private String agentName;
@@ -66,6 +67,9 @@ public class ArchivedObjectVersionForApiContract {
 
   public static final String JSON_PROPERTY_ID = "id";
   private Integer id;
+
+  public static final String JSON_PROPERTY_IS_SNAPSHOT = "isSnapshot";
+  private Boolean isSnapshot;
 
   public static final String JSON_PROPERTY_NOTES = "notes";
   private String notes;
@@ -272,6 +276,32 @@ public class ArchivedObjectVersionForApiContract {
   }
 
 
+  public ArchivedObjectVersionForApiContract isSnapshot(Boolean isSnapshot) {
+    
+    this.isSnapshot = isSnapshot;
+    return this;
+  }
+
+   /**
+   * Get isSnapshot
+   * @return isSnapshot
+  **/
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_IS_SNAPSHOT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Boolean getIsSnapshot() {
+    return isSnapshot;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_IS_SNAPSHOT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setIsSnapshot(Boolean isSnapshot) {
+    this.isSnapshot = isSnapshot;
+  }
+
+
   public ArchivedObjectVersionForApiContract notes(String notes) {
     
     this.notes = notes;
@@ -392,6 +422,7 @@ public class ArchivedObjectVersionForApiContract {
         Objects.equals(this.created, archivedObjectVersionForApiContract.created) &&
         Objects.equals(this.hidden, archivedObjectVersionForApiContract.hidden) &&
         Objects.equals(this.id, archivedObjectVersionForApiContract.id) &&
+        Objects.equals(this.isSnapshot, archivedObjectVersionForApiContract.isSnapshot) &&
         Objects.equals(this.notes, archivedObjectVersionForApiContract.notes) &&
         Objects.equals(this.reason, archivedObjectVersionForApiContract.reason) &&
         Objects.equals(this.status, archivedObjectVersionForApiContract.status) &&
@@ -400,7 +431,7 @@ public class ArchivedObjectVersionForApiContract {
 
   @Override
   public int hashCode() {
-    return Objects.hash(agentName, anythingChanged, author, changedFields, created, hidden, id, notes, reason, status, version);
+    return Objects.hash(agentName, anythingChanged, author, changedFields, created, hidden, id, isSnapshot, notes, reason, status, version);
   }
 
   @Override
@@ -414,6 +445,7 @@ public class ArchivedObjectVersionForApiContract {
     sb.append("    created: ").append(toIndentedString(created)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    isSnapshot: ").append(toIndentedString(isSnapshot)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    reason: ").append(toIndentedString(reason)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");

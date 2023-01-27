@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArchivedWebLinkContract.JSON_PROPERTY_DISABLED,
   ArchivedWebLinkContract.JSON_PROPERTY_URL
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
 public class ArchivedWebLinkContract {
   public static final String JSON_PROPERTY_CATEGORY = "category";
   private WebLinkCategory category;

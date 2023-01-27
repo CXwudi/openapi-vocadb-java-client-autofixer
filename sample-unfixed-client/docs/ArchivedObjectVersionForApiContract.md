@@ -14,6 +14,7 @@
 |**created** | **LocalDateTime** |  |  [optional] |
 |**hidden** | **Boolean** |  |  [optional] |
 |**id** | **Integer** |  |  [optional] |
+|**isSnapshot** | **Boolean** |  |  [optional] |
 |**notes** | **String** |  |  [optional] |
 |**reason** | **String** |  |  [optional] |
 |**status** | **EntryStatus** |  |  [optional] |

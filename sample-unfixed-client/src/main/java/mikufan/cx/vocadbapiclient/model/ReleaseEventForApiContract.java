@@ -28,6 +28,7 @@ import mikufan.cx.vocadbapiclient.model.EntryStatus;
 import mikufan.cx.vocadbapiclient.model.EntryThumbForApiContract;
 import mikufan.cx.vocadbapiclient.model.EventCategory;
 import mikufan.cx.vocadbapiclient.model.LocalizedStringContract;
+import mikufan.cx.vocadbapiclient.model.PVContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesContract;
 import mikufan.cx.vocadbapiclient.model.SongListBaseContract;
 import mikufan.cx.vocadbapiclient.model.TagUsageForApiContract;
@@ -50,6 +51,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ReleaseEventForApiContract.JSON_PROPERTY_MAIN_PICTURE,
   ReleaseEventForApiContract.JSON_PROPERTY_NAME,
   ReleaseEventForApiContract.JSON_PROPERTY_NAMES,
+  ReleaseEventForApiContract.JSON_PROPERTY_PVS,
   ReleaseEventForApiContract.JSON_PROPERTY_SERIES,
   ReleaseEventForApiContract.JSON_PROPERTY_SERIES_ID,
   ReleaseEventForApiContract.JSON_PROPERTY_SERIES_NUMBER,
@@ -63,7 +65,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ReleaseEventForApiContract.JSON_PROPERTY_VERSION,
   ReleaseEventForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
 public class ReleaseEventForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -94,6 +96,9 @@ public class ReleaseEventForApiContract {
 
   public static final String JSON_PROPERTY_NAMES = "names";
   private List<LocalizedStringContract> names = null;
+
+  public static final String JSON_PROPERTY_PVS = "pvs";
+  private List<PVContract> pvs = null;
 
   public static final String JSON_PROPERTY_SERIES = "series";
   private ReleaseEventSeriesContract series;
@@ -407,6 +412,40 @@ public class ReleaseEventForApiContract {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNames(List<LocalizedStringContract> names) {
     this.names = names;
+  }
+
+
+  public ReleaseEventForApiContract pvs(List<PVContract> pvs) {
+    
+    this.pvs = pvs;
+    return this;
+  }
+
+  public ReleaseEventForApiContract addPvsItem(PVContract pvsItem) {
+    if (this.pvs == null) {
+      this.pvs = new ArrayList<>();
+    }
+    this.pvs.add(pvsItem);
+    return this;
+  }
+
+   /**
+   * Get pvs
+   * @return pvs
+  **/
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_PVS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<PVContract> getPvs() {
+    return pvs;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_PVS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setPvs(List<PVContract> pvs) {
+    this.pvs = pvs;
   }
 
 
@@ -757,6 +796,7 @@ public class ReleaseEventForApiContract {
         Objects.equals(this.mainPicture, releaseEventForApiContract.mainPicture) &&
         Objects.equals(this.name, releaseEventForApiContract.name) &&
         Objects.equals(this.names, releaseEventForApiContract.names) &&
+        Objects.equals(this.pvs, releaseEventForApiContract.pvs) &&
         Objects.equals(this.series, releaseEventForApiContract.series) &&
         Objects.equals(this.seriesId, releaseEventForApiContract.seriesId) &&
         Objects.equals(this.seriesNumber, releaseEventForApiContract.seriesNumber) &&
@@ -773,7 +813,7 @@ public class ReleaseEventForApiContract {
 
   @Override
   public int hashCode() {
-    return Objects.hash(additionalNames, artists, category, date, description, endDate, id, mainPicture, name, names, series, seriesId, seriesNumber, seriesSuffix, songList, status, tags, urlSlug, venue, venueName, version, webLinks);
+    return Objects.hash(additionalNames, artists, category, date, description, endDate, id, mainPicture, name, names, pvs, series, seriesId, seriesNumber, seriesSuffix, songList, status, tags, urlSlug, venue, venueName, version, webLinks);
   }
 
   @Override
@@ -790,6 +830,7 @@ public class ReleaseEventForApiContract {
     sb.append("    mainPicture: ").append(toIndentedString(mainPicture)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    names: ").append(toIndentedString(names)).append("\n");
+    sb.append("    pvs: ").append(toIndentedString(pvs)).append("\n");
     sb.append("    series: ").append(toIndentedString(series)).append("\n");
     sb.append("    seriesId: ").append(toIndentedString(seriesId)).append("\n");
     sb.append("    seriesNumber: ").append(toIndentedString(seriesNumber)).append("\n");

@@ -19,5 +19,7 @@
 
 * `TAGUSAGECOUNT` (value: `"TagUsageCount"`)
 
+* `SONGTYPE` (value: `"SongType"`)
+
 
 

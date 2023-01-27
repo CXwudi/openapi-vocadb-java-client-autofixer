@@ -17,6 +17,7 @@
 |**mainPicture** | [**EntryThumbForApiContract**](EntryThumbForApiContract.md) |  |  [optional] |
 |**name** | **String** |  |  [optional] |
 |**names** | [**List&lt;LocalizedStringContract&gt;**](LocalizedStringContract.md) |  |  [optional] |
+|**pvs** | [**List&lt;PVContract&gt;**](PVContract.md) |  |  [optional] |
 |**series** | [**ReleaseEventSeriesContract**](ReleaseEventSeriesContract.md) |  |  [optional] |
 |**seriesId** | **Integer** |  |  [optional] |
 |**seriesNumber** | **Integer** |  |  [optional] |

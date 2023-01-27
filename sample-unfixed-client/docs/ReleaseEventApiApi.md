@@ -285,7 +285,7 @@ public class Example {
 | **seriesId** | **Integer**|  | [optional] [default to 0] |
 | **afterDate** | **LocalDateTime**|  | [optional] |
 | **beforeDate** | **LocalDateTime**|  | [optional] |
-| **category** | [**EventCategory**](.md)|  | [optional] [enum: Unspecified, AlbumRelease, Anniversary, Club, Concert, Contest, Convention, Other] |
+| **category** | [**EventCategory**](.md)|  | [optional] [enum: Unspecified, AlbumRelease, Anniversary, Club, Concert, Contest, Convention, Other, Festival] |
 | **userCollectionId** | **Integer**|  | [optional] |
 | **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
 | **childTags** | **Boolean**|  | [optional] [default to false] |
@@ -297,7 +297,7 @@ public class Example {
 | **maxResults** | **Integer**|  | [optional] [default to 10] |
 | **getTotalCount** | **Boolean**|  | [optional] [default to false] |
 | **sort** | [**EventSortRule**](.md)|  | [optional] [enum: None, Name, Date, AdditionDate, SeriesName, VenueName] |
-| **fields** | [**ReleaseEventOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, MainPicture, Names, Series, SongList, Tags, Venue, WebLinks] |
+| **fields** | [**ReleaseEventOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, MainPicture, Names, Series, SongList, Tags, Venue, WebLinks, PVs] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 | **sortDirection** | [**SortDirection**](.md)|  | [optional] [enum: Ascending, Descending] |
 
@@ -433,7 +433,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **Integer**|  | |
-| **fields** | [**ReleaseEventOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, MainPicture, Names, Series, SongList, Tags, Venue, WebLinks] |
+| **fields** | [**ReleaseEventOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, MainPicture, Names, Series, SongList, Tags, Venue, WebLinks, PVs] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type

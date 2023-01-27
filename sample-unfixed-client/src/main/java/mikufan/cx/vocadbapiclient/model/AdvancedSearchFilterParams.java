@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AdvancedSearchFilterParams.JSON_PROPERTY_NEGATE,
   AdvancedSearchFilterParams.JSON_PROPERTY_PARAM
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
 public class AdvancedSearchFilterParams {
   public static final String JSON_PROPERTY_FILTER_TYPE = "filterType";
   private AdvancedFilterType filterType;

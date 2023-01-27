@@ -46,7 +46,9 @@ public enum ReleaseEventOptionalFields {
   
   VENUE("Venue"),
   
-  WEBLINKS("WebLinks");
+  WEBLINKS("WebLinks"),
+  
+  PVS("PVs");
 
   private String value;
 

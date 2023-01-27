@@ -319,7 +319,7 @@ public class Example {
 | **start** | **Integer**|  | [optional] [default to 0] |
 | **maxResults** | **Integer**|  | [optional] [default to 10] |
 | **getTotalCount** | **Boolean**|  | [optional] [default to false] |
-| **sort** | [**SongSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, PublishDate, FavoritedTimes, RatingScore, TagUsageCount] |
+| **sort** | [**SongSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, PublishDate, FavoritedTimes, RatingScore, TagUsageCount, SongType] |
 | **preferAccurateMatches** | **Boolean**|  | [optional] [default to false] |
 | **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
 | **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |

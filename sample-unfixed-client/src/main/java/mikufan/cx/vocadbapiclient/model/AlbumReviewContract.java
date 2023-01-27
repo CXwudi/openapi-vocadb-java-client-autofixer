@@ -37,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AlbumReviewContract.JSON_PROPERTY_TITLE,
   AlbumReviewContract.JSON_PROPERTY_USER
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
 public class AlbumReviewContract {
   public static final String JSON_PROPERTY_ID = "id";
   private Integer id;

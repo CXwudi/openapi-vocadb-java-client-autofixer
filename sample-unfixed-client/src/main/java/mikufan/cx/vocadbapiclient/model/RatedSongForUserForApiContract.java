@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RatedSongForUserForApiContract.JSON_PROPERTY_USER,
   RatedSongForUserForApiContract.JSON_PROPERTY_RATING
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
 public class RatedSongForUserForApiContract {
   public static final String JSON_PROPERTY_DATE = "date";
   private LocalDateTime date;

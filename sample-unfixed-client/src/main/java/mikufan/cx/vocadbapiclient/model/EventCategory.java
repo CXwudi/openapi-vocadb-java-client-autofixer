@@ -40,7 +40,9 @@ public enum EventCategory {
   
   CONVENTION("Convention"),
   
-  OTHER("Other");
+  OTHER("Other"),
+  
+  FESTIVAL("Festival");
 
   private String value;
 

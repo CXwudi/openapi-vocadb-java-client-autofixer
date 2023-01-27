@@ -20,7 +20,9 @@
 |**lengthSeconds** | **Integer** |  |  [optional] |
 |**lyrics** | [**List&lt;LyricsForSongContract&gt;**](LyricsForSongContract.md) |  |  [optional] |
 |**mainPicture** | [**EntryThumbForApiContract**](EntryThumbForApiContract.md) |  |  [optional] |
+|**maxMilliBpm** | **Integer** |  |  [optional] |
 |**mergedTo** | **Integer** |  |  [optional] |
+|**minMilliBpm** | **Integer** |  |  [optional] |
 |**name** | **String** |  |  [optional] |
 |**names** | [**List&lt;LocalizedStringContract&gt;**](LocalizedStringContract.md) |  |  [optional] |
 |**originalVersionId** | **Integer** |  |  [optional] |
@@ -35,8 +37,6 @@
 |**thumbUrl** | **String** |  |  [optional] |
 |**version** | **Integer** |  |  [optional] |
 |**webLinks** | [**List&lt;WebLinkForApiContract&gt;**](WebLinkForApiContract.md) |  |  [optional] |
-|**minMilliBpm** | **Integer** |  |  [optional] |
-|**maxMilliBpm** | **Integer** |  |  [optional] |
 
 
 

@@ -213,7 +213,7 @@ public class Example {
 | **start** | **Integer**|  | [optional] [default to 0] |
 | **maxResults** | **Integer**|  | [optional] [default to 10] |
 | **getTotalCount** | **Boolean**|  | [optional] [default to false] |
-| **sort** | [**ArtistSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, AdditionDateAsc, ReleaseDate, SongCount, SongRating, FollowerCount] |
+| **sort** | [**ArtistSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, AdditionDateAsc, ReleaseDate, SongCount, SongRating, FollowerCount, ArtistType] |
 | **preferAccurateMatches** | **Boolean**|  | [optional] [default to false] |
 | **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
 | **fields** | [**ArtistOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, ArtistLinks, ArtistLinksReverse, BaseVoicebank, Description, MainPicture, Names, Tags, WebLinks] |

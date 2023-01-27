@@ -21,5 +21,7 @@
 
 * `OTHER` (value: `"Other"`)
 
+* `FESTIVAL` (value: `"Festival"`)
+
 
 

@@ -557,7 +557,7 @@ No authorization required
 
 ## apiUsersCurrentSongTagsSongIdPost
 
-> apiUsersCurrentSongTagsSongIdPost(songId, tagBaseContract)
+> apiUsersCurrentSongTagsSongIdPost(songId)
 
 
 
@@ -578,9 +578,8 @@ public class Example {
 
         UserApiApi apiInstance = new UserApiApi(defaultClient);
         Integer songId = 56; // Integer | 
-        List<TagBaseContract> tagBaseContract = Arrays.asList(); // List<TagBaseContract> | 
         try {
-            apiInstance.apiUsersCurrentSongTagsSongIdPost(songId, tagBaseContract);
+            apiInstance.apiUsersCurrentSongTagsSongIdPost(songId);
         } catch (ApiException e) {
             System.err.println("Exception when calling UserApiApi#apiUsersCurrentSongTagsSongIdPost");
             System.err.println("Status code: " + e.getCode());
@@ -598,7 +597,6 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **songId** | **Integer**|  | |
-| **tagBaseContract** | [**List&lt;TagBaseContract&gt;**](TagBaseContract.md)|  | [optional] |
 
 ### Return type
 
@@ -610,7 +608,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
+- **Content-Type**: Not defined
 - **Accept**: Not defined
 
 
@@ -1061,7 +1059,7 @@ public class Example {
 | **start** | **Integer**|  | [optional] [default to 0] |
 | **maxResults** | **Integer**|  | [optional] [default to 10] |
 | **getTotalCount** | **Boolean**|  | [optional] [default to false] |
-| **sort** | [**ArtistSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, AdditionDateAsc, ReleaseDate, SongCount, SongRating, FollowerCount] |
+| **sort** | [**ArtistSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, AdditionDateAsc, ReleaseDate, SongCount, SongRating, FollowerCount, ArtistType] |
 | **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
 | **fields** | [**ArtistOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, ArtistLinks, ArtistLinksReverse, BaseVoicebank, Description, MainPicture, Names, Tags, WebLinks] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |

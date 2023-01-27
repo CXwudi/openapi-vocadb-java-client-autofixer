@@ -7,11 +7,13 @@ docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli generate \
   --group-id mikufan.cx \
   --artifact-id vocadb-api-client \
   --artifact-version 1.0.0 \
+  --minimal-update \
   -g java  \
     -p java8=true \
     -p dateLibrary=java8-localdatetime \
     -p useRuntimeException=true \
     -p useSpringBoot3=true \
+    -p useJakartaEe=true \
     -p openApiNullable=false \
     -p serializationLibrary=jackson \
     -p licenseName=WTFPL \

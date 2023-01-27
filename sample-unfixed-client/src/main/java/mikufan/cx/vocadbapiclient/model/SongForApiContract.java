@@ -56,7 +56,9 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongForApiContract.JSON_PROPERTY_LENGTH_SECONDS,
   SongForApiContract.JSON_PROPERTY_LYRICS,
   SongForApiContract.JSON_PROPERTY_MAIN_PICTURE,
+  SongForApiContract.JSON_PROPERTY_MAX_MILLI_BPM,
   SongForApiContract.JSON_PROPERTY_MERGED_TO,
+  SongForApiContract.JSON_PROPERTY_MIN_MILLI_BPM,
   SongForApiContract.JSON_PROPERTY_NAME,
   SongForApiContract.JSON_PROPERTY_NAMES,
   SongForApiContract.JSON_PROPERTY_ORIGINAL_VERSION_ID,
@@ -70,11 +72,9 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongForApiContract.JSON_PROPERTY_TAGS,
   SongForApiContract.JSON_PROPERTY_THUMB_URL,
   SongForApiContract.JSON_PROPERTY_VERSION,
-  SongForApiContract.JSON_PROPERTY_WEB_LINKS,
-  SongForApiContract.JSON_PROPERTY_MIN_MILLI_BPM,
-  SongForApiContract.JSON_PROPERTY_MAX_MILLI_BPM
+  SongForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
 public class SongForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -115,8 +115,14 @@ public class SongForApiContract {
   public static final String JSON_PROPERTY_MAIN_PICTURE = "mainPicture";
   private EntryThumbForApiContract mainPicture;
 
+  public static final String JSON_PROPERTY_MAX_MILLI_BPM = "maxMilliBpm";
+  private Integer maxMilliBpm;
+
   public static final String JSON_PROPERTY_MERGED_TO = "mergedTo";
   private Integer mergedTo;
+
+  public static final String JSON_PROPERTY_MIN_MILLI_BPM = "minMilliBpm";
+  private Integer minMilliBpm;
 
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;
@@ -159,12 +165,6 @@ public class SongForApiContract {
 
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
   private List<WebLinkForApiContract> webLinks = null;
-
-  public static final String JSON_PROPERTY_MIN_MILLI_BPM = "minMilliBpm";
-  private Integer minMilliBpm;
-
-  public static final String JSON_PROPERTY_MAX_MILLI_BPM = "maxMilliBpm";
-  private Integer maxMilliBpm;
 
   public SongForApiContract() {
   }
@@ -531,6 +531,32 @@ public class SongForApiContract {
   }
 
 
+  public SongForApiContract maxMilliBpm(Integer maxMilliBpm) {
+    
+    this.maxMilliBpm = maxMilliBpm;
+    return this;
+  }
+
+   /**
+   * Get maxMilliBpm
+   * @return maxMilliBpm
+  **/
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_MAX_MILLI_BPM)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Integer getMaxMilliBpm() {
+    return maxMilliBpm;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_MAX_MILLI_BPM)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setMaxMilliBpm(Integer maxMilliBpm) {
+    this.maxMilliBpm = maxMilliBpm;
+  }
+
+
   public SongForApiContract mergedTo(Integer mergedTo) {
     
     this.mergedTo = mergedTo;
@@ -554,6 +580,32 @@ public class SongForApiContract {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMergedTo(Integer mergedTo) {
     this.mergedTo = mergedTo;
+  }
+
+
+  public SongForApiContract minMilliBpm(Integer minMilliBpm) {
+    
+    this.minMilliBpm = minMilliBpm;
+    return this;
+  }
+
+   /**
+   * Get minMilliBpm
+   * @return minMilliBpm
+  **/
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_MIN_MILLI_BPM)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Integer getMinMilliBpm() {
+    return minMilliBpm;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_MIN_MILLI_BPM)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setMinMilliBpm(Integer minMilliBpm) {
+    this.minMilliBpm = minMilliBpm;
   }
 
 
@@ -953,58 +1005,6 @@ public class SongForApiContract {
   }
 
 
-  public SongForApiContract minMilliBpm(Integer minMilliBpm) {
-    
-    this.minMilliBpm = minMilliBpm;
-    return this;
-  }
-
-   /**
-   * Get minMilliBpm
-   * @return minMilliBpm
-  **/
-  @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MIN_MILLI_BPM)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public Integer getMinMilliBpm() {
-    return minMilliBpm;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MIN_MILLI_BPM)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMinMilliBpm(Integer minMilliBpm) {
-    this.minMilliBpm = minMilliBpm;
-  }
-
-
-  public SongForApiContract maxMilliBpm(Integer maxMilliBpm) {
-    
-    this.maxMilliBpm = maxMilliBpm;
-    return this;
-  }
-
-   /**
-   * Get maxMilliBpm
-   * @return maxMilliBpm
-  **/
-  @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MAX_MILLI_BPM)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public Integer getMaxMilliBpm() {
-    return maxMilliBpm;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MAX_MILLI_BPM)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMaxMilliBpm(Integer maxMilliBpm) {
-    this.maxMilliBpm = maxMilliBpm;
-  }
-
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -1027,7 +1027,9 @@ public class SongForApiContract {
         Objects.equals(this.lengthSeconds, songForApiContract.lengthSeconds) &&
         Objects.equals(this.lyrics, songForApiContract.lyrics) &&
         Objects.equals(this.mainPicture, songForApiContract.mainPicture) &&
+        Objects.equals(this.maxMilliBpm, songForApiContract.maxMilliBpm) &&
         Objects.equals(this.mergedTo, songForApiContract.mergedTo) &&
+        Objects.equals(this.minMilliBpm, songForApiContract.minMilliBpm) &&
         Objects.equals(this.name, songForApiContract.name) &&
         Objects.equals(this.names, songForApiContract.names) &&
         Objects.equals(this.originalVersionId, songForApiContract.originalVersionId) &&
@@ -1041,14 +1043,12 @@ public class SongForApiContract {
         Objects.equals(this.tags, songForApiContract.tags) &&
         Objects.equals(this.thumbUrl, songForApiContract.thumbUrl) &&
         Objects.equals(this.version, songForApiContract.version) &&
-        Objects.equals(this.webLinks, songForApiContract.webLinks) &&
-        Objects.equals(this.minMilliBpm, songForApiContract.minMilliBpm) &&
-        Objects.equals(this.maxMilliBpm, songForApiContract.maxMilliBpm);
+        Objects.equals(this.webLinks, songForApiContract.webLinks);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(additionalNames, albums, artists, artistString, createDate, defaultName, defaultNameLanguage, deleted, favoritedTimes, id, lengthSeconds, lyrics, mainPicture, mergedTo, name, names, originalVersionId, publishDate, pvs, pvServices, ratingScore, releaseEvent, songType, status, tags, thumbUrl, version, webLinks, minMilliBpm, maxMilliBpm);
+    return Objects.hash(additionalNames, albums, artists, artistString, createDate, defaultName, defaultNameLanguage, deleted, favoritedTimes, id, lengthSeconds, lyrics, mainPicture, maxMilliBpm, mergedTo, minMilliBpm, name, names, originalVersionId, publishDate, pvs, pvServices, ratingScore, releaseEvent, songType, status, tags, thumbUrl, version, webLinks);
   }
 
   @Override
@@ -1068,7 +1068,9 @@ public class SongForApiContract {
     sb.append("    lengthSeconds: ").append(toIndentedString(lengthSeconds)).append("\n");
     sb.append("    lyrics: ").append(toIndentedString(lyrics)).append("\n");
     sb.append("    mainPicture: ").append(toIndentedString(mainPicture)).append("\n");
+    sb.append("    maxMilliBpm: ").append(toIndentedString(maxMilliBpm)).append("\n");
     sb.append("    mergedTo: ").append(toIndentedString(mergedTo)).append("\n");
+    sb.append("    minMilliBpm: ").append(toIndentedString(minMilliBpm)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    names: ").append(toIndentedString(names)).append("\n");
     sb.append("    originalVersionId: ").append(toIndentedString(originalVersionId)).append("\n");
@@ -1083,8 +1085,6 @@ public class SongForApiContract {
     sb.append("    thumbUrl: ").append(toIndentedString(thumbUrl)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("    webLinks: ").append(toIndentedString(webLinks)).append("\n");
-    sb.append("    minMilliBpm: ").append(toIndentedString(minMilliBpm)).append("\n");
-    sb.append("    maxMilliBpm: ").append(toIndentedString(maxMilliBpm)).append("\n");
     sb.append("}");
     return sb.toString();
   }

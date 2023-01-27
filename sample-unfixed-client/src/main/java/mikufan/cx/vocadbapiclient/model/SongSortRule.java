@@ -38,7 +38,9 @@ public enum SongSortRule {
   
   RATINGSCORE("RatingScore"),
   
-  TAGUSAGECOUNT("TagUsageCount");
+  TAGUSAGECOUNT("TagUsageCount"),
+  
+  SONGTYPE("SongType");
 
   private String value;
 

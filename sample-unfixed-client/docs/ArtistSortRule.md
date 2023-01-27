@@ -21,5 +21,7 @@
 
 * `FOLLOWERCOUNT` (value: `"FollowerCount"`)
 
+* `ARTISTTYPE` (value: `"ArtistType"`)
+
 
 

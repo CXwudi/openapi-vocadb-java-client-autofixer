@@ -28,12 +28,16 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  * ArtistForUserForApiContract
  */
 @JsonPropertyOrder({
-  ArtistForUserForApiContract.JSON_PROPERTY_ARTIST
+  ArtistForUserForApiContract.JSON_PROPERTY_ARTIST,
+  ArtistForUserForApiContract.JSON_PROPERTY_ID
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-26T19:00:44.138376Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
 public class ArtistForUserForApiContract {
   public static final String JSON_PROPERTY_ARTIST = "artist";
   private ArtistForApiContract artist;
+
+  public static final String JSON_PROPERTY_ID = "id";
+  private Integer id;
 
   public ArtistForUserForApiContract() {
   }
@@ -64,6 +68,32 @@ public class ArtistForUserForApiContract {
   }
 
 
+  public ArtistForUserForApiContract id(Integer id) {
+    
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * Get id
+   * @return id
+  **/
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Integer getId() {
+    return id;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setId(Integer id) {
+    this.id = id;
+  }
+
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -73,12 +103,13 @@ public class ArtistForUserForApiContract {
       return false;
     }
     ArtistForUserForApiContract artistForUserForApiContract = (ArtistForUserForApiContract) o;
-    return Objects.equals(this.artist, artistForUserForApiContract.artist);
+    return Objects.equals(this.artist, artistForUserForApiContract.artist) &&
+        Objects.equals(this.id, artistForUserForApiContract.id);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(artist);
+    return Objects.hash(artist, id);
   }
 
   @Override
@@ -86,6 +117,7 @@ public class ArtistForUserForApiContract {
     StringBuilder sb = new StringBuilder();
     sb.append("class ArtistForUserForApiContract {\n");
     sb.append("    artist: ").append(toIndentedString(artist)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("}");
     return sb.toString();
   }

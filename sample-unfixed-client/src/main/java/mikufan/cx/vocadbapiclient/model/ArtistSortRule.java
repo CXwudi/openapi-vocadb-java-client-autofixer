@@ -40,7 +40,9 @@ public enum ArtistSortRule {
   
   SONGRATING("SongRating"),
   
-  FOLLOWERCOUNT("FollowerCount");
+  FOLLOWERCOUNT("FollowerCount"),
+  
+  ARTISTTYPE("ArtistType");
 
   private String value;
 
