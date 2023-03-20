@@ -15,8 +15,8 @@ Just go to my sample [VocaDB OpenAPI Java Client](https://github.com/CXwudi/voca
 2. grab the `swagger.json` from VocaDB API [page](https://vocadb.net/swagger/index.html)
 3. open bash and run these command
 
-   ``` shell
-openapi-generator-cli generate \
+   ``` shell 
+   openapi-generator-cli generate \
    --api-package <your package>.api \
    --model-package <your package>.model \
    --invoker-package <your package>.client \
