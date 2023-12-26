@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RatedSongForUserForApiContract.JSON_PROPERTY_USER,
   RatedSongForUserForApiContract.JSON_PROPERTY_RATING
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class RatedSongForUserForApiContract {
   public static final String JSON_PROPERTY_DATE = "date";
   private LocalDateTime date;
@@ -155,7 +155,6 @@ public class RatedSongForUserForApiContract {
   public void setRating(SongVoteRating rating) {
     this.rating = rating;
   }
-
 
   @Override
   public boolean equals(Object o) {

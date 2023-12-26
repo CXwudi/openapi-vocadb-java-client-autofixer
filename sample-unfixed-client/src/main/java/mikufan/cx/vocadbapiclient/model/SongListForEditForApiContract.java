@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
 import mikufan.cx.vocadbapiclient.model.EntryThumbForApiContract;
@@ -45,7 +46,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongListForEditForApiContract.JSON_PROPERTY_STATUS,
   SongListForEditForApiContract.JSON_PROPERTY_UPDATE_NOTES
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class SongListForEditForApiContract {
   public static final String JSON_PROPERTY_DELETED = "deleted";
   private Boolean deleted;
@@ -69,7 +70,7 @@ public class SongListForEditForApiContract {
   private String name;
 
   public static final String JSON_PROPERTY_SONG_LINKS = "songLinks";
-  private List<SongInListEditContract> songLinks = null;
+  private List<SongInListEditContract> songLinks;
 
   public static final String JSON_PROPERTY_STATUS = "status";
   private EntryStatus status;
@@ -346,7 +347,6 @@ public class SongListForEditForApiContract {
   public void setUpdateNotes(String updateNotes) {
     this.updateNotes = updateNotes;
   }
-
 
   @Override
   public boolean equals(Object o) {

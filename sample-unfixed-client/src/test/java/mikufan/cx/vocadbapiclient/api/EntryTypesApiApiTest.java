@@ -48,6 +48,7 @@ public class EntryTypesApiApiTest {
         EntryType entryType = null;
         String subType = null;
         TagOptionalFields fields = null;
+
         TagForApiContract response = api.apiEntryTypesEntryTypeSubTypeTagGet(entryType, subType, fields);
 
         // TODO: test validations

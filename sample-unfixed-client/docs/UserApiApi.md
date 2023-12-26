@@ -1055,7 +1055,7 @@ public class Example {
 | **id** | **Integer**|  | |
 | **query** | **String**|  | [optional] [default to ] |
 | **tagId** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
-| **artistType** | [**ArtistType**](.md)|  | [optional] [enum: Unknown, Circle, Label, Producer, Animator, Illustrator, Lyricist, Vocaloid, UTAU, CeVIO, OtherVoiceSynthesizer, OtherVocalist, OtherGroup, OtherIndividual, Utaite, Band, Vocalist, Character, SynthesizerV, CoverArtist] |
+| **artistType** | [**ArtistType**](.md)|  | [optional] [enum: Unknown, Circle, Label, Producer, Animator, Illustrator, Lyricist, Vocaloid, UTAU, CeVIO, OtherVoiceSynthesizer, OtherVocalist, OtherGroup, OtherIndividual, Utaite, Band, Vocalist, Character, SynthesizerV, CoverArtist, NEUTRINO, VoiSona, NewType, Voiceroid, Instrumentalist, Designer] |
 | **start** | **Integer**|  | [optional] [default to 0] |
 | **maxResults** | **Integer**|  | [optional] [default to 10] |
 | **getTotalCount** | **Boolean**|  | [optional] [default to false] |
@@ -1570,7 +1570,7 @@ public class Example {
 | **getTotalCount** | **Boolean**|  | [optional] [default to false] |
 | **sort** | [**RatedSongForUserSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, PublishDate, FavoritedTimes, RatingScore, RatingDate] |
 | **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
-| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type

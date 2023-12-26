@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
 import mikufan.cx.vocadbapiclient.model.OptionalGeoPointContract;
@@ -44,7 +45,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   VenueContract.JSON_PROPERTY_VERSION,
   VenueContract.JSON_PROPERTY_WEB_LINKS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class VenueContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -77,7 +78,7 @@ public class VenueContract {
   private Integer version;
 
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
-  private List<WebLinkContract> webLinks = null;
+  private List<WebLinkContract> webLinks;
 
   public VenueContract() {
   }
@@ -374,7 +375,6 @@ public class VenueContract {
   public void setWebLinks(List<WebLinkContract> webLinks) {
     this.webLinks = webLinks;
   }
-
 
   @Override
   public boolean equals(Object o) {

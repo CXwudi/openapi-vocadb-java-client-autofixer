@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
 import mikufan.cx.vocadbapiclient.model.LocalizedStringContract;
@@ -48,7 +49,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   VenueForApiContract.JSON_PROPERTY_VERSION,
   VenueForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class VenueForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -69,7 +70,7 @@ public class VenueForApiContract {
   private String description;
 
   public static final String JSON_PROPERTY_EVENTS = "events";
-  private List<ReleaseEventContract> events = null;
+  private List<ReleaseEventContract> events;
 
   public static final String JSON_PROPERTY_ID = "id";
   private Integer id;
@@ -78,7 +79,7 @@ public class VenueForApiContract {
   private String name;
 
   public static final String JSON_PROPERTY_NAMES = "names";
-  private List<LocalizedStringContract> names = null;
+  private List<LocalizedStringContract> names;
 
   public static final String JSON_PROPERTY_STATUS = "status";
   private EntryStatus status;
@@ -87,7 +88,7 @@ public class VenueForApiContract {
   private Integer version;
 
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
-  private List<WebLinkForApiContract> webLinks = null;
+  private List<WebLinkForApiContract> webLinks;
 
   public VenueForApiContract() {
   }
@@ -452,7 +453,6 @@ public class VenueForApiContract {
   public void setWebLinks(List<WebLinkForApiContract> webLinks) {
     this.webLinks = webLinks;
   }
-
 
   @Override
   public boolean equals(Object o) {

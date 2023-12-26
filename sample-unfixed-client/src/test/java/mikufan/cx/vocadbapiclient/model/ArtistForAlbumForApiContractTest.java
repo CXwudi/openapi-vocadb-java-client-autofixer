@@ -18,15 +18,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.ArtistCategories;
 import mikufan.cx.vocadbapiclient.model.ArtistContract;
 import mikufan.cx.vocadbapiclient.model.ArtistRoles;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
 
 /**
  * Model tests for ArtistForAlbumForApiContract

@@ -18,13 +18,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import mikufan.cx.vocadbapiclient.model.TranslationType;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
 
 /**
  * Model tests for LyricsForSongContract
@@ -41,11 +41,11 @@ public class LyricsForSongContractTest {
     }
 
     /**
-     * Test the property 'cultureCode'
+     * Test the property 'cultureCodes'
      */
     @Test
-    public void cultureCodeTest() {
-        // TODO: test cultureCode
+    public void cultureCodesTest() {
+        // TODO: test cultureCodes
     }
 
     /**

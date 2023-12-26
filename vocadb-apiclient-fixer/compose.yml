@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  vocadb-apiclient-fixer:
+    image: maven:3-eclipse-temurin-17-alpine
+    container_name: vocadb-apiclient-fixer
+    volumes:
+      - ../:/workspace/
+    working_dir: /workspace/vocadb-apiclient-fixer
+    command: mvn spring-boot:run '-Dspring-boot.run.arguments="--spring.config.import=file:my-config.yml"'

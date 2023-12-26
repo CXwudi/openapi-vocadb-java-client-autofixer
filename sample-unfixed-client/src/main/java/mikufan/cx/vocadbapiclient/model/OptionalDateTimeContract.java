@@ -28,18 +28,14 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  */
 @JsonPropertyOrder({
   OptionalDateTimeContract.JSON_PROPERTY_DAY,
-  OptionalDateTimeContract.JSON_PROPERTY_FORMATTED,
   OptionalDateTimeContract.JSON_PROPERTY_IS_EMPTY,
   OptionalDateTimeContract.JSON_PROPERTY_MONTH,
   OptionalDateTimeContract.JSON_PROPERTY_YEAR
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class OptionalDateTimeContract {
   public static final String JSON_PROPERTY_DAY = "day";
   private Integer day;
-
-  public static final String JSON_PROPERTY_FORMATTED = "formatted";
-  private String formatted;
 
   public static final String JSON_PROPERTY_IS_EMPTY = "isEmpty";
   private Boolean isEmpty;
@@ -76,32 +72,6 @@ public class OptionalDateTimeContract {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDay(Integer day) {
     this.day = day;
-  }
-
-
-  public OptionalDateTimeContract formatted(String formatted) {
-    
-    this.formatted = formatted;
-    return this;
-  }
-
-   /**
-   * Get formatted
-   * @return formatted
-  **/
-  @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FORMATTED)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public String getFormatted() {
-    return formatted;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_FORMATTED)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFormatted(String formatted) {
-    this.formatted = formatted;
   }
 
 
@@ -182,7 +152,6 @@ public class OptionalDateTimeContract {
     this.year = year;
   }
 
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -193,7 +162,6 @@ public class OptionalDateTimeContract {
     }
     OptionalDateTimeContract optionalDateTimeContract = (OptionalDateTimeContract) o;
     return Objects.equals(this.day, optionalDateTimeContract.day) &&
-        Objects.equals(this.formatted, optionalDateTimeContract.formatted) &&
         Objects.equals(this.isEmpty, optionalDateTimeContract.isEmpty) &&
         Objects.equals(this.month, optionalDateTimeContract.month) &&
         Objects.equals(this.year, optionalDateTimeContract.year);
@@ -201,7 +169,7 @@ public class OptionalDateTimeContract {
 
   @Override
   public int hashCode() {
-    return Objects.hash(day, formatted, isEmpty, month, year);
+    return Objects.hash(day, isEmpty, month, year);
   }
 
   @Override
@@ -209,7 +177,6 @@ public class OptionalDateTimeContract {
     StringBuilder sb = new StringBuilder();
     sb.append("class OptionalDateTimeContract {\n");
     sb.append("    day: ").append(toIndentedString(day)).append("\n");
-    sb.append("    formatted: ").append(toIndentedString(formatted)).append("\n");
     sb.append("    isEmpty: ").append(toIndentedString(isEmpty)).append("\n");
     sb.append("    month: ").append(toIndentedString(month)).append("\n");
     sb.append("    year: ").append(toIndentedString(year)).append("\n");

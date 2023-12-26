@@ -60,6 +60,7 @@ public class ReleaseEventApiApiTest {
         Integer eventId = null;
         AlbumOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         List<AlbumForApiContract> response = api.apiReleaseEventsEventIdAlbumsGet(eventId, fields, lang);
 
         // TODO: test validations
@@ -78,6 +79,7 @@ public class ReleaseEventApiApiTest {
         Integer eventId = null;
         SongOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         List<SongForApiContract> response = api.apiReleaseEventsEventIdPublishedSongsGet(eventId, fields, lang);
 
         // TODO: test validations
@@ -97,6 +99,7 @@ public class ReleaseEventApiApiTest {
         EventReportType reportType = null;
         String notes = null;
         Integer versionNumber = null;
+
         api.apiReleaseEventsEventIdReportsPost(eventId, reportType, notes, versionNumber);
 
         // TODO: test validations
@@ -132,6 +135,7 @@ public class ReleaseEventApiApiTest {
         ReleaseEventOptionalFields fields = null;
         ContentLanguagePreference lang = null;
         SortDirection sortDirection = null;
+
         ReleaseEventForApiContractPartialFindResult response = api.apiReleaseEventsGet(query, nameMatchMode, seriesId, afterDate, beforeDate, category, userCollectionId, tagId, childTags, artistId, childVoicebanks, includeMembers, status, start, maxResults, getTotalCount, sort, fields, lang, sortDirection);
 
         // TODO: test validations
@@ -150,6 +154,7 @@ public class ReleaseEventApiApiTest {
         Integer id = null;
         String notes = null;
         Boolean hardDelete = null;
+
         api.apiReleaseEventsIdDelete(id, notes, hardDelete);
 
         // TODO: test validations
@@ -168,6 +173,7 @@ public class ReleaseEventApiApiTest {
         Integer id = null;
         ReleaseEventOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         ReleaseEventForApiContract response = api.apiReleaseEventsIdGet(id, fields, lang);
 
         // TODO: test validations
@@ -185,6 +191,7 @@ public class ReleaseEventApiApiTest {
     public void apiReleaseEventsNamesGetTest() {
         String query = null;
         Integer maxResults = null;
+
         List<String> response = api.apiReleaseEventsNamesGet(query, maxResults);
 
         // TODO: test validations

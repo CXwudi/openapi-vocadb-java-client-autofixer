@@ -52,6 +52,7 @@ public class CommentApiApiTest {
     public void apiCommentsEntryTypeCommentsCommentIdDeleteTest() {
         EntryType entryType = null;
         Integer commentId = null;
+
         api.apiCommentsEntryTypeCommentsCommentIdDelete(entryType, commentId);
 
         // TODO: test validations
@@ -70,6 +71,7 @@ public class CommentApiApiTest {
         EntryType entryType = null;
         Integer commentId = null;
         CommentForApiContract commentForApiContract = null;
+
         api.apiCommentsEntryTypeCommentsCommentIdPost(entryType, commentId, commentForApiContract);
 
         // TODO: test validations
@@ -87,6 +89,7 @@ public class CommentApiApiTest {
     public void apiCommentsEntryTypeCommentsGetTest() {
         EntryType entryType = null;
         Integer entryId = null;
+
         CommentForApiContractPartialFindResult response = api.apiCommentsEntryTypeCommentsGet(entryType, entryId);
 
         // TODO: test validations
@@ -104,6 +107,7 @@ public class CommentApiApiTest {
     public void apiCommentsEntryTypeCommentsPostTest() {
         EntryType entryType = null;
         CommentForApiContract commentForApiContract = null;
+
         CommentForApiContract response = api.apiCommentsEntryTypeCommentsPost(entryType, commentForApiContract);
 
         // TODO: test validations
@@ -129,6 +133,7 @@ public class CommentApiApiTest {
         EntryOptionalFields entryFields = null;
         ContentLanguagePreference lang = null;
         CommentSortRule sortRule = null;
+
         CommentForApiContractPartialFindResult response = api.apiCommentsGet(before, since, userId, entryType, maxResults, getTotalCount, fields, entryFields, lang, sortRule);
 
         // TODO: test validations

@@ -30,6 +30,7 @@
 |**ratingCount** | **Integer** |  |  [optional] |
 |**releaseDate** | [**OptionalDateTimeContract**](OptionalDateTimeContract.md) |  |  [optional] |
 |**releaseEvent** | [**ReleaseEventForApiContract**](ReleaseEventForApiContract.md) |  |  [optional] |
+|**releaseEvents** | [**List&lt;ReleaseEventForApiContract&gt;**](ReleaseEventForApiContract.md) |  |  [optional] |
 |**status** | **EntryStatus** |  |  [optional] |
 |**tags** | [**List&lt;TagUsageForApiContract&gt;**](TagUsageForApiContract.md) |  |  [optional] |
 |**tracks** | [**List&lt;SongInAlbumForApiContract&gt;**](SongInAlbumForApiContract.md) |  |  [optional] |

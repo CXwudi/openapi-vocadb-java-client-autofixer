@@ -20,6 +20,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongVoteRating;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -34,9 +37,10 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongInAlbumForApiContract.JSON_PROPERTY_NAME,
   SongInAlbumForApiContract.JSON_PROPERTY_RATING,
   SongInAlbumForApiContract.JSON_PROPERTY_SONG,
-  SongInAlbumForApiContract.JSON_PROPERTY_TRACK_NUMBER
+  SongInAlbumForApiContract.JSON_PROPERTY_TRACK_NUMBER,
+  SongInAlbumForApiContract.JSON_PROPERTY_COMPUTED_CULTURE_CODES
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class SongInAlbumForApiContract {
   public static final String JSON_PROPERTY_DISC_NUMBER = "discNumber";
   private Integer discNumber;
@@ -55,6 +59,9 @@ public class SongInAlbumForApiContract {
 
   public static final String JSON_PROPERTY_TRACK_NUMBER = "trackNumber";
   private Integer trackNumber;
+
+  public static final String JSON_PROPERTY_COMPUTED_CULTURE_CODES = "computedCultureCodes";
+  private List<String> computedCultureCodes;
 
   public SongInAlbumForApiContract() {
   }
@@ -215,6 +222,39 @@ public class SongInAlbumForApiContract {
   }
 
 
+  public SongInAlbumForApiContract computedCultureCodes(List<String> computedCultureCodes) {
+    
+    this.computedCultureCodes = computedCultureCodes;
+    return this;
+  }
+
+  public SongInAlbumForApiContract addComputedCultureCodesItem(String computedCultureCodesItem) {
+    if (this.computedCultureCodes == null) {
+      this.computedCultureCodes = new ArrayList<>();
+    }
+    this.computedCultureCodes.add(computedCultureCodesItem);
+    return this;
+  }
+
+   /**
+   * Get computedCultureCodes
+   * @return computedCultureCodes
+  **/
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_COMPUTED_CULTURE_CODES)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getComputedCultureCodes() {
+    return computedCultureCodes;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_COMPUTED_CULTURE_CODES)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setComputedCultureCodes(List<String> computedCultureCodes) {
+    this.computedCultureCodes = computedCultureCodes;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -229,12 +269,13 @@ public class SongInAlbumForApiContract {
         Objects.equals(this.name, songInAlbumForApiContract.name) &&
         Objects.equals(this.rating, songInAlbumForApiContract.rating) &&
         Objects.equals(this.song, songInAlbumForApiContract.song) &&
-        Objects.equals(this.trackNumber, songInAlbumForApiContract.trackNumber);
+        Objects.equals(this.trackNumber, songInAlbumForApiContract.trackNumber) &&
+        Objects.equals(this.computedCultureCodes, songInAlbumForApiContract.computedCultureCodes);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(discNumber, id, name, rating, song, trackNumber);
+    return Objects.hash(discNumber, id, name, rating, song, trackNumber, computedCultureCodes);
   }
 
   @Override
@@ -247,6 +288,7 @@ public class SongInAlbumForApiContract {
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    song: ").append(toIndentedString(song)).append("\n");
     sb.append("    trackNumber: ").append(toIndentedString(trackNumber)).append("\n");
+    sb.append("    computedCultureCodes: ").append(toIndentedString(computedCultureCodes)).append("\n");
     sb.append("}");
     return sb.toString();
   }

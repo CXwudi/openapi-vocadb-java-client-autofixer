@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.AlbumDiscPropertiesContract;
 import mikufan.cx.vocadbapiclient.model.AlbumIdentifierContract;
@@ -67,19 +68,20 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AlbumForApiContract.JSON_PROPERTY_RATING_COUNT,
   AlbumForApiContract.JSON_PROPERTY_RELEASE_DATE,
   AlbumForApiContract.JSON_PROPERTY_RELEASE_EVENT,
+  AlbumForApiContract.JSON_PROPERTY_RELEASE_EVENTS,
   AlbumForApiContract.JSON_PROPERTY_STATUS,
   AlbumForApiContract.JSON_PROPERTY_TAGS,
   AlbumForApiContract.JSON_PROPERTY_TRACKS,
   AlbumForApiContract.JSON_PROPERTY_VERSION,
   AlbumForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class AlbumForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
 
   public static final String JSON_PROPERTY_ARTISTS = "artists";
-  private List<ArtistForAlbumForApiContract> artists = null;
+  private List<ArtistForAlbumForApiContract> artists;
 
   public static final String JSON_PROPERTY_ARTIST_STRING = "artistString";
   private String artistString;
@@ -106,7 +108,7 @@ public class AlbumForApiContract {
   private String description;
 
   public static final String JSON_PROPERTY_DISCS = "discs";
-  private List<AlbumDiscPropertiesContract> discs = null;
+  private List<AlbumDiscPropertiesContract> discs;
 
   public static final String JSON_PROPERTY_DISC_TYPE = "discType";
   private DiscType discType;
@@ -115,7 +117,7 @@ public class AlbumForApiContract {
   private Integer id;
 
   public static final String JSON_PROPERTY_IDENTIFIERS = "identifiers";
-  private List<AlbumIdentifierContract> identifiers = null;
+  private List<AlbumIdentifierContract> identifiers;
 
   public static final String JSON_PROPERTY_MAIN_PICTURE = "mainPicture";
   private EntryThumbForApiContract mainPicture;
@@ -127,10 +129,10 @@ public class AlbumForApiContract {
   private String name;
 
   public static final String JSON_PROPERTY_NAMES = "names";
-  private List<LocalizedStringContract> names = null;
+  private List<LocalizedStringContract> names;
 
   public static final String JSON_PROPERTY_PVS = "pvs";
-  private List<PVContract> pvs = null;
+  private List<PVContract> pvs;
 
   public static final String JSON_PROPERTY_RATING_AVERAGE = "ratingAverage";
   private Double ratingAverage;
@@ -144,20 +146,23 @@ public class AlbumForApiContract {
   public static final String JSON_PROPERTY_RELEASE_EVENT = "releaseEvent";
   private ReleaseEventForApiContract releaseEvent;
 
+  public static final String JSON_PROPERTY_RELEASE_EVENTS = "releaseEvents";
+  private List<ReleaseEventForApiContract> releaseEvents;
+
   public static final String JSON_PROPERTY_STATUS = "status";
   private EntryStatus status;
 
   public static final String JSON_PROPERTY_TAGS = "tags";
-  private List<TagUsageForApiContract> tags = null;
+  private List<TagUsageForApiContract> tags;
 
   public static final String JSON_PROPERTY_TRACKS = "tracks";
-  private List<SongInAlbumForApiContract> tracks = null;
+  private List<SongInAlbumForApiContract> tracks;
 
   public static final String JSON_PROPERTY_VERSION = "version";
   private Integer version;
 
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
-  private List<WebLinkForApiContract> webLinks = null;
+  private List<WebLinkForApiContract> webLinks;
 
   public AlbumForApiContract() {
   }
@@ -800,6 +805,40 @@ public class AlbumForApiContract {
   }
 
 
+  public AlbumForApiContract releaseEvents(List<ReleaseEventForApiContract> releaseEvents) {
+    
+    this.releaseEvents = releaseEvents;
+    return this;
+  }
+
+  public AlbumForApiContract addReleaseEventsItem(ReleaseEventForApiContract releaseEventsItem) {
+    if (this.releaseEvents == null) {
+      this.releaseEvents = new ArrayList<>();
+    }
+    this.releaseEvents.add(releaseEventsItem);
+    return this;
+  }
+
+   /**
+   * Get releaseEvents
+   * @return releaseEvents
+  **/
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_RELEASE_EVENTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<ReleaseEventForApiContract> getReleaseEvents() {
+    return releaseEvents;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_RELEASE_EVENTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setReleaseEvents(List<ReleaseEventForApiContract> releaseEvents) {
+    this.releaseEvents = releaseEvents;
+  }
+
+
   public AlbumForApiContract status(EntryStatus status) {
     
     this.status = status;
@@ -953,7 +992,6 @@ public class AlbumForApiContract {
     this.webLinks = webLinks;
   }
 
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -986,6 +1024,7 @@ public class AlbumForApiContract {
         Objects.equals(this.ratingCount, albumForApiContract.ratingCount) &&
         Objects.equals(this.releaseDate, albumForApiContract.releaseDate) &&
         Objects.equals(this.releaseEvent, albumForApiContract.releaseEvent) &&
+        Objects.equals(this.releaseEvents, albumForApiContract.releaseEvents) &&
         Objects.equals(this.status, albumForApiContract.status) &&
         Objects.equals(this.tags, albumForApiContract.tags) &&
         Objects.equals(this.tracks, albumForApiContract.tracks) &&
@@ -995,7 +1034,7 @@ public class AlbumForApiContract {
 
   @Override
   public int hashCode() {
-    return Objects.hash(additionalNames, artists, artistString, barcode, catalogNumber, createDate, defaultName, defaultNameLanguage, deleted, description, discs, discType, id, identifiers, mainPicture, mergedTo, name, names, pvs, ratingAverage, ratingCount, releaseDate, releaseEvent, status, tags, tracks, version, webLinks);
+    return Objects.hash(additionalNames, artists, artistString, barcode, catalogNumber, createDate, defaultName, defaultNameLanguage, deleted, description, discs, discType, id, identifiers, mainPicture, mergedTo, name, names, pvs, ratingAverage, ratingCount, releaseDate, releaseEvent, releaseEvents, status, tags, tracks, version, webLinks);
   }
 
   @Override
@@ -1025,6 +1064,7 @@ public class AlbumForApiContract {
     sb.append("    ratingCount: ").append(toIndentedString(ratingCount)).append("\n");
     sb.append("    releaseDate: ").append(toIndentedString(releaseDate)).append("\n");
     sb.append("    releaseEvent: ").append(toIndentedString(releaseEvent)).append("\n");
+    sb.append("    releaseEvents: ").append(toIndentedString(releaseEvents)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
     sb.append("    tracks: ").append(toIndentedString(tracks)).append("\n");

@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArtistForArtistForApiContract.JSON_PROPERTY_ARTIST,
   ArtistForArtistForApiContract.JSON_PROPERTY_LINK_TYPE
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class ArtistForArtistForApiContract {
   public static final String JSON_PROPERTY_ARTIST = "artist";
   private ArtistContract artist;
@@ -93,7 +93,6 @@ public class ArtistForArtistForApiContract {
   public void setLinkType(ArtistLinkType linkType) {
     this.linkType = linkType;
   }
-
 
   @Override
   public boolean equals(Object o) {

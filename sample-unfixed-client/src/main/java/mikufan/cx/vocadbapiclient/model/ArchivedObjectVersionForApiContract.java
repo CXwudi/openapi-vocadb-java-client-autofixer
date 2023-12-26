@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
@@ -45,7 +46,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArchivedObjectVersionForApiContract.JSON_PROPERTY_STATUS,
   ArchivedObjectVersionForApiContract.JSON_PROPERTY_VERSION
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class ArchivedObjectVersionForApiContract {
   public static final String JSON_PROPERTY_AGENT_NAME = "agentName";
   private String agentName;
@@ -57,7 +58,7 @@ public class ArchivedObjectVersionForApiContract {
   private UserForApiContract author;
 
   public static final String JSON_PROPERTY_CHANGED_FIELDS = "changedFields";
-  private List<String> changedFields = null;
+  private List<String> changedFields;
 
   public static final String JSON_PROPERTY_CREATED = "created";
   private LocalDateTime created;
@@ -404,7 +405,6 @@ public class ArchivedObjectVersionForApiContract {
   public void setVersion(Integer version) {
     this.version = version;
   }
-
 
   @Override
   public boolean equals(Object o) {

@@ -27,6 +27,7 @@ import mikufan.cx.vocadbapiclient.model.DiscType;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
 import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.NameMatchMode;
+import mikufan.cx.vocadbapiclient.model.RelatedAlbumsContract;
 import mikufan.cx.vocadbapiclient.model.SongInAlbumForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongOptionalFields;
 import org.junit.Test;
@@ -59,6 +60,7 @@ public class AlbumApiApiTest {
     @Test
     public void apiAlbumsCommentsCommentIdDeleteTest() {
         Integer commentId = null;
+
         api.apiAlbumsCommentsCommentIdDelete(commentId);
 
         // TODO: test validations
@@ -76,6 +78,7 @@ public class AlbumApiApiTest {
     public void apiAlbumsCommentsCommentIdPostTest() {
         Integer commentId = null;
         CommentForApiContract commentForApiContract = null;
+
         api.apiAlbumsCommentsCommentIdPost(commentId, commentForApiContract);
 
         // TODO: test validations
@@ -114,6 +117,7 @@ public class AlbumApiApiTest {
         NameMatchMode nameMatchMode = null;
         AlbumOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         AlbumForApiContractPartialFindResult response = api.apiAlbumsGet(query, discTypes, tagName, tagId, childTags, artistId, artistParticipationStatus, childVoicebanks, includeMembers, barcode, status, releaseDateAfter, releaseDateBefore, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, deleted, nameMatchMode, fields, lang);
 
         // TODO: test validations
@@ -130,6 +134,7 @@ public class AlbumApiApiTest {
     @Test
     public void apiAlbumsIdCommentsGetTest() {
         Integer id = null;
+
         List<CommentForApiContract> response = api.apiAlbumsIdCommentsGet(id);
 
         // TODO: test validations
@@ -147,6 +152,7 @@ public class AlbumApiApiTest {
     public void apiAlbumsIdCommentsPostTest() {
         Integer id = null;
         CommentForApiContract commentForApiContract = null;
+
         CommentForApiContract response = api.apiAlbumsIdCommentsPost(id, commentForApiContract);
 
         // TODO: test validations
@@ -164,6 +170,7 @@ public class AlbumApiApiTest {
     public void apiAlbumsIdDeleteTest() {
         Integer id = null;
         String notes = null;
+
         api.apiAlbumsIdDelete(id, notes);
 
         // TODO: test validations
@@ -183,7 +190,27 @@ public class AlbumApiApiTest {
         AlbumOptionalFields fields = null;
         SongOptionalFields songFields = null;
         ContentLanguagePreference lang = null;
+
         AlbumForApiContract response = api.apiAlbumsIdGet(id, fields, songFields, lang);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * 
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void apiAlbumsIdRelatedGetTest() {
+        Integer id = null;
+        AlbumOptionalFields fields = null;
+        ContentLanguagePreference lang = null;
+
+        RelatedAlbumsContract response = api.apiAlbumsIdRelatedGet(id, fields, lang);
 
         // TODO: test validations
     }
@@ -200,6 +227,7 @@ public class AlbumApiApiTest {
     public void apiAlbumsIdReviewsGetTest() {
         Integer id = null;
         String languageCode = null;
+
         List<AlbumReviewContract> response = api.apiAlbumsIdReviewsGet(id, languageCode);
 
         // TODO: test validations
@@ -217,6 +245,7 @@ public class AlbumApiApiTest {
     public void apiAlbumsIdReviewsPostTest() {
         Integer id = null;
         AlbumReviewContract albumReviewContract = null;
+
         AlbumReviewContract response = api.apiAlbumsIdReviewsPost(id, albumReviewContract);
 
         // TODO: test validations
@@ -234,6 +263,7 @@ public class AlbumApiApiTest {
     public void apiAlbumsIdReviewsReviewIdDeleteTest() {
         Integer reviewId = null;
         String id = null;
+
         api.apiAlbumsIdReviewsReviewIdDelete(reviewId, id);
 
         // TODO: test validations
@@ -253,6 +283,7 @@ public class AlbumApiApiTest {
         List<String> field = null;
         Integer discNumber = null;
         ContentLanguagePreference lang = null;
+
         List<Map<String, String>> response = api.apiAlbumsIdTracksFieldsGet(id, field, discNumber, lang);
 
         // TODO: test validations
@@ -271,6 +302,7 @@ public class AlbumApiApiTest {
         Integer id = null;
         SongOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         List<SongInAlbumForApiContract> response = api.apiAlbumsIdTracksGet(id, fields, lang);
 
         // TODO: test validations
@@ -288,6 +320,7 @@ public class AlbumApiApiTest {
     public void apiAlbumsIdUserCollectionsGetTest() {
         Integer id = null;
         ContentLanguagePreference languagePreference = null;
+
         List<AlbumForUserForApiContract> response = api.apiAlbumsIdUserCollectionsGet(id, languagePreference);
 
         // TODO: test validations
@@ -306,6 +339,7 @@ public class AlbumApiApiTest {
         String query = null;
         NameMatchMode nameMatchMode = null;
         Integer maxResults = null;
+
         List<String> response = api.apiAlbumsNamesGet(query, nameMatchMode, maxResults);
 
         // TODO: test validations
@@ -323,6 +357,7 @@ public class AlbumApiApiTest {
     public void apiAlbumsNewGetTest() {
         ContentLanguagePreference languagePreference = null;
         AlbumOptionalFields fields = null;
+
         List<AlbumForApiContract> response = api.apiAlbumsNewGet(languagePreference, fields);
 
         // TODO: test validations
@@ -341,6 +376,7 @@ public class AlbumApiApiTest {
         List<Integer> ignoreIds = null;
         ContentLanguagePreference languagePreference = null;
         AlbumOptionalFields fields = null;
+
         List<AlbumForApiContract> response = api.apiAlbumsTopGet(ignoreIds, languagePreference, fields);
 
         // TODO: test validations

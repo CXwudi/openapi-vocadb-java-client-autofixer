@@ -18,14 +18,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongVoteRating;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
 
 /**
  * Model tests for SongInAlbumForApiContract
@@ -87,6 +87,14 @@ public class SongInAlbumForApiContractTest {
     @Test
     public void trackNumberTest() {
         // TODO: test trackNumber
+    }
+
+    /**
+     * Test the property 'computedCultureCodes'
+     */
+    @Test
+    public void computedCultureCodesTest() {
+        // TODO: test computedCultureCodes
     }
 
 }

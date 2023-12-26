@@ -34,8 +34,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
-@Component("mikufan.cx.vocadbapiclient.api.ArtistApiApi")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class ArtistApiApi {
     private ApiClient apiClient;
 
@@ -43,7 +42,6 @@ public class ArtistApiApi {
         this(new ApiClient());
     }
 
-    @Autowired
     public ArtistApiApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
@@ -173,11 +171,12 @@ public class ArtistApiApi {
      * @param nameMatchMode  (optional)
      * @param fields  (optional)
      * @param lang  (optional)
+     * @param languages  (optional)
      * @return ArtistForApiContractPartialFindResult
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ArtistForApiContractPartialFindResult apiArtistsGet(String query, String artistTypes, Boolean allowBaseVoicebanks, List<String> tagName, List<Integer> tagId, Boolean childTags, Integer followedByUserId, EntryStatus status, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, ArtistSortRule sort, Boolean preferAccurateMatches, NameMatchMode nameMatchMode, ArtistOptionalFields fields, ContentLanguagePreference lang) throws RestClientException {
-        return apiArtistsGetWithHttpInfo(query, artistTypes, allowBaseVoicebanks, tagName, tagId, childTags, followedByUserId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang).getBody();
+    public ArtistForApiContractPartialFindResult apiArtistsGet(String query, String artistTypes, Boolean allowBaseVoicebanks, List<String> tagName, List<Integer> tagId, Boolean childTags, Integer followedByUserId, EntryStatus status, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, ArtistSortRule sort, Boolean preferAccurateMatches, NameMatchMode nameMatchMode, ArtistOptionalFields fields, ContentLanguagePreference lang, List<String> languages) throws RestClientException {
+        return apiArtistsGetWithHttpInfo(query, artistTypes, allowBaseVoicebanks, tagName, tagId, childTags, followedByUserId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, languages).getBody();
     }
 
     /**
@@ -201,10 +200,11 @@ public class ArtistApiApi {
      * @param nameMatchMode  (optional)
      * @param fields  (optional)
      * @param lang  (optional)
+     * @param languages  (optional)
      * @return ResponseEntity&lt;ArtistForApiContractPartialFindResult&gt;
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ResponseEntity<ArtistForApiContractPartialFindResult> apiArtistsGetWithHttpInfo(String query, String artistTypes, Boolean allowBaseVoicebanks, List<String> tagName, List<Integer> tagId, Boolean childTags, Integer followedByUserId, EntryStatus status, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, ArtistSortRule sort, Boolean preferAccurateMatches, NameMatchMode nameMatchMode, ArtistOptionalFields fields, ContentLanguagePreference lang) throws RestClientException {
+    public ResponseEntity<ArtistForApiContractPartialFindResult> apiArtistsGetWithHttpInfo(String query, String artistTypes, Boolean allowBaseVoicebanks, List<String> tagName, List<Integer> tagId, Boolean childTags, Integer followedByUserId, EntryStatus status, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, ArtistSortRule sort, Boolean preferAccurateMatches, NameMatchMode nameMatchMode, ArtistOptionalFields fields, ContentLanguagePreference lang, List<String> languages) throws RestClientException {
         Object localVarPostBody = null;
         
 
@@ -230,6 +230,8 @@ public class ArtistApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "nameMatchMode", nameMatchMode));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("multi".toUpperCase(Locale.ROOT)), "languages[]", languages));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -385,6 +387,7 @@ public class ArtistApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
 
+
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         final String[] localVarContentTypes = {  };
@@ -442,6 +445,7 @@ public class ArtistApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "relations", relations));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -490,6 +494,7 @@ public class ArtistApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "query", query));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "nameMatchMode", nameMatchMode));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"

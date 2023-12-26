@@ -44,6 +44,7 @@ public class ResourcesApiApiTest {
     public void apiResourcesCultureCodeGetTest() {
         String cultureCode = null;
         List<String> setNames = null;
+
         Map<String, Map<String, String>> response = api.apiResourcesCultureCodeGet(cultureCode, setNames);
 
         // TODO: test validations

@@ -45,7 +45,6 @@ import mikufan.cx.vocadbapiclient.model.SongListOptionalFields;
 import mikufan.cx.vocadbapiclient.model.SongListSortRule;
 import mikufan.cx.vocadbapiclient.model.SongOptionalFields;
 import mikufan.cx.vocadbapiclient.model.SongVoteRating;
-import mikufan.cx.vocadbapiclient.model.TagBaseContract;
 import mikufan.cx.vocadbapiclient.model.UserEventRelationshipType;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import mikufan.cx.vocadbapiclient.model.UserForApiContractPartialFindResult;
@@ -85,6 +84,7 @@ public class UserApiApiTest {
     @Test
     public void apiUsersCurrentAlbumCollectionStatusesAlbumIdGetTest() {
         Integer albumId = null;
+
         AlbumForUserForApiContract response = api.apiUsersCurrentAlbumCollectionStatusesAlbumIdGet(albumId);
 
         // TODO: test validations
@@ -104,6 +104,7 @@ public class UserApiApiTest {
         PurchaseStatus collectionStatus = null;
         MediaType mediaType = null;
         Integer rating = null;
+
         String response = api.apiUsersCurrentAlbumsAlbumIdPost(albumId, collectionStatus, mediaType, rating);
 
         // TODO: test validations
@@ -120,6 +121,7 @@ public class UserApiApiTest {
     @Test
     public void apiUsersCurrentFollowedArtistsArtistIdGetTest() {
         Integer artistId = null;
+
         ArtistForUserForApiContract response = api.apiUsersCurrentFollowedArtistsArtistIdGet(artistId);
 
         // TODO: test validations
@@ -136,6 +138,7 @@ public class UserApiApiTest {
     @Test
     public void apiUsersCurrentFollowedTagsTagIdDeleteTest() {
         Integer tagId = null;
+
         api.apiUsersCurrentFollowedTagsTagIdDelete(tagId);
 
         // TODO: test validations
@@ -152,6 +155,7 @@ public class UserApiApiTest {
     @Test
     public void apiUsersCurrentFollowedTagsTagIdPostTest() {
         Integer tagId = null;
+
         api.apiUsersCurrentFollowedTagsTagIdPost(tagId);
 
         // TODO: test validations
@@ -168,6 +172,7 @@ public class UserApiApiTest {
     @Test
     public void apiUsersCurrentGetTest() {
         UserOptionalFields fields = null;
+
         UserForApiContract response = api.apiUsersCurrentGet(fields);
 
         // TODO: test validations
@@ -184,6 +189,7 @@ public class UserApiApiTest {
     @Test
     public void apiUsersCurrentRatedSongsSongIdGetTest() {
         Integer songId = null;
+
         SongVoteRating response = api.apiUsersCurrentRatedSongsSongIdGet(songId);
 
         // TODO: test validations
@@ -201,6 +207,7 @@ public class UserApiApiTest {
     public void apiUsersCurrentRefreshEntryEditPostTest() {
         EntryType entryType = null;
         Integer entryId = null;
+
         EntryEditDataContract response = api.apiUsersCurrentRefreshEntryEditPost(entryType, entryId);
 
         // TODO: test validations
@@ -217,8 +224,8 @@ public class UserApiApiTest {
     @Test
     public void apiUsersCurrentSongTagsSongIdPostTest() {
         Integer songId = null;
-        List<TagBaseContract> tagBaseContract = null;
-        api.apiUsersCurrentSongTagsSongIdPost(songId, tagBaseContract);
+
+        api.apiUsersCurrentSongTagsSongIdPost(songId);
 
         // TODO: test validations
     }
@@ -246,6 +253,7 @@ public class UserApiApiTest {
         Boolean onlyVerified = null;
         String knowsLanguage = null;
         UserOptionalFields fields = null;
+
         UserForApiContractPartialFindResult response = api.apiUsersGet(query, groups, joinDateAfter, joinDateBefore, nameMatchMode, start, maxResults, getTotalCount, sort, includeDisabled, onlyVerified, knowsLanguage, fields);
 
         // TODO: test validations
@@ -263,6 +271,7 @@ public class UserApiApiTest {
     public void apiUsersIdAlbumCollectionStatusesAlbumIdGetTest() {
         Integer id = null;
         Integer albumId = null;
+
         AlbumForUserForApiContract response = api.apiUsersIdAlbumCollectionStatusesAlbumIdGet(id, albumId);
 
         // TODO: test validations
@@ -295,6 +304,7 @@ public class UserApiApiTest {
         AlbumOptionalFields fields = null;
         ContentLanguagePreference lang = null;
         MediaType mediaType = null;
+
         AlbumForUserForApiContractPartialFindResult response = api.apiUsersIdAlbumsGet(id, query, tagId, tag, artistId, purchaseStatuses, releaseEventId, albumTypes, advancedFilters, start, maxResults, getTotalCount, sort, nameMatchMode, fields, lang, mediaType);
 
         // TODO: test validations
@@ -312,6 +322,7 @@ public class UserApiApiTest {
     public void apiUsersIdEventsGetTest() {
         Integer id = null;
         UserEventRelationshipType relationshipType = null;
+
         List<ReleaseEventForApiContract> response = api.apiUsersIdEventsGet(id, relationshipType);
 
         // TODO: test validations
@@ -329,6 +340,7 @@ public class UserApiApiTest {
     public void apiUsersIdFollowedArtistsArtistIdGetTest() {
         Integer id = null;
         Integer artistId = null;
+
         ArtistForUserForApiContract response = api.apiUsersIdFollowedArtistsArtistIdGet(id, artistId);
 
         // TODO: test validations
@@ -355,6 +367,7 @@ public class UserApiApiTest {
         NameMatchMode nameMatchMode = null;
         ArtistOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         ArtistForUserForApiContractPartialFindResult response = api.apiUsersIdFollowedArtistsGet(id, query, tagId, artistType, start, maxResults, getTotalCount, sort, nameMatchMode, fields, lang);
 
         // TODO: test validations
@@ -372,6 +385,7 @@ public class UserApiApiTest {
     public void apiUsersIdGetTest() {
         Integer id = null;
         UserOptionalFields fields = null;
+
         UserForApiContract response = api.apiUsersIdGet(id, fields);
 
         // TODO: test validations
@@ -389,6 +403,7 @@ public class UserApiApiTest {
     public void apiUsersIdMessagesDeleteTest() {
         Integer id = null;
         List<Integer> messageId = null;
+
         api.apiUsersIdMessagesDelete(id, messageId);
 
         // TODO: test validations
@@ -411,6 +426,7 @@ public class UserApiApiTest {
         Integer start = null;
         Integer maxResults = null;
         Boolean getTotalCount = null;
+
         UserMessageContractPartialFindResult response = api.apiUsersIdMessagesGet(id, inbox, unread, anotherUserId, start, maxResults, getTotalCount);
 
         // TODO: test validations
@@ -428,6 +444,7 @@ public class UserApiApiTest {
     public void apiUsersIdMessagesPostTest() {
         Integer id = null;
         UserMessageContract userMessageContract = null;
+
         UserMessageContract response = api.apiUsersIdMessagesPost(id, userMessageContract);
 
         // TODO: test validations
@@ -447,6 +464,7 @@ public class UserApiApiTest {
         Integer start = null;
         Integer maxResults = null;
         Boolean getTotalCount = null;
+
         CommentForApiContractPartialFindResult response = api.apiUsersIdProfileCommentsGet(id, start, maxResults, getTotalCount);
 
         // TODO: test validations
@@ -464,6 +482,7 @@ public class UserApiApiTest {
     public void apiUsersIdProfileCommentsPostTest() {
         Integer id = null;
         CommentForApiContract commentForApiContract = null;
+
         CommentForApiContract response = api.apiUsersIdProfileCommentsPost(id, commentForApiContract);
 
         // TODO: test validations
@@ -498,6 +517,7 @@ public class UserApiApiTest {
         NameMatchMode nameMatchMode = null;
         SongOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         RatedSongForUserForApiContractPartialFindResult response = api.apiUsersIdRatedSongsGet(id, query, tagName, tagId, artistId, childVoicebanks, artistGrouping, rating, songListId, groupByRating, pvServices, advancedFilters, start, maxResults, getTotalCount, sort, nameMatchMode, fields, lang);
 
         // TODO: test validations
@@ -515,6 +535,7 @@ public class UserApiApiTest {
     public void apiUsersIdRatedSongsSongIdGetTest() {
         Integer id = null;
         Integer songId = null;
+
         SongVoteRating response = api.apiUsersIdRatedSongsSongIdGet(id, songId);
 
         // TODO: test validations
@@ -532,6 +553,7 @@ public class UserApiApiTest {
     public void apiUsersIdReportsPostTest() {
         Integer id = null;
         CreateReportModel createReportModel = null;
+
         Boolean response = api.apiUsersIdReportsPost(id, createReportModel);
 
         // TODO: test validations
@@ -550,6 +572,7 @@ public class UserApiApiTest {
         Integer id = null;
         String settingName = null;
         String body = null;
+
         api.apiUsersIdSettingsSettingNamePost(id, settingName, body);
 
         // TODO: test validations
@@ -575,6 +598,7 @@ public class UserApiApiTest {
         Boolean getTotalCount = null;
         SongListSortRule sort = null;
         SongListOptionalFields fields = null;
+
         SongListForApiContractPartialFindResult response = api.apiUsersIdSongListsGet(id, query, tagId, childTags, nameMatchMode, start, maxResults, getTotalCount, sort, fields);
 
         // TODO: test validations
@@ -591,6 +615,7 @@ public class UserApiApiTest {
     @Test
     public void apiUsersMessagesMessageIdGetTest() {
         Integer messageId = null;
+
         UserMessageContract response = api.apiUsersMessagesMessageIdGet(messageId);
 
         // TODO: test validations
@@ -610,6 +635,7 @@ public class UserApiApiTest {
         NameMatchMode nameMatchMode = null;
         Integer maxResults = null;
         Boolean includeDisabled = null;
+
         List<String> response = api.apiUsersNamesGet(query, nameMatchMode, maxResults, includeDisabled);
 
         // TODO: test validations
@@ -626,6 +652,7 @@ public class UserApiApiTest {
     @Test
     public void apiUsersProfileCommentsCommentIdDeleteTest() {
         Integer commentId = null;
+
         api.apiUsersProfileCommentsCommentIdDelete(commentId);
 
         // TODO: test validations
@@ -643,6 +670,7 @@ public class UserApiApiTest {
     public void apiUsersProfileCommentsCommentIdPostTest() {
         Integer commentId = null;
         CommentForApiContract commentForApiContract = null;
+
         api.apiUsersProfileCommentsCommentIdPost(commentId, commentForApiContract);
 
         // TODO: test validations

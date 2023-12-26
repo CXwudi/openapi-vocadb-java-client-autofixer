@@ -66,6 +66,7 @@ public class SongApiApiTest {
         String pvId = null;
         SongOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         SongForApiContract response = api.apiSongsByPvGet(pvService, pvId, fields, lang);
 
         // TODO: test validations
@@ -82,6 +83,7 @@ public class SongApiApiTest {
     @Test
     public void apiSongsCommentsCommentIdDeleteTest() {
         Integer commentId = null;
+
         api.apiSongsCommentsCommentIdDelete(commentId);
 
         // TODO: test validations
@@ -99,6 +101,7 @@ public class SongApiApiTest {
     public void apiSongsCommentsCommentIdPostTest() {
         Integer commentId = null;
         CommentForApiContract commentForApiContract = null;
+
         api.apiSongsCommentsCommentIdPost(commentId, commentForApiContract);
 
         // TODO: test validations
@@ -147,7 +150,11 @@ public class SongApiApiTest {
         Integer maxMilliBpm = null;
         Integer minLength = null;
         Integer maxLength = null;
-        SongForApiContractPartialFindResult response = api.apiSongsGet(query, songTypes, afterDate, beforeDate, tagName, tagId, childTags, unifyTypesAndTags, artistId, artistParticipationStatus, childVoicebanks, includeMembers, onlyWithPvs, pvServices, since, minScore, userCollectionId, releaseEventId, parentSongId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, minMilliBpm, maxMilliBpm, minLength, maxLength);
+        String language = null;
+        List<String> languages = null;
+        List<Integer> excludedTagIds = null;
+
+        SongForApiContractPartialFindResult response = api.apiSongsGet(query, songTypes, afterDate, beforeDate, tagName, tagId, childTags, unifyTypesAndTags, artistId, artistParticipationStatus, childVoicebanks, includeMembers, onlyWithPvs, pvServices, since, minScore, userCollectionId, releaseEventId, parentSongId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, minMilliBpm, maxMilliBpm, minLength, maxLength, language, languages, excludedTagIds);
 
         // TODO: test validations
     }
@@ -164,6 +171,7 @@ public class SongApiApiTest {
     public void apiSongsHighlightedGetTest() {
         ContentLanguagePreference languagePreference = null;
         SongOptionalFields fields = null;
+
         List<SongForApiContract> response = api.apiSongsHighlightedGet(languagePreference, fields);
 
         // TODO: test validations
@@ -180,6 +188,7 @@ public class SongApiApiTest {
     @Test
     public void apiSongsIdCommentsGetTest() {
         Integer id = null;
+
         List<CommentForApiContract> response = api.apiSongsIdCommentsGet(id);
 
         // TODO: test validations
@@ -197,6 +206,7 @@ public class SongApiApiTest {
     public void apiSongsIdCommentsPostTest() {
         Integer id = null;
         CommentForApiContract commentForApiContract = null;
+
         CommentForApiContract response = api.apiSongsIdCommentsPost(id, commentForApiContract);
 
         // TODO: test validations
@@ -214,6 +224,7 @@ public class SongApiApiTest {
     public void apiSongsIdDeleteTest() {
         Integer id = null;
         String notes = null;
+
         api.apiSongsIdDelete(id, notes);
 
         // TODO: test validations
@@ -232,6 +243,7 @@ public class SongApiApiTest {
         Integer id = null;
         SongOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         List<SongForApiContract> response = api.apiSongsIdDerivedGet(id, fields, lang);
 
         // TODO: test validations
@@ -250,6 +262,7 @@ public class SongApiApiTest {
         Integer id = null;
         SongOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         SongForApiContract response = api.apiSongsIdGet(id, fields, lang);
 
         // TODO: test validations
@@ -268,6 +281,7 @@ public class SongApiApiTest {
         Integer id = null;
         UserOptionalFields userFields = null;
         ContentLanguagePreference lang = null;
+
         List<RatedSongForUserForApiContract> response = api.apiSongsIdRatingsGet(id, userFields, lang);
 
         // TODO: test validations
@@ -285,6 +299,7 @@ public class SongApiApiTest {
     public void apiSongsIdRatingsPostTest() {
         Integer id = null;
         SongRatingContract songRatingContract = null;
+
         api.apiSongsIdRatingsPost(id, songRatingContract);
 
         // TODO: test validations
@@ -303,6 +318,7 @@ public class SongApiApiTest {
         Integer id = null;
         SongOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         RelatedSongsContract response = api.apiSongsIdRelatedGet(id, fields, lang);
 
         // TODO: test validations
@@ -319,6 +335,7 @@ public class SongApiApiTest {
     @Test
     public void apiSongsLyricsLyricsIdGetTest() {
         Integer lyricsId = null;
+
         LyricsForSongContract response = api.apiSongsLyricsLyricsIdGet(lyricsId);
 
         // TODO: test validations
@@ -337,6 +354,7 @@ public class SongApiApiTest {
         String query = null;
         NameMatchMode nameMatchMode = null;
         Integer maxResults = null;
+
         List<String> response = api.apiSongsNamesGet(query, nameMatchMode, maxResults);
 
         // TODO: test validations
@@ -359,6 +377,7 @@ public class SongApiApiTest {
         Integer maxResults = null;
         SongOptionalFields fields = null;
         ContentLanguagePreference languagePreference = null;
+
         List<SongForApiContract> response = api.apiSongsTopRatedGet(durationHours, startDate, filterBy, vocalist, maxResults, fields, languagePreference);
 
         // TODO: test validations

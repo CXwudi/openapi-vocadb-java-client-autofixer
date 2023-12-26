@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   EntryThumbForApiContract.JSON_PROPERTY_URL_THUMB,
   EntryThumbForApiContract.JSON_PROPERTY_URL_TINY_THUMB
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class EntryThumbForApiContract {
   public static final String JSON_PROPERTY_MIME = "mime";
   private String mime;
@@ -211,7 +211,6 @@ public class EntryThumbForApiContract {
   public void setUrlTinyThumb(String urlTinyThumb) {
     this.urlTinyThumb = urlTinyThumb;
   }
-
 
   @Override
   public boolean equals(Object o) {

@@ -20,6 +20,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import mikufan.cx.vocadbapiclient.model.TranslationType;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -28,17 +31,17 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  * LyricsForSongContract
  */
 @JsonPropertyOrder({
-  LyricsForSongContract.JSON_PROPERTY_CULTURE_CODE,
+  LyricsForSongContract.JSON_PROPERTY_CULTURE_CODES,
   LyricsForSongContract.JSON_PROPERTY_ID,
   LyricsForSongContract.JSON_PROPERTY_SOURCE,
   LyricsForSongContract.JSON_PROPERTY_TRANSLATION_TYPE,
   LyricsForSongContract.JSON_PROPERTY_URL,
   LyricsForSongContract.JSON_PROPERTY_VALUE
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class LyricsForSongContract {
-  public static final String JSON_PROPERTY_CULTURE_CODE = "cultureCode";
-  private String cultureCode = "";
+  public static final String JSON_PROPERTY_CULTURE_CODES = "cultureCodes";
+  private List<String> cultureCodes;
 
   public static final String JSON_PROPERTY_ID = "id";
   private Integer id;
@@ -58,29 +61,37 @@ public class LyricsForSongContract {
   public LyricsForSongContract() {
   }
 
-  public LyricsForSongContract cultureCode(String cultureCode) {
+  public LyricsForSongContract cultureCodes(List<String> cultureCodes) {
     
-    this.cultureCode = cultureCode;
+    this.cultureCodes = cultureCodes;
+    return this;
+  }
+
+  public LyricsForSongContract addCultureCodesItem(String cultureCodesItem) {
+    if (this.cultureCodes == null) {
+      this.cultureCodes = new ArrayList<>();
+    }
+    this.cultureCodes.add(cultureCodesItem);
     return this;
   }
 
    /**
-   * Get cultureCode
-   * @return cultureCode
+   * Get cultureCodes
+   * @return cultureCodes
   **/
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CULTURE_CODE)
+  @JsonProperty(JSON_PROPERTY_CULTURE_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public String getCultureCode() {
-    return cultureCode;
+  public List<String> getCultureCodes() {
+    return cultureCodes;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CULTURE_CODE)
+  @JsonProperty(JSON_PROPERTY_CULTURE_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCultureCode(String cultureCode) {
-    this.cultureCode = cultureCode;
+  public void setCultureCodes(List<String> cultureCodes) {
+    this.cultureCodes = cultureCodes;
   }
 
 
@@ -213,7 +224,6 @@ public class LyricsForSongContract {
     this.value = value;
   }
 
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -223,7 +233,7 @@ public class LyricsForSongContract {
       return false;
     }
     LyricsForSongContract lyricsForSongContract = (LyricsForSongContract) o;
-    return Objects.equals(this.cultureCode, lyricsForSongContract.cultureCode) &&
+    return Objects.equals(this.cultureCodes, lyricsForSongContract.cultureCodes) &&
         Objects.equals(this.id, lyricsForSongContract.id) &&
         Objects.equals(this.source, lyricsForSongContract.source) &&
         Objects.equals(this.translationType, lyricsForSongContract.translationType) &&
@@ -233,14 +243,14 @@ public class LyricsForSongContract {
 
   @Override
   public int hashCode() {
-    return Objects.hash(cultureCode, id, source, translationType, url, value);
+    return Objects.hash(cultureCodes, id, source, translationType, url, value);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class LyricsForSongContract {\n");
-    sb.append("    cultureCode: ").append(toIndentedString(cultureCode)).append("\n");
+    sb.append("    cultureCodes: ").append(toIndentedString(cultureCodes)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    source: ").append(toIndentedString(source)).append("\n");
     sb.append("    translationType: ").append(toIndentedString(translationType)).append("\n");

@@ -47,7 +47,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AlbumContract.JSON_PROPERTY_STATUS,
   AlbumContract.JSON_PROPERTY_VERSION
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class AlbumContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
@@ -456,7 +456,6 @@ public class AlbumContract {
   public void setVersion(Integer version) {
     this.version = version;
   }
-
 
   @Override
   public boolean equals(Object o) {

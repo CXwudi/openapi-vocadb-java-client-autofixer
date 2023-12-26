@@ -62,6 +62,7 @@ public class EntryApiApiTest {
         NameMatchMode nameMatchMode = null;
         EntryOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         EntryForApiContractPartialFindResult response = api.apiEntriesGet(query, tagName, tagId, childTags, entryTypes, status, start, maxResults, getTotalCount, sort, nameMatchMode, fields, lang);
 
         // TODO: test validations
@@ -80,6 +81,7 @@ public class EntryApiApiTest {
         String query = null;
         NameMatchMode nameMatchMode = null;
         Integer maxResults = null;
+
         List<String> response = api.apiEntriesNamesGet(query, nameMatchMode, maxResults);
 
         // TODO: test validations

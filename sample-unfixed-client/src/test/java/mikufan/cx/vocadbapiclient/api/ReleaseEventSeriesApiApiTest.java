@@ -55,6 +55,7 @@ public class ReleaseEventSeriesApiApiTest {
         Boolean getTotalCount = null;
         NameMatchMode nameMatchMode = null;
         ContentLanguagePreference lang = null;
+
         ReleaseEventSeriesForApiContractPartialFindResult response = api.apiReleaseEventSeriesGet(query, fields, start, maxResults, getTotalCount, nameMatchMode, lang);
 
         // TODO: test validations
@@ -73,6 +74,7 @@ public class ReleaseEventSeriesApiApiTest {
         Integer id = null;
         String notes = null;
         Boolean hardDelete = null;
+
         api.apiReleaseEventSeriesIdDelete(id, notes, hardDelete);
 
         // TODO: test validations
@@ -89,6 +91,7 @@ public class ReleaseEventSeriesApiApiTest {
     @Test
     public void apiReleaseEventSeriesIdForEditGetTest() {
         Integer id = null;
+
         ReleaseEventSeriesForEditForApiContract response = api.apiReleaseEventSeriesIdForEditGet(id);
 
         // TODO: test validations
@@ -107,6 +110,7 @@ public class ReleaseEventSeriesApiApiTest {
         Integer id = null;
         ReleaseEventSeriesOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         ReleaseEventSeriesForApiContract response = api.apiReleaseEventSeriesIdGet(id, fields, lang);
 
         // TODO: test validations

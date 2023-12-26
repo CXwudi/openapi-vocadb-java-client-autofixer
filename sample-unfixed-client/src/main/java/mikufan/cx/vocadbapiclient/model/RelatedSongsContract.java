@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.SongForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -34,16 +35,16 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   RelatedSongsContract.JSON_PROPERTY_LIKE_MATCHES,
   RelatedSongsContract.JSON_PROPERTY_TAG_MATCHES
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class RelatedSongsContract {
   public static final String JSON_PROPERTY_ARTIST_MATCHES = "artistMatches";
-  private List<SongForApiContract> artistMatches = null;
+  private List<SongForApiContract> artistMatches;
 
   public static final String JSON_PROPERTY_LIKE_MATCHES = "likeMatches";
-  private List<SongForApiContract> likeMatches = null;
+  private List<SongForApiContract> likeMatches;
 
   public static final String JSON_PROPERTY_TAG_MATCHES = "tagMatches";
-  private List<SongForApiContract> tagMatches = null;
+  private List<SongForApiContract> tagMatches;
 
   public RelatedSongsContract() {
   }
@@ -148,7 +149,6 @@ public class RelatedSongsContract {
   public void setTagMatches(List<SongForApiContract> tagMatches) {
     this.tagMatches = tagMatches;
   }
-
 
   @Override
   public boolean equals(Object o) {

@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.EntryThumbForApiContract;
 import mikufan.cx.vocadbapiclient.model.OldUsernameContract;
@@ -44,7 +45,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UserForApiContract.JSON_PROPERTY_ID,
   UserForApiContract.JSON_PROPERTY_NAME
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class UserForApiContract {
   public static final String JSON_PROPERTY_ACTIVE = "active";
   private Boolean active;
@@ -53,7 +54,7 @@ public class UserForApiContract {
   private UserGroupId groupId;
 
   public static final String JSON_PROPERTY_KNOWN_LANGUAGES = "knownLanguages";
-  private List<UserKnownLanguageContract> knownLanguages = null;
+  private List<UserKnownLanguageContract> knownLanguages;
 
   public static final String JSON_PROPERTY_MAIN_PICTURE = "mainPicture";
   private EntryThumbForApiContract mainPicture;
@@ -62,7 +63,7 @@ public class UserForApiContract {
   private LocalDateTime memberSince;
 
   public static final String JSON_PROPERTY_OLD_USERNAMES = "oldUsernames";
-  private List<OldUsernameContract> oldUsernames = null;
+  private List<OldUsernameContract> oldUsernames;
 
   public static final String JSON_PROPERTY_VERIFIED_ARTIST = "verifiedArtist";
   private Boolean verifiedArtist;
@@ -324,7 +325,6 @@ public class UserForApiContract {
   public void setName(String name) {
     this.name = name;
   }
-
 
   @Override
   public boolean equals(Object o) {

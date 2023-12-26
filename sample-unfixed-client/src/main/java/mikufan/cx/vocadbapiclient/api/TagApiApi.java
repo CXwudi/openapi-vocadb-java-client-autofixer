@@ -36,8 +36,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
-@Component("mikufan.cx.vocadbapiclient.api.TagApiApi")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class TagApiApi {
     private ApiClient apiClient;
 
@@ -45,7 +44,6 @@ public class TagApiApi {
         this(new ApiClient());
     }
 
-    @Autowired
     public TagApiApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
@@ -106,6 +104,7 @@ public class TagApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -151,6 +150,7 @@ public class TagApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "query", query));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "nameMatchMode", nameMatchMode));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -276,11 +276,12 @@ public class TagApiApi {
      * @param fields  (optional)
      * @param lang  (optional)
      * @param target  (optional)
+     * @param deleted  (optional, default to false)
      * @return TagForApiContractPartialFindResult
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public TagForApiContractPartialFindResult apiTagsGet(String query, Boolean allowChildren, String categoryName, Integer start, Integer maxResults, Boolean getTotalCount, NameMatchMode nameMatchMode, TagSortRule sort, Boolean preferAccurateMatches, TagOptionalFields fields, ContentLanguagePreference lang, TagTargetTypes target) throws RestClientException {
-        return apiTagsGetWithHttpInfo(query, allowChildren, categoryName, start, maxResults, getTotalCount, nameMatchMode, sort, preferAccurateMatches, fields, lang, target).getBody();
+    public TagForApiContractPartialFindResult apiTagsGet(String query, Boolean allowChildren, String categoryName, Integer start, Integer maxResults, Boolean getTotalCount, NameMatchMode nameMatchMode, TagSortRule sort, Boolean preferAccurateMatches, TagOptionalFields fields, ContentLanguagePreference lang, TagTargetTypes target, Boolean deleted) throws RestClientException {
+        return apiTagsGetWithHttpInfo(query, allowChildren, categoryName, start, maxResults, getTotalCount, nameMatchMode, sort, preferAccurateMatches, fields, lang, target, deleted).getBody();
     }
 
     /**
@@ -299,10 +300,11 @@ public class TagApiApi {
      * @param fields  (optional)
      * @param lang  (optional)
      * @param target  (optional)
+     * @param deleted  (optional, default to false)
      * @return ResponseEntity&lt;TagForApiContractPartialFindResult&gt;
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ResponseEntity<TagForApiContractPartialFindResult> apiTagsGetWithHttpInfo(String query, Boolean allowChildren, String categoryName, Integer start, Integer maxResults, Boolean getTotalCount, NameMatchMode nameMatchMode, TagSortRule sort, Boolean preferAccurateMatches, TagOptionalFields fields, ContentLanguagePreference lang, TagTargetTypes target) throws RestClientException {
+    public ResponseEntity<TagForApiContractPartialFindResult> apiTagsGetWithHttpInfo(String query, Boolean allowChildren, String categoryName, Integer start, Integer maxResults, Boolean getTotalCount, NameMatchMode nameMatchMode, TagSortRule sort, Boolean preferAccurateMatches, TagOptionalFields fields, ContentLanguagePreference lang, TagTargetTypes target, Boolean deleted) throws RestClientException {
         Object localVarPostBody = null;
         
 
@@ -323,6 +325,8 @@ public class TagApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "target", target));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "deleted", deleted));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -379,6 +383,7 @@ public class TagApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "hardDelete", hardDelete));
 
+
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         final String[] localVarContentTypes = {  };
@@ -433,6 +438,7 @@ public class TagApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -482,6 +488,7 @@ public class TagApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "allowAliases", allowAliases));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -524,6 +531,7 @@ public class TagApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "name", name));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -580,6 +588,7 @@ public class TagApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -741,6 +750,7 @@ public class TagApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "versionNumber", versionNumber));
 
+
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         final String[] localVarContentTypes = {  };
@@ -790,6 +800,7 @@ public class TagApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "entryType", entryType));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"

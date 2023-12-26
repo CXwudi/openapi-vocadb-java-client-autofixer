@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   TagUsageForApiContract.JSON_PROPERTY_COUNT,
   TagUsageForApiContract.JSON_PROPERTY_TAG
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class TagUsageForApiContract {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Integer count;
@@ -92,7 +92,6 @@ public class TagUsageForApiContract {
   public void setTag(TagBaseContract tag) {
     this.tag = tag;
   }
-
 
   @Override
   public boolean equals(Object o) {

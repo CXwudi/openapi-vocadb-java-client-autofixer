@@ -31,8 +31,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
-@Component("mikufan.cx.vocadbapiclient.api.VenueApiApi")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class VenueApiApi {
     private ApiClient apiClient;
 
@@ -40,7 +39,6 @@ public class VenueApiApi {
         this(new ApiClient());
     }
 
-    @Autowired
     public VenueApiApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
@@ -117,6 +115,7 @@ public class VenueApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "radius", radius));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "distanceUnit", distanceUnit));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -171,6 +170,7 @@ public class VenueApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "hardDelete", hardDelete));
+
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -227,6 +227,7 @@ public class VenueApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "reportType", reportType));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "versionNumber", versionNumber));
+
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);

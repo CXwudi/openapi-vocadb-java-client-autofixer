@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CreateReportModel.JSON_PROPERTY_REPORT_TYPE,
   CreateReportModel.JSON_PROPERTY_REASON
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class CreateReportModel {
   public static final String JSON_PROPERTY_REPORT_TYPE = "reportType";
   private UserReportType reportType;
@@ -92,7 +92,6 @@ public class CreateReportModel {
   public void setReason(String reason) {
     this.reason = reason;
   }
-
 
   @Override
   public boolean equals(Object o) {

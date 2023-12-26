@@ -57,6 +57,7 @@ public class TagApiApiTest {
         String name = null;
         TagOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         TagForApiContract response = api.apiTagsByNameNameGet(name, fields, lang);
 
         // TODO: test validations
@@ -74,6 +75,7 @@ public class TagApiApiTest {
     public void apiTagsCategoryNamesGetTest() {
         String query = null;
         NameMatchMode nameMatchMode = null;
+
         List<String> response = api.apiTagsCategoryNamesGet(query, nameMatchMode);
 
         // TODO: test validations
@@ -90,6 +92,7 @@ public class TagApiApiTest {
     @Test
     public void apiTagsCommentsCommentIdDeleteTest() {
         Integer commentId = null;
+
         api.apiTagsCommentsCommentIdDelete(commentId);
 
         // TODO: test validations
@@ -107,6 +110,7 @@ public class TagApiApiTest {
     public void apiTagsCommentsCommentIdPostTest() {
         Integer commentId = null;
         CommentForApiContract commentForApiContract = null;
+
         api.apiTagsCommentsCommentIdPost(commentId, commentForApiContract);
 
         // TODO: test validations
@@ -134,7 +138,9 @@ public class TagApiApiTest {
         TagOptionalFields fields = null;
         ContentLanguagePreference lang = null;
         TagTargetTypes target = null;
-        TagForApiContractPartialFindResult response = api.apiTagsGet(query, allowChildren, categoryName, start, maxResults, getTotalCount, nameMatchMode, sort, preferAccurateMatches, fields, lang, target);
+        Boolean deleted = null;
+
+        TagForApiContractPartialFindResult response = api.apiTagsGet(query, allowChildren, categoryName, start, maxResults, getTotalCount, nameMatchMode, sort, preferAccurateMatches, fields, lang, target, deleted);
 
         // TODO: test validations
     }
@@ -152,6 +158,7 @@ public class TagApiApiTest {
         Integer id = null;
         String notes = null;
         Boolean hardDelete = null;
+
         api.apiTagsIdDelete(id, notes, hardDelete);
 
         // TODO: test validations
@@ -170,6 +177,7 @@ public class TagApiApiTest {
         Integer id = null;
         TagOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         TagForApiContract response = api.apiTagsIdGet(id, fields, lang);
 
         // TODO: test validations
@@ -188,6 +196,7 @@ public class TagApiApiTest {
         String query = null;
         Boolean allowAliases = null;
         Integer maxResults = null;
+
         List<String> response = api.apiTagsNamesGet(query, allowAliases, maxResults);
 
         // TODO: test validations
@@ -204,6 +213,7 @@ public class TagApiApiTest {
     @Test
     public void apiTagsPostTest() {
         String name = null;
+
         TagBaseContract response = api.apiTagsPost(name);
 
         // TODO: test validations
@@ -222,6 +232,7 @@ public class TagApiApiTest {
         Integer tagId = null;
         TagOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         List<TagForApiContract> response = api.apiTagsTagIdChildrenGet(tagId, fields, lang);
 
         // TODO: test validations
@@ -238,6 +249,7 @@ public class TagApiApiTest {
     @Test
     public void apiTagsTagIdCommentsGetTest() {
         Integer tagId = null;
+
         CommentForApiContractPartialFindResult response = api.apiTagsTagIdCommentsGet(tagId);
 
         // TODO: test validations
@@ -255,6 +267,7 @@ public class TagApiApiTest {
     public void apiTagsTagIdCommentsPostTest() {
         Integer tagId = null;
         CommentForApiContract commentForApiContract = null;
+
         CommentForApiContract response = api.apiTagsTagIdCommentsPost(tagId, commentForApiContract);
 
         // TODO: test validations
@@ -274,6 +287,7 @@ public class TagApiApiTest {
         TagReportType reportType = null;
         String notes = null;
         Integer versionNumber = null;
+
         api.apiTagsTagIdReportsPost(tagId, reportType, notes, versionNumber);
 
         // TODO: test validations
@@ -293,6 +307,7 @@ public class TagApiApiTest {
         EntryType entryType = null;
         Integer maxResults = null;
         ContentLanguagePreference lang = null;
+
         List<TagBaseContract> response = api.apiTagsTopGet(categoryName, entryType, maxResults, lang);
 
         // TODO: test validations

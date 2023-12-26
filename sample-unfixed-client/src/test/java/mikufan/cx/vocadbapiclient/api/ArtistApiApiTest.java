@@ -53,6 +53,7 @@ public class ArtistApiApiTest {
     @Test
     public void apiArtistsCommentsCommentIdDeleteTest() {
         Integer commentId = null;
+
         api.apiArtistsCommentsCommentIdDelete(commentId);
 
         // TODO: test validations
@@ -70,6 +71,7 @@ public class ArtistApiApiTest {
     public void apiArtistsCommentsCommentIdPostTest() {
         Integer commentId = null;
         CommentForApiContract commentForApiContract = null;
+
         api.apiArtistsCommentsCommentIdPost(commentId, commentForApiContract);
 
         // TODO: test validations
@@ -102,7 +104,9 @@ public class ArtistApiApiTest {
         NameMatchMode nameMatchMode = null;
         ArtistOptionalFields fields = null;
         ContentLanguagePreference lang = null;
-        ArtistForApiContractPartialFindResult response = api.apiArtistsGet(query, artistTypes, allowBaseVoicebanks, tagName, tagId, childTags, followedByUserId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang);
+        List<String> languages = null;
+
+        ArtistForApiContractPartialFindResult response = api.apiArtistsGet(query, artistTypes, allowBaseVoicebanks, tagName, tagId, childTags, followedByUserId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, languages);
 
         // TODO: test validations
     }
@@ -118,6 +122,7 @@ public class ArtistApiApiTest {
     @Test
     public void apiArtistsIdCommentsGetTest() {
         Integer id = null;
+
         List<CommentForApiContract> response = api.apiArtistsIdCommentsGet(id);
 
         // TODO: test validations
@@ -135,6 +140,7 @@ public class ArtistApiApiTest {
     public void apiArtistsIdCommentsPostTest() {
         Integer id = null;
         CommentForApiContract commentForApiContract = null;
+
         CommentForApiContract response = api.apiArtistsIdCommentsPost(id, commentForApiContract);
 
         // TODO: test validations
@@ -152,6 +158,7 @@ public class ArtistApiApiTest {
     public void apiArtistsIdDeleteTest() {
         Integer id = null;
         String notes = null;
+
         api.apiArtistsIdDelete(id, notes);
 
         // TODO: test validations
@@ -171,6 +178,7 @@ public class ArtistApiApiTest {
         ArtistOptionalFields fields = null;
         ArtistRelationsFields relations = null;
         ContentLanguagePreference lang = null;
+
         ArtistForApiContract response = api.apiArtistsIdGet(id, fields, relations, lang);
 
         // TODO: test validations
@@ -189,6 +197,7 @@ public class ArtistApiApiTest {
         String query = null;
         NameMatchMode nameMatchMode = null;
         Integer maxResults = null;
+
         List<String> response = api.apiArtistsNamesGet(query, nameMatchMode, maxResults);
 
         // TODO: test validations

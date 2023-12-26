@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.ArchivedWebLinkContract;
 import mikufan.cx.vocadbapiclient.model.ArtistType;
@@ -69,7 +70,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   EntryForApiContract.JSON_PROPERTY_VERSION,
   EntryForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class EntryForApiContract {
   public static final String JSON_PROPERTY_ACTIVITY_DATE = "activityDate";
   private LocalDateTime activityDate;
@@ -114,10 +115,10 @@ public class EntryForApiContract {
   private String name;
 
   public static final String JSON_PROPERTY_NAMES = "names";
-  private List<LocalizedStringContract> names = null;
+  private List<LocalizedStringContract> names;
 
   public static final String JSON_PROPERTY_PVS = "pvs";
-  private List<PVContract> pvs = null;
+  private List<PVContract> pvs;
 
   public static final String JSON_PROPERTY_SONG_LIST_FEATURED_CATEGORY = "songListFeaturedCategory";
   private SongListFeaturedCategory songListFeaturedCategory;
@@ -135,7 +136,7 @@ public class EntryForApiContract {
   private String tagCategoryName;
 
   public static final String JSON_PROPERTY_TAGS = "tags";
-  private List<TagUsageForApiContract> tags = null;
+  private List<TagUsageForApiContract> tags;
 
   public static final String JSON_PROPERTY_URL_SLUG = "urlSlug";
   private String urlSlug;
@@ -144,7 +145,7 @@ public class EntryForApiContract {
   private Integer version;
 
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
-  private List<ArchivedWebLinkContract> webLinks = null;
+  private List<ArchivedWebLinkContract> webLinks;
 
   public EntryForApiContract() {
   }
@@ -829,7 +830,6 @@ public class EntryForApiContract {
   public void setWebLinks(List<ArchivedWebLinkContract> webLinks) {
     this.webLinks = webLinks;
   }
-
 
   @Override
   public boolean equals(Object o) {

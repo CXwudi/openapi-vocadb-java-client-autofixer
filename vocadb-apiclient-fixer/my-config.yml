@@ -12,4 +12,4 @@ config:
   # for debug purposes, not writing to anything
   dry-run: false
 
-# run with ./mvnw spring-boot:run '-Dspring-boot.run.arguments="--spring.config.import=file:my-config.yml"'
+# run with docker compose up -d

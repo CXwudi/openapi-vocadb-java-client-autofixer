@@ -61,6 +61,7 @@ public class ActivityEntryApiApiTest {
         EntryOptionalFields entryFields = null;
         ContentLanguagePreference lang = null;
         ActivityEntrySortRule sortRule = null;
+
         ActivityEntryForApiContractPartialFindResult response = api.apiActivityEntriesGet(before, since, userId, editEvent, entryType, maxResults, getTotalCount, fields, entryFields, lang, sortRule);
 
         // TODO: test validations

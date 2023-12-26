@@ -70,7 +70,7 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **pvService** | [**PVService**](.md)|  | [optional] [enum: NicoNicoDouga, Youtube, SoundCloud, Vimeo, Piapro, Bilibili, File, LocalFile, Creofuga, Bandcamp] |
 | **pvId** | **String**|  | [optional] |
-| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
@@ -223,7 +223,7 @@ No authorization required
 
 ## apiSongsGet
 
-> SongForApiContractPartialFindResult apiSongsGet(query, songTypes, afterDate, beforeDate, tagName, tagId, childTags, unifyTypesAndTags, artistId, artistParticipationStatus, childVoicebanks, includeMembers, onlyWithPvs, pvServices, since, minScore, userCollectionId, releaseEventId, parentSongId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, minMilliBpm, maxMilliBpm, minLength, maxLength)
+> SongForApiContractPartialFindResult apiSongsGet(query, songTypes, afterDate, beforeDate, tagName, tagId, childTags, unifyTypesAndTags, artistId, artistParticipationStatus, childVoicebanks, includeMembers, onlyWithPvs, pvServices, since, minScore, userCollectionId, releaseEventId, parentSongId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, minMilliBpm, maxMilliBpm, minLength, maxLength, language, languages, excludedTagIds)
 
 
 
@@ -276,8 +276,11 @@ public class Example {
         Integer maxMilliBpm = 56; // Integer | 
         Integer minLength = 56; // Integer | 
         Integer maxLength = 56; // Integer | 
+        String language = "language_example"; // String | 
+        List<String> languages = Arrays.asList(); // List<String> | 
+        List<Integer> excludedTagIds = Arrays.asList(); // List<Integer> | 
         try {
-            SongForApiContractPartialFindResult result = apiInstance.apiSongsGet(query, songTypes, afterDate, beforeDate, tagName, tagId, childTags, unifyTypesAndTags, artistId, artistParticipationStatus, childVoicebanks, includeMembers, onlyWithPvs, pvServices, since, minScore, userCollectionId, releaseEventId, parentSongId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, minMilliBpm, maxMilliBpm, minLength, maxLength);
+            SongForApiContractPartialFindResult result = apiInstance.apiSongsGet(query, songTypes, afterDate, beforeDate, tagName, tagId, childTags, unifyTypesAndTags, artistId, artistParticipationStatus, childVoicebanks, includeMembers, onlyWithPvs, pvServices, since, minScore, userCollectionId, releaseEventId, parentSongId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, minMilliBpm, maxMilliBpm, minLength, maxLength, language, languages, excludedTagIds);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling SongApiApi#apiSongsGet");
@@ -322,12 +325,15 @@ public class Example {
 | **sort** | [**SongSortRule**](.md)|  | [optional] [enum: None, Name, AdditionDate, PublishDate, FavoritedTimes, RatingScore, TagUsageCount, SongType] |
 | **preferAccurateMatches** | **Boolean**|  | [optional] [default to false] |
 | **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
-| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 | **minMilliBpm** | **Integer**|  | [optional] |
 | **maxMilliBpm** | **Integer**|  | [optional] |
 | **minLength** | **Integer**|  | [optional] |
 | **maxLength** | **Integer**|  | [optional] |
+| **language** | **String**|  | [optional] |
+| **languages** | [**List&lt;String&gt;**](String.md)|  | [optional] |
+| **excludedTagIds** | [**List&lt;Integer&gt;**](Integer.md)|  | [optional] |
 
 ### Return type
 
@@ -393,7 +399,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
-| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 
 ### Return type
 
@@ -655,7 +661,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **Integer**|  | |
-| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
@@ -723,7 +729,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **Integer**|  | |
-| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
@@ -924,7 +930,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **Integer**|  | |
-| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
@@ -1132,7 +1138,7 @@ public class Example {
 | **filterBy** | [**TopSongsDateFilterType**](.md)|  | [optional] [enum: CreateDate, PublishDate, Popularity] |
 | **vocalist** | [**SongVocalistSelection**](.md)|  | [optional] [enum: Nothing, Vocaloid, UTAU, Other] |
 | **maxResults** | **Integer**|  | [optional] [default to 25] |
-| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 | **languagePreference** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type

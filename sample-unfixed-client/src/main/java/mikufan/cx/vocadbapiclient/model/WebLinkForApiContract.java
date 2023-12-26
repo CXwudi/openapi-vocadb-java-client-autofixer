@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   WebLinkForApiContract.JSON_PROPERTY_ID,
   WebLinkForApiContract.JSON_PROPERTY_URL
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class WebLinkForApiContract {
   public static final String JSON_PROPERTY_CATEGORY = "category";
   private WebLinkCategory category;
@@ -212,7 +212,6 @@ public class WebLinkForApiContract {
   public void setUrl(String url) {
     this.url = url;
   }
-
 
   @Override
   public boolean equals(Object o) {

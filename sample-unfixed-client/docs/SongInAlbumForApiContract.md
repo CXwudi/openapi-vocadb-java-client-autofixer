@@ -13,6 +13,7 @@
 |**rating** | **SongVoteRating** |  |  [optional] |
 |**song** | [**SongForApiContract**](SongForApiContract.md) |  |  [optional] |
 |**trackNumber** | **Integer** |  |  [optional] |
+|**computedCultureCodes** | **List&lt;String&gt;** |  |  [optional] |
 
 
 

@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.AlbumContract;
 import mikufan.cx.vocadbapiclient.model.ArtistForSongContract;
@@ -67,23 +68,25 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongForApiContract.JSON_PROPERTY_PV_SERVICES,
   SongForApiContract.JSON_PROPERTY_RATING_SCORE,
   SongForApiContract.JSON_PROPERTY_RELEASE_EVENT,
+  SongForApiContract.JSON_PROPERTY_RELEASE_EVENTS,
   SongForApiContract.JSON_PROPERTY_SONG_TYPE,
   SongForApiContract.JSON_PROPERTY_STATUS,
   SongForApiContract.JSON_PROPERTY_TAGS,
   SongForApiContract.JSON_PROPERTY_THUMB_URL,
   SongForApiContract.JSON_PROPERTY_VERSION,
-  SongForApiContract.JSON_PROPERTY_WEB_LINKS
+  SongForApiContract.JSON_PROPERTY_WEB_LINKS,
+  SongForApiContract.JSON_PROPERTY_CULTURE_CODES
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class SongForApiContract {
   public static final String JSON_PROPERTY_ADDITIONAL_NAMES = "additionalNames";
   private String additionalNames;
 
   public static final String JSON_PROPERTY_ALBUMS = "albums";
-  private List<AlbumContract> albums = null;
+  private List<AlbumContract> albums;
 
   public static final String JSON_PROPERTY_ARTISTS = "artists";
-  private List<ArtistForSongContract> artists = null;
+  private List<ArtistForSongContract> artists;
 
   public static final String JSON_PROPERTY_ARTIST_STRING = "artistString";
   private String artistString;
@@ -110,7 +113,7 @@ public class SongForApiContract {
   private Integer lengthSeconds;
 
   public static final String JSON_PROPERTY_LYRICS = "lyrics";
-  private List<LyricsForSongContract> lyrics = null;
+  private List<LyricsForSongContract> lyrics;
 
   public static final String JSON_PROPERTY_MAIN_PICTURE = "mainPicture";
   private EntryThumbForApiContract mainPicture;
@@ -128,7 +131,7 @@ public class SongForApiContract {
   private String name;
 
   public static final String JSON_PROPERTY_NAMES = "names";
-  private List<LocalizedStringContract> names = null;
+  private List<LocalizedStringContract> names;
 
   public static final String JSON_PROPERTY_ORIGINAL_VERSION_ID = "originalVersionId";
   private Integer originalVersionId;
@@ -137,7 +140,7 @@ public class SongForApiContract {
   private LocalDateTime publishDate;
 
   public static final String JSON_PROPERTY_PVS = "pvs";
-  private List<PVContract> pvs = null;
+  private List<PVContract> pvs;
 
   public static final String JSON_PROPERTY_PV_SERVICES = "pvServices";
   private PVServices pvServices;
@@ -148,6 +151,9 @@ public class SongForApiContract {
   public static final String JSON_PROPERTY_RELEASE_EVENT = "releaseEvent";
   private ReleaseEventForApiContract releaseEvent;
 
+  public static final String JSON_PROPERTY_RELEASE_EVENTS = "releaseEvents";
+  private List<ReleaseEventForApiContract> releaseEvents;
+
   public static final String JSON_PROPERTY_SONG_TYPE = "songType";
   private SongType songType;
 
@@ -155,7 +161,7 @@ public class SongForApiContract {
   private EntryStatus status;
 
   public static final String JSON_PROPERTY_TAGS = "tags";
-  private List<TagUsageForApiContract> tags = null;
+  private List<TagUsageForApiContract> tags;
 
   public static final String JSON_PROPERTY_THUMB_URL = "thumbUrl";
   private String thumbUrl;
@@ -164,7 +170,10 @@ public class SongForApiContract {
   private Integer version;
 
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
-  private List<WebLinkForApiContract> webLinks = null;
+  private List<WebLinkForApiContract> webLinks;
+
+  public static final String JSON_PROPERTY_CULTURE_CODES = "cultureCodes";
+  private List<String> cultureCodes;
 
   public SongForApiContract() {
   }
@@ -833,6 +842,40 @@ public class SongForApiContract {
   }
 
 
+  public SongForApiContract releaseEvents(List<ReleaseEventForApiContract> releaseEvents) {
+    
+    this.releaseEvents = releaseEvents;
+    return this;
+  }
+
+  public SongForApiContract addReleaseEventsItem(ReleaseEventForApiContract releaseEventsItem) {
+    if (this.releaseEvents == null) {
+      this.releaseEvents = new ArrayList<>();
+    }
+    this.releaseEvents.add(releaseEventsItem);
+    return this;
+  }
+
+   /**
+   * Get releaseEvents
+   * @return releaseEvents
+  **/
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_RELEASE_EVENTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<ReleaseEventForApiContract> getReleaseEvents() {
+    return releaseEvents;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_RELEASE_EVENTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setReleaseEvents(List<ReleaseEventForApiContract> releaseEvents) {
+    this.releaseEvents = releaseEvents;
+  }
+
+
   public SongForApiContract songType(SongType songType) {
     
     this.songType = songType;
@@ -1005,6 +1048,39 @@ public class SongForApiContract {
   }
 
 
+  public SongForApiContract cultureCodes(List<String> cultureCodes) {
+    
+    this.cultureCodes = cultureCodes;
+    return this;
+  }
+
+  public SongForApiContract addCultureCodesItem(String cultureCodesItem) {
+    if (this.cultureCodes == null) {
+      this.cultureCodes = new ArrayList<>();
+    }
+    this.cultureCodes.add(cultureCodesItem);
+    return this;
+  }
+
+   /**
+   * Get cultureCodes
+   * @return cultureCodes
+  **/
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_CULTURE_CODES)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getCultureCodes() {
+    return cultureCodes;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_CULTURE_CODES)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setCultureCodes(List<String> cultureCodes) {
+    this.cultureCodes = cultureCodes;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -1038,17 +1114,19 @@ public class SongForApiContract {
         Objects.equals(this.pvServices, songForApiContract.pvServices) &&
         Objects.equals(this.ratingScore, songForApiContract.ratingScore) &&
         Objects.equals(this.releaseEvent, songForApiContract.releaseEvent) &&
+        Objects.equals(this.releaseEvents, songForApiContract.releaseEvents) &&
         Objects.equals(this.songType, songForApiContract.songType) &&
         Objects.equals(this.status, songForApiContract.status) &&
         Objects.equals(this.tags, songForApiContract.tags) &&
         Objects.equals(this.thumbUrl, songForApiContract.thumbUrl) &&
         Objects.equals(this.version, songForApiContract.version) &&
-        Objects.equals(this.webLinks, songForApiContract.webLinks);
+        Objects.equals(this.webLinks, songForApiContract.webLinks) &&
+        Objects.equals(this.cultureCodes, songForApiContract.cultureCodes);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(additionalNames, albums, artists, artistString, createDate, defaultName, defaultNameLanguage, deleted, favoritedTimes, id, lengthSeconds, lyrics, mainPicture, maxMilliBpm, mergedTo, minMilliBpm, name, names, originalVersionId, publishDate, pvs, pvServices, ratingScore, releaseEvent, songType, status, tags, thumbUrl, version, webLinks);
+    return Objects.hash(additionalNames, albums, artists, artistString, createDate, defaultName, defaultNameLanguage, deleted, favoritedTimes, id, lengthSeconds, lyrics, mainPicture, maxMilliBpm, mergedTo, minMilliBpm, name, names, originalVersionId, publishDate, pvs, pvServices, ratingScore, releaseEvent, releaseEvents, songType, status, tags, thumbUrl, version, webLinks, cultureCodes);
   }
 
   @Override
@@ -1079,12 +1157,14 @@ public class SongForApiContract {
     sb.append("    pvServices: ").append(toIndentedString(pvServices)).append("\n");
     sb.append("    ratingScore: ").append(toIndentedString(ratingScore)).append("\n");
     sb.append("    releaseEvent: ").append(toIndentedString(releaseEvent)).append("\n");
+    sb.append("    releaseEvents: ").append(toIndentedString(releaseEvents)).append("\n");
     sb.append("    songType: ").append(toIndentedString(songType)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
     sb.append("    thumbUrl: ").append(toIndentedString(thumbUrl)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("    webLinks: ").append(toIndentedString(webLinks)).append("\n");
+    sb.append("    cultureCodes: ").append(toIndentedString(cultureCodes)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -18,16 +18,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.ArtistForEventContract;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
 import mikufan.cx.vocadbapiclient.model.EntryThumbForApiContract;
 import mikufan.cx.vocadbapiclient.model.EventCategory;
 import mikufan.cx.vocadbapiclient.model.LocalizedStringContract;
+import mikufan.cx.vocadbapiclient.model.PVContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventSeriesContract;
 import mikufan.cx.vocadbapiclient.model.SongListBaseContract;
 import mikufan.cx.vocadbapiclient.model.TagUsageForApiContract;
@@ -36,7 +36,6 @@ import mikufan.cx.vocadbapiclient.model.WebLinkForApiContract;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
 
 /**
  * Model tests for ReleaseEventForApiContract
@@ -130,6 +129,14 @@ public class ReleaseEventForApiContractTest {
     @Test
     public void namesTest() {
         // TODO: test names
+    }
+
+    /**
+     * Test the property 'pvs'
+     */
+    @Test
+    public void pvsTest() {
+        // TODO: test pvs
     }
 
     /**

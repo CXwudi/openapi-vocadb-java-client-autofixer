@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AlbumDiscPropertiesContract.JSON_PROPERTY_MEDIA_TYPE,
   AlbumDiscPropertiesContract.JSON_PROPERTY_NAME
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class AlbumDiscPropertiesContract {
   public static final String JSON_PROPERTY_DISC_NUMBER = "discNumber";
   private Integer discNumber;
@@ -152,7 +152,6 @@ public class AlbumDiscPropertiesContract {
   public void setName(String name) {
     this.name = name;
   }
-
 
   @Override
   public boolean equals(Object o) {

@@ -64,7 +64,19 @@ public enum ArtistType {
   
   SYNTHESIZERV("SynthesizerV"),
   
-  COVERARTIST("CoverArtist");
+  COVERARTIST("CoverArtist"),
+  
+  NEUTRINO("NEUTRINO"),
+  
+  VOISONA("VoiSona"),
+  
+  NEWTYPE("NewType"),
+  
+  VOICEROID("Voiceroid"),
+  
+  INSTRUMENTALIST("Instrumentalist"),
+  
+  DESIGNER("Designer");
 
   private String value;
 

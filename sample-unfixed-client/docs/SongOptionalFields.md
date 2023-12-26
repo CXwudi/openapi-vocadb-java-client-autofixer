@@ -31,5 +31,7 @@
 
 * `BPM` (value: `"Bpm"`)
 
+* `CULTURECODES` (value: `"CultureCodes"`)
+
 
 

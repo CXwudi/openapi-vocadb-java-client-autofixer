@@ -51,7 +51,25 @@ public class PvApiApiTest {
         Integer maxResults = null;
         Boolean getTotalCount = null;
         ContentLanguagePreference lang = null;
+
         PVForSongContractPartialFindResult response = api.apiPvsForSongsGet(name, author, service, maxResults, getTotalCount, lang);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * 
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void apiPvsThumbnailGetTest() {
+        String pvUrl = null;
+
+        api.apiPvsThumbnailGet(pvUrl);
 
         // TODO: test validations
     }

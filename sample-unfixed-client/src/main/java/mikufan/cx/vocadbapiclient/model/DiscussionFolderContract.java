@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   DiscussionFolderContract.JSON_PROPERTY_NAME,
   DiscussionFolderContract.JSON_PROPERTY_TOPIC_COUNT
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class DiscussionFolderContract {
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
   private String description;
@@ -213,7 +213,6 @@ public class DiscussionFolderContract {
   public void setTopicCount(Integer topicCount) {
     this.topicCount = topicCount;
   }
-
 
   @Override
   public boolean equals(Object o) {

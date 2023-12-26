@@ -1,4 +1,5 @@
 # make sure sample-unfixed-client is an existing empty folder
+rm -rf sample-unfixed-client
 docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli generate \
   --api-package mikufan.cx.vocadbapiclient.api \
   --model-package mikufan.cx.vocadbapiclient.model \
@@ -8,7 +9,7 @@ docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli generate \
   --artifact-id vocadb-api-client \
   --artifact-version 1.0.0 \
   --minimal-update \
-  -g java  \
+  -g java \
     -p java8=true \
     -p dateLibrary=java8-localdatetime \
     -p useRuntimeException=true \

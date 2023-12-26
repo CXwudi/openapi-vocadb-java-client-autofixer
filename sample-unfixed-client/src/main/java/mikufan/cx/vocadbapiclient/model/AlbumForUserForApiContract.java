@@ -37,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AlbumForUserForApiContract.JSON_PROPERTY_RATING,
   AlbumForUserForApiContract.JSON_PROPERTY_USER
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class AlbumForUserForApiContract {
   public static final String JSON_PROPERTY_ALBUM = "album";
   private AlbumForApiContract album;
@@ -185,7 +185,6 @@ public class AlbumForUserForApiContract {
   public void setUser(UserForApiContract user) {
     this.user = user;
   }
-
 
   @Override
   public boolean equals(Object o) {

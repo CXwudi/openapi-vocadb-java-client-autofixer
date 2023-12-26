@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongListBaseContract.JSON_PROPERTY_ID,
   SongListBaseContract.JSON_PROPERTY_NAME
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class SongListBaseContract {
   public static final String JSON_PROPERTY_FEATURED_CATEGORY = "featuredCategory";
   private SongListFeaturedCategory featuredCategory;
@@ -122,7 +122,6 @@ public class SongListBaseContract {
   public void setName(String name) {
     this.name = name;
   }
-
 
   @Override
   public boolean equals(Object o) {

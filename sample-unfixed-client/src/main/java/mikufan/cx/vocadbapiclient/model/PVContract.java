@@ -45,7 +45,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   PVContract.JSON_PROPERTY_THUMB_URL,
   PVContract.JSON_PROPERTY_URL
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class PVContract {
   public static final String JSON_PROPERTY_AUTHOR = "author";
   private String author;
@@ -425,7 +425,6 @@ public class PVContract {
   public void setUrl(String url) {
     this.url = url;
   }
-
 
   @Override
   public boolean equals(Object o) {

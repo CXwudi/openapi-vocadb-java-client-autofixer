@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.ArtistForUserForApiContract;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -34,10 +35,10 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArtistForUserForApiContractPartialFindResult.JSON_PROPERTY_TERM,
   ArtistForUserForApiContractPartialFindResult.JSON_PROPERTY_TOTAL_COUNT
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class ArtistForUserForApiContractPartialFindResult {
   public static final String JSON_PROPERTY_ITEMS = "items";
-  private List<ArtistForUserForApiContract> items = null;
+  private List<ArtistForUserForApiContract> items;
 
   public static final String JSON_PROPERTY_TERM = "term";
   private String term;
@@ -132,7 +133,6 @@ public class ArtistForUserForApiContractPartialFindResult {
   public void setTotalCount(Integer totalCount) {
     this.totalCount = totalCount;
   }
-
 
   @Override
   public boolean equals(Object o) {

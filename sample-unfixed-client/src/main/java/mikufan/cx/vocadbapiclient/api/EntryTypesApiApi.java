@@ -27,8 +27,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
-@Component("mikufan.cx.vocadbapiclient.api.EntryTypesApiApi")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class EntryTypesApiApi {
     private ApiClient apiClient;
 
@@ -36,7 +35,6 @@ public class EntryTypesApiApi {
         this(new ApiClient());
     }
 
-    @Autowired
     public EntryTypesApiApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
@@ -97,6 +95,7 @@ public class EntryTypesApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"

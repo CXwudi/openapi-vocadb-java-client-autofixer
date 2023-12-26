@@ -50,7 +50,9 @@ public enum SongOptionalFields {
   
   WEBLINKS("WebLinks"),
   
-  BPM("Bpm");
+  BPM("Bpm"),
+  
+  CULTURECODES("CultureCodes");
 
   private String value;
 

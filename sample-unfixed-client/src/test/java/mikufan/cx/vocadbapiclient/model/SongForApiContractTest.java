@@ -18,10 +18,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.AlbumContract;
 import mikufan.cx.vocadbapiclient.model.ArtistForSongContract;
@@ -39,7 +38,6 @@ import mikufan.cx.vocadbapiclient.model.WebLinkForApiContract;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
 
 /**
  * Model tests for SongForApiContract
@@ -160,11 +158,27 @@ public class SongForApiContractTest {
     }
 
     /**
+     * Test the property 'maxMilliBpm'
+     */
+    @Test
+    public void maxMilliBpmTest() {
+        // TODO: test maxMilliBpm
+    }
+
+    /**
      * Test the property 'mergedTo'
      */
     @Test
     public void mergedToTest() {
         // TODO: test mergedTo
+    }
+
+    /**
+     * Test the property 'minMilliBpm'
+     */
+    @Test
+    public void minMilliBpmTest() {
+        // TODO: test minMilliBpm
     }
 
     /**
@@ -232,6 +246,14 @@ public class SongForApiContractTest {
     }
 
     /**
+     * Test the property 'releaseEvents'
+     */
+    @Test
+    public void releaseEventsTest() {
+        // TODO: test releaseEvents
+    }
+
+    /**
      * Test the property 'songType'
      */
     @Test
@@ -280,19 +302,11 @@ public class SongForApiContractTest {
     }
 
     /**
-     * Test the property 'minMilliBpm'
+     * Test the property 'cultureCodes'
      */
     @Test
-    public void minMilliBpmTest() {
-        // TODO: test minMilliBpm
-    }
-
-    /**
-     * Test the property 'maxMilliBpm'
-     */
-    @Test
-    public void maxMilliBpmTest() {
-        // TODO: test maxMilliBpm
+    public void cultureCodesTest() {
+        // TODO: test cultureCodes
     }
 
 }

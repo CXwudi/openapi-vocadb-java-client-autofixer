@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.ContentLanguageSelection;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
@@ -46,7 +47,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ReleaseEventSeriesForEditForApiContract.JSON_PROPERTY_STATUS,
   ReleaseEventSeriesForEditForApiContract.JSON_PROPERTY_WEB_LINKS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class ReleaseEventSeriesForEditForApiContract {
   public static final String JSON_PROPERTY_CATEGORY = "category";
   private EventCategory category;
@@ -70,13 +71,13 @@ public class ReleaseEventSeriesForEditForApiContract {
   private String name;
 
   public static final String JSON_PROPERTY_NAMES = "names";
-  private List<LocalizedStringWithIdContract> names = null;
+  private List<LocalizedStringWithIdContract> names;
 
   public static final String JSON_PROPERTY_STATUS = "status";
   private EntryStatus status;
 
   public static final String JSON_PROPERTY_WEB_LINKS = "webLinks";
-  private List<WebLinkForApiContract> webLinks = null;
+  private List<WebLinkForApiContract> webLinks;
 
   public ReleaseEventSeriesForEditForApiContract() {
   }
@@ -355,7 +356,6 @@ public class ReleaseEventSeriesForEditForApiContract {
   public void setWebLinks(List<WebLinkForApiContract> webLinks) {
     this.webLinks = webLinks;
   }
-
 
   @Override
   public boolean equals(Object o) {

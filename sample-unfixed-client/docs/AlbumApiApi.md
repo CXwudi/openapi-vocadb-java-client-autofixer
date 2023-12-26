@@ -11,6 +11,7 @@ All URIs are relative to *http://localhost*
 | [**apiAlbumsIdCommentsPost**](AlbumApiApi.md#apiAlbumsIdCommentsPost) | **POST** /api/albums/{id}/comments |  |
 | [**apiAlbumsIdDelete**](AlbumApiApi.md#apiAlbumsIdDelete) | **DELETE** /api/albums/{id} |  |
 | [**apiAlbumsIdGet**](AlbumApiApi.md#apiAlbumsIdGet) | **GET** /api/albums/{id} |  |
+| [**apiAlbumsIdRelatedGet**](AlbumApiApi.md#apiAlbumsIdRelatedGet) | **GET** /api/albums/{id}/related |  |
 | [**apiAlbumsIdReviewsGet**](AlbumApiApi.md#apiAlbumsIdReviewsGet) | **GET** /api/albums/{id}/reviews |  |
 | [**apiAlbumsIdReviewsPost**](AlbumApiApi.md#apiAlbumsIdReviewsPost) | **POST** /api/albums/{id}/reviews |  |
 | [**apiAlbumsIdReviewsReviewIdDelete**](AlbumApiApi.md#apiAlbumsIdReviewsReviewIdDelete) | **DELETE** /api/albums/{id}/reviews/{reviewId} |  |
@@ -501,12 +502,80 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **id** | **Integer**|  | |
 | **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks] |
-| **songFields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **songFields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type
 
 [**AlbumForApiContract**](AlbumForApiContract.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: text/plain, application/json, text/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+
+## apiAlbumsIdRelatedGet
+
+> RelatedAlbumsContract apiAlbumsIdRelatedGet(id, fields, lang)
+
+
+
+### Example
+
+```java
+// Import classes:
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.AlbumApiApi;
+
+public class Example {
+    public static void main(String[] args) {
+        ApiClient defaultClient = Configuration.getDefaultApiClient();
+        defaultClient.setBasePath("http://localhost");
+
+        AlbumApiApi apiInstance = new AlbumApiApi(defaultClient);
+        Integer id = 56; // Integer | 
+        AlbumOptionalFields fields = AlbumOptionalFields.fromValue("None"); // AlbumOptionalFields | 
+        ContentLanguagePreference lang = ContentLanguagePreference.fromValue("Default"); // ContentLanguagePreference | 
+        try {
+            RelatedAlbumsContract result = apiInstance.apiAlbumsIdRelatedGet(id, fields, lang);
+            System.out.println(result);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling AlbumApiApi#apiAlbumsIdRelatedGet");
+            System.err.println("Status code: " + e.getCode());
+            System.err.println("Reason: " + e.getResponseBody());
+            System.err.println("Response headers: " + e.getResponseHeaders());
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+### Parameters
+
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **Integer**|  | |
+| **fields** | [**AlbumOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Artists, Description, Discs, Identifiers, MainPicture, Names, PVs, ReleaseEvent, Tags, Tracks, WebLinks] |
+| **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+
+### Return type
+
+[**RelatedAlbumsContract**](RelatedAlbumsContract.md)
 
 ### Authorization
 
@@ -836,7 +905,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **Integer**|  | |
-| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm] |
+| **fields** | [**SongOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, Albums, Artists, Lyrics, MainPicture, Names, PVs, ReleaseEvent, Tags, ThumbUrl, WebLinks, Bpm, CultureCodes] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 
 ### Return type

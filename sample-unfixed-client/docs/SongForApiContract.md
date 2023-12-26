@@ -31,12 +31,14 @@
 |**pvServices** | **PVServices** |  |  [optional] |
 |**ratingScore** | **Integer** |  |  [optional] |
 |**releaseEvent** | [**ReleaseEventForApiContract**](ReleaseEventForApiContract.md) |  |  [optional] |
+|**releaseEvents** | [**List&lt;ReleaseEventForApiContract&gt;**](ReleaseEventForApiContract.md) |  |  [optional] |
 |**songType** | **SongType** |  |  [optional] |
 |**status** | **EntryStatus** |  |  [optional] |
 |**tags** | [**List&lt;TagUsageForApiContract&gt;**](TagUsageForApiContract.md) |  |  [optional] |
 |**thumbUrl** | **String** |  |  [optional] |
 |**version** | **Integer** |  |  [optional] |
 |**webLinks** | [**List&lt;WebLinkForApiContract&gt;**](WebLinkForApiContract.md) |  |  [optional] |
+|**cultureCodes** | **List&lt;String&gt;** |  |  [optional] |
 
 
 

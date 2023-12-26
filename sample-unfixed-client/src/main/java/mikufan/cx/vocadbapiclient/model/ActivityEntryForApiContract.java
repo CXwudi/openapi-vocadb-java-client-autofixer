@@ -38,7 +38,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ActivityEntryForApiContract.JSON_PROPERTY_EDIT_EVENT,
   ActivityEntryForApiContract.JSON_PROPERTY_ENTRY
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class ActivityEntryForApiContract {
   public static final String JSON_PROPERTY_ARCHIVED_VERSION = "archivedVersion";
   private ArchivedObjectVersionForApiContract archivedVersion;
@@ -186,7 +186,6 @@ public class ActivityEntryForApiContract {
   public void setEntry(EntryForApiContract entry) {
     this.entry = entry;
   }
-
 
   @Override
   public boolean equals(Object o) {

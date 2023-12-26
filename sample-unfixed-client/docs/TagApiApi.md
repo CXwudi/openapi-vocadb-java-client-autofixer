@@ -285,7 +285,7 @@ No authorization required
 
 ## apiTagsGet
 
-> TagForApiContractPartialFindResult apiTagsGet(query, allowChildren, categoryName, start, maxResults, getTotalCount, nameMatchMode, sort, preferAccurateMatches, fields, lang, target)
+> TagForApiContractPartialFindResult apiTagsGet(query, allowChildren, categoryName, start, maxResults, getTotalCount, nameMatchMode, sort, preferAccurateMatches, fields, lang, target, deleted)
 
 
 
@@ -317,8 +317,9 @@ public class Example {
         TagOptionalFields fields = TagOptionalFields.fromValue("None"); // TagOptionalFields | 
         ContentLanguagePreference lang = ContentLanguagePreference.fromValue("Default"); // ContentLanguagePreference | 
         TagTargetTypes target = TagTargetTypes.fromValue("Nothing"); // TagTargetTypes | 
+        Boolean deleted = false; // Boolean | 
         try {
-            TagForApiContractPartialFindResult result = apiInstance.apiTagsGet(query, allowChildren, categoryName, start, maxResults, getTotalCount, nameMatchMode, sort, preferAccurateMatches, fields, lang, target);
+            TagForApiContractPartialFindResult result = apiInstance.apiTagsGet(query, allowChildren, categoryName, start, maxResults, getTotalCount, nameMatchMode, sort, preferAccurateMatches, fields, lang, target, deleted);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling TagApiApi#apiTagsGet");
@@ -348,6 +349,7 @@ public class Example {
 | **fields** | [**TagOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, AliasedTo, Description, MainPicture, Names, Parent, RelatedTags, TranslatedDescription, WebLinks] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
 | **target** | [**TagTargetTypes**](.md)|  | [optional] [enum: Nothing, Album, Artist, AlbumArtist, Event, Song, AlbumSong, ArtistSong, SongList, All] |
+| **deleted** | **Boolean**|  | [optional] [default to false] |
 
 ### Return type
 

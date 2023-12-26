@@ -18,8 +18,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import mikufan.cx.vocadbapiclient.model.AlbumForApiContract;
 import mikufan.cx.vocadbapiclient.model.MediaType;
 import mikufan.cx.vocadbapiclient.model.PurchaseStatus;
@@ -27,7 +25,6 @@ import mikufan.cx.vocadbapiclient.model.UserForApiContract;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
 
 /**
  * Model tests for AlbumForUserForApiContract

@@ -57,6 +57,7 @@ public class SongListApiApiTest {
     @Test
     public void apiSongListsCommentsCommentIdDeleteTest() {
         Integer commentId = null;
+
         api.apiSongListsCommentsCommentIdDelete(commentId);
 
         // TODO: test validations
@@ -74,6 +75,7 @@ public class SongListApiApiTest {
     public void apiSongListsCommentsCommentIdPostTest() {
         Integer commentId = null;
         CommentForApiContract commentForApiContract = null;
+
         api.apiSongListsCommentsCommentIdPost(commentId, commentForApiContract);
 
         // TODO: test validations
@@ -100,6 +102,7 @@ public class SongListApiApiTest {
         SongListSortRule sort = null;
         SongListOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         SongListForApiContractPartialFindResult response = api.apiSongListsFeaturedGet(query, tagId, childTags, nameMatchMode, featuredCategory, start, maxResults, getTotalCount, sort, fields, lang);
 
         // TODO: test validations
@@ -119,6 +122,7 @@ public class SongListApiApiTest {
         NameMatchMode nameMatchMode = null;
         SongListFeaturedCategory featuredCategory = null;
         Integer maxResults = null;
+
         List<String> response = api.apiSongListsFeaturedNamesGet(query, nameMatchMode, featuredCategory, maxResults);
 
         // TODO: test validations
@@ -137,6 +141,7 @@ public class SongListApiApiTest {
         Integer id = null;
         String notes = null;
         Boolean hardDelete = null;
+
         api.apiSongListsIdDelete(id, notes, hardDelete);
 
         // TODO: test validations
@@ -153,6 +158,7 @@ public class SongListApiApiTest {
     @Test
     public void apiSongListsListIdCommentsGetTest() {
         Integer listId = null;
+
         CommentForApiContractPartialFindResult response = api.apiSongListsListIdCommentsGet(listId);
 
         // TODO: test validations
@@ -170,6 +176,7 @@ public class SongListApiApiTest {
     public void apiSongListsListIdCommentsPostTest() {
         Integer listId = null;
         CommentForApiContract commentForApiContract = null;
+
         CommentForApiContract response = api.apiSongListsListIdCommentsPost(listId, commentForApiContract);
 
         // TODO: test validations
@@ -200,6 +207,7 @@ public class SongListApiApiTest {
         NameMatchMode nameMatchMode = null;
         SongOptionalFields fields = null;
         ContentLanguagePreference lang = null;
+
         SongInListForApiContractPartialFindResult response = api.apiSongListsListIdSongsGet(listId, query, songTypes, pvServices, tagId, artistId, childVoicebanks, advancedFilters, start, maxResults, getTotalCount, sort, nameMatchMode, fields, lang);
 
         // TODO: test validations
@@ -216,6 +224,7 @@ public class SongListApiApiTest {
     @Test
     public void apiSongListsPostTest() {
         SongListForEditForApiContract songListForEditForApiContract = null;
+
         Integer response = api.apiSongListsPost(songListForEditForApiContract);
 
         // TODO: test validations

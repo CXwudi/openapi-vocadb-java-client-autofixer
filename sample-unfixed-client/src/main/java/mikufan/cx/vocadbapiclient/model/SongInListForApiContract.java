@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongInListForApiContract.JSON_PROPERTY_ORDER,
   SongInListForApiContract.JSON_PROPERTY_SONG
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class SongInListForApiContract {
   public static final String JSON_PROPERTY_NOTES = "notes";
   private String notes;
@@ -122,7 +122,6 @@ public class SongInListForApiContract {
   public void setSong(SongForApiContract song) {
     this.song = song;
   }
-
 
   @Override
   public boolean equals(Object o) {

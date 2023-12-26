@@ -145,7 +145,7 @@ No authorization required
 
 ## apiArtistsGet
 
-> ArtistForApiContractPartialFindResult apiArtistsGet(query, artistTypes, allowBaseVoicebanks, tagName, tagId, childTags, followedByUserId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang)
+> ArtistForApiContractPartialFindResult apiArtistsGet(query, artistTypes, allowBaseVoicebanks, tagName, tagId, childTags, followedByUserId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, languages)
 
 
 
@@ -182,8 +182,9 @@ public class Example {
         NameMatchMode nameMatchMode = NameMatchMode.fromValue("Auto"); // NameMatchMode | 
         ArtistOptionalFields fields = ArtistOptionalFields.fromValue("None"); // ArtistOptionalFields | 
         ContentLanguagePreference lang = ContentLanguagePreference.fromValue("Default"); // ContentLanguagePreference | 
+        List<String> languages = Arrays.asList(); // List<String> | 
         try {
-            ArtistForApiContractPartialFindResult result = apiInstance.apiArtistsGet(query, artistTypes, allowBaseVoicebanks, tagName, tagId, childTags, followedByUserId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang);
+            ArtistForApiContractPartialFindResult result = apiInstance.apiArtistsGet(query, artistTypes, allowBaseVoicebanks, tagName, tagId, childTags, followedByUserId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, languages);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling ArtistApiApi#apiArtistsGet");
@@ -218,6 +219,7 @@ public class Example {
 | **nameMatchMode** | [**NameMatchMode**](.md)|  | [optional] [enum: Auto, Partial, StartsWith, Exact, Words] |
 | **fields** | [**ArtistOptionalFields**](.md)|  | [optional] [enum: None, AdditionalNames, ArtistLinks, ArtistLinksReverse, BaseVoicebank, Description, MainPicture, Names, Tags, WebLinks] |
 | **lang** | [**ContentLanguagePreference**](.md)|  | [optional] [enum: Default, Japanese, Romaji, English] |
+| **languages** | [**List&lt;String&gt;**](String.md)|  | [optional] |
 
 ### Return type
 

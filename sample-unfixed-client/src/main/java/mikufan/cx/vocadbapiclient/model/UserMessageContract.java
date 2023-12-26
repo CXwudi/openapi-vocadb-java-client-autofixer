@@ -39,7 +39,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UserMessageContract.JSON_PROPERTY_SENDER,
   UserMessageContract.JSON_PROPERTY_SUBJECT
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class UserMessageContract {
   public static final String JSON_PROPERTY_BODY = "body";
   private String body;
@@ -303,7 +303,6 @@ public class UserMessageContract {
   public void setSubject(String subject) {
     this.subject = subject;
   }
-
 
   @Override
   public boolean equals(Object o) {

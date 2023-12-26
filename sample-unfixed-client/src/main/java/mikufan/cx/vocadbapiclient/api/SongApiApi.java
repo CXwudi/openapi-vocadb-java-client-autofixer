@@ -44,8 +44,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
-@Component("mikufan.cx.vocadbapiclient.api.SongApiApi")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class SongApiApi {
     private ApiClient apiClient;
 
@@ -53,7 +52,6 @@ public class SongApiApi {
         this(new ApiClient());
     }
 
-    @Autowired
     public SongApiApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
@@ -105,6 +103,7 @@ public class SongApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "pvId", pvId));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -251,11 +250,14 @@ public class SongApiApi {
      * @param maxMilliBpm  (optional)
      * @param minLength  (optional)
      * @param maxLength  (optional)
+     * @param language  (optional)
+     * @param languages  (optional)
+     * @param excludedTagIds  (optional)
      * @return SongForApiContractPartialFindResult
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public SongForApiContractPartialFindResult apiSongsGet(String query, String songTypes, LocalDateTime afterDate, LocalDateTime beforeDate, List<String> tagName, List<Integer> tagId, Boolean childTags, Boolean unifyTypesAndTags, List<Integer> artistId, ArtistAlbumParticipationStatus artistParticipationStatus, Boolean childVoicebanks, Boolean includeMembers, Boolean onlyWithPvs, PVServices pvServices, Integer since, Integer minScore, Integer userCollectionId, Integer releaseEventId, Integer parentSongId, EntryStatus status, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, SongSortRule sort, Boolean preferAccurateMatches, NameMatchMode nameMatchMode, SongOptionalFields fields, ContentLanguagePreference lang, Integer minMilliBpm, Integer maxMilliBpm, Integer minLength, Integer maxLength) throws RestClientException {
-        return apiSongsGetWithHttpInfo(query, songTypes, afterDate, beforeDate, tagName, tagId, childTags, unifyTypesAndTags, artistId, artistParticipationStatus, childVoicebanks, includeMembers, onlyWithPvs, pvServices, since, minScore, userCollectionId, releaseEventId, parentSongId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, minMilliBpm, maxMilliBpm, minLength, maxLength).getBody();
+    public SongForApiContractPartialFindResult apiSongsGet(String query, String songTypes, LocalDateTime afterDate, LocalDateTime beforeDate, List<String> tagName, List<Integer> tagId, Boolean childTags, Boolean unifyTypesAndTags, List<Integer> artistId, ArtistAlbumParticipationStatus artistParticipationStatus, Boolean childVoicebanks, Boolean includeMembers, Boolean onlyWithPvs, PVServices pvServices, Integer since, Integer minScore, Integer userCollectionId, Integer releaseEventId, Integer parentSongId, EntryStatus status, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, SongSortRule sort, Boolean preferAccurateMatches, NameMatchMode nameMatchMode, SongOptionalFields fields, ContentLanguagePreference lang, Integer minMilliBpm, Integer maxMilliBpm, Integer minLength, Integer maxLength, String language, List<String> languages, List<Integer> excludedTagIds) throws RestClientException {
+        return apiSongsGetWithHttpInfo(query, songTypes, afterDate, beforeDate, tagName, tagId, childTags, unifyTypesAndTags, artistId, artistParticipationStatus, childVoicebanks, includeMembers, onlyWithPvs, pvServices, since, minScore, userCollectionId, releaseEventId, parentSongId, status, advancedFilters, start, maxResults, getTotalCount, sort, preferAccurateMatches, nameMatchMode, fields, lang, minMilliBpm, maxMilliBpm, minLength, maxLength, language, languages, excludedTagIds).getBody();
     }
 
     /**
@@ -295,10 +297,13 @@ public class SongApiApi {
      * @param maxMilliBpm  (optional)
      * @param minLength  (optional)
      * @param maxLength  (optional)
+     * @param language  (optional)
+     * @param languages  (optional)
+     * @param excludedTagIds  (optional)
      * @return ResponseEntity&lt;SongForApiContractPartialFindResult&gt;
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public ResponseEntity<SongForApiContractPartialFindResult> apiSongsGetWithHttpInfo(String query, String songTypes, LocalDateTime afterDate, LocalDateTime beforeDate, List<String> tagName, List<Integer> tagId, Boolean childTags, Boolean unifyTypesAndTags, List<Integer> artistId, ArtistAlbumParticipationStatus artistParticipationStatus, Boolean childVoicebanks, Boolean includeMembers, Boolean onlyWithPvs, PVServices pvServices, Integer since, Integer minScore, Integer userCollectionId, Integer releaseEventId, Integer parentSongId, EntryStatus status, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, SongSortRule sort, Boolean preferAccurateMatches, NameMatchMode nameMatchMode, SongOptionalFields fields, ContentLanguagePreference lang, Integer minMilliBpm, Integer maxMilliBpm, Integer minLength, Integer maxLength) throws RestClientException {
+    public ResponseEntity<SongForApiContractPartialFindResult> apiSongsGetWithHttpInfo(String query, String songTypes, LocalDateTime afterDate, LocalDateTime beforeDate, List<String> tagName, List<Integer> tagId, Boolean childTags, Boolean unifyTypesAndTags, List<Integer> artistId, ArtistAlbumParticipationStatus artistParticipationStatus, Boolean childVoicebanks, Boolean includeMembers, Boolean onlyWithPvs, PVServices pvServices, Integer since, Integer minScore, Integer userCollectionId, Integer releaseEventId, Integer parentSongId, EntryStatus status, List<AdvancedSearchFilterParams> advancedFilters, Integer start, Integer maxResults, Boolean getTotalCount, SongSortRule sort, Boolean preferAccurateMatches, NameMatchMode nameMatchMode, SongOptionalFields fields, ContentLanguagePreference lang, Integer minMilliBpm, Integer maxMilliBpm, Integer minLength, Integer maxLength, String language, List<String> languages, List<Integer> excludedTagIds) throws RestClientException {
         Object localVarPostBody = null;
         
 
@@ -340,6 +345,10 @@ public class SongApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxMilliBpm", maxMilliBpm));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "minLength", minLength));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxLength", maxLength));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "language", language));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("multi".toUpperCase(Locale.ROOT)), "languages[]", languages));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("multi".toUpperCase(Locale.ROOT)), "excludedTagIds[]", excludedTagIds));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -386,6 +395,7 @@ public class SongApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "languagePreference", languagePreference));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -541,6 +551,7 @@ public class SongApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
 
+
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         final String[] localVarContentTypes = {  };
@@ -594,6 +605,7 @@ public class SongApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -651,6 +663,7 @@ public class SongApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -706,6 +719,7 @@ public class SongApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "userFields", userFields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -813,6 +827,7 @@ public class SongApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -911,6 +926,7 @@ public class SongApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "nameMatchMode", nameMatchMode));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -971,6 +987,7 @@ public class SongApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "languagePreference", languagePreference));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"

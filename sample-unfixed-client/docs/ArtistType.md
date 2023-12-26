@@ -45,5 +45,17 @@
 
 * `COVERARTIST` (value: `"CoverArtist"`)
 
+* `NEUTRINO` (value: `"NEUTRINO"`)
+
+* `VOISONA` (value: `"VoiSona"`)
+
+* `NEWTYPE` (value: `"NewType"`)
+
+* `VOICEROID` (value: `"Voiceroid"`)
+
+* `INSTRUMENTALIST` (value: `"Instrumentalist"`)
+
+* `DESIGNER` (value: `"Designer"`)
+
 
 

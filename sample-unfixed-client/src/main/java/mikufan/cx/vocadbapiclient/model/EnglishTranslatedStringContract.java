@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   EnglishTranslatedStringContract.JSON_PROPERTY_ENGLISH,
   EnglishTranslatedStringContract.JSON_PROPERTY_ORIGINAL
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class EnglishTranslatedStringContract {
   public static final String JSON_PROPERTY_ENGLISH = "english";
   private String english;
@@ -91,7 +91,6 @@ public class EnglishTranslatedStringContract {
   public void setOriginal(String original) {
     this.original = original;
   }
-
 
   @Override
   public boolean equals(Object o) {

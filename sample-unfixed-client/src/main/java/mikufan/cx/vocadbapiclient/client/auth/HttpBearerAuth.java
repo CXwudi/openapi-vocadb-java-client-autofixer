@@ -1,31 +1,49 @@
 package mikufan.cx.vocadbapiclient.client.auth;
 
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
-
+import java.util.Optional;
+import java.util.function.Supplier;
 import org.springframework.http.HttpHeaders;
-import org.springframework.util.Base64Utils;
 import org.springframework.util.MultiValueMap;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class HttpBearerAuth implements Authentication {
     private final String scheme;
-    private String bearerToken;
+    private Supplier<String> tokenSupplier;
 
     public HttpBearerAuth(String scheme) {
         this.scheme = scheme;
     }
 
+    /**
+     * Gets the token, which together with the scheme, will be sent as the value of the Authorization header.
+     *
+     * @return The bearer token
+     */
     public String getBearerToken() {
-        return bearerToken;
+        return tokenSupplier.get();
     }
 
+    /**
+     * Sets the token, which together with the scheme, will be sent as the value of the Authorization header.
+     *
+     * @param bearerToken The bearer token to send in the Authorization header
+     */
     public void setBearerToken(String bearerToken) {
-        this.bearerToken = bearerToken;
+        this.tokenSupplier = () -> bearerToken;
+    }
+
+    /**
+     * Sets the supplier of tokens, which together with the scheme, will be sent as the value of the Authorization header.
+     *
+     * @param tokenSupplier The supplier of bearer tokens to send in the Authorization header
+     */
+    public void setBearerToken(Supplier<String> tokenSupplier) {
+        this.tokenSupplier = tokenSupplier;
     }
 
     @Override
     public void applyToParams(MultiValueMap<String, String> queryParams, HttpHeaders headerParams, MultiValueMap<String, String> cookieParams) {
+        String bearerToken = Optional.ofNullable(tokenSupplier).map(Supplier::get).orElse(null);
         if (bearerToken == null) {
             return;
         }

@@ -27,8 +27,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
-@Component("mikufan.cx.vocadbapiclient.api.PvApiApi")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class PvApiApi {
     private ApiClient apiClient;
 
@@ -36,7 +35,6 @@ public class PvApiApi {
         this(new ApiClient());
     }
 
-    @Autowired
     public PvApiApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
@@ -95,6 +93,7 @@ public class PvApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "getTotalCount", getTotalCount));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -106,5 +105,46 @@ public class PvApiApi {
 
         ParameterizedTypeReference<PVForSongContractPartialFindResult> localReturnType = new ParameterizedTypeReference<PVForSongContractPartialFindResult>() {};
         return apiClient.invokeAPI("/api/pvs/for-songs", HttpMethod.GET, Collections.<String, Object>emptyMap(), localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
+    }
+    /**
+     * 
+     * 
+     * <p><b>200</b> - Success
+     * @param pvUrl  (optional)
+     * @throws RestClientException if an error occurs while attempting to invoke the API
+     */
+    public void apiPvsThumbnailGet(String pvUrl) throws RestClientException {
+        apiPvsThumbnailGetWithHttpInfo(pvUrl);
+    }
+
+    /**
+     * 
+     * 
+     * <p><b>200</b> - Success
+     * @param pvUrl  (optional)
+     * @return ResponseEntity&lt;Void&gt;
+     * @throws RestClientException if an error occurs while attempting to invoke the API
+     */
+    public ResponseEntity<Void> apiPvsThumbnailGetWithHttpInfo(String pvUrl) throws RestClientException {
+        Object localVarPostBody = null;
+        
+
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
+
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "pvUrl", pvUrl));
+
+
+        final String[] localVarAccepts = {  };
+        final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+        String[] localVarAuthNames = new String[] {  };
+
+        ParameterizedTypeReference<Void> localReturnType = new ParameterizedTypeReference<Void>() {};
+        return apiClient.invokeAPI("/api/pvs/thumbnail", HttpMethod.GET, Collections.<String, Object>emptyMap(), localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
 }

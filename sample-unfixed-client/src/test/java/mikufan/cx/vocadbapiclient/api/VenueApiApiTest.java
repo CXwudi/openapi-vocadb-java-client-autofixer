@@ -61,6 +61,7 @@ public class VenueApiApiTest {
         Double longitude = null;
         Double radius = null;
         DistanceUnit distanceUnit = null;
+
         VenueForApiContractPartialFindResult response = api.apiVenuesGet(query, fields, start, maxResults, getTotalCount, nameMatchMode, lang, sortRule, latitude, longitude, radius, distanceUnit);
 
         // TODO: test validations
@@ -79,6 +80,7 @@ public class VenueApiApiTest {
         Integer id = null;
         String notes = null;
         Boolean hardDelete = null;
+
         api.apiVenuesIdDelete(id, notes, hardDelete);
 
         // TODO: test validations
@@ -98,6 +100,7 @@ public class VenueApiApiTest {
         VenueReportType reportType = null;
         String notes = null;
         Integer versionNumber = null;
+
         api.apiVenuesIdReportsPost(id, reportType, notes, versionNumber);
 
         // TODO: test validations

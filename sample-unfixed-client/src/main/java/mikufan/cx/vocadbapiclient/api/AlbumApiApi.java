@@ -16,6 +16,7 @@ import mikufan.cx.vocadbapiclient.model.DiscType;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
 import java.time.LocalDateTime;
 import mikufan.cx.vocadbapiclient.model.NameMatchMode;
+import mikufan.cx.vocadbapiclient.model.RelatedAlbumsContract;
 import mikufan.cx.vocadbapiclient.model.SongInAlbumForApiContract;
 import mikufan.cx.vocadbapiclient.model.SongOptionalFields;
 
@@ -40,8 +41,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
-@Component("mikufan.cx.vocadbapiclient.api.AlbumApiApi")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class AlbumApiApi {
     private ApiClient apiClient;
 
@@ -49,7 +49,6 @@ public class AlbumApiApi {
         this(new ApiClient());
     }
 
-    @Autowired
     public AlbumApiApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
@@ -255,6 +254,7 @@ public class AlbumApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -409,6 +409,7 @@ public class AlbumApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
 
+
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         final String[] localVarContentTypes = {  };
@@ -466,6 +467,7 @@ public class AlbumApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "songFields", songFields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -477,6 +479,63 @@ public class AlbumApiApi {
 
         ParameterizedTypeReference<AlbumForApiContract> localReturnType = new ParameterizedTypeReference<AlbumForApiContract>() {};
         return apiClient.invokeAPI("/api/albums/{id}", HttpMethod.GET, uriVariables, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
+    }
+    /**
+     * 
+     * 
+     * <p><b>200</b> - Success
+     * @param id  (required)
+     * @param fields  (optional)
+     * @param lang  (optional)
+     * @return RelatedAlbumsContract
+     * @throws RestClientException if an error occurs while attempting to invoke the API
+     */
+    public RelatedAlbumsContract apiAlbumsIdRelatedGet(Integer id, AlbumOptionalFields fields, ContentLanguagePreference lang) throws RestClientException {
+        return apiAlbumsIdRelatedGetWithHttpInfo(id, fields, lang).getBody();
+    }
+
+    /**
+     * 
+     * 
+     * <p><b>200</b> - Success
+     * @param id  (required)
+     * @param fields  (optional)
+     * @param lang  (optional)
+     * @return ResponseEntity&lt;RelatedAlbumsContract&gt;
+     * @throws RestClientException if an error occurs while attempting to invoke the API
+     */
+    public ResponseEntity<RelatedAlbumsContract> apiAlbumsIdRelatedGetWithHttpInfo(Integer id, AlbumOptionalFields fields, ContentLanguagePreference lang) throws RestClientException {
+        Object localVarPostBody = null;
+        
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Missing the required parameter 'id' when calling apiAlbumsIdRelatedGet");
+        }
+        
+        // create path and map variables
+        final Map<String, Object> uriVariables = new HashMap<String, Object>();
+        uriVariables.put("id", id);
+
+        final MultiValueMap<String, String> localVarQueryParams = new LinkedMultiValueMap<String, String>();
+        final HttpHeaders localVarHeaderParams = new HttpHeaders();
+        final MultiValueMap<String, String> localVarCookieParams = new LinkedMultiValueMap<String, String>();
+        final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
+
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
+        localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+
+
+        final String[] localVarAccepts = { 
+            "text/plain", "application/json", "text/json"
+         };
+        final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        final String[] localVarContentTypes = {  };
+        final MediaType localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+        String[] localVarAuthNames = new String[] {  };
+
+        ParameterizedTypeReference<RelatedAlbumsContract> localReturnType = new ParameterizedTypeReference<RelatedAlbumsContract>() {};
+        return apiClient.invokeAPI("/api/albums/{id}/related", HttpMethod.GET, uriVariables, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localReturnType);
     }
     /**
      * 
@@ -518,6 +577,7 @@ public class AlbumApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "languageCode", languageCode));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -685,6 +745,7 @@ public class AlbumApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "discNumber", discNumber));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -741,6 +802,7 @@ public class AlbumApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -794,6 +856,7 @@ public class AlbumApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "languagePreference", languagePreference));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -843,6 +906,7 @@ public class AlbumApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "nameMatchMode", nameMatchMode));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "maxResults", maxResults));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -888,6 +952,7 @@ public class AlbumApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "languagePreference", languagePreference));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
@@ -937,6 +1002,7 @@ public class AlbumApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(ApiClient.CollectionFormat.valueOf("multi".toUpperCase(Locale.ROOT)), "ignoreIds[]", ignoreIds));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "languagePreference", languagePreference));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"

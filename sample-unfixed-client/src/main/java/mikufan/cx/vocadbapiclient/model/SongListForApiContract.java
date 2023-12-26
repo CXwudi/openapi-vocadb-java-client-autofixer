@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.CommentForApiContract;
 import mikufan.cx.vocadbapiclient.model.EntryStatus;
@@ -50,7 +51,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   SongListForApiContract.JSON_PROPERTY_ID,
   SongListForApiContract.JSON_PROPERTY_NAME
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class SongListForApiContract {
   public static final String JSON_PROPERTY_AUTHOR = "author";
   private UserForApiContract author;
@@ -65,10 +66,10 @@ public class SongListForApiContract {
   private LocalDateTime eventDate;
 
   public static final String JSON_PROPERTY_EVENTS = "events";
-  private List<ReleaseEventForApiContract> events = null;
+  private List<ReleaseEventForApiContract> events;
 
   public static final String JSON_PROPERTY_LATEST_COMMENTS = "latestComments";
-  private List<CommentForApiContract> latestComments = null;
+  private List<CommentForApiContract> latestComments;
 
   public static final String JSON_PROPERTY_MAIN_PICTURE = "mainPicture";
   private EntryThumbForApiContract mainPicture;
@@ -77,7 +78,7 @@ public class SongListForApiContract {
   private EntryStatus status;
 
   public static final String JSON_PROPERTY_TAGS = "tags";
-  private List<TagUsageForApiContract> tags = null;
+  private List<TagUsageForApiContract> tags;
 
   public static final String JSON_PROPERTY_FEATURED_CATEGORY = "featuredCategory";
   private SongListFeaturedCategory featuredCategory;
@@ -425,7 +426,6 @@ public class SongListForApiContract {
   public void setName(String name) {
     this.name = name;
   }
-
 
   @Override
   public boolean equals(Object o) {

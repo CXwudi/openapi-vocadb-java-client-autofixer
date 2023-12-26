@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   LocalizedStringWithIdContract.JSON_PROPERTY_LANGUAGE,
   LocalizedStringWithIdContract.JSON_PROPERTY_VALUE
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class LocalizedStringWithIdContract {
   public static final String JSON_PROPERTY_ID = "id";
   private Integer id;
@@ -122,7 +122,6 @@ public class LocalizedStringWithIdContract {
   public void setValue(String value) {
     this.value = value;
   }
-
 
   @Override
   public boolean equals(Object o) {

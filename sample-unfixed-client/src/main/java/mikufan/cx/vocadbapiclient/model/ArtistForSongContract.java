@@ -39,7 +39,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArtistForSongContract.JSON_PROPERTY_NAME,
   ArtistForSongContract.JSON_PROPERTY_ROLES
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class ArtistForSongContract {
   public static final String JSON_PROPERTY_ARTIST = "artist";
   private ArtistContract artist;
@@ -274,7 +274,6 @@ public class ArtistForSongContract {
   public void setRoles(ArtistRoles roles) {
     this.roles = roles;
   }
-
 
   @Override
   public boolean equals(Object o) {

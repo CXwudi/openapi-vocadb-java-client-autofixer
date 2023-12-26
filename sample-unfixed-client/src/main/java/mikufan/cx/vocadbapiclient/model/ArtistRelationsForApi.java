@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.AlbumForApiContract;
 import mikufan.cx.vocadbapiclient.model.ReleaseEventForApiContract;
@@ -38,22 +39,22 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ArtistRelationsForApi.JSON_PROPERTY_POPULAR_ALBUMS,
   ArtistRelationsForApi.JSON_PROPERTY_POPULAR_SONGS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class ArtistRelationsForApi {
   public static final String JSON_PROPERTY_LATEST_ALBUMS = "latestAlbums";
-  private List<AlbumForApiContract> latestAlbums = null;
+  private List<AlbumForApiContract> latestAlbums;
 
   public static final String JSON_PROPERTY_LATEST_EVENTS = "latestEvents";
-  private List<ReleaseEventForApiContract> latestEvents = null;
+  private List<ReleaseEventForApiContract> latestEvents;
 
   public static final String JSON_PROPERTY_LATEST_SONGS = "latestSongs";
-  private List<SongForApiContract> latestSongs = null;
+  private List<SongForApiContract> latestSongs;
 
   public static final String JSON_PROPERTY_POPULAR_ALBUMS = "popularAlbums";
-  private List<AlbumForApiContract> popularAlbums = null;
+  private List<AlbumForApiContract> popularAlbums;
 
   public static final String JSON_PROPERTY_POPULAR_SONGS = "popularSongs";
-  private List<SongForApiContract> popularSongs = null;
+  private List<SongForApiContract> popularSongs;
 
   public ArtistRelationsForApi() {
   }
@@ -226,7 +227,6 @@ public class ArtistRelationsForApi {
   public void setPopularSongs(List<SongForApiContract> popularSongs) {
     this.popularSongs = popularSongs;
   }
-
 
   @Override
   public boolean equals(Object o) {

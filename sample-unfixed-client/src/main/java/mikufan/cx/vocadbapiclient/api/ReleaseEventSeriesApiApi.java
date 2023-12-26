@@ -30,8 +30,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
-@Component("mikufan.cx.vocadbapiclient.api.ReleaseEventSeriesApiApi")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class ReleaseEventSeriesApiApi {
     private ApiClient apiClient;
 
@@ -39,7 +38,6 @@ public class ReleaseEventSeriesApiApi {
         this(new ApiClient());
     }
 
-    @Autowired
     public ReleaseEventSeriesApiApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
@@ -101,6 +99,7 @@ public class ReleaseEventSeriesApiApi {
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "nameMatchMode", nameMatchMode));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
 
+
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"
          };
@@ -155,6 +154,7 @@ public class ReleaseEventSeriesApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "notes", notes));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "hardDelete", hardDelete));
+
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -258,6 +258,7 @@ public class ReleaseEventSeriesApiApi {
 
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "fields", fields));
         localVarQueryParams.putAll(apiClient.parameterToMultiValueMap(null, "lang", lang));
+
 
         final String[] localVarAccepts = { 
             "text/plain", "application/json", "text/json"

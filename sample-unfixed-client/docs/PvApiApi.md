@@ -5,6 +5,7 @@ All URIs are relative to *http://localhost*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**apiPvsForSongsGet**](PvApiApi.md#apiPvsForSongsGet) | **GET** /api/pvs/for-songs |  |
+| [**apiPvsThumbnailGet**](PvApiApi.md#apiPvsThumbnailGet) | **GET** /api/pvs/thumbnail |  |
 
 
 
@@ -74,6 +75,69 @@ No authorization required
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain, application/json, text/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+
+## apiPvsThumbnailGet
+
+> apiPvsThumbnailGet(pvUrl)
+
+
+
+### Example
+
+```java
+// Import classes:
+import mikufan.cx.vocadbapiclient.client.ApiClient;
+import mikufan.cx.vocadbapiclient.client.ApiException;
+import mikufan.cx.vocadbapiclient.client.Configuration;
+import mikufan.cx.vocadbapiclient.client.models.*;
+import mikufan.cx.vocadbapiclient.api.PvApiApi;
+
+public class Example {
+    public static void main(String[] args) {
+        ApiClient defaultClient = Configuration.getDefaultApiClient();
+        defaultClient.setBasePath("http://localhost");
+
+        PvApiApi apiInstance = new PvApiApi(defaultClient);
+        String pvUrl = "pvUrl_example"; // String | 
+        try {
+            apiInstance.apiPvsThumbnailGet(pvUrl);
+        } catch (ApiException e) {
+            System.err.println("Exception when calling PvApiApi#apiPvsThumbnailGet");
+            System.err.println("Status code: " + e.getCode());
+            System.err.println("Reason: " + e.getResponseBody());
+            System.err.println("Response headers: " + e.getResponseHeaders());
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+### Parameters
+
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **pvUrl** | **String**|  | [optional] |
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
 
 ### HTTP response details

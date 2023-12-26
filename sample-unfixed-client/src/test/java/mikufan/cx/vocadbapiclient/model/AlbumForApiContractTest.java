@@ -18,10 +18,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.AlbumDiscPropertiesContract;
 import mikufan.cx.vocadbapiclient.model.AlbumIdentifierContract;
@@ -40,7 +39,6 @@ import mikufan.cx.vocadbapiclient.model.WebLinkForApiContract;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
 
 /**
  * Model tests for AlbumForApiContract
@@ -238,6 +236,14 @@ public class AlbumForApiContractTest {
     @Test
     public void releaseEventTest() {
         // TODO: test releaseEvent
+    }
+
+    /**
+     * Test the property 'releaseEvents'
+     */
+    @Test
+    public void releaseEventsTest() {
+        // TODO: test releaseEvents
     }
 
     /**

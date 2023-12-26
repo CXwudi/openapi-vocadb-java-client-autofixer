@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import mikufan.cx.vocadbapiclient.model.CommentForApiContract;
 import mikufan.cx.vocadbapiclient.model.UserForApiContract;
@@ -43,7 +44,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   DiscussionTopicContract.JSON_PROPERTY_LOCKED,
   DiscussionTopicContract.JSON_PROPERTY_NAME
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-27T01:04:32.642512Z[Etc/UTC]")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-12-26T07:29:58.607748373Z[Etc/UTC]")
 public class DiscussionTopicContract {
   public static final String JSON_PROPERTY_AUTHOR = "author";
   private UserForApiContract author;
@@ -52,7 +53,7 @@ public class DiscussionTopicContract {
   private Integer commentCount;
 
   public static final String JSON_PROPERTY_COMMENTS = "comments";
-  private List<CommentForApiContract> comments = null;
+  private List<CommentForApiContract> comments;
 
   public static final String JSON_PROPERTY_CONTENT = "content";
   private String content;
@@ -344,7 +345,6 @@ public class DiscussionTopicContract {
   public void setName(String name) {
     this.name = name;
   }
-
 
   @Override
   public boolean equals(Object o) {
