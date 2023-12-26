@@ -7,4 +7,4 @@ services:
     volumes:
       - ../:/workspace/
     working_dir: /workspace/vocadb-apiclient-fixer
-    command: mvn spring-boot:run '-Dspring-boot.run.arguments="--spring.config.import=file:my-config.yml"'
+    command: mvn spring-boot:run '-Dspring-boot.run.arguments="--spring.config.import=file:my-config.yml"' && sleep 100000000
